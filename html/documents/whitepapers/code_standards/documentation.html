@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2005 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li>
+  <!--#include virtual="/documents/xml/overview.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/mech_theory.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/news.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/proposals.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/published.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/reports.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/talks.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/tutorials.xml" -->
+  </li>
+  <li id="subnavon">
+  <!--#include virtual="/documents/xml/whitepapers.xml" -->
+  </li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>Whitepapers</h2>
+<h3>The KindSoftware Coding Standards</h3>
+            
+<h4>Table of Contents:</h4>
+<ol>
+  <li> <a href="index.html">Introduction</a> </li>
+  <li> Documentation </li>
+  <li> <a href="naming.html">Naming Conventions</a> </li>
+  <li> <a href="properties.html">Semantic Properties</a> </li>
+<!--   <li> <a href="recommendations.html">General Recommendations</a> </li> -->
+  <li> <a href="tools.html">Tools</a> </li>
+  <li> <a href="examples.html">Code Examples</a> </li>
+  <li> <a href="references.html">References</a> </li>
+  <li> Specific Recommendations for:
+      <ol>
+        <li> <a href="java.html">Java</a> </li>
+        <li> <a href="eiffel.html">Eiffel</a> </li>
+      </ol>
+  </li>
+  <li> <a href="credits.html">Credits</a> </li>
+</ol>
+
+<h2>Documentation</h2>
+
+<p> Documentation is all about communication. If you have any hope or
+desire to see your code understood and reused, it needs to be
+completely and thoroughly documented. We have a tool called the
+"CommentCounter" that can actually evaluate the true comment volume of
+your code. While we'll accept code submissions with a 35%
+documentation ratio, around 50% is what we're really looking for. </p>
+
+<p> These numbers sound high even for extensively documented classroom
+code, and <span class="bold">incredibly</span> high for Open Source
+Software.  So where does all this documentation come from? </p>
+
+<p> In-code documentation isn't all that counts toward the ratio.
+Overviews, design documents, man pages, etc. all contribute as
+well. </p>
+
+<p> In our experience, once you document a system so that other
+programmers can both rapidly understand what you have built and be
+capable of building it from scratch with your design, you will have
+ratios close to what we have prescribed. </p>
+
+<h3>How much is enough?</h3>
+
+<p> Your guiding metric for "How much is enough?" should be the
+following: Communicate exactly enough information in your comments so
+that the reader can implement what you are describing <em>and</em> do
+so correctly. </p>
+
+<p> Quality is better than quantity.  We don't want to see dozens of
+"My dog is blue" comments in code just to bump up the numbers.
+Besides, the new design of the CommentCounter will catch this kind of
+funny business anyway. </p>
+
+<h3>Self-documenting code</h3>
+
+<p> Some argue that the code itself should be "self-documenting". This
+is true in some sense, and we enforce it in some ways through naming
+conventions and running comments, but it isn't enough. What about the
+reader who doesn't know the language you are coding in? What about
+proprietary reusable components? Obviously, something more is
+necessary.  </p>
+
+<p> We find this opinion especially among the functional programming
+languages community.  It astounds and confuses us that such a bright
+group of programmers can seriously think that no documentation is
+better than good documentation.  We're working to make a difference
+there as well. </p>
+
+<h3>Real coders don't document</h3>
+
+<p> Also, for those of you that think that documenting is for
+weaklings and that real hackers, Masters, and Rambo-coders don't need
+comments; believe us, we could find some code that you wouldn't
+understand even with days of head-scratching (if you're in the area,
+drop by and we'll prove it). Rambo-coders need not apply. </p>
+
+<h2>Comment Types</h2>
+
+<p> We use <a href="properties.html"><em>semantic properties</em></a>
+for documenting program code is regular, parseable, meaningful
+ways. </p>
+
+<p> Each property has a legal scope of use, called its
+<em>context</em>.  Contexts are defined in a coarse,
+language-independent fashion using inclusion operators in kind theory.
+Contexts are comprised of <em>files</em>, <em>modules</em>,
+<em>features</em>, and <em>variables</em>. </p>
+
+<p> <em>Files</em> are exactly that: data files in which program code
+resides.  The scope of a file encompasses everything contained in that
+file. </p>
+
+<p> A <em>module</em> is some large-scale program unit.  Modules are
+typically realized by an explicit module- or class-like structure.
+Examples of modules are classes in object-oriented systems, modules in
+languages of the Modula and ML families, packages in the Ada lineage,
+etc.  Other words and structures typically bound to modules include
+units, protocols, interfaces, etc. </p>
+
+<p> <em>Features</em> are the entry point for computation.  Features
+are often named, have parameters, and return values.  Functions and
+procedures in structured languages are features, as are methods in
+object-oriented languages, and functions in functional systems. </p>
+
+<p> Finally, <em>variables</em> are program variables, attributes,
+constants, enumerations, etc.  Because few languages enforce any
+access principles for variables, variables can vary in semantics
+considerably. </p>
+
+<p> We maintain regular convensions for property-based documentation
+for each of these scopes.  They are documented in the next few
+sections. </p>
+
+<h3><a name="file">File Comment</a></h3>
+
+<p> Every file has a file comment contains at least the following
+information (example below): </p>
+
+<ol>
+  <li> The title of the project with which this module is associated
+      using the <a href="#title"><var>title</var></a> property. </li>
+  <li> A short description of the file's contents using the
+      <a href="#description"><var>description</var></a>
+      property. </li>
+  <li> Any copyright information relevant to the project using the
+      <a href="#copyright"><var>copyright</var></a> property. </li>
+  <li> The license(s) under which the file is protected using the
+      <a href="#license"><var>license</var></a> property. </li>
+  <li> The primary authors of the file using the
+      <a href="#author"><var>author</var></a> property. </li>
+  <li> Using a <a href="#version"><var>version</var></a> property,
+      document the RCS/CVS tag <var>$Revision: 19441 $</var>. </li>
+</ol>
+
+<h3><a name="module">Module Comment</a></h3>
+
+<p> A module (class, interface, package, module, unit, protocol, etc.)
+comment describes the purpose of the module, guaranteed invariants,
+usage instructions, and/or usage examples. The beginning of the
+comment should be a description of the module in exactly one sentence
+using the <var>bon</var> property. Also included in the class comment
+are any reminders or disclaimers about required or desired
+improvements. Use XHTML format when appropriate, but do not forget
+that all inline text is parsed as XHTML format by most tools, so
+accidental use of XHTML elements can result in strange looking
+documentation. See the below chart for appropriate properties and
+usages. </p>
+
+<p> Each class comment block must include exactly one <var>version
+</var> property and at least one <var>author</var> property. The
+<var>author</var> properties often list everyone who has written more
+than a few lines of the class. Each <var>author</var> property should
+list exactly one author. The <var>version</var> property's version is
+a project specific string (e.g. "1.0b5c7") followed by a CVS/RCS
+$<code>Date</code>$ tag. Additionally, each class may optionally
+contain a <code>//</code> comment after its closing brace stating that
+the class declaration has ended. </p>
+
+<h3><a name="feature">Feature Comment</a></h3>
+
+<p> Use language and local documentation conventions to describe
+nature, purpose, specification, effects, algorithmic notes, usage
+instructions, reminders, etc. The beginning of a method comment should
+be a summary of the method in exactly one sentence using the
+<var>bon</var> property. Use XHTML format when appropriate. Individual
+paragraphs within a comment do not need bounding paragraph tags
+(&lt;P&gt;).  See the chart below for appropriate properties and
+usages. </p>
+
+<h3><a name="variable">Variable Comment</a></h3>
+
+<p> At the minimum, variables should be commented with those semantic
+properties that are not implicitly specified by program structure.
+Many variable-scoped semantic properites are implicit within the
+structure of the program code given the semantics of the programming
+language in use.  For example, the <tt>hides</tt> property, when used,
+is an explicit documentation of an implicit feature of the language.
+Thus, the most important semantic property to use on variables is the
+<tt>values</tt> property, each of which should also, obviously, be
+documented as a class invariant. </p>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2005 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="documentation.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

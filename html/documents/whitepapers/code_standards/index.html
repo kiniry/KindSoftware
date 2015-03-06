@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2005 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li>
+  <!--#include virtual="/documents/xml/overview.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/mech_theory.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/news.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/proposals.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/published.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/reports.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/talks.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/tutorials.xml" -->
+  </li>
+  <li id="subnavon">
+  <!--#include virtual="/documents/xml/whitepapers.xml" -->
+  </li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>Whitepapers</h2>
+<h3>The KindSoftware Coding Standards</h3>
+            
+<h4>Table of Contents:</h4>
+<ol>
+  <li> Introduction </li>
+  <li> <a href="documentation.html">Documentation</a> </li>
+  <li> <a href="naming.html">Naming Conventions</a> </li>
+  <li> <a href="properties.html">Semantic Properties</a> </li>
+<!--   <li> <a href="recommendations.html">General Recommendations</a> </li> -->
+  <li> <a href="tools.html">Tools</a> </li>
+  <li> <a href="examples.html">Code Examples</a> </li>
+  <li> <a href="references.html">References</a> </li>
+  <li> Specific Recommendations for:
+      <ol>
+        <li> <a href="java.html">Java</a> </li>
+        <li> <a href="eiffel.html">Eiffel</a> </li>
+      </ol>
+  </li>
+  <li> <a href="credits.html">Credits</a> </li>
+</ol>
+
+<h2>Introduction</h2>
+
+<p> Code standards aren't just about obsession, they are about
+productivity, professionalism, and presentation. </p>
+
+<p> This code standard is used by several companies, research groups, and
+numerous individuals including groups at
+<a href="http://www.sun.com/">Sun Microsystems</a>,
+<a href="http://www.kindsoftware.com/">KindSoftware</a>,
+<a href="http://www.dalilab.com/">DALi</a>,
+<a href="http://www.fulcrummicro.com/">Fulcrum Microsystems</a>,
+the <a href="http://www.infospheres.caltech.edu/comp.html">Compositional
+Computing/Infospheres Group</a> in the
+<a href="http://www.cs.caltech.edu/">Department of Computer Science</a>
+at <a href="http://www.caltech.edu/">Caltech</a>,
+the <a href="http://www.cs.ru.nl/sos/">Security of Systems (SoS) Group</a>
+in the <a href="http://www.cs.kun.nl/">Nijmegen Institute for
+Computing and Information Science</a> at the <a href="http://www.ru.nl/">Radboud
+University Nijmegen</a>, and the
+<a href="http://www.kindsoftware.com/">KindSoftware: Software Engineering with Applied Formal Methods Group</a> in the
+<a href="http://www.csi.ucd.ie/">School of Computer Science and Informatics</a> at
+<a href="http://www.ucd.ie/">University College Dublin</a>. </p>
+
+<p> Resulting products are more readable, maintainable, robust,
+testable, and professional. </p>
+
+<p> Many people helped with the evolution of this code standard.
+These practices were not created in a vacuum.  They are tried and true
+rules that have been used in producing both research and commercial
+systems by teams of dozens of programmers.  While not all the rules
+are applicable to every developer or all systems, a general adherence
+to the rules and a belief in software engineering practices often
+results in happier and healthier developers and systems. </p>
+
+<p> In the context of this document, "structure" means "organization,
+look, and feel" of a body of code.  It includes elements of system and
+subsystem organization (packages), documentation (feature
+documentation, Javadoc tags, inline comments, and index files),
+specification (in-code and extra-code specification, running comments,
+index files), and development (code organization).  Adhering to these
+standards means that every piece of code has the same structure so
+that a reader can instantly know where to find a piece of information
+(attribute, import, method, feature, etc.) without have to search
+through an entire source file. </p>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2005 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="index.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

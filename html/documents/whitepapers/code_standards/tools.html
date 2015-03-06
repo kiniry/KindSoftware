@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2005 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li>
+  <!--#include virtual="/documents/xml/overview.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/mech_theory.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/news.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/proposals.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/published.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/reports.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/talks.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/tutorials.xml" -->
+  </li>
+  <li id="subnavon">
+  <!--#include virtual="/documents/xml/whitepapers.xml" -->
+  </li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>Whitepapers</h2>
+<h3>The KindSoftware Coding Standards</h3>
+            
+<h4>Table of Contents:</h4>
+<ol>
+  <li> <a href="index.html">Introduction</a> </li>
+  <li> <a href="documentation.html">Documentation</a> </li>
+  <li> <a href="naming.html">Naming Conventions</a> </li>
+  <li> <a href="properties.html">Semantic Properties</a> </li>
+<!--   <li> <a href="recommendations.html">General Recommendations</a> </li> -->
+  <li> Tools </li>
+  <li> <a href="examples.html">Code Examples</a> </li>
+  <li> <a href="references.html">References</a> </li>
+  <li> Specific Recommendations for:
+      <ol>
+        <li> <a href="java.html">Java</a> </li>
+        <li> <a href="eiffel.html">Eiffel</a> </li>
+      </ol>
+  </li>
+  <li> <a href="credits.html">Credits</a> </li>
+</ol>
+
+<h2>Tools</h2>
+<h3>(X)Emacs</h3>
+
+<p> The canonical summary: <em>Emacs is the extensible, customizable,
+self-documenting real-time display editor.</em> </p>
+
+<p> <em>(Rewritten from the XEmacs home page)</em> Emacs is a
+powerful, extensible text editor with full GUI and terminal
+support. </p>
+
+<p> Two primary supported free implementations of Emacs exist:
+<ul>
+  <li> <a href="http://www.fsf.org/">FSF</a> Emacs, the Free
+      Software Foundation's mainline Emacs implementation, and
+  </li>
+
+  <li> <a href="http://www.xemacs.org/">XEmacs</a>, a highly
+      graphical version initially based on an early version of
+      GNU Emacs 19 from the Free Software Foundation and since
+      kept up to date with recent versions of that
+      product. XEmacs stems from a collaboration of Lucid,
+      Inc. with <a href="http://www.sun.com/">Sun Microsystems,
+      Inc.</a> and the <a
+      href="http://www.cs.uiuc.edu/">University of Illinois</a>,
+      with additional support having been provided by <a
+      href="http://www.amdahl.com/">Amdahl Corporation</a> and <a
+      href="http://www.altrasoft.com/">Altrasoft</a>. </li>
+</ul>
+</p>
+
+<p> <span class="bold">Extending Emacs.</span> (X)Emacs is extended
+through the use of Emacs Lisp <em>packages</em>.  The primary packages
+we use for the development of Java are as follows.  This list is by no
+means complete and reflects our personal biases.  Some of the
+following summaries come directly from the info web pages for the
+corresponding package.
+
+<ul>
+  <li> <span class="bold">Semantic/Bovine.</span>
+      Semantic is a program for Emacs which includes, at its core, a
+      lexer, and two compiler compilers (bovinator and wisent).
+      Additional tools include, support for imenu, speedbar,
+      whichfunc, eldoc, hippie-expand, and several other build in
+      tools.
+
+      <p> The core utility is the parser infrastructure which allows
+      different types of parsers to be linked into the system.  Two
+      build in parsers include the "bovine" parser, and the "wisent"
+      parser. </p>
+
+  <li> <span class="bold">Speedbar.</span>
+      Speedbar is a program for Emacs which can be used to summarize
+      information related to the current buffer.  Its original
+      inspiration is the `explorer' often used in modern development
+      environments, office packages, and web browsers.
+
+  <li> <span class="bold">EIEIO.</span>
+      Summary.
+
+  <li> <span class="bold">AucTeX.</span>
+      Summary.
+
+  <li> <span class="bold">Proof General.</span>
+      Summary.
+
+  <li> <span class="bold">Emacs Library (elib).</span>
+      Summary.
+
+  <li> <span class="bold">Tramp.</span>
+      Summary.
+
+  <li> <span class="bold"><a href="http://repose.cx/emacs/wiki">Wiki.</a></span>
+      Emacs-Wiki enables you to create and use hyperlinks and simple
+      formatting in plain text files, and to optionally publish your
+      pages as HTML.
+
+  <li> <span class="bold"><a href="http://www.csd.uu.se/~andersl/emacs.shtml">Folding.</a></span>
+      This package provides a minor mode, compatible with all major
+      editing modes, for folding (hiding) parts of the edited text or
+      program.
+
+      <p> Folding mode handles a document as a tree, where each branch is
+      bounded by special markers `{{{' and `}}}'. A branch can be placed
+      inside another branch, creating a complete hierarchical
+      structure. </p>
+
+  <li> <span class="bold">Tracker.</span>
+      This mode keeps a list of projects and associated billing
+      entity. A single project can be selected and it will be marked
+      in a file as active until a new command is made to stop it. A
+      project is automatically terminated when emacs exits. If somehow
+      this fails, the tracking data file is touched at regular
+      intervals, so the next time the tracker is started if there is
+      an open project a reasonable guess can be made as to when to
+      mark it as closed. Each session can have multiple comments
+      associated with it, in which you can mark acomplishments or
+      whatever. It will generate informal daily summary reports and a
+      report of total hours for a particular billee.
+
+  <li> <span class="bold">Calendar and Diary.</span>
+      Emacs provides the functions of a desk calendar, with a diary of
+      planned or past events.  It also has facilities for managing
+      your appointments, and keeping track of how much time you spend
+      working on certain projects.
+
+  <li> <span class="bold">ECB (Emacs Code Browser).</span>
+      While (X)Emacs already has good <em>editing</em> support for
+      many modes, its <em>browsing</em> support is somewhat lacking.
+      That's where ECB comes in: it displays a number of informational
+      windows that allow for easy source code navigation and overview.
+
+  <li> <span class="bold">Timeclock.</span>
+      This mode is for keeping track of time intervals.  You can use
+      it for whatever purpose you like, but the typical scenario is to
+      keep track of how much time you spend working on certain
+      projects.
+
+  <li> <span class="bold"><a href="http://sacha.free.net.ph/notebook/wiki/PlannerMode.php"></a>Planner/Remember.</span>
+      Planner mode is an organizer and day planner for Emacs.  It
+      helps you keep track of your completed and pending tasks, daily
+      schedule, and notes in plain text files.  Planner mode is based
+      on the aforementioned Emacs-Wiki mode.
+
+  <li> <span class="bold"><a href="http://cedet.sourceforge.net/ede.shtml">EDE (Emacs Development
+      Environment).</a></span>
+      EDE provides the gloss that simplifies the learning curve for
+      all the very useful functionality of building and debugging
+      under emacs.  In doing so it attempts to emulate a typical IDE
+      (Integrated Development Environment).  What this means is that
+      EDE will manage or create your makefiles and other building
+      environment duties so the developer can concentrate on code, and
+      not support files.  In doing so, it will be much easier for new
+      programmers to learn and adopt the GNU ways of doing things.
+
+  <li> <span class="bold"><a href="http://www.common-lisp.net/project/slime/">SLIME.</a></span>
+      SLIME is a major mode for programming in Common Lisp.  It
+      essentially replaces
+      <a href="http://sourceforge.net/projects/ilisp/">ILISP</a> mode
+      which is no longer wholly supported.  SLIME works with all major
+      variants of Common Lisp.
+      
+      <p> SLIME uses a socket-based communication/RPC interface between
+      Emacs and Lisp.  Slime mode is a minor-mode complementing
+      Lisp mode. It includes many commands for interacting with the
+      Common Lisp process, including a a read-eval-print loop and a
+      Common Lisp debugger written in Emacs Lisp. The debugger pops up
+      an Emacs buffer similar to the Emacs/Elisp debugger. </p>
+
+  <li> <span class="bold">CLHS/HyperSpec (Common Lisp HyperSpec).</span>
+      CLHS and HyperSpec are minor modes used to look up definitions
+      in the ANSI Common Lisp standard (ANSI X3.226-1994) which is <a
+      href="http://www.lispworks.com/reference/HyperSpec/">available
+      on the web</a>, courtesy of Kent Pitman and Xanalys.
+
+  <li> <span class="bold"><a href="http://www.xref-tech.com">X-Refactory.</a></span>
+      XRef is a cross referencing tool for C and Java.  It lets you
+      lookup definitions, uses of variables and functions, and
+      refactor source code in a type-safe way.
+
+  <li> <span class="bold"><a href="http://caml.inria.fr/">Caml and Tuareg mode.</a></span>
+      These are two major modes for programming in (O)Caml.  I prefer
+      the former, but many people prefer the latter.  It provides a
+      read-eval-print loop, built-in support for compilation,
+      debugging, and more.
+
+  <li> <span class="bold"><a href="http://sourceforge.net/projects/preview-latex">Preview-LaTeX.</a></span>
+      This Elisp/LaTeX package will render your displayed LaTeX
+      equations right into the editing window where they belong.
+      The purpose of preview-latex is to embed LaTeX environments such
+      as display math or figures into the source buffers.  By
+      mouse-clicking, you can open the original text.  After editing,
+      another click will just run the region in question through LaTeX
+      and redisplay the new results.
+
+  <li> <span class="bold">W3M.</span>
+      Summary.
+
+  <li> <span class="bold"><a href="http://x-symbol.sourceforge.net/">X-Symbol.</a></span>
+      This file documents X-Symbol, a package providing
+      semi-WYSIWYG for LaTeX, HTML and other ``token languages''.  It
+      uses additional fonts and provide input methods to insert their
+      characters into your document.
+
+  <li> <span class="bold">CC-mode.</span> This is a GNU Emacs
+      mode for editing files containing C, C++, Objective-C,
+      Java, and CORBA IDL code.  CC-mode support template
+      insertion, auto-indenting, key shortcuts for often used
+      expressions and blocks and much, much more.  Documentation
+      on cc-mode can be found in the info pages of your Emacs
+      process (type control-h then 'i').</li>
+      
+  <li> <span class="bold">fill-paragraph.</span> The fill-*
+      functions reformat sections of text, code, etc. to be more
+      readable.  I.e. They can automatically reorganize and/or
+      justify your code, text, HTML, etc. to fit your needs.  The
+      primary use of fill-paragraph while coding in Java is
+      cleaning up documentation in comments.  Most programmers do
+      not like what it does to their source code by default.</li>
+      
+  <li> <a href="http://sourceforge.net/projects/oo-browser/"><span
+      class="bold">The OO Browser.</span></a> OOBR, the
+      object-oriented browser, used to be a free piece of
+      software from Bob Weiner.  It is/was a very powerful,
+      flexible, multi-language, source code browser (a la the
+      Smalltalk tradition) for Emacs. </li>
+      
+  <li> <span class="bold"><a href="http://jdee.sunsite.dk/">JDEE</a>:
+      The Java Development Environment for Emacs.</span>: The
+      JDEE is an Emacs Lisp package that provides a highly
+      configurable Emacs wrapper for command-line Java
+      development tools, such as those provided in JavaSoft's
+      JDK. The JDEE provides menu access to a Java compiler,
+      debugger, and API documenter. The Emacs/JDEE combination
+      adds features typically missing from command-line tools,
+      including:
+      <ul>
+        <li> syntax coloring</li>
+        <li> auto indentation </li>
+        <li> compile error to source links </li>
+        <li> source-level debugging </li>
+        <li> source code browsing </li>
+      </ul>
+      <p> The JDEE supports both Emacs (Unix and Windows
+      versions) and XEmacs. It is freely available under the
+      GNU public license. </p>
+      
+      <p> Note that much of the functionality of JDEE is simply
+      JDEE using other packages like cc-mode, font-lock-mode,
+      etc.  It does pull all of these packages together very
+      well. </p>
+  </li>
+      
+  <li> <span class="bold">Tags.</span> (from XEmacs info
+      documentation node (XEmacs)Tags:) A "tags table" is a
+      description of how a multi-file program is broken up into
+      files.  It lists the names of the component files and the
+      names and positions of the functions (or other named
+      sub-units) in each file.  Grouping the related files makes
+      it possible to search or replace through all the files with
+      one command.  Recording the function names and positions
+      makes possible the `M-.'  command which finds the
+      definition of a function by looking up which of the files
+      it is in.
+      
+      <p> Briefly, using tags with Java means that your Emacs
+      knows the location and completion of all interesting
+      features (classes, interfaces, fields, methods, etc.) of
+      your project so that you can (a) jump right to the
+      feature definitions, (b) use <em>completion</em> (see the
+      next bullet), (c) do regular expression searches and/or
+      replaces on tags (e.g. global replace of a variable), and
+      more.  See the documentation on tags in Emacs info for
+      more information on the use of tags. </p>
+  </li>
+      
+  <li> <span class="bold">Completion.</span> When using tags
+      or OOBR, <em>completion</em> can be enabled.  When enabled,
+      completion will let Emacs complete partially typed names of
+      interesting features like classes, interfaces, methods,
+      etc.  No longer do you have to type those 30 character
+      interface names!  Emacs does it for you!  Do an Emacs
+      apropos search on "completion" (control-h 'a') for more
+      information.  Completion is normally mapped to meta-tab in
+      most modes.  (Completion can work even in text mode - it
+      can complete from your local dictionary!)</li>
+      
+  <li> <span class="bold">font-lock-mode.</span> When Font
+      Lock mode is enabled, text is fontified (i.e. put into new
+      fonts, colors, styles, etc. depending upon what you are
+      typing to make the display of information more clear) as
+      you type it.  While font locking can make for a more
+      pretty/clear display, it can seriously slow down
+      typing/development for large files and long-lived Emacs
+      sessions.  Possible solutions include refining font locking
+      (see <code>turn-on-fast-lock</code> and related functions),
+      Lazy Font Locking (see <code>lazy-shot-mode</code>),
+      caching font lock information (see
+      <code>fast-lock-cache-directories</code>), and more.</li>
+      
+  <li> <span class="bold">Jacob - The Java Commando
+      Base.</span> Jacob is a Java class browser and project
+      manager for Emacs and includes a powerful class wizard.
+      Jacob is a <em>Java program</em> and its functionality
+      overlaps with that of JDEE, OOBR, and XEmacs.  We find it
+      most useful to use all of these tools in tandem, adjusting
+      to fit personal taste.</li>
+</ul>
+</p>
+
+<p> Our code standard is partially enforced with this <a
+href="java.el">elisp code</a> that provides some customizations
+to CC-mode and more. </p>
+
+<h3><a href="http://www.jmlspecs.org/">JML</a></h3>
+
+<p> The Java Modeling Language (JML) is a behavioral interface
+specification language and complementary tool that can be used to
+specify the behavior of Java modules. It combines the approaches of
+Eiffel and Larch, with some elements of the refinement calculus. We
+are using JML heavily in the development of all of our Java software.
+In particular, we use the JML compiler, the JML runtime assertion
+checker, JMLdoc (the JML version of Javadoc), JMLunit (to generate
+unit tests from annotations), and more. </p>
+
+<h3><a href="http://semantik.informatik.uni-oldenburg.de/~jass/">Jass</a></h3>
+
+<p> Jass is a pre-compiler for Java the provides support for
+Eiffel-like code annotations for program specification, trace
+assertions, and more.  We have used Jass heavily in our <a
+href="/products/opensource/IDebug/">IDebug</a> framework, but now we
+use the JML tools exclusively. </p>
+
+<h3>ESC/Java</h3>
+
+<p> The Compaq Extended Static Checker for Java (ESC/Java), developed
+at the Compaq Systems Research Center (SRC), is a programming tool for
+finding errors in Java programs.  ESC/Java detects, at compile time,
+common programming errors that ordinarily are not detected until run
+time, and sometimes not even then; for example, null dereference
+errors, array bounds errors, type cast errors, and race
+conditions. </p>
+
+<p> We are co-developers of the new version of ESC/Java2.  See our <a
+href="/products/opensource/ESCJava2/">ESC/Java2</a> web pages for more
+information. </p>
+
+<!--
+
+<h3><a href="/products/opensource/">CommentCounter</a></h3>
+
+<p> CommentCounter is a small component which helps you to determine
+how well you are commenting your Java code. </p>
+
+<p> CommentCounter counts the lines of code and comments in a Java
+file or set of Java files.  Whitespace comments and code lines are not
+counted, nor are lines of code less than 3 characters long (such as
+lines with only a solitary brace).  The totals for lines of code,
+lines of comments, and a ratio (comments/total) are written to
+standard output. </p>
+
+<p> Our position on code commenting is as follows: </p>
+
+<ul>
+  <li> Horribly commented code averages 0-5% comment ratio.</li>
+  <li> Poorly commented code has a 5-10% comment ratio.</li>
+  <li> Average code has a 10-15% comment ratio.</li>
+  <li> Good code has a 15-25% comment ratio.</li>
+  <li> Excellent code has a > 25% comment ratio.</li>
+</ul>
+
+<p> The code that we release averages approximately a 45% comment
+ratio. </p>
+
+<h3>JPP: The Java Pre-Processor</h3>
+
+<p> <span class="bold">Abstract.</span></p>
+
+<p> The KindSoftware Java Pre-Processor, or KindJPP for short, is a parsing
+pre-processor for the Java programming language. Unlike its namesake (the
+C/C++ Pre-Processor, cpp), KindJPP provides functionality above and beyond
+simple textual substitution. KindJPP's capabilities include code
+beautification, code standard conformance checking, class and interface
+specification and testing, and documentation generation. </p>
+
+<p> The following is a brief overview of KindJPP. </p>
+
+<p> <span class="bold">Introduction.</span> </p>
+
+<p> The KindSoftware Java Pre-Processor, referred to as KindJPP henceforth,
+is a parsing pre-processor for the Java programming language. This document
+will describe the design, development, and use of KindJPP. </p>
+
+<p> KindJPP is primarily used as either a front-end for a Java compiler
+like javac, jikes, espresso, or guavac, or as a verification and validation
+tool as part of a configuration management system. We will describe both
+possibilities here as well as provide a number of examples of innovative
+alternative uses. </p>
+
+<p> The default KindJPP configuration corresponds to the KindSoftware Java
+Coding Standard (this document). Any questions as to the details of code
+standards, layout, beautification, and verification are addressed in that
+document. This document only focuses on the tool KindJPP. </p>
+
+<p> All aspects of KindJPP are user configurable. Configuration is
+accomplished through the use of Java properties and command-line
+switches. </p>
+
+<p> Briefly, KindJPP provides the following functionality: </p>
+
+<ul>
+  
+  <li>Code Beautification. KindJPP can process any legal Java code and
+      reorganize it in an ordered, aesthetic manner. The rules used in the
+      reformatting of code are user configurable. KindJPP is used as a code
+      beautifier to clean up downloaded or otherwise adopted code before
+      performing a code review. It is also used in preparation for gaining and
+      understanding of a codebase before modifying and maintaining it. Finally,
+      KindJPP can be used to process code from multiple developers/teams
+      regularly to enforce local coding standards.</li>
+      
+  <li>Code Evaluation. KindJPP can also be used to take an existing piece
+      of code and ``grade'' it. Such a code evaluation comes in several forms:
+      
+      <ul>
+        
+        <li> Code Standard Conformance Checking. KindJPP is configured to a
+            specific code standard. Code standards give rules on how code is
+            syntactically arranged, field naming policies, feature access
+            rules, etc. KindJPP can evaluate how well a piece of code conforms
+            to its current code standard. Such an evaluation comes in the form
+            of a short or long report which can be automatically mailed to the
+            appropriate parties and/or logged for review.</li>
+            
+        <li> Code Complexity Analysis. KindJPP knows several standard code
+            complexity algorithms. KindJPP can evaluate Java classes,
+            interfaces, and even whole packages and provide complexity
+            measures. These metrics can help guide a designer and developer
+            toward more readable, understandable, and maintainable
+            code. Metrics are also provided as short or long reports.</li>
+            
+        <li> Documentation Analysis. KindJPP can evaluate the thoroughness
+            of code documentation. KindJPP knows what a ``real'' comment is and
+            performs information theoretical complexity measures (per-feature
+            and per-entity entropy) of comments to determine their completeness
+            and usefulness. KindJPP will comment on your comments!</li>
+            
+        <li> Object-Oriented Design Principles. KindJPP understands a core
+            set of object-oriented design principles: the Laws of Demeter,
+            class/interface/inheritance dependency graph analysis, JavaBean
+            patterns, and component specification to name a few. KindJPP can
+            evaluate Java code and provide suggestions as to how to improve
+            design based upon these principles.</li>
+            
+      </ul>
+  </li>
+      
+  <li> Class and Interface Specification. KindJPP's specification
+      constructs are inspired by Meyer's Design by Contract. The primary
+      constructs used to specify a contract for a component are method
+      preconditions and post-conditions, and class invariants. KindJPP can
+      enforce and/or encourage the specification of contracts on the methods
+      of classes and interfaces, and can test for the validity of such clauses
+      in subtyping relationships.</li>
+      
+  <li> Class and Interface Testing. In addition to the aforementioned
+      contract specifications on methods, KindJPP supports the specification
+      of loop invariants and variants. All five of these constructs (the three
+      specification clauses and the two loop clauses) can be transformed by
+      KindJPP into actual embedded test harness code, inserted into a class's
+      methods at the appropriate points. The insertion of the test code at
+      compile time, and the enabling and disabling of test code at run-time,
+      is completely under the control of the developer.</li>
+      
+  <li> Documentation Generation. KindJPP can also transform Java code into
+      HTML, XML, or LaTeX for direct code documentation and reference. The
+      resulting document is properly formatted for pretty-printing, has the
+      appropriate embedded links for feature cross-referencing, and external
+      language-specific links can be embedded in the code with special
+      directives to the pre-processor.</li>
+      
+</ul>
+
+-->
+
+<a href="/products/opensource/IDebug/"><h3>IDebug: An Advanced
+Debugging Framework for Java</h3></a>
+
+<p> IDebug, the KindSoftware debugging framework, is an advanced
+debugging framework for Java. This framework provides the standard
+core debugging and specification constructs such as assertions, debug
+levels and categories, stack traces, and specialized
+exceptions. Debugging functionality can be fine-tuned to a per-thread
+and/or a per-class basis, debugging contexts can be stored to and
+recovered from persistent storage, and several aspects of the
+debugging run-time are configurable at the meta-level.  Additionally,
+the framework is designed for extensibility. Planned improvements
+include support for debugging distributed object systems via currying
+call stacks across virtual machine contexts and debug information
+logging with a variety of networking media including unicast,
+multicast, RMI, distributed events, and JavaSpaces. Finally, we are
+adding support for debugging mobile agent systems by providing mobile
+debug logs. </p>
+
+<!--
+
+<h3>Extended BON</h3>
+
+<p> TODO: Describe ongoing work with Extended BON. </p>
+
+-->
+            
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2005 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="tools.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

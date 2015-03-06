@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2005 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li>
+  <!--#include virtual="/documents/xml/overview.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/mech_theory.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/news.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/proposals.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/published.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/reports.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/talks.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/tutorials.xml" -->
+  </li>
+  <li id="subnavon">
+  <!--#include virtual="/documents/xml/whitepapers.xml" -->
+  </li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>Whitepapers</h2>
+<h3>The KindSoftware Coding Standards</h3>
+            
+<h4>Table of Contents:</h4>
+<ol>
+  <li> <a href="index.html">Introduction</a> </li>
+  <li> <a href="documentation.html">Documentation</a> </li>
+  <li> <a href="naming.html">Naming Conventions</a> </li>
+  <li> <a href="properties.html">Semantic Properties</a> </li>
+<!--   <li> <a href="recommendations.html">General Recommendations</a> </li> -->
+  <li> <a href="tools.html">Tools</a> </li>
+  <li> <a href="examples.html">Code Examples</a> </li>
+  <li> <a href="references.html">References</a> </li>
+  <li> Specific Recommendations for:
+      <ol>
+        <li> <a href="java.html">Java</a> </li>
+        <li> Eiffel </li>
+      </ol>
+  </li>
+  <li> <a href="credits.html">Credits</a> </li>
+</ol>
+
+<h2>Eiffel Recommendations</h2>
+
+<p> The following are coding <em>recommendations.</em> It is not
+necessary to follow them to the letter, but we have found it helpful
+to always keep them in mind. </p>
+
+<p> Our base set of Eiffel style guidelines are those documented in
+<em>Eiffel: The Language</em> (ETL) and <em>Object-Oriented Software
+Construction</em>, both by Bertrand Meyer. </p>
+
+<p> In particular, Appendix A (Style Guidelines, pps. 483-496) of ETL
+contains an excellent, to-the-point summary of good Eiffel style. </p>
+
+<p> As discussed in the <a href="properties.html">semantic properties
+paper</a>, properties are used to augment these style guidelines.
+They are embedded in Eiffel code through a regularized use of
+structured Eiffel comments and indexing clauses. </p>
+
+<p> File-scoped comments are documented using indexing clauses as
+normal for Eiffel code.  Modules in Eiffel are classes, so
+module-scoped specification should be located in the class comment
+region, just after the <tt>class</tt> declaration, but before the
+<tt>inherit</tt> region of an Eiffel class.  Feature and variable
+structured comments using semantic properties are located in the
+standard places for feature Eiffel comments, since variables are
+features---just after the feature declaration. </p>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2005 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="eiffel.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

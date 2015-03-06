@@ -1,0 +1,18 @@
+<!-- Cadeceus -->
+<!-- add more subnav stuff here -->
+<a href="/documents/proposals/">Project Proposals</a>
+<ul>
+  <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong> </li>
+</ul>

@@ -1,0 +1,3577 @@
+(FEATURE_TYPES)
+(FEATURE_MODEL_GENERIC
+ (domain_assignment?_TCC1 0
+  (domain_assignment?_TCC1-1 nil 3381509008 3381509020
+   ("" (subtype-tcc) nil nil) proved-complete
+   ((FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE formal-type-decl nil FEATURE_MODEL_GENERIC nil)
+    (AV formal-type-decl nil FEATURE_MODEL_GENERIC nil)
+    (AT formal-type-decl nil FEATURE_MODEL_GENERIC nil)
+    (setof type-eq-decl nil defined_types nil)
+    (IDS formal-type-decl nil FEATURE_MODEL_GENERIC nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil))
+   55 10 nil nil)))
+(FEATURE_MODELS)
+(GROUP_TYPES)
+(FEATURE_GROUPS_TH)
+(GROUP_MEMBERS_TH)
+(FEATURE_TREES
+ (walk_from?_TCC1 0
+  (walk_from?_TCC1-1 nil 3381395420 3381509020
+   ("" (subtype-tcc) nil nil) unchecked
+   ((real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_gt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (> const-decl "bool" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil))
+   108 30 nil nil))
+ (walk_from?_TCC2 0
+  (walk_from?_TCC2-1 nil 3381395420 3381509020
+   ("" (subtype-tcc) nil nil) unchecked
+   ((< const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (GROUP formal-type-decl nil FEATURE_TREES nil)
+    (setof type-eq-decl nil defined_types nil)
+    (FEATURE formal-type-decl nil FEATURE_TREES nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (root formal-const-decl "FEATURE" FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (WALK_GENERIC type-eq-decl nil FEATURE_TREES nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (real_gt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (> const-decl "bool" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil))
+   159 100 nil nil))
+ (no_cycles_TCC1 0
+  (no_cycles_TCC1-1 nil 3381395420 3381509020
+   ("" (subtype-tcc) nil nil) unchecked
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (> const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (GROUP formal-type-decl nil FEATURE_TREES nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (setof type-eq-decl nil defined_types nil)
+    (FEATURE formal-type-decl nil FEATURE_TREES nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (root formal-const-decl "FEATURE" FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (< const-decl "bool" reals nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (WALK_GENERIC type-eq-decl nil FEATURE_TREES nil)
+    (rooted_walk? const-decl "bool" FEATURE_TREES nil)
+    (walk_from? const-decl "bool" FEATURE_TREES nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_gt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil))
+   82 50 nil nil))
+ (no_cycles_TCC2 0
+  (no_cycles_TCC2-1 nil 3381395420 3381509021
+   ("" (subtype-tcc) nil nil) unchecked
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (> const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (GROUP formal-type-decl nil FEATURE_TREES nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (setof type-eq-decl nil defined_types nil)
+    (FEATURE formal-type-decl nil FEATURE_TREES nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (root formal-const-decl "FEATURE" FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (< const-decl "bool" reals nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (WALK_GENERIC type-eq-decl nil FEATURE_TREES nil)
+    (rooted_walk? const-decl "bool" FEATURE_TREES nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_gt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (walk_from? const-decl "bool" FEATURE_TREES nil))
+   103 70 nil nil))
+ (no_cycles 0
+  (no_cycles-1 nil 3381395422 3381509266
+   ("" (skolem! 1)
+    (("" (induct l)
+      (("1" (ground) nil nil) ("2" (assert) nil nil)
+       ("3" (assert) nil nil)
+       ("4" (skolem! 1)
+        (("4" (flatten)
+          (("4" (skolem! 1)
+            (("4" (flatten)
+              (("4" (case "j!1 = 0")
+                (("1" (replace -1)
+                  (("1" (hide -2)
+                    (("1" (assert)
+                      (("1" (skolem! -4)
+                        (("1" (flatten)
+                          (("1" (typepred "c!1")
+                            (("1" (typepred "w!1")
+                              (("1"
+                                (expand "rooted_walk?")
+                                (("1"
+                                  (expand "walk_from?")
+                                  (("1"
+                                    (assert)
+                                    (("1"
+                                      (flatten)
+                                      (("1"
+                                        (replace -1)
+                                        (("1"
+                                          (inst -4 "PROJ_1(c!1) -2")
+                                          (("1"
+                                            (skolem! -4)
+                                            (("1"
+                                              (assert)
+                                              (("1"
+                                                (replace -9)
+                                                (("1"
+                                                  (hide -1 -2 -3 -5)
+                                                  (("1"
+                                                    (typepred
+                                                     "ft!1`group_members")
+                                                    (("1"
+                                                      (expand
+                                                       "group_members?")
+                                                      (("1"
+                                                        (flatten)
+                                                        (("1"
+                                                          (inst? 1)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil)
+                 ("2" (assert)
+                  (("2"
+                    (inst -1
+                     "(j!1, LAMBDA (i: below(j!1)): PROJ_2(w!1)(i))")
+                    (("1" (skolem! -3)
+                      (("1" (assert)
+                        (("1" (flatten)
+                          (("1"
+                            (inst 2
+                             "(PROJ_1(c!1), LAMBDA (i: below(PROJ_1(c!1))): IF i = 0 THEN PROJ_2(w!1)(j!1 - 1) ELSE IF i < PROJ_1(c!1) THEN PROJ_2(c!1)(i-1) ELSE PROJ_2(w!1)(j!1 - 1) ENDIF ENDIF)")
+                            (("1" (assert)
+                              (("1"
+                                (typepred "c!1")
+                                (("1"
+                                  (typepred "w!1")
+                                  (("1"
+                                    (expand "rooted_walk?")
+                                    (("1"
+                                      (expand "walk_from?")
+                                      (("1"
+                                        (flatten)
+                                        (("1"
+                                          (inst -4 "PROJ_1(c!1) -2")
+                                          (("1"
+                                            (skolem! -4)
+                                            (("1"
+                                              (assert)
+                                              (("1"
+                                                (replace -8)
+                                                (("1"
+                                                  (typepred "g!1")
+                                                  (("1"
+                                                    (inst -3 "j!1 -1")
+                                                    (("1"
+                                                      (skolem! -3)
+                                                      (("1"
+                                                        (assert)
+                                                        (("1"
+                                                          (typepred
+                                                           "g!2")
+                                                          (("1"
+                                                            (typepred
+                                                             "ft!1`group_members")
+                                                            (("1"
+                                                              (expand
+                                                               "group_members?")
+                                                              (("1"
+                                                                (flatten)
+                                                                (("1"
+                                                                  (inst
+                                                                   -1
+                                                                   "g!1"
+                                                                   "g!2")
+                                                                  (("1"
+                                                                    (assert)
+                                                                    (("1"
+                                                                      (case
+                                                                       "g!1 = g!2")
+                                                                      (("1"
+                                                                        (replace
+                                                                         -1)
+                                                                        (("1"
+                                                                          (typepred
+                                                                           "ft!1`feature_groups")
+                                                                          (("1"
+                                                                            (expand
+                                                                             "feature_groups?")
+                                                                            (("1"
+                                                                              (inst
+                                                                               -1
+                                                                               "PROJ_2(c!1)(PROJ_1(c!1) - 2)"
+                                                                               "PROJ_2(w!1)(j!1 - 1)")
+                                                                              (("1"
+                                                                                (assert)
+                                                                                (("1"
+                                                                                  (inst?
+                                                                                   -1)
+                                                                                  nil
+                                                                                  nil))
+                                                                                nil))
+                                                                              nil))
+                                                                            nil))
+                                                                          nil))
+                                                                        nil)
+                                                                       ("2"
+                                                                        (assert)
+                                                                        (("2"
+                                                                          (inst
+                                                                           -1
+                                                                           "PROJ_2(w!1)(j!1)"
+                                                                           "PROJ_2(w!1)(j!1)")
+                                                                          nil
+                                                                          nil))
+                                                                        nil))
+                                                                      nil))
+                                                                    nil))
+                                                                  nil))
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil)
+                             ("2" (assert)
+                              (("2"
+                                (expand "walk_from?")
+                                (("2"
+                                  (skolem! 1)
+                                  (("2"
+                                    (case "i!1 = 0")
+                                    (("1"
+                                      (replace -1)
+                                      (("1"
+                                        (assert)
+                                        (("1"
+                                          (typepred "w!1")
+                                          (("1"
+                                            (expand "rooted_walk?")
+                                            (("1"
+                                              (expand "walk_from?")
+                                              (("1"
+                                                (flatten)
+                                                (("1"
+                                                  (typepred "c!1")
+                                                  (("1"
+                                                    (expand
+                                                     "walk_from?")
+                                                    (("1"
+                                                      (flatten)
+                                                      (("1"
+                                                        (replace -1)
+                                                        (("1"
+                                                          (inst
+                                                           -4
+                                                           "j!1 - 1")
+                                                          (("1"
+                                                            (skolem!
+                                                             -4)
+                                                            (("1"
+                                                              (assert)
+                                                              (("1"
+                                                                (inst
+                                                                 1
+                                                                 "g!1")
+                                                                nil
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil)
+                                     ("2"
+                                      (typepred "c!1")
+                                      (("2"
+                                        (expand "walk_from?")
+                                        (("2"
+                                          (flatten)
+                                          (("2"
+                                            (inst -2 "i!1 -1")
+                                            (("1"
+                                              (skolem! -2)
+                                              (("1"
+                                                (assert)
+                                                (("1"
+                                                  (inst 2 "g!1")
+                                                  nil
+                                                  nil))
+                                                nil))
+                                              nil)
+                                             ("2" (assert) nil nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil)
+                             ("3" (assert)
+                              (("3"
+                                (skolem! 1)
+                                (("3"
+                                  (flatten)
+                                  (("3" (assert) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (assert)
+                      (("2" (typepred "w!1")
+                        (("2" (expand "rooted_walk?")
+                          (("2" (expand "walk_from?")
+                            (("2" (flatten)
+                              (("2"
+                                (split 1)
+                                (("1" (propax) nil nil)
+                                 ("2"
+                                  (skolem! 1)
+                                  (("2" (inst -2 "i!1") nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil)
+       ("5" (assert) (("5" (grind) nil nil)) nil)
+       ("6" (grind) nil nil))
+      nil))
+    nil)
+   unchecked
+   ((int_minus_int_is_int application-judgement "int" integers nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (= const-decl "[T, T -> boolean]" equalities nil) nil
+    (rooted_walk? const-decl "bool" FEATURE_TREES nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (root formal-const-decl "FEATURE" FEATURE_TREES nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (setof type-eq-decl nil defined_types nil)
+    (GROUP formal-type-decl nil FEATURE_TREES nil)
+    (WALK_GENERIC type-eq-decl nil FEATURE_TREES nil)
+    (FEATURE formal-type-decl nil FEATURE_TREES nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (< const-decl "bool" reals nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (IMPLIES const-decl "[bool, bool -> bool]" booleans nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (walk_from? const-decl "bool" FEATURE_TREES nil)
+    (pred type-eq-decl nil defined_types nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (nat_induction formula-decl nil naturalnumbers nil)
+    (real_gt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    nil (FEATURE_GROUPS_GENERIC type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (feature_groups? const-decl "bool" FEATURE_GROUPS_TH nil)
+    (IF const-decl "[boolean, T, T -> T]" if_def nil) nil
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    nil nil
+    (nnint_plus_posint_is_posint application-judgement "posint"
+     integers nil)
+    (even_plus_odd_is_odd application-judgement "odd_int" integers nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (int_plus_int_is_int application-judgement "int" integers nil)
+    (group_members? const-decl "bool" GROUP_MEMBERS_TH nil)
+    (GROUP_MEMBERS_GENERIC type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (+ const-decl "[numfield, numfield -> numfield]" number_fields
+       nil))
+   1273 830 t shostak))
+ (acyclic 0
+  (acyclic-1 nil 3381421376 3381509266
+   ("" (skolem! 1)
+    (("" (lemma "no_cycles")
+      (("" (skolem! 1) (("" (assert) (("" (inst? -1) nil nil)) nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((no_cycles formula-decl nil FEATURE_TREES nil)
+    (GROUP formal-type-decl nil FEATURE_TREES nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (setof type-eq-decl nil defined_types nil)
+    (FEATURE formal-type-decl nil FEATURE_TREES nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (root formal-const-decl "FEATURE" FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (< const-decl "bool" reals nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (WALK_GENERIC type-eq-decl nil FEATURE_TREES nil)
+    (rooted_walk? const-decl "bool" FEATURE_TREES nil))
+   67 40 t shostak))
+ (restriction_TCC1 0
+  (restriction_TCC1-1 nil 3381320939 3381509021
+   ("" (subtype-tcc) nil nil) unchecked nil 61 20 nil nil))
+ (restriction_TCC2 0
+  (restriction_TCC2-1 nil 3381320939 3381509021
+   ("" (subtype-tcc) nil nil) unchecked nil 24 20 nil nil))
+ (restriction_TCC3 0
+  (restriction_TCC3-1 nil 3381320939 3381509021
+   ("" (subtype-tcc) nil nil) unchecked nil 26 20 nil nil))
+ (mandatory_lemma 0
+  (mandatory_lemma-1 nil 3381323376 3381509266
+   ("" (skolem! 1)
+    (("" (flatten)
+      (("" (skolem! 1)
+        (("" (flatten)
+          (("" (skolem! -4)
+            (("" (flatten)
+              (("" (expand "restriction")
+                (("" (flatten)
+                  (("" (assert)
+                    (("" (hide -4)
+                      (("" (inst -4 "pf!1")
+                        (("" (assert)
+                          (("" (inst? -4)
+                            (("" (expand "restrict")
+                              ((""
+                                (expand "singleton")
+                                ((""
+                                  (assert)
+                                  ((""
+                                    (skolem! -4)
+                                    ((""
+                                      (typepred "n!1")
+                                      ((""
+                                        (replace -2)
+                                        ((""
+                                          (assert)
+                                          ((""
+                                            (skolem! -5)
+                                            ((""
+                                              (assert)
+                                              ((""
+                                                (expand "bijective?")
+                                                ((""
+                                                  (flatten)
+                                                  ((""
+                                                    (expand
+                                                     "surjective?")
+                                                    ((""
+                                                      (inst -6 0)
+                                                      ((""
+                                                        (skolem! -6)
+                                                        ((""
+                                                          (typepred
+                                                           "x!1")
+                                                          ((""
+                                                            (replace
+                                                             -5)
+                                                            ((""
+                                                              (assert)
+                                                              nil
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((restrict const-decl "R" restrict nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (below type-eq-decl nil nat_types nil)
+    (< const-decl "bool" reals nil)
+    (IDS formal-type-decl nil FEATURE_TREES nil)
+    (AV formal-type-decl nil FEATURE_TREES nil)
+    (AT formal-type-decl nil FEATURE_TREES nil)
+    (TYPING formal-const-decl "[AV -> AT]" FEATURE_TREES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (typeof formal-const-decl "TYPEOF" FEATURE_TREES nil)
+    (SELECT type-eq-decl nil FEATURE_MODELS nil)
+    (surjective? const-decl "bool" functions nil)
+    (bijective? const-decl "bool" functions nil)
+    (singleton const-decl "(singleton?)" sets nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (root formal-const-decl "FEATURE" FEATURE_TREES nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (GROUP formal-type-decl nil FEATURE_TREES nil)
+    (FEATURE formal-type-decl nil FEATURE_TREES nil)
+    (finite_restrict application-judgement "finite_set[S]"
+     restrict_set_props nil)
+    (nonempty_singleton_finite application-judgement
+     "non_empty_finite_set" finite_sets nil)
+    (restriction const-decl "RESTRICTION" FEATURE_TREES nil))
+   167 100 t shostak))
+ (alternative_lemma 0
+  (alternative_lemma-1 nil 3381331440 3381509267
+   ("" (skolem! 1)
+    (("" (skolem! 1)
+      (("" (flatten)
+        (("" (expand "restrict")
+          (("" (expand "restriction")
+            (("" (flatten)
+              (("" (hide -1 -2)
+                (("" (skolem! -3)
+                  (("" (inst -1 "pf!1")
+                    (("" (flatten)
+                      (("" (assert)
+                        (("" (inst? -1)
+                          (("" (skolem! -1)
+                            (("" (skolem! -1)
+                              ((""
+                                (expand "bijective?")
+                                ((""
+                                  (expand "injective?")
+                                  ((""
+                                    (expand "surjective?")
+                                    ((""
+                                      (flatten)
+                                      ((""
+                                        (typepred "n!1")
+                                        ((""
+                                          (replace -4)
+                                          ((""
+                                            (assert)
+                                            ((""
+                                              (expand "singleton")
+                                              ((""
+                                                (inst -3 0)
+                                                (("1"
+                                                  (skolem! -3)
+                                                  (("1"
+                                                    (typepred "x!1")
+                                                    (("1"
+                                                      (inst 1 "x!1")
+                                                      (("1"
+                                                        (skolem! 1)
+                                                        (("1"
+                                                          (split 1)
+                                                          (("1"
+                                                            (inst
+                                                             -4
+                                                             "f!1"
+                                                             "x!1")
+                                                            (("1"
+                                                              (assert)
+                                                              (("1"
+                                                                (assert)
+                                                                (("1"
+                                                                  (assert)
+                                                                  nil
+                                                                  nil))
+                                                                nil))
+                                                              nil)
+                                                             ("2"
+                                                              (assert)
+                                                              nil
+                                                              nil))
+                                                            nil)
+                                                           ("2"
+                                                            (assert)
+                                                            (("2"
+                                                              (flatten)
+                                                              (("2"
+                                                                (assert)
+                                                                nil
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil)
+                                                 ("2"
+                                                  (assert)
+                                                  nil
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((restrict const-decl "R" restrict nil)
+    (GROUP formal-type-decl nil FEATURE_TREES nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (setof type-eq-decl nil defined_types nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (root formal-const-decl "FEATURE" FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (injective? const-decl "bool" functions nil)
+    (singleton const-decl "(singleton?)" sets nil) nil nil
+    (SELECT type-eq-decl nil FEATURE_MODELS nil)
+    (typeof formal-const-decl "TYPEOF" FEATURE_TREES nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (TYPING formal-const-decl "[AV -> AT]" FEATURE_TREES nil)
+    (AT formal-type-decl nil FEATURE_TREES nil)
+    (AV formal-type-decl nil FEATURE_TREES nil)
+    (IDS formal-type-decl nil FEATURE_TREES nil)
+    (below type-eq-decl nil nat_types nil) nil nil nil
+    (< const-decl "bool" reals nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (nonempty_singleton_finite application-judgement
+     "non_empty_finite_set" finite_sets nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (surjective? const-decl "bool" functions nil)
+    (bijective? const-decl "bool" functions nil)
+    (FEATURE formal-type-decl nil FEATURE_TREES nil)
+    (restriction const-decl "RESTRICTION" FEATURE_TREES nil))
+   208 130 t shostak))
+ (cardinality_spec 0
+  (cardinality_spec-1 nil 3381333021 3381509267
+   ("" (skolem! 1)
+    (("" (assert)
+      (("" (flatten)
+        (("" (expand "specialized?")
+          (("" (skolem! 1)
+            (("" (assert)
+              (("" (flatten)
+                (("" (expand "restriction")
+                  (("" (split 1)
+                    (("1" (assert) nil nil)
+                     ("2" (skolem! 1)
+                      (("2" (flatten)
+                        (("2" (inst? -7)
+                          (("2" (assert)
+                            (("2" (skolem! -7)
+                              (("2"
+                                (flatten)
+                                (("2"
+                                  (inst? 1)
+                                  (("2"
+                                    (assert)
+                                    (("2"
+                                      (split 1)
+                                      (("1" (propax) nil nil)
+                                       ("2"
+                                        (skolem! 1)
+                                        (("2"
+                                          (inst? -10)
+                                          (("2"
+                                            (skolem! -10)
+                                            (("2"
+                                              (inst 1 "g!2")
+                                              (("2"
+                                                (replace -4)
+                                                (("2"
+                                                  (propax)
+                                                  nil
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("3" (skolem! 1)
+                      (("3" (flatten)
+                        (("3" (skolem! 1)
+                          (("3" (case "g!2 = g!1")
+                            (("1" (expand "subset?")
+                              (("1"
+                                (inst? -9)
+                                (("1"
+                                  (assert)
+                                  (("1"
+                                    (inst -9 "g!2")
+                                    (("1"
+                                      (skolem! -9)
+                                      (("1"
+                                        (skolem! -9)
+                                        (("1"
+                                          (inst 1 "n!1")
+                                          (("1"
+                                            (inst 1 "b!1")
+                                            (("1"
+                                              (assert)
+                                              (("1"
+                                                (expand "bijective?")
+                                                (("1"
+                                                  (expand "injective?")
+                                                  (("1"
+                                                    (expand
+                                                     "surjective?")
+                                                    (("1"
+                                                      (split 1)
+                                                      (("1"
+                                                        (skolem! 1)
+                                                        (("1"
+                                                          (flatten)
+                                                          (("1"
+                                                            (inst? -10)
+                                                            (("1"
+                                                              (assert)
+                                                              nil
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil)
+                                                       ("2"
+                                                        (flatten)
+                                                        (("2"
+                                                          (skolem! 1)
+                                                          (("2"
+                                                            (inst? -10)
+                                                            (("2"
+                                                              (assert)
+                                                              (("2"
+                                                                (skolem!
+                                                                 -10)
+                                                                (("2"
+                                                                  (inst?
+                                                                   1)
+                                                                  nil
+                                                                  nil))
+                                                                nil))
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil)
+                                             ("2"
+                                              (skolem! 1)
+                                              (("2"
+                                                (assert)
+                                                (("2"
+                                                  (replace -5)
+                                                  (("2"
+                                                    (assert)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil)
+                                           ("2"
+                                            (assert)
+                                            (("2"
+                                              (inst? -3)
+                                              (("2"
+                                                (expand member -3)
+                                                (("2"
+                                                  (propax)
+                                                  nil
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil)
+                             ("2" (inst? -8)
+                              (("2"
+                                (assert)
+                                (("2"
+                                  (inst? -8)
+                                  (("2"
+                                    (skolem! -8)
+                                    (("2"
+                                      (inst 2 "n!1")
+                                      (("2"
+                                        (skolem! -8)
+                                        (("2"
+                                          (inst? 2)
+                                          (("1"
+                                            (assert)
+                                            (("1"
+                                              (expand "bijective?")
+                                              (("1"
+                                                (expand "injective?")
+                                                (("1"
+                                                  (expand
+                                                   "surjective?")
+                                                  (("1"
+                                                    (split 2)
+                                                    (("1"
+                                                      (flatten)
+                                                      (("1"
+                                                        (skolem! 1)
+                                                        (("1"
+                                                          (inst? -8)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil)
+                                                     ("2"
+                                                      (skolem! 1)
+                                                      (("2"
+                                                        (ground)
+                                                        (("2"
+                                                          (inst? -9)
+                                                          (("2"
+                                                            (skolem!
+                                                             -9)
+                                                            (("2"
+                                                              (inst? 1)
+                                                              nil
+                                                              nil))
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil)
+                                           ("2"
+                                            (skolem! 1)
+                                            (("2"
+                                              (split 1)
+                                              (("1"
+                                                (flatten)
+                                                (("1"
+                                                  (assert)
+                                                  nil
+                                                  nil))
+                                                nil)
+                                               ("2"
+                                                (flatten)
+                                                (("2"
+                                                  (assert)
+                                                  nil
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((subset_is_partial_order name-judgement "(partial_order?[set[T]])"
+     sets_lemmas nil)
+    (specialized? const-decl "bool" FEATURE_MODELS nil)
+    (restriction const-decl "RESTRICTION" FEATURE_TREES nil)
+    (subset? const-decl "bool" sets nil) nil nil nil nil nil
+    (injective? const-decl "bool" functions nil)
+    (surjective? const-decl "bool" functions nil)
+    (bijective? const-decl "bool" functions nil)
+    (below type-eq-decl nil nat_types nil)
+    (IFF const-decl "[bool, bool -> bool]" booleans nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (IDS formal-type-decl nil FEATURE_TREES nil)
+    (AV formal-type-decl nil FEATURE_TREES nil)
+    (AT formal-type-decl nil FEATURE_TREES nil)
+    (TYPING formal-const-decl "[AV -> AT]" FEATURE_TREES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (typeof formal-const-decl "TYPEOF" FEATURE_TREES nil)
+    (SELECT type-eq-decl nil FEATURE_MODELS nil) nil
+    (member const-decl "bool" sets nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (FEATURE formal-type-decl nil FEATURE_TREES nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (< const-decl "bool" reals nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (GROUP formal-type-decl nil FEATURE_TREES nil)
+    (setof type-eq-decl nil defined_types nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (root formal-const-decl "FEATURE" FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (int_minus_int_is_int application-judgement "int" integers nil))
+   664 420 t shostak))
+ (attr_spec1 0
+  (attr_spec1-1 nil 3381517142 3381517153
+   ("" (skolem! 1)
+    (("" (expand "specialized?")
+      (("" (skolem! 1)
+        (("" (expand "assign_value") (("" (flatten) nil nil)) nil))
+        nil))
+      nil))
+    nil)
+   proved
+   ((specialized? const-decl "bool" FEATURE_MODELS nil)
+    (assign_value const-decl "RESTRICTION" FEATURE_TREES nil))
+   10043 30 t shostak))
+ (attr_spec 0
+  (attr_spec-1 nil 3381486002 3381509267
+   ("" (skolem! 1)
+    (("" (assert)
+      (("" (expand "specialized?")
+        (("" (skolem! 1)
+          (("" (flatten)
+            (("" (expand "assign_value") (("" (flatten) nil nil)) nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked (nil (specialized? const-decl "bool" FEATURE_MODELS nil))
+   47 20 t shostak)))
+(AT_VALUE)
+(ATTRIBUTE_VALUE_TYPING)
+(USING
+ (root_TCC1 0
+  (root_TCC1-1 nil 3381250318 3381509021 ("" (subtype-tcc) nil nil)
+   unchecked
+   ((feature_set const-decl "setof[[FEATURE_NAME, nat]]" USING nil)
+    (restrict const-decl "R" restrict nil))
+   14 10 t nil))
+ (group_types_TCC1 0
+  (group_types_TCC1-1 nil 3381417181 3381509021
+   ("" (cases-tcc) nil nil) unchecked
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (FEATURE_NAME type-decl nil USING nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (passwordPolicy? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (passwordPolicy adt-constructor-decl "(passwordPolicy?)" USING nil)
+    (permissionSet? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (permissionSet adt-constructor-decl "(permissionSet?)" USING nil)
+    (GROUP type-eq-decl nil USING nil))
+   46 20 nil nil))
+ (feature_groups1_TCC1 0
+  (feature_groups1_TCC1-1 nil 3381320939 3381509021
+   ("" (subtype-tcc) nil nil) unchecked
+   ((NOT const-decl "[bool -> bool]" booleans nil)
+    (restrict const-decl "R" restrict nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (emptyset const-decl "set" sets nil)
+    (set type-eq-decl nil sets nil)
+    (securityProfile adt-constructor-decl "(securityProfile?)" USING
+     nil)
+    (securityProfile? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (GROUP type-eq-decl nil USING nil)
+    (permissionSet adt-constructor-decl "(permissionSet?)" USING nil)
+    (permissionSet? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (passwordPolicy adt-constructor-decl "(passwordPolicy?)" USING nil)
+    (passwordPolicy? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (FEATURE type-eq-decl nil USING nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]" USING nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil USING nil)
+    (feature_groups? const-decl "bool" FEATURE_GROUPS_TH nil))
+   390 200 nil nil))
+ (group_members1_TCC1 0
+  (group_members1_TCC1-1 nil 3381400606 3381509021
+   ("" (subtype-tcc) nil nil) unchecked
+   ((NOT const-decl "[bool -> bool]" booleans nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (restrict const-decl "R" restrict nil)
+    (root const-decl "FEATURE" USING nil)
+    (GROUP type-eq-decl nil USING nil)
+    (permissionSet adt-constructor-decl "(permissionSet?)" USING nil)
+    (permissionSet? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (passwordPolicy adt-constructor-decl "(passwordPolicy?)" USING nil)
+    (passwordPolicy? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (FEATURE type-eq-decl nil USING nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]" USING nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil USING nil)
+    (group_members? const-decl "bool" GROUP_MEMBERS_TH nil))
+   207 110 nil nil))
+ (proj_groups 0
+  (proj_groups-1 nil 3381417237 3381509268
+   ("" (skolem! 1)
+    (("" (expand "group_members1")
+      (("" (flatten)
+        (("" (typepred "f!1")
+          (("" (expand "feature_set")
+            (("" (expand "restrict")
+              (("" (typepred "g!1") (("" (grind) nil nil)) nil)) nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((group_members1 const-decl "GROUP_MEMBERS" USING nil)
+    (FEATURE type-eq-decl nil USING nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]" USING nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil USING nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (restrict const-decl "R" restrict nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (GROUP type-eq-decl nil USING nil)
+    (permissionSet adt-constructor-decl "(permissionSet?)" USING nil)
+    (permissionSet? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (passwordPolicy adt-constructor-decl "(passwordPolicy?)" USING nil)
+    (passwordPolicy? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil))
+   143 80 t shostak))
+ (passwordPolicyIs_TCC1 0
+  (passwordPolicyIs_TCC1-1 nil 3381256438 3381509021
+   ("" (subtype-tcc) nil nil) unchecked
+   ((ft1 const-decl "FEATURE_TREE" USING nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]" USING nil)
+    (restrict const-decl "R" restrict nil))
+   78 80 nil nil))
+ (passwordPolicyIs 0
+  (passwordPolicyIs-1 nil 3381256629 3381509269
+   ("" (assert)
+    (("" (lemma "mandatory_lemma")
+      (("" (inst? -1)
+        (("" (inst -1 "passwordPolicy" "(passwordPolicy, 0)")
+          (("1" (expand "restrict")
+            (("1" (expand "ft1")
+              (("1" (expand "cardinalities1")
+                (("1" (expand "restrict")
+                  (("1" (expand "group_members1")
+                    (("1" (assert)
+                      (("1" (expand "singleton")
+                        (("1" (skolem! 1)
+                          (("1" (inst? -1)
+                            (("1" (flatten)
+                              (("1"
+                                (expand "restriction")
+                                (("1"
+                                  (flatten)
+                                  (("1"
+                                    (assert)
+                                    (("1" (grind) nil nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil)
+           ("2" (expand "feature_set")
+            (("2" (expand "restrict") (("2" (propax) nil nil)) nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((root const-decl "FEATURE" USING nil)
+    (group_types const-decl "[GROUP -> GROUP_TYPE]" USING nil)
+    (GROUP_TYPE type-decl nil GROUP_TYPES nil)
+    (typeof const-decl "TYPEOF" USING nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (GROUP type-eq-decl nil USING nil)
+    (permissionSet adt-constructor-decl "(permissionSet?)" USING nil)
+    (permissionSet? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (passwordPolicy adt-constructor-decl "(passwordPolicy?)" USING nil)
+    (passwordPolicy? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (FEATURE type-eq-decl nil USING nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]" USING nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil USING nil)
+    (AT_TYPING const-decl "[AT_VALUE -> AT_TYPE]"
+     ATTRIBUTE_VALUE_TYPING nil)
+    (AT_TYPE type-decl nil ATTRIBUTE_VALUE_TYPING nil)
+    (AT_VALUE type-decl nil AT_VALUE_adt nil)
+    (IDS type-decl nil USING nil)
+    (mandatory_lemma formula-decl nil FEATURE_TREES nil)
+    (nonempty_singleton_finite application-judgement
+     "non_empty_finite_set" finite_sets nil)
+    (feature_groups1 const-decl "FEATURE_GROUPS" USING nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_gt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (feature_groups? const-decl "bool" FEATURE_GROUPS_TH nil)
+    (FEATURE_GROUPS_GENERIC type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (odd_plus_even_is_odd application-judgement "odd_int" integers nil)
+    (TRUE const-decl "bool" booleans nil) nil nil
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    nil
+    (- const-decl "[numfield, numfield -> numfield]" number_fields nil)
+    (numfield nonempty-type-eq-decl nil number_fields nil)
+    (even_minus_odd_is_odd application-judgement "odd_int" integers
+     nil)
+    (odd_minus_odd_is_even application-judgement "even_int" integers
+     nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (< const-decl "bool" reals nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (posint_plus_nnint_is_posint application-judgement "posint"
+     integers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (> const-decl "bool" reals nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (securityProfile? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (securityProfile adt-constructor-decl "(securityProfile?)" USING
+     nil)
+    (bijective? const-decl "bool" functions nil)
+    (surjective? const-decl "bool" functions nil)
+    (injective? const-decl "bool" functions nil)
+    (restriction const-decl "RESTRICTION" FEATURE_TREES nil)
+    (SELECT type-eq-decl nil FEATURE_MODELS nil)
+    (DOMAIN_ASSIGNMENT_GENERIC type-eq-decl nil FEATURE_MODEL_GENERIC
+     nil)
+    (domain_assignment? const-decl "bool" FEATURE_MODEL_GENERIC nil)
+    (DOMAIN_ASSIGNMENT type-eq-decl nil FEATURE_MODELS nil)
+    (singleton const-decl "(singleton?)" sets nil)
+    (group_members1 const-decl "GROUP_MEMBERS" USING nil)
+    (cardinalities1 const-decl "[GROUP -> set[nat]]" USING nil)
+    (restrict const-decl "R" restrict nil)
+    (ft1 const-decl "FEATURE_TREE" USING nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil))
+   1531 1130 t shostak))
+ (isAConfig_TCC1 0
+  (isAConfig_TCC1-1 nil 3381324550 3381509022
+   ("" (subtype-tcc) nil nil) unchecked
+   ((singleton const-decl "(singleton?)" sets nil)
+    (nonempty_singleton_finite application-judgement
+     "non_empty_finite_set" finite_sets nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (finite_emptyset name-judgement "finite_set" finite_sets nil)
+    (emptyset const-decl "set" sets nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (root const-decl "FEATURE" USING nil)
+    (list2finseq const-decl "finseq[T]" list2finseq nil)
+    (restrict const-decl "R" restrict nil)
+    (AT_TYPING const-decl "[AT_VALUE -> AT_TYPE]"
+     ATTRIBUTE_VALUE_TYPING nil)
+    (typeof const-decl "TYPEOF" USING nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE type-eq-decl nil USING nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]" USING nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil USING nil)
+    (AT_TYPE type-decl nil ATTRIBUTE_VALUE_TYPING nil)
+    (AT_VALUE type-decl nil AT_VALUE_adt nil)
+    (IDS type-decl nil USING nil)
+    (domain_assignment? const-decl "bool" FEATURE_MODEL_GENERIC nil))
+   255 150 nil nil))
+ (isAConfig 0
+  (isAConfig-1 nil 3381324619 3381509270
+   ("" (assert)
+    (("" (expand "restriction")
+      (("" (split 1)
+        (("1" (skolem! 1)
+          (("1" (flatten)
+            (("1" (assert)
+              (("1" (expand "root")
+                (("1" (split -1)
+                  (("1"
+                    (inst 1 "1"
+                     "LAMBDA (i: below(1)): (securityProfile, 0)")
+                    (("1" (replace -1)
+                      (("1" (assert) (("1" (skolem! 1) nil nil)) nil))
+                      nil)
+                     ("2" (expand "feature_set")
+                      (("2" (expand "restrict")
+                        (("2" (propax) nil nil)) nil))
+                      nil))
+                    nil)
+                   ("2"
+                    (inst 1 "2"
+                     "LAMBDA (i: below(2)): IF i = 0 THEN (securityProfile, 0) ELSE (passwordPolicy, 0) ENDIF")
+                    (("1" (assert)
+                      (("1" (replace -1)
+                        (("1" (split 1)
+                          (("1" (skolem! 1)
+                            (("1" (assert)
+                              (("1"
+                                (typepred "i!1")
+                                (("1"
+                                  (case "i!1 = 0")
+                                  (("1"
+                                    (replace -1)
+                                    (("1" (propax) nil nil))
+                                    nil)
+                                   ("2" (assert) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (skolem! 1)
+                            (("2" (inst? 1)
+                              (("1"
+                                (ground)
+                                (("1"
+                                  (expand "ft1")
+                                  (("1"
+                                    (expand "group_members1")
+                                    (("1" (propax) nil nil))
+                                    nil))
+                                  nil))
+                                nil)
+                               ("2"
+                                (expand "ft1")
+                                (("2"
+                                  (expand "feature_groups1")
+                                  (("2" (propax) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (expand "feature_set")
+                      (("2" (expand "restrict")
+                        (("2" (propax) nil nil)) nil))
+                      nil)
+                     ("3" (expand "feature_set")
+                      (("3" (expand "restrict")
+                        (("3" (propax) nil nil)) nil))
+                      nil))
+                    nil)
+                   ("3"
+                    (inst 1 "2"
+                     "LAMBDA (i: below(2)): IF i = 0 THEN (securityProfile, 0) ELSE (permissionSet, 0) ENDIF")
+                    (("1" (replace -1)
+                      (("1" (assert)
+                        (("1" (split 1)
+                          (("1" (skolem! 1)
+                            (("1" (case "i!1 = 0")
+                              (("1" (assert) nil nil)
+                               ("2" (assert) nil nil))
+                              nil))
+                            nil)
+                           ("2" (expand "ft1")
+                            (("2" (skolem! 1)
+                              (("2"
+                                (expand "group_members1")
+                                (("2"
+                                  (assert)
+                                  (("2"
+                                    (inst? 1)
+                                    (("1"
+                                      (assert)
+                                      (("1" (inst 1 0) nil nil))
+                                      nil)
+                                     ("2"
+                                      (expand "ft1")
+                                      (("2"
+                                        (expand "feature_groups1")
+                                        (("2" (propax) nil nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (expand "feature_set")
+                      (("2" (assert)
+                        (("2" (expand "restrict")
+                          (("2" (skolem! 1)
+                            (("2" (flatten) (("2" (inst 2 0) nil nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("3" (skolem! 1)
+                      (("3" (flatten)
+                        (("3" (expand "feature_set")
+                          (("3" (expand "restrict")
+                            (("3" (propax) nil nil)) nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil)
+                   ("4"
+                    (inst 1 "2"
+                     "LAMBDA (i: below(2)): IF i = 0 THEN (securityProfile, 0) ELSE (permissionSet, 1) ENDIF")
+                    (("1" (assert)
+                      (("1" (split 1)
+                        (("1" (assert)
+                          (("1" (replace -1) (("1" (propax) nil nil))
+                            nil))
+                          nil)
+                         ("2" (skolem! 1)
+                          (("2" (case "i!1 = 0")
+                            (("1" (assert) nil nil)
+                             ("2" (assert) nil nil))
+                            nil))
+                          nil)
+                         ("3" (skolem! 1)
+                          (("3" (inst? 1)
+                            (("1" (grind) nil nil)
+                             ("2" (expand "ft1")
+                              (("2"
+                                (expand "feature_groups1")
+                                (("2" (propax) nil nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (skolem! 1)
+                      (("2" (flatten)
+                        (("2" (expand "feature_set")
+                          (("2" (expand "restrict")
+                            (("2" (inst 2 1) nil nil)) nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("3" (skolem! 1)
+                      (("3" (flatten)
+                        (("3" (expand "feature_set")
+                          (("3" (expand "restrict")
+                            (("3" (propax) nil nil)) nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil)
+         ("2" (skolem! 1)
+          (("2" (flatten)
+            (("2" (skolem! 1)
+              (("2" (typepred "g!1")
+                (("2" (assert)
+                  (("2" (split -1)
+                    (("1" (replace -1)
+                      (("1" (inst 1 1)
+                        (("1" (assert)
+                          (("1"
+                            (inst 1
+                             "LAMBDA (f : ({c: (ft1`group_members(g!1)) |
+                     c = root OR
+                      c = (passwordPolicy, 0) OR
+                       c = (permissionSet, 0) OR
+                        c = (permissionSet, 1)})): 0")
+                            (("1" (expand "bijective?")
+                              (("1"
+                                (split 1)
+                                (("1"
+                                  (expand "injective?")
+                                  (("1"
+                                    (skolem! 1)
+                                    (("1"
+                                      (typepred "x1!1")
+                                      (("1"
+                                        (typepred "x2!1")
+                                        (("1"
+                                          (assert)
+                                          (("1"
+                                            (replace -7)
+                                            (("1"
+                                              (expand "ft1")
+                                              (("1"
+                                                (expand
+                                                 "group_members1")
+                                                (("1"
+                                                  (replace -2)
+                                                  (("1"
+                                                    (propax)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil)
+                                 ("2"
+                                  (expand "surjective?")
+                                  (("2"
+                                    (skolem! 1)
+                                    (("2"
+                                      (inst 1 "(passwordPolicy, 0)")
+                                      (("2"
+                                        (replace -1)
+                                        (("2"
+                                          (expand "feature_set")
+                                          (("2"
+                                            (expand "restrict")
+                                            (("2"
+                                              (expand "ft1")
+                                              (("2"
+                                                (expand
+                                                 "group_members1")
+                                                (("2"
+                                                  (propax)
+                                                  nil
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil)
+                         ("2" (expand "ft1")
+                          (("2" (expand "cardinalities1")
+                            (("2" (replace -1)
+                              (("2"
+                                (assert)
+                                (("2"
+                                  (expand "restrict")
+                                  (("2"
+                                    (expand "singleton")
+                                    (("2" (propax) nil nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (inst 1 2)
+                      (("1"
+                        (inst 1
+                         "LAMBDA (f : ({c: (ft1`group_members(g!1)) |
+                     c = root OR
+                      c = (passwordPolicy, 0) OR
+                       c = (permissionSet, 0) OR
+                        c = (permissionSet, 1)})): PROJ_2(f)")
+                        (("1" (expand "bijective?")
+                          (("1" (split 1)
+                            (("1" (expand "injective?")
+                              (("1"
+                                (skolem! 1)
+                                (("1"
+                                  (assert)
+                                  (("1"
+                                    (typepred "x1!1")
+                                    (("1"
+                                      (typepred "x2!1")
+                                      (("1"
+                                        (assert)
+                                        (("1"
+                                          (replace -7)
+                                          (("1"
+                                            (expand "ft1")
+                                            (("1"
+                                              (expand "group_members1")
+                                              (("1"
+                                                (skolem! -2)
+                                                (("1"
+                                                  (skolem! -5)
+                                                  (("1"
+                                                    (assert)
+                                                    (("1"
+                                                      (replace -2)
+                                                      (("1"
+                                                        (replace -5)
+                                                        (("1"
+                                                          (assert)
+                                                          (("1"
+                                                            (flatten)
+                                                            nil
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil)
+                             ("2" (expand "surjective?")
+                              (("2"
+                                (skolem! 1)
+                                (("2"
+                                  (typepred "y!1")
+                                  (("2"
+                                    (case "y!1 = 0")
+                                    (("1"
+                                      (replace -1)
+                                      (("1"
+                                        (inst 1 "(permissionSet, 0)")
+                                        (("1"
+                                          (expand "feature_set")
+                                          (("1"
+                                            (expand "restrict")
+                                            (("1"
+                                              (assert)
+                                              (("1"
+                                                (expand "ft1")
+                                                (("1"
+                                                  (expand
+                                                   "group_members1")
+                                                  (("1"
+                                                    (split 1)
+                                                    (("1"
+                                                      (inst 1 0)
+                                                      nil
+                                                      nil)
+                                                     ("2"
+                                                      (inst 1 0)
+                                                      nil
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil)
+                                     ("2"
+                                      (inst 2 "(permissionSet, 1)")
+                                      (("1" (assert) nil nil)
+                                       ("2"
+                                        (expand "feature_set")
+                                        (("2"
+                                          (assert)
+                                          (("2"
+                                            (expand "restrict")
+                                            (("2"
+                                              (split 1)
+                                              (("1" (inst 1 1) nil nil)
+                                               ("2"
+                                                (expand "ft1")
+                                                (("2"
+                                                  (expand
+                                                   "group_members1")
+                                                  (("2"
+                                                    (inst 1 1)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil)
+                         ("2" (skolem! 1)
+                          (("2" (typepred "f!2")
+                            (("2" (ground)
+                              (("1"
+                                (expand "ft1")
+                                (("1"
+                                  (expand "group_members1")
+                                  (("1"
+                                    (skolem! -4)
+                                    (("1"
+                                      (expand "root")
+                                      (("1" (assert) nil nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil)
+                               ("2"
+                                (expand "root")
+                                (("2"
+                                  (replace -2)
+                                  (("2" (assert) nil nil))
+                                  nil))
+                                nil)
+                               ("3"
+                                (expand "root")
+                                (("3"
+                                  (replace -2)
+                                  (("3" (assert) nil nil))
+                                  nil))
+                                nil)
+                               ("4"
+                                (replace -2)
+                                (("4"
+                                  (assert)
+                                  (("4"
+                                    (expand "root")
+                                    (("4" (assert) nil nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil)
+                       ("2" (replace -1)
+                        (("2" (expand "ft1")
+                          (("2" (expand "cardinalities1")
+                            (("2" (propax) nil nil)) nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((restriction const-decl "RESTRICTION" FEATURE_TREES nil)
+    (singleton const-decl "(singleton?)" sets nil)
+    (finite_restrict application-judgement "finite_set[S]"
+     restrict_set_props nil)
+    (nonempty_singleton_finite application-judgement
+     "non_empty_finite_set" finite_sets nil)
+    (cardinalities1 const-decl "[GROUP -> set[nat]]" USING nil)
+    (bijective? const-decl "bool" functions nil)
+    (surjective? const-decl "bool" functions nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (injective? const-decl "bool" functions nil)
+    (below type-eq-decl nil nat_types nil) nil nil
+    (restrict const-decl "R" restrict nil)
+    (FEATURE type-eq-decl nil USING nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (< const-decl "bool" reals nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (FEATURE_NAME type-decl nil USING nil)
+    (setof type-eq-decl nil defined_types nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]" USING nil)
+    (securityProfile? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (securityProfile adt-constructor-decl "(securityProfile?)" USING
+     nil)
+    (even_minus_odd_is_odd application-judgement "odd_int" integers
+     nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (ft1 const-decl "FEATURE_TREE" USING nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (group_types const-decl "[GROUP -> GROUP_TYPE]" USING nil)
+    (GROUP_TYPE type-decl nil GROUP_TYPES nil)
+    (typeof const-decl "TYPEOF" USING nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (AT_TYPING const-decl "[AT_VALUE -> AT_TYPE]"
+     ATTRIBUTE_VALUE_TYPING nil)
+    (AT_TYPE type-decl nil ATTRIBUTE_VALUE_TYPING nil)
+    (AT_VALUE type-decl nil AT_VALUE_adt nil)
+    (IDS type-decl nil USING nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (GROUP type-eq-decl nil USING nil)
+    (permissionSet adt-constructor-decl "(permissionSet?)" USING nil)
+    (permissionSet? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (group_members1 const-decl "GROUP_MEMBERS" USING nil)
+    (feature_groups1 const-decl "FEATURE_GROUPS" USING nil)
+    (IF const-decl "[boolean, T, T -> T]" if_def nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (passwordPolicy? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     USING nil)
+    (passwordPolicy adt-constructor-decl "(passwordPolicy?)" USING nil)
+    (IMPLIES const-decl "[bool, bool -> bool]" booleans nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (root const-decl "FEATURE" USING nil))
+   1344 720 t shostak)))
+(FIN_INT_SEQUENCES
+ (sum_i_TCC1 0
+  (sum_i_TCC1-1 nil 3381505820 3381507311 ("" (subtype-tcc) nil nil)
+   proved-complete
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (<= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (len formal-const-decl "nat" FIN_INT_SEQUENCES nil)
+    (upto nonempty-type-eq-decl nil naturalnumbers nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   95 40 nil nil))
+ (sum_i_TCC2 0
+  (sum_i_TCC2-1 nil 3381505820 3381507311
+   ("" (termination-tcc) nil nil) proved-complete
+   ((boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (<= const-decl "bool" reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (len formal-const-decl "nat" FIN_INT_SEQUENCES nil)
+    (upto nonempty-type-eq-decl nil naturalnumbers nil)
+    (int_minus_int_is_int application-judgement "int" integers nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   56 20 nil nil))
+ (sum_i_TCC3 0
+  (sum_i_TCC3-1 nil 3381507302 3381507311
+   ("" (termination-tcc) nil nil) proved-complete nil 7 0 nil nil))
+ (sum_TCC1 0
+  (sum_TCC1-1 nil 3381505820 3381507311 ("" (subtype-tcc) nil nil)
+   proved-complete
+   ((real_le_is_total_order name-judgement "(total_order?[real])"
+     real_props nil))
+   4 10 nil nil)))
+(SATELLITE_EXAMPLE
+ (IMP_FEATURE_TREES_TCC1 0
+  (IMP_FEATURE_TREES_TCC1-1 nil 3381506723 3381509930
+   ("" (subtype-tcc) nil nil) unchecked
+   ((feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil))
+   6 0 nil nil))
+ (feature_groups1_TCC1 0
+  (feature_groups1_TCC1-1 nil 3381506723 3381509930
+   ("" (subtype-tcc) nil nil) unchecked
+   ((NOT const-decl "[bool -> bool]" booleans nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (FALSE const-decl "bool" booleans nil)
+    (satellite adt-constructor-decl "(satellite?)" SATELLITE_EXAMPLE
+     nil)
+    (satellite? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (GROUP type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr adt-constructor-decl "(userDefinedApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr adt-constructor-decl "(storageControl_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr adt-constructor-decl "(routerApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (GROUP_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (feature_groups? const-decl "bool" FEATURE_GROUPS_TH nil))
+   418 200 nil nil))
+ (group_members1_TCC1 0
+  (group_members1_TCC1-1 nil 3381506723 3381509931
+   ("" (subtype-tcc) nil nil) unchecked
+   ((NOT const-decl "[bool -> bool]" booleans nil)
+    (packetRouter? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (packetRouter adt-constructor-decl "(packetRouter?)"
+     SATELLITE_EXAMPLE nil)
+    (circuitSwitchedApp? adt-recognizer-decl
+     "[FEATURE_NAME -> boolean]" SATELLITE_EXAMPLE nil)
+    (circuitSwitchedApp adt-constructor-decl "(circuitSwitchedApp?)"
+     SATELLITE_EXAMPLE nil)
+    (storageControl? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (storageControl adt-constructor-decl "(storageControl?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp adt-constructor-decl "(userDefinedApp?)"
+     SATELLITE_EXAMPLE nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (satellite adt-constructor-decl "(satellite?)" SATELLITE_EXAMPLE
+     nil)
+    (satellite? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (GROUP type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr adt-constructor-decl "(userDefinedApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr adt-constructor-decl "(storageControl_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr adt-constructor-decl "(routerApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (GROUP_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (group_members? const-decl "bool" GROUP_MEMBERS_TH nil))
+   249 160 nil nil))
+ (sat_restriction_TCC1 0
+  (sat_restriction_TCC1-1 nil 3381506723 3381509931
+   ("" (skolem! 1)
+    (("" (flatten)
+      (("" (skolem! 1)
+        (("" (flatten)
+          (("" (skolem! 1)
+            (("" (typepred "i!1")
+              (("" (expand "typeof")
+                (("" (expand "udaIds") (("" (propax) nil nil)) nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((below type-eq-decl nil naturalnumbers nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (< const-decl "bool" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (udaIds const-decl "setof[IDS]" SATELLITE_EXAMPLE nil)
+    (typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil))
+   45 20 t nil))
+ (sat_restriction_TCC2 0
+  (sat_restriction_TCC2-1 nil 3381506723 3381509931
+   ("" (skolem! 1)
+    (("" (flatten)
+      (("" (skolem! 1)
+        (("" (flatten)
+          (("" (skolem! 1)
+            (("" (expand "feature_set") (("" (inst 1 "i!1") nil nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (< const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil))
+   39 20 t nil))
+ (sat_restriction_TCC3 0
+  (sat_restriction_TCC3-1 nil 3381506723 3381509931
+   ("" (skolem!)
+    (("" (flatten)
+      (("" (skolem! 1)
+        (("" (flatten)
+          (("" (skolem! 1)
+            (("" (flatten)
+              (("" (typepred "da!1")
+                (("" (expand "domain_assignment?")
+                  (("" (inst? -1)
+                    (("" (expand "assignment?")
+                      (("" (inst? -1)
+                        (("1" (assert)
+                          (("1" (expand "AT_TYPING")
+                            (("1" (expand "typeof")
+                              (("1"
+                                (assert)
+                                (("1" (grind) nil nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil)
+                         ("2" (expand "typeof")
+                          (("2" (expand "satIds")
+                            (("2" (propax) nil nil)) nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((DOMAIN_ASSIGNMENT type-eq-decl nil FEATURE_MODELS nil)
+    (domain_assignment? const-decl "bool" FEATURE_MODEL_GENERIC nil)
+    (DOMAIN_ASSIGNMENT_GENERIC type-eq-decl nil FEATURE_MODEL_GENERIC
+     nil)
+    (AT_TYPING const-decl "[AT_VALUE -> AT_TYPE]"
+     ATTRIBUTE_VALUE_TYPING nil)
+    (typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (AT_VALUE type-decl nil AT_VALUE_adt nil)
+    (AT_TYPE type-decl nil ATTRIBUTE_VALUE_TYPING nil)
+    (IDS type-decl nil SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (< const-decl "bool" reals nil)
+    (userDefinedApp adt-constructor-decl "(userDefinedApp?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (MaxStorageFieldSize adt-constructor-decl "(MaxStorageFieldSize?)"
+     SATELLITE_EXAMPLE nil)
+    (MaxStorageFieldSize? adt-recognizer-decl "[IDS -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (restriction const-decl "RESTRICTION" FEATURE_TREES nil)
+    (GROUP_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (routerApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr adt-constructor-decl "(routerApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr adt-constructor-decl "(storageControl_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr adt-constructor-decl "(userDefinedApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (GROUP type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (GROUP_TYPE type-decl nil GROUP_TYPES nil)
+    (group_types const-decl "[GROUP -> GROUP_TYPE]" SATELLITE_EXAMPLE
+     nil)
+    (satellite? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (satellite adt-constructor-decl "(satellite?)" SATELLITE_EXAMPLE
+     nil)
+    (bijective? const-decl "bool" functions nil)
+    (surjective? const-decl "bool" functions nil)
+    (injective? const-decl "bool" functions nil)
+    (group_members1 const-decl "GROUP_MEMBERS" SATELLITE_EXAMPLE nil)
+    (sat_ft const-decl "FEATURE_TREE" SATELLITE_EXAMPLE nil))
+   343 260 t nil))
+ (sat_restriction_TCC4 0
+  (sat_restriction_TCC4-1 nil 3381509009 3381509931
+   ("" (subtype-tcc) nil nil) unchecked
+   ((sat_ft const-decl "FEATURE_TREE" SATELLITE_EXAMPLE nil)
+    (injective? const-decl "bool" functions nil)
+    (surjective? const-decl "bool" functions nil)
+    (bijective? const-decl "bool" functions nil)
+    (satellite adt-constructor-decl "(satellite?)" SATELLITE_EXAMPLE
+     nil)
+    (satellite? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (group_types const-decl "[GROUP -> GROUP_TYPE]" SATELLITE_EXAMPLE
+     nil)
+    (GROUP_TYPE type-decl nil GROUP_TYPES nil)
+    (typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (GROUP type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr adt-constructor-decl "(userDefinedApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr adt-constructor-decl "(storageControl_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr adt-constructor-decl "(routerApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (GROUP_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (AT_TYPING const-decl "[AT_VALUE -> AT_TYPE]"
+     ATTRIBUTE_VALUE_TYPING nil)
+    (AT_TYPE type-decl nil ATTRIBUTE_VALUE_TYPING nil)
+    (AT_VALUE type-decl nil AT_VALUE_adt nil)
+    (IDS type-decl nil SATELLITE_EXAMPLE nil)
+    (restriction const-decl "RESTRICTION" FEATURE_TREES nil)
+    (satIds const-decl "setof[IDS]" SATELLITE_EXAMPLE nil))
+   120 90 nil nil))
+ (sat_restriction_TCC5 0
+  (sat_restriction_TCC5-1 nil 3381509009 3381509932
+   ("" (skolem! 1)
+    (("" (flatten)
+      (("" (skolem! 1)
+        (("" (flatten)
+          (("" (skolem! 1)
+            (("" (flatten)
+              (("" (typepred "da!1")
+                (("" (expand "domain_assignment?")
+                  (("" (inst? -1)
+                    (("" (expand "AT_TYPING")
+                      (("" (expand "typeof")
+                        (("" (assert) (("" (grind) nil nil)) nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((restriction const-decl "RESTRICTION" FEATURE_TREES nil)
+    (GROUP_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (routerApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr adt-constructor-decl "(routerApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr adt-constructor-decl "(storageControl_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr adt-constructor-decl "(userDefinedApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (GROUP type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (GROUP_TYPE type-decl nil GROUP_TYPES nil)
+    (group_types const-decl "[GROUP -> GROUP_TYPE]" SATELLITE_EXAMPLE
+     nil)
+    (bijective? const-decl "bool" functions nil)
+    (surjective? const-decl "bool" functions nil)
+    (injective? const-decl "bool" functions nil)
+    (group_members1 const-decl "GROUP_MEMBERS" SATELLITE_EXAMPLE nil)
+    (sat_ft const-decl "FEATURE_TREE" SATELLITE_EXAMPLE nil)
+    (MaxUserMainMemory? adt-recognizer-decl "[IDS -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (MaxUserMainMemory adt-constructor-decl "(MaxUserMainMemory?)"
+     SATELLITE_EXAMPLE nil)
+    (satellite? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (satellite adt-constructor-decl "(satellite?)" SATELLITE_EXAMPLE
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (number nonempty-type-decl nil numbers nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (setof type-eq-decl nil defined_types nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (IDS type-decl nil SATELLITE_EXAMPLE nil)
+    (AT_TYPE type-decl nil ATTRIBUTE_VALUE_TYPING nil)
+    (AT_VALUE type-decl nil AT_VALUE_adt nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil)
+    (AT_TYPING const-decl "[AT_VALUE -> AT_TYPE]"
+     ATTRIBUTE_VALUE_TYPING nil)
+    (DOMAIN_ASSIGNMENT_GENERIC type-eq-decl nil FEATURE_MODEL_GENERIC
+     nil)
+    (domain_assignment? const-decl "bool" FEATURE_MODEL_GENERIC nil)
+    (DOMAIN_ASSIGNMENT type-eq-decl nil FEATURE_MODELS nil))
+   348 250 t nil))
+ (valid_conf_TCC1 0
+  (valid_conf_TCC1-1 nil 3381508219 3381509932 ("" (cases-tcc) nil nil)
+   unchecked
+   ((udaIds const-decl "setof[IDS]" SATELLITE_EXAMPLE nil)
+    (IDS type-decl nil SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil))
+   65 30 nil nil))
+ (valid_conf_TCC2 0
+  (valid_conf_TCC2-1 nil 3381508219 3381509932
+   ("" (subtype-tcc) nil nil) unchecked
+   ((typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (udaIds const-decl "setof[IDS]" SATELLITE_EXAMPLE nil))
+   65 40 nil nil))
+ (valid_conf_TCC3 0
+  (valid_conf_TCC3-1 nil 3381508219 3381509932 ("" (cases-tcc) nil nil)
+   unchecked
+   ((satIds const-decl "setof[IDS]" SATELLITE_EXAMPLE nil)
+    (IDS type-decl nil SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil))
+   62 30 nil nil))
+ (valid_conf_TCC4 0
+  (valid_conf_TCC4-1 nil 3381508219 3381509932
+   ("" (subtype-tcc) nil nil) unchecked
+   ((typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (satIds const-decl "setof[IDS]" SATELLITE_EXAMPLE nil))
+   71 30 nil nil))
+ (valid_conf_TCC5 0
+  (valid_conf_TCC5-1 nil 3381508219 3381509932 ("" (cases-tcc) nil nil)
+   unchecked
+   ((typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil)
+    (finite_emptyset name-judgement "finite_set" finite_sets nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (emptyset const-decl "set" sets nil))
+   126 80 nil nil))
+ (valid_conf_TCC6 0
+  (valid_conf_TCC6-1 nil 3381508219 3381509932
+   ("" (subtype-tcc) nil nil) unchecked
+   ((satIds const-decl "setof[IDS]" SATELLITE_EXAMPLE nil)
+    (emptyset const-decl "set" sets nil)
+    (finite_emptyset name-judgement "finite_set" finite_sets nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (udaIds const-decl "setof[IDS]" SATELLITE_EXAMPLE nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (list2finseq const-decl "finseq[T]" list2finseq nil)
+    (AT_TYPING const-decl "[AT_VALUE -> AT_TYPE]"
+     ATTRIBUTE_VALUE_TYPING nil)
+    (typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (>= const-decl "bool" reals nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number nonempty-type-decl nil numbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (AT_TYPE type-decl nil ATTRIBUTE_VALUE_TYPING nil)
+    (AT_VALUE type-decl nil AT_VALUE_adt nil)
+    (IDS type-decl nil SATELLITE_EXAMPLE nil)
+    (domain_assignment? const-decl "bool" FEATURE_MODEL_GENERIC nil))
+   237 170 nil nil))
+ (valid_conf 0
+  (valid_conf-1 nil 3381509958 3381512031
+   ("" (assert)
+    (("" (expand "sat_restriction")
+      (("" (split 1)
+        (("1" (expand "restriction")
+          (("1" (split 1)
+            (("1" (skolem! 1)
+              (("1" (flatten)
+                (("1" (split -1)
+                  (("1"
+                    (inst 1 "1" "LAMBDA (i: below(1)): (satellite, 0)")
+                    (("1" (assert)
+                      (("1" (replace -1) (("1" (skolem! 1) nil nil))
+                        nil))
+                      nil)
+                     ("2" (expand "feature_set")
+                      (("2" (propax) nil nil)) nil))
+                    nil)
+                   ("2" (replace -1)
+                    (("2"
+                      (inst 1 "2"
+                       "LAMBDA (i: below(2)): IF i = 0 THEN (satellite, 0) ELSE (packetRouter, 0) ENDIF")
+                      (("1" (assert)
+                        (("1" (split 1)
+                          (("1" (skolem! 1)
+                            (("1" (typepred "i!1")
+                              (("1"
+                                (case "i!1 = 0")
+                                (("1" (assert) nil nil)
+                                 ("2"
+                                  (case "i!1 = 1")
+                                  (("1"
+                                    (replace -1)
+                                    (("1" (assert) nil nil))
+                                    nil)
+                                   ("2" (assert) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (expand "sat_ft")
+                            (("2" (expand "group_members1")
+                              (("2"
+                                (assert)
+                                (("2"
+                                  (skolem! 1)
+                                  (("2"
+                                    (typepred "i!1")
+                                    (("2"
+                                      (case "i!1=0")
+                                      (("1"
+                                        (replace -1)
+                                        (("1"
+                                          (inst 1 "routerApp_gr")
+                                          (("1" (assert) nil nil)
+                                           ("2"
+                                            (expand "sat_ft")
+                                            (("2"
+                                              (expand
+                                               "feature_groups1")
+                                              (("2" (propax) nil nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil)
+                                       ("2" (assert) nil nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil)
+                       ("2" (expand "feature_set")
+                        (("2" (propax) nil nil)) nil)
+                       ("3" (expand "feature_set")
+                        (("3" (propax) nil nil)) nil))
+                      nil))
+                    nil)
+                   ("3"
+                    (inst 1 "2"
+                     "LAMBDA (i: below(2)): IF i = 0 THEN (satellite, 0) ELSE (userDefinedApp, 0) ENDIF")
+                    (("1" (assert)
+                      (("1" (split 1)
+                        (("1" (replace -1) (("1" (propax) nil nil))
+                          nil)
+                         ("2" (skolem! 1)
+                          (("2" (flatten)
+                            (("2" (typepred "i!1")
+                              (("2"
+                                (case "i!1 = 0")
+                                (("1"
+                                  (replace -1)
+                                  (("1" (propax) nil nil))
+                                  nil)
+                                 ("2" (assert) nil nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil)
+                         ("3" (skolem! 1)
+                          (("3" (inst 1 "userDefinedApp_gr")
+                            (("1" (expand "sat_ft")
+                              (("1"
+                                (expand "group_members1")
+                                (("1" (propax) nil nil))
+                                nil))
+                              nil)
+                             ("2" (expand "sat_ft")
+                              (("2"
+                                (expand "feature_groups1")
+                                (("2" (propax) nil nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (expand "feature_set")
+                      (("2" (skolem! 1)
+                        (("2" (flatten) (("2" (inst 2 "0") nil nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("3" (expand "feature_set")
+                      (("3" (propax) nil nil)) nil))
+                    nil)
+                   ("4"
+                    (inst 1 "2"
+                     "LAMBDA (i: below(2)): IF i = 0 THEN (satellite, 0) ELSE (userDefinedApp, 1) ENDIF")
+                    (("1" (assert)
+                      (("1" (replace -1)
+                        (("1" (split 1)
+                          (("1" (skolem! 1)
+                            (("1" (typepred "i!1")
+                              (("1"
+                                (case "i!1 = 0")
+                                (("1" (assert) nil nil)
+                                 ("2" (assert) nil nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (skolem! 1)
+                            (("2" (inst 1 "userDefinedApp_gr")
+                              (("1"
+                                (expand "sat_ft")
+                                (("1"
+                                  (expand "group_members1")
+                                  (("1" (propax) nil nil))
+                                  nil))
+                                nil)
+                               ("2"
+                                (expand "sat_ft")
+                                (("2"
+                                  (expand "feature_groups1")
+                                  (("2" (propax) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (skolem! 1)
+                      (("2" (flatten)
+                        (("2" (expand "feature_set")
+                          (("2" (inst 2 1) nil nil)) nil))
+                        nil))
+                      nil)
+                     ("3" (expand "feature_set")
+                      (("3" (propax) nil nil)) nil))
+                    nil))
+                  nil))
+                nil))
+              nil)
+             ("2" (skolem! 1)
+              (("2" (flatten)
+                (("2" (skolem! 1)
+                  (("2" (split -1)
+                    (("1" (typepred "g!1")
+                      (("1" (split -1)
+                        (("1" (inst 1 1)
+                          (("1"
+                            (inst 1
+                             "LAMBDA ( f:({c: (sat_ft`group_members(g!1)) |
+                     c = (satellite, 0) OR
+                      c = (packetRouter, 0) OR
+                       c = (userDefinedApp, 0) OR
+                        c = (userDefinedApp, 1)})): 0")
+                            (("1" (expand "bijective?")
+                              (("1"
+                                (expand "sat_ft")
+                                (("1"
+                                  (split 1)
+                                  (("1"
+                                    (expand "injective?")
+                                    (("1"
+                                      (skolem! 1)
+                                      (("1"
+                                        (typepred "x1!1")
+                                        (("1"
+                                          (typepred "x2!1")
+                                          (("1"
+                                            (expand "sat_ft")
+                                            (("1"
+                                              (expand "group_members1")
+                                              (("1" (grind) nil nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil)
+                                   ("2"
+                                    (expand "surjective?")
+                                    (("2"
+                                      (skolem! 1)
+                                      (("2"
+                                        (replace -1)
+                                        (("2"
+                                          (inst 1 "(packetRouter, 0)")
+                                          (("2"
+                                            (expand "sat_ft")
+                                            (("2"
+                                              (replace -1)
+                                              (("2"
+                                                (expand "feature_set")
+                                                (("2"
+                                                  (expand
+                                                   "group_members1")
+                                                  (("2"
+                                                    (propax)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (expand "sat_ft")
+                            (("2" (expand "cardinalities1")
+                              (("2"
+                                (replace -1)
+                                (("2" (assert) nil nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil)
+                         ("2"
+                          (inst 1 "0"
+                           "LAMBDA (f: ({c: (sat_ft`group_members(g!1)) |
+                       c = (satellite, 0) OR
+                        c = (packetRouter, 0) OR
+                         c = (userDefinedApp, 0) OR
+                          c = (userDefinedApp, 1)})): 0")
+                          (("1" (expand "bijective?")
+                            (("1" (split 1)
+                              (("1"
+                                (expand "injective?")
+                                (("1"
+                                  (skolem! 1)
+                                  (("1"
+                                    (typepred "x2!1")
+                                    (("1"
+                                      (typepred "x1!1")
+                                      (("1"
+                                        (expand "sat_ft")
+                                        (("1"
+                                          (replace -7)
+                                          (("1"
+                                            (expand "group_members1")
+                                            (("1" (assert) nil nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil)
+                               ("2"
+                                (expand "surjective?")
+                                (("2" (skolem! 1) nil nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (skolem! 1)
+                            (("2" (typepred "f!2")
+                              (("2"
+                                (expand "feature_set")
+                                (("2"
+                                  (replace -4)
+                                  (("2"
+                                    (expand "sat_ft")
+                                    (("2"
+                                      (expand "group_members1")
+                                      (("2" (assert) nil nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("3" (expand "sat_ft")
+                            (("3" (expand "cardinalities1")
+                              (("3" (assert) nil nil)) nil))
+                            nil))
+                          nil)
+                         ("3"
+                          (inst 1 "2"
+                           "LAMBDA (f : ({c: (sat_ft`group_members(g!1)) |
+                       c = (satellite, 0) OR
+                        c = (packetRouter, 0) OR
+                         c = (userDefinedApp, 0) OR
+                          c = (userDefinedApp, 1)})): PROJ_2(f)")
+                          (("1" (expand "bijective?")
+                            (("1" (split 1)
+                              (("1"
+                                (replace -1)
+                                (("1"
+                                  (expand "injective?")
+                                  (("1"
+                                    (skolem! 1)
+                                    (("1"
+                                      (assert)
+                                      (("1"
+                                        (typepred "x1!1")
+                                        (("1"
+                                          (typepred "x2!1")
+                                          (("1"
+                                            (expand "sat_ft")
+                                            (("1"
+                                              (expand "group_members1")
+                                              (("1"
+                                                (expand "feature_set")
+                                                (("1"
+                                                  (assert)
+                                                  (("1"
+                                                    (ground)
+                                                    (("1"
+                                                      (replace -1)
+                                                      (("1"
+                                                        (replace -2)
+                                                        (("1"
+                                                          (propax)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil)
+                                                     ("2"
+                                                      (replace -2)
+                                                      (("2"
+                                                        (assert)
+                                                        nil
+                                                        nil))
+                                                      nil)
+                                                     ("3"
+                                                      (replace -1)
+                                                      (("3"
+                                                        (assert)
+                                                        (("3"
+                                                          (replace
+                                                           -3
+                                                           *
+                                                           LR)
+                                                          (("3"
+                                                            (assert)
+                                                            nil
+                                                            nil))
+                                                          nil))
+                                                        nil))
+                                                      nil)
+                                                     ("4"
+                                                      (replace -1)
+                                                      (("4"
+                                                        (assert)
+                                                        nil
+                                                        nil))
+                                                      nil)
+                                                     ("5"
+                                                      (replace -1)
+                                                      (("5"
+                                                        (replace -2)
+                                                        (("5"
+                                                          (propax)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil)
+                                                     ("6"
+                                                      (replace -1 * LR)
+                                                      (("6"
+                                                        (replace
+                                                         -3
+                                                         *
+                                                         LR)
+                                                        (("6"
+                                                          (assert)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil)
+                                                     ("7"
+                                                      (replace -1 * LR)
+                                                      (("7"
+                                                        (assert)
+                                                        nil
+                                                        nil))
+                                                      nil)
+                                                     ("8"
+                                                      (replace -1 * LR)
+                                                      (("8"
+                                                        (assert)
+                                                        nil
+                                                        nil))
+                                                      nil)
+                                                     ("9"
+                                                      (replace -1 * LR)
+                                                      (("9"
+                                                        (replace
+                                                         -3
+                                                         *
+                                                         LR)
+                                                        (("9"
+                                                          (propax)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil)
+                                                     ("10"
+                                                      (replace -1 * LR)
+                                                      (("10"
+                                                        (replace
+                                                         -3
+                                                         *
+                                                         LR)
+                                                        (("10"
+                                                          (propax)
+                                                          nil
+                                                          nil))
+                                                        nil))
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil)
+                               ("2"
+                                (expand "surjective?")
+                                (("2"
+                                  (skolem! 1)
+                                  (("2"
+                                    (typepred "y!1")
+                                    (("2"
+                                      (case "y!1 = 0")
+                                      (("1"
+                                        (replace -1)
+                                        (("1"
+                                          (inst
+                                           1
+                                           "(userDefinedApp, 0)")
+                                          (("1"
+                                            (assert)
+                                            (("1"
+                                              (expand "feature_set")
+                                              (("1"
+                                                (expand "sat_ft")
+                                                (("1"
+                                                  (expand
+                                                   "group_members1")
+                                                  (("1"
+                                                    (inst 1 0)
+                                                    nil
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil))
+                                        nil)
+                                       ("2"
+                                        (case "y!1 = 1")
+                                        (("1"
+                                          (replace -1)
+                                          (("1"
+                                            (inst
+                                             2
+                                             "(userDefinedApp, 1)")
+                                            (("1"
+                                              (expand "sat_ft")
+                                              (("1"
+                                                (expand
+                                                 "group_members1")
+                                                (("1"
+                                                  (assert)
+                                                  (("1"
+                                                    (expand
+                                                     "feature_set")
+                                                    (("1"
+                                                      (inst 1 1)
+                                                      nil
+                                                      nil))
+                                                    nil))
+                                                  nil))
+                                                nil))
+                                              nil))
+                                            nil))
+                                          nil)
+                                         ("2" (assert) nil nil))
+                                        nil))
+                                      nil))
+                                    nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil)
+                           ("2" (skolem! 1)
+                            (("2" (typepred "f!2")
+                              (("2" (assert) nil nil)) nil))
+                            nil)
+                           ("3" (expand "sat_ft")
+                            (("3" (expand "cardinalities1")
+                              (("3" (assert) nil nil)) nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("2" (typepred "f!1")
+                      (("2" (typepred "g!1")
+                        (("2" (expand "sat_ft")
+                          (("2" (replace -4)
+                            (("2" (expand "feature_groups1")
+                              (("2" (propax) nil nil)) nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("3" (typepred "g!1")
+                      (("3" (expand "sat_ft")
+                        (("3" (expand "feature_groups1")
+                          (("3" (assert)
+                            (("3" (replace -3 * LR)
+                              (("3" (assert) nil nil)) nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil)
+                     ("4" (typepred "f!1")
+                      (("4" (ground)
+                        (("4" (typepred "g!1")
+                          (("4" (assert)
+                            (("4" (replace -4 * LR)
+                              (("4"
+                                (expand "sat_ft")
+                                (("4"
+                                  (expand "feature_groups1")
+                                  (("4" (propax) nil nil))
+                                  nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil)
+         ("2" (inst 1 2)
+          (("2" (split 1)
+            (("1" (skolem! 1)
+              (("1" (flatten)
+                (("1" (assert)
+                  (("1" (typepred "f!1")
+                    (("1" (expand "feature_set")
+                      (("1" (ground)
+                        (("1" (replace -1) (("1" (assert) nil nil))
+                          nil)
+                         ("2" (replace -1) (("2" (assert) nil nil))
+                          nil)
+                         ("3" (skolem! -1)
+                          (("3" (replace -1) (("3" (assert) nil nil))
+                            nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil)
+             ("2" (skolem! 1)
+              (("2" (flatten) (("2" (assert) nil nil)) nil)) nil)
+             ("3" (assert)
+              (("3" (assert)
+                (("3" (expand "sum")
+                  (("3" (expand "sum_i")
+                    (("3" (assert)
+                      (("3" (expand "sum_i")
+                        (("3" (expand "sum_i") (("3" (assert) nil nil))
+                          nil))
+                        nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((sat_restriction const-decl "RESTRICTION" SATELLITE_EXAMPLE nil)
+    (sum const-decl "int" FIN_INT_SEQUENCES nil)
+    (int_plus_int_is_int application-judgement "int" integers nil)
+    (sum_i def-decl "int" FIN_INT_SEQUENCES nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (restriction const-decl "RESTRICTION" FEATURE_TREES nil)
+    (FALSE const-decl "bool" booleans nil)
+    (bijective? const-decl "bool" functions nil)
+    (injective? const-decl "bool" functions nil)
+    (AND const-decl "[bool, bool -> bool]" booleans nil)
+    (surjective? const-decl "bool" functions nil)
+    (below type-eq-decl nil nat_types nil)
+    (cardinalities1 const-decl "[GROUP -> set[nat]]" SATELLITE_EXAMPLE
+     nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (posnat nonempty-type-eq-decl nil integers nil)
+    (> const-decl "bool" reals nil)
+    (nonneg_int nonempty-type-eq-decl nil integers nil)
+    (number nonempty-type-decl nil numbers nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (>= const-decl "bool" reals nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (< const-decl "bool" reals nil)
+    (below type-eq-decl nil naturalnumbers nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (satellite? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (satellite adt-constructor-decl "(satellite?)" SATELLITE_EXAMPLE
+     nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (IMPLIES const-decl "[bool, bool -> bool]" booleans nil)
+    (packetRouter adt-constructor-decl "(packetRouter?)"
+     SATELLITE_EXAMPLE nil)
+    (packetRouter? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (IF const-decl "[boolean, T, T -> T]" if_def nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (group_members1 const-decl "GROUP_MEMBERS" SATELLITE_EXAMPLE nil)
+    (FEATURE_TREE type-eq-decl nil FEATURE_TREES nil)
+    (group_types const-decl "[GROUP -> GROUP_TYPE]" SATELLITE_EXAMPLE
+     nil)
+    (GROUP_TYPE type-decl nil GROUP_TYPES nil)
+    (typeof const-decl "TYPEOF" SATELLITE_EXAMPLE nil)
+    (TYPEOF type-eq-decl nil FEATURE_TYPES nil)
+    (FEATURE_TYPE type-eq-decl nil FEATURE_TYPES nil)
+    (AT_TYPING const-decl "[AT_VALUE -> AT_TYPE]"
+     ATTRIBUTE_VALUE_TYPING nil)
+    (AT_TYPE type-decl nil ATTRIBUTE_VALUE_TYPING nil)
+    (AT_VALUE type-decl nil AT_VALUE_adt nil)
+    (IDS type-decl nil SATELLITE_EXAMPLE nil)
+    (GROUP_MEMBERS type-eq-decl nil GROUP_MEMBERS_TH nil)
+    (FEATURE_GROUPS type-eq-decl nil FEATURE_GROUPS_TH nil)
+    (GROUP type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr adt-constructor-decl "(userDefinedApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr adt-constructor-decl "(storageControl_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (storageControl_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr adt-constructor-decl "(routerApp_gr?)"
+     SATELLITE_EXAMPLE nil)
+    (routerApp_gr? adt-recognizer-decl "[GROUP_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (OR const-decl "[bool, bool -> bool]" booleans nil)
+    (GROUP_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (feature_groups1 const-decl "FEATURE_GROUPS" SATELLITE_EXAMPLE nil)
+    (sat_ft const-decl "FEATURE_TREE" SATELLITE_EXAMPLE nil)
+    (even_minus_odd_is_odd application-judgement "odd_int" integers
+     nil)
+    (userDefinedApp? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp adt-constructor-decl "(userDefinedApp?)"
+     SATELLITE_EXAMPLE nil))
+   2073533 2220 t shostak))
+ (invalid_conf_TCC1 0
+  (invalid_conf_TCC1-1 nil 3381513054 nil ("" (subtype-tcc) nil nil)
+   unfinished nil nil nil nil nil))
+ (invalid_conf 0
+  (invalid_conf-1 nil 3381513055 3381513452
+   ("" (assert)
+    (("" (expand "sat_restriction")
+      (("" (flatten)
+        (("" (skolem! -2)
+          (("" (flatten)
+            (("" (typepred "n!1")
+              (("" (case "n!1 < 2")
+                (("1" (inst -5 "(userDefinedApp, 1)")
+                  (("1" (assert) nil nil)
+                   ("2" (expand "feature_set")
+                    (("2" (inst 1 1) nil nil)) nil))
+                  nil)
+                 ("2" (case "n!1 > 2")
+                  (("1" (inst -4 "(userDefinedApp, 2)")
+                    (("1" (assert) nil nil)
+                     ("2" (expand "feature_set")
+                      (("2" (inst 1 2) nil nil)) nil))
+                    nil)
+                   ("2" (assert)
+                    (("2" (case "n!1 = 2")
+                      (("1" (replace -1)
+                        (("1" (expand "sum")
+                          (("1" (expand "sum_i")
+                            (("1" (expand "sum_i")
+                              (("1"
+                                (expand "sum_i")
+                                (("1" (assert) nil nil))
+                                nil))
+                              nil))
+                            nil))
+                          nil))
+                        nil)
+                       ("2" (assert) nil nil))
+                      nil))
+                    nil))
+                  nil))
+                nil))
+              nil))
+            nil))
+          nil))
+        nil))
+      nil))
+    nil)
+   unchecked
+   ((sat_restriction const-decl "RESTRICTION" SATELLITE_EXAMPLE nil)
+    (nat nonempty-type-eq-decl nil naturalnumbers nil)
+    (int nonempty-type-eq-decl nil integers nil)
+    (integer_pred const-decl "[rational -> boolean]" integers nil)
+    (rational nonempty-type-from-decl nil rationals nil)
+    (rational_pred const-decl "[real -> boolean]" rationals nil)
+    (>= const-decl "bool" reals nil)
+    (real nonempty-type-from-decl nil reals nil)
+    (real_pred const-decl "[number_field -> boolean]" reals nil)
+    (number_field nonempty-type-from-decl nil number_fields nil)
+    (number_field_pred const-decl "[number -> boolean]" number_fields
+     nil)
+    (number nonempty-type-decl nil numbers nil)
+    (NOT const-decl "[bool -> bool]" booleans nil)
+    (bool nonempty-type-eq-decl nil booleans nil)
+    (boolean nonempty-type-decl nil booleans nil)
+    (> const-decl "bool" reals nil)
+    (real_gt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (= const-decl "[T, T -> boolean]" equalities nil)
+    (sum const-decl "int" FIN_INT_SEQUENCES nil)
+    (sum_i def-decl "int" FIN_INT_SEQUENCES nil)
+    (userDefinedApp adt-constructor-decl "(userDefinedApp?)"
+     SATELLITE_EXAMPLE nil)
+    (userDefinedApp? adt-recognizer-decl "[FEATURE_NAME -> boolean]"
+     SATELLITE_EXAMPLE nil)
+    (feature_set const-decl "setof[[FEATURE_NAME, nat]]"
+     SATELLITE_EXAMPLE nil)
+    (setof type-eq-decl nil defined_types nil)
+    (FEATURE_NAME type-decl nil SATELLITE_EXAMPLE nil)
+    (FEATURE type-eq-decl nil SATELLITE_EXAMPLE nil)
+    (real_lt_is_strict_total_order name-judgement
+     "(strict_total_order?[real])" real_props nil)
+    (real_ge_is_total_order name-judgement "(total_order?[real])"
+     real_props nil)
+    (< const-decl "bool" reals nil))
+   396895 290 t shostak)))
+

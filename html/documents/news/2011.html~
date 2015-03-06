@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2011 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li>
+  <!--#include virtual="/documents/xml/overview.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/mech_theory.xml" -->
+  </li>
+  <li id="subnavon">
+  <!--#include virtual="/documents/xml/news.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/proposals.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/published.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/reports.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/talks.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/tutorials.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/whitepapers.xml" -->
+  </li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>2011</h2>
+
+<h3>December 2011</h3>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> gave a talk
+entitled "Validating Semantics" at the second IFIP working group
+1.9/2.15 on Verified Software meeting in York, UK. </p>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> is on the Program
+Committee of TCS 2012. </p>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> is on the Program
+Committee of <a href="http://2012.gasworkshop.org/">GAS 2012</a>. </p>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> has become
+a become a member of IFIP working group 1.9/2.15 on Verified
+Software. </p>
+
+<h3>November 2011</h3>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> is on the Program
+Committee of <a href="http://sefm2012.city.academic.gr/">SEFM
+2012</a>. </p>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> gave an invited
+talk entitled <a href="documents/talks/democracy.html">Democracy as a
+Critical System</a>, and a guest lecture <em>DOSE/GSD Concretized:
+Distributed Outsourced Software Engineering/Global Software
+Development: Case Studies, Lessons Learned, Best Practices</em>, at
+ETHZ.
+  
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> gave an invited
+talk entitled <a href="documents/talks/democracy.html">Democracy as a
+Critical System</a> at DTU.
+
+<p> Around fifteen BSc and MSc project/thesis descriptions have been
+posted to the <a href="/documents/proposals/index.html">proposals
+page</a>, primarily for ITU students. </p>
+
+<h3>October 2011</h3>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> is on the Program
+Committee of ICECCS 2012. </p>
+
+<h3>May 2011</h3>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> is on the Program
+Committee of <a href="http://foveoos2011.cost-ic0701.org/">FoVeOSS
+2011</a>. </p>
+
+<h3>March 2011</h3>
+
+<p> <a href="/about/people/jrk.html">Joe Kiniry</a> gave an invited
+  talk entitled <a href="documents/talks/democracy.html">Democracy as
+  a Critical System</a> to the <a
+   href="http://www.daimi.au.dk/">Department of Computer Science</a>
+  in the <a href="http://www.au.dk/en/">University of Aarhus</a>. </p>
+
+<p> Several <a href="/about/positions/">postdoc and PhD student
+  positions</a> will be available later this year. </p>
+
+<p> A paper "<a href="/documents/published/">Verified Gaming</a>" by
+  <a href="/about/people/jrk.html">Joe</a>,
+  <a href="/about/people/dmz.html">Dan</a>, and
+  <a href="/about/people/fdf.html">Fintan</a> has been accepted to
+  <a href="http://2011.gasworkshop.org/">GAS 2011</a>. </p>
+
+<p> A paper "<a href="/documents/published/">Achieving Instant Gradeification</a>" by
+  <a href="/about/people/dmz.html">Dan</a>,
+  <a href="/about/people/jrk.html">Joe</a>, and
+  <a href="/about/people/fdf.html">Fintan</a> has been accepted to
+  <a href="http://conferences.computer.org/cseet/2011/CSEET_2011/Index.html">CSEE&amp;T 2011</a>. </p>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2012 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="2011.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

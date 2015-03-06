@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link href="/stylesheets/kind.css" type="text/css" rel="stylesheet"/>
+    <title>About Us - A Kind Community - Donate</title>
+  </head>
+
+  <body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="headerleft" width="5%">
+          <h1>KindSoftware</h1>
+        </td>
+        <td class="headermid" width="35%">
+          <!-- spacer -->
+          &nbsp;
+        </td>
+        <!-- header menu: all td tags are of class "topmenu" with a tags being 
+        class "topitems" except the tab we are currently on, which the a is class 
+        "curtop".  the menu dynamically resizes with the window, so if the window 
+        is long, the tabs will be spaced farther apart -->
+        <td class="topmenu" nowrap="nowrap">
+          <a class="curtop" href="/about/research_group/">About Us</a>
+        </td>
+        <td class="topmenu" nowrap="nowrap">
+          <a class="topitems" href="/products/opensource/">Open Source 
+            Software</a>
+        </td>
+        <td class="topmenu" nowrap="nowrap">
+          <a class="topitems" href="/documents/">Documents</a>
+        </td>
+        <td class="topmenu" nowrap="nowrap">
+          <a class="topitems" href="/jiki/">Jiki</a>
+        </td>
+        <td class="topmenu" nowrap="nowrap">
+          <a class="topitems" href="/">Home</a>
+        </td>
+      </tr>
+      <tr>
+        <!-- image filling left tds of second menu area until we hit the menu, 
+        spans the number of rows as there are objects in the menu, and the number 
+        of columns there are until the tab we are currently on -->
+        <td class="about" colspan="2" height="68">
+          <!-- name from current tab in the top menu -->
+          <div class="indent">about us</div>
+        </td>
+        <!-- second level menu: the current td tag is class "cursecmenu" with the 
+        current a tag "cursec", and the rest are td tag class "secmenu" and a tag 
+        class "sec" -->
+        <td class="square">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="cursecmenu" nowrap="nowrap">
+                A Kind Community
+              </td>
+            </tr>
+            <tr>
+              <td class="secmenu" nowrap="nowrap">
+                <a class="sec" href="/about/people/">Who We Are</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="secmenu" nowrap="nowrap">
+                <a class="sec" href="/about/ideology/">Our Ideology</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="secmenu" nowrap="nowrap">
+                <a class="sec" href="/about/community/">Our Community</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <!-- image filling remaining right td's of second menu area, spans the 
+        number of rows as there are objects in the menu, the number of remaining 
+        columns after the tab we are currently on  -->
+        <td class="software" colspan="4" height="68">
+          <!-- space so netscape puts the image here -->
+          &nbsp;
+        </td>
+      </tr>
+
+      <!-- end top header, start body content -->
+
+      <tr>
+        <!-- left side of body (menus) -->
+        <td class="sidemenu" width="5%">
+          <!-- third level menu (side menu): the current td tag is class "curmenu" 
+          with the current a tag "curitems", and the rest are td tag class "menu" 
+          and a tag class "items" -->
+          <table width="100%" border="0" cellspacing="5" cellpadding="3">
+            <tr>
+              <!-- name from current tab in the second menu -->
+              <th>
+                A Kind Community:
+              </th>
+            </tr>
+            <tr>
+              <!-- side menu items -->
+              <td class="menu">
+                <a class="items" href="/about/research_group/">Introduction</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu">
+                <a class="items" href="contact.html">Contact Information</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="menu">
+                <a class="items" href="jobs.html">Jobs</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="curmenu">
+                Donate
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- right side of body (content) -->
+        <td class="content" colspan="6" width="95%" height="280">
+          <div class="pad">
+            <!-- logo -->
+            <img src="/images/kind.png" alt="[KindSoftware]" align="right"
+                 border="0"/>
+
+            <!-- content -->
+
+            <h2>Donations</h2>
+
+            <p> KindSoftware accepts donations to support our work.  Quick
+              any easy donations can be made through Amazon. </p>
+
+<!--             <\!-- Begin PayPal Paybox -\-> -->
+<!--             <form action="https://secure.paypal.com/cgi-bin/webscr" -->
+<!--                   method="POST"> -->
+<!--               <input type="hidden" name="cmd" value="_xclick"/> -->
+<!--               <input type="hidden" name="business" -->
+<!--                      value="kiniry@acm.org"/> -->
+<!--               <input type="hidden" name="return"  -->
+<!--                      value="http://dsoftware.comkind.ucd.ie/"/> -->
+<!--               <input type="hidden" name="undefined_quantity" value="1"/>  -->
+<!--               <input type="hidden" name="item_name"  -->
+<!--                      value="Donate to support KindSoftware"/> -->
+<!--               <input type="hidden" name="item_number" value="0001-t"/> -->
+<!--               <input type="image"  -->
+<!--                      src="http://images.paypal.com/images/lgo/logo3v.gif"  -->
+<!--                      name="submit" alt="PayPal secure donation" border="0"/> -->
+<!--             </form> -->
+<!--             <\!-- End PayPal Paybox -\-> -->
+
+            <!-- Begin Amazon Honor System Paybox -->
+            <img
+                 src="http://s1.amazon.com/exec/varzea/tipbox/A1QS9JRNRJWBMS/T27XV6BWJ6BQHL" usemap="#T27XV6BWJ6BQHL" border="0" alt="Amazon Honor System" />
+            <map name="T27XV6BWJ6BQHL">
+              <area coords="13,64,108,117"
+                    href="http://s1.amazon.com/exec/varzea/pay/T27XV6BWJ6BQHL" alt="Click Here to Pay" target="_top" />
+              <area coords="13,133,108,145"
+                    href="http://s1.amazon.com/exec/varzea/subst/fx/help/how-we-know.html" alt="Learn More" target="_top" />
+            </map>
+            <!-- End Amazon Honor System Paybox -->
+
+          </div>
+
+        </td>
+      </tr>
+      <tr>
+        <td class="footer" colspan="7" height="50">
+          <!-- footer:  spans left and right column -->
+          <!--#include virtual="/xml/footer.xml" -->
+          Last Updated: <!--#flastmod file="donate.html" -->
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+<!--
+Local Variables:
+mode: xml
+sgml-omittag:nil
+sgml-shorttag:nil
+sgml-namecase-general:nil
+sgml-general-insert-case:lower
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:2
+sgml-indent-data:t
+sgml-parent-document:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->

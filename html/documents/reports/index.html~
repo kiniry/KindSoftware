@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware</title>
+
+<link href="/stylesheets/kind.css" type="text/css" rel="stylesheet"/>
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2005 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li>
+  <!--#include virtual="/documents/xml/overview.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/mech_theory.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/news.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/proposals.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/published.xml" -->
+  </li>
+  <li id="subnavon">
+  <!--#include virtual="/documents/xml/reports.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/talks.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/tutorials.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/whitepapers.xml" -->
+  </li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>Reports (PhD Dissertations, MSc and BSc Reports)</h2>
+
+<p> Here you will find reports published by KindSoftware members. </p>
+
+<ul>
+  <li> 2012 </li>
+      <ul>
+        <li> <a href="AaesSkovvart12.pdf">Aegis Digital Voter List</a>
+            by Nikolaj Aaes and Nicolai Skovvart (BSc)</li>
+        <li> <a href="AdelhartKargov12.pdf">Mario Game Solver</a> by
+            Kim Adelhardt and Nedyalko Kargov (MSc)</li>
+        <li> <a href="AlkaersigDidriksen12.pdf">From Implementation to
+            Specification: Integrating Textual BON Into
+            EiffelStudio</a> by Sune Alk&aelig;rsig and Thomas
+            Didriksen (BSc)</li>
+        <li> <a href="Britt12.pdf">Data Structures Used in the OpenBSD
+            Kernel</a> by Adam Britt (MSc)</li>
+        <li> <a href="Engel12.pdf">From Eiffel to the Java Virtual
+            Machine: Adding a new language target to the EiffelStudio
+            compiler</a> by S&oslash;ren Engel (BSc)</li>
+        <li> <a href="Iosif-LazarBalazs12.pdf">AMOC: A Visual Studio
+            Extension for Application Modeling with Contracts</a> by
+            Alexandru F. Iosif-Lazar and Gabriel Balazs (MSc)</li>
+        <li> <a href="Jensen12.pdf">Code Generation from an Abstract
+            State Machine into Contracted C#</a> Asger Jensen
+            (MSc)</li>
+        <li> <a href="Kjaergaard12.pdf">Flatland</a> by Anders
+            H&oslash;st Kj&aelig;rgaard (BSc)</li>
+        <li> <a href="KroerSvendsen12">SAT and SMT-based Interactive
+            Configuration for Container Vessel Stowage Planning</a> by
+            Christian Kroer Martin Kj&aelig;r Svendsen (MSc)</li>
+        <li> <a href="Mitache12.pdf">Building a Product
+            Modeller/Configurator Tool</a> by Radu Mitache (MSc)</li>
+        <li> <a href="Oland12.pdf">Real-Time Polyphonic
+            Pitch-Detection for the Harpsichord</a> by Anders
+            &Oslash;land (BSc)</li>
+        <li> <a href="OlstedMa12.pdf">GALAPACOS: God Algorithm for
+            Living Artificial Physics-based Adapting Creatures with
+            Omnipotent Scalability</a> by Peter &Oslash;lsted and
+            Benjamin Ma (BSc)</li>
+        <li> <a href="SpencerMagling12.pdf">Journey Infinita: An
+            Editor with an Embedded Programming Language</a> by
+            Kristian Spencer and Michael Bo Magling (BSc)</li>
+      </ul>
+  <li> 2011 </li>
+      <ul>
+        <li> <a href="Kjolbro11.pdf"><em>Verifying the Danish Voting
+            System</em></a> by &Oacute;lavur Kj&oslash;lbro (MSc) </li>
+        <li> <em>Supporting Programming as a Reflective Activity
+            through Custom Repesentations</em> by Sieman Baader
+            (MSc)</li>
+        <li> <a href="Hansen11.pdf">MARLLr: Specification Matching for
+            Popular (widely used) Programming Languages</a> by Martin
+            Hansen (MSc)</li>
+        <li> <a href="Jinor11.pdf">Pro-active Architecture and
+            Implementation of a Secure Online Banking System that Uses
+            Fingerprint Data as Part of Client Side Digital
+            Signatures</a> by Ane Divine Jinor (MSc) </li>
+      </ul>
+  <li> 2010 </li>
+      <ul>
+        <li> <a href="Chojna10.pdf">Data Stream Processing on
+            Enterprise Integration Platforms</a> by Damian Chojna
+            (MSc) </li>
+        <li> <a href="Green10.pdf">Verified Monadic Programming</a> by
+            <a href="/about/people/rdg.html">Robin Green</a> (MSc) </li>
+        <li> <a href="Grigore10.pdf">The Design
+            and Algorithms of a Verification Condition Generator</a>
+            by <a href="/about/people/rg.html">Radu Grigore</a> (PhD)
+        </li>
+        <li> <a href="Hicks10.pdf">Tool-assisted Code Splitting for
+            GWT</a> by Alan Hicks (MSc) </li>
+        <li> <a href="Hull10.pdf">Automated Refactoring of Java
+            Contracts</a> by Iain Hull (MSc) </li>
+        <li> <a href="Hyland10.pdf">A Process for the Specification of
+            Core JDK Classes</a> by Ralph Hyland (MSc) </li>
+        <li> <a href="IraniKargov10.pdf">Verified Pong</a> by Benjamin
+            Irani and Nedyalko Kargov (MSc project) </li>
+        <li> <a href="Janota10.pdf">SAT Solving
+            in Interactive Configuration</a> by <a
+            href="/about/people/mj.html">Mikolas Janota</a> (PhD)</li>
+        <li> <a href="Morrissey10.pdf">Automatic Static Class
+            Generation from Informal BON Class Charts to Formal
+            Textual BON Notation</a> by Aidan Morrissey (MSc) </li> 
+        <li> <a href="Palmer10.pdf">SensorML on SenseTile</a> by
+            Ciaran Palmer (MSc) </li>
+        <li> <a href="Skinner10.pdf">An Integrated Development
+            Environment for Business Object Notation</a> by Ralph
+            Skinner (MSc) </li>
+        <li> <a href="Torlakcik10.pdf">Contracts in OpenBSD</a> by
+            Murat Torlakcik (MSc) </li>
+      </ul>
+  <li> 2009 </li>
+      <ul>
+        <li> <a href="Bartley09.pdf">R.E.A.L.</a> by Eliott Bartley
+        </li>
+        <li> <a href="Darulova09.pdf">Beetlz - BON Software Model
+            Consistency Checker for Eclipse</a> by Eva Darulov&aacute;
+        </li>
+        <li> <a href="Sandygulova09.pdf">SenseTile in the City:
+            Road-W&aelig;r</a> by Anara Sandygulova </li>
+      </ul>
+  <li> 2008 </li>
+      <ul>
+        <li> <a href="Barrett08.pdf">Reasoning About Java
+            Persistence</a> by Alan Barrett (MSc) </li>
+      </ul>
+  <li> 2007 </li>
+      <ul>
+        <li> <a href="Dostal07.pdf">Navigating Large Source Files
+            Using a Fisheye View</a> by Jakub Dost&aacute;l </li>
+      </ul>
+  <li> 2006 </li>
+      <ul>
+        <li> <a href="Cochran06.pdf">Secure Internet Voting in Ireland
+            Using the Open Source Kiezen op Afstand (KOA) Remote
+            Voting System</a> by <a
+            href="/about/people/dc.html">Dermot Cochran</a> (MSc)
+        </li>
+        <li> <a href="Denby06.pdf">Automatic Soundness and
+            Completeness Warnings in ESC/Java2</a> by Barry Denby
+        </li>
+        <li> <a href="Finlay06.pdf">A PVS Eclipse Plug-in</a> by
+            Robert Finlay </li>
+        <li> <a href="Hurley06.pdf">A CLR Back-end for a FLOSS
+            Eiffel</a> by Daragh Hurley </li>
+        <li> <a href="OHiggins06.pdf">Bugs in OpenBSD</a> by Niall
+            O'Higgins </li>
+      </ul>
+  <li> 2005 </li>
+      <ul>
+        <li> <a href="Fairmichael05.pdf">Full Verification of the KOA
+            Tally System</a> by Fintan Fairmichael </li>
+        <li> <a href="Gallagher05.pdf">Checking JML Specification
+            Soundness Using ESC/Java2</a> by Conor Gallagher </li>
+        <li> <a href="Hurlin05.pdf">A Verification Condition Generator
+            for ESC/Java2</a> by Cl&eacute;ment Hurlin </li>
+        <li> <a href="Morkan05.pdf">KOA Evaluation, Demonstration
+            Installation and Implementation</a> by Alan Morkan </li>
+      </ul>
+</ul>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2012 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="index.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> :: <a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

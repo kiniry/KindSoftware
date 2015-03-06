@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: KOA and VoComp</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+    <!--#include virtual="/documents/xml/proposals.xml"-->
+    <!--#include virtual="/documents/proposals/xml/case_studies.xml"--></li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>KOA and VoComp</h2>
+
+<h3>Preparing the KOA Platform for Participation in the e-Voting
+System Competition</h3>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong> Software Engineering </li>
+      
+  <li> <strong>Pre-requisites</strong> Good knowledge of Java </li>
+
+  <li> <strong>Co-requisites (things you must learn along the
+      way)</strong> Knowledge of J2EE, JDBC, web services, encryption
+      and security, JML, BON will be obtained during the course of
+      this project </li>
+
+  <li> <strong>Subject Coverage</strong> Electronic and Internet
+      Voting Systems, Application (J2EE) and Web Services, Databases,
+      Security </li>
+
+  <li> <strong>Project Type</strong> Design and Implementation </li>
+      
+  <li> <strong>Hardware/Software</strong> Machine running anything
+    but Windows </li>
+</ul>
+
+<h3>Description</h3>
+
+<p> The <a href="/products/opensource/KOA/">Kiezen op Afstand</a>
+(KOA) system is the world's first Open Source Internet Voting System.
+The KOA system was designed, developed, tested, and deployed by
+LogicaCMG, a Dutch consulting firm, under contract with the Dutch
+Government.  The KOA system was Open Sourced by the Dutch Government
+under the GPL license in July of 2004, partially due to the influence
+of my previous research group (the Security of Systems [SoS] Group at
+the University of Nijmegen).  Over the past three years, researchers
+at UCD and elsewhere have
+<a href="/documents/proposals/revive_koa.html">"revived" KOA</a>,
+<a href="/documents/proposals/koa_tally.html">validated the
+verification of the Dutch tally
+system</a>, <a href="/documents/proposals/spec_votail.html">written a
+formal specification of the Irish PR-STV voting system</a>,
+and <a href="/documents/proposals/impl_votail.html">implemented that
+specification</a>. </p>
+
+<p> As widely reported (e.g.,
+in <a
+href="http://politics.slashdot.org/article.pl?sid=07/07/24/1823211">Slashdot</a>),
+this year, the first International e-Voting Systems Competition
+<a href="http://vocomp.org/">"VoComp"</a> took place, sponsored by the
+ACM, ES&amp;S, and Hewlett-Packard.  Four systems entered the event,
+and each team came home with various prizes, ranging from $10,000 to
+laptop computers.  Next year, it is expected several more systems will
+enter the contest.  UCD wishes to enter the KOAv2 system into the
+contest, primarily emphasizing the software engineering practices used
+in the system, particularly verification. </p>
+
+<p> The purpose of this project is to prepare the existing KOA system
+for VoComp 2008.  VoComp stipulates the format of various input and
+output files, types of demonstrations, required documentation, etc.
+Thus, the core scientific and engineering tasks of this project entail
+writing new subsystems for KOAv2 to fulfill VoComp 2008's
+specifications. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+
+  <li> Gain familiarity with the BON specification language. </li>
+
+  <li> Gain familiarity with JML, basic use of ESC/Java2, and the
+      KOA system. </li>
+      
+  <li> Write BON specifications for the full KOA system. </li>
+      
+  <li> Write user documentation for the full KOA system. </li>
+
+  <li> Write new subsystem(s) necessary to fulfill VoComp 2008's
+    guidelines. </li>
+
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+
+  <li> Analyzing the system's test code coverage, CPU and memory
+      usage, load capabilities, etc. would all have great utility.  We
+      have professional tools for performing such audits. </li>
+
+  <li> Writing formal specification in JML for critical portions of
+      the KOA system would make the system more comprehensible to
+      future users, developers, code reviews, etc.  Such
+      specifications would be used to test the system for correctness
+      and security flaws using runtime assertion checking, unit test
+      generation, and extended static checking. </li>
+
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+
+  <li> Write, submit, and publish a paper on the results. </li>
+
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+
+  <li> <a href="/products/opensource/KOA/">The KOA web site</a> </li>
+
+  <li> <a href="http://www.jmlspecs.org/">The JML web site</a> </li>
+      
+  <li> <a href="/products/opensource/ESCJava2/">The ESC/Java2 web
+      site</a> </li>
+
+  <li> Read the two recent papers available via the JML web page: "An
+      overview of JML tools and applications" and "JML: notations and
+      tools supporting detailed design in Java". </li>
+      
+  <li> Read <a href="http://java.sun.com/j2ee/">introduction to J2EE
+      technologies</a>. </li>
+   
+  <li> Read about Open Source J2EE and web services like <a
+      href="http://www.jboss.org/">JBoss</a>, <a
+      href="http://jakarta.apache.org/tomcat/">Tomcat</a>, etc. </li>
+    
+  <li> Download, install, and play around with the JML tool suite and
+      ESC/Java2 to get a feel for the technology. </li>
+      
+  <li> Download, install, run, play around with the full KOA system
+      and the JML annotated vote counting software available
+      from <a href="/products/opensource/KOA/">UCD's KOA
+      web pages</a> </li>
+
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="koa_votecomp.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

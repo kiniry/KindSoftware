@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: Implementing the Irish Voting System</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+    <!--#include virtual="/documents/xml/proposals.xml"-->
+    <!--#include virtual="/documents/proposals/xml/case_studies.xml"--></li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>Implementing the Irish Voting System</h2>
+
+<p> <strong>Note:</strong> This project was
+the 2006-2007 Final Year Project
+of UCD student <a href="/about/people/">Patrick Tierney</a>. </p>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong>
+    software engineering </li>
+      
+  <li> <strong>Pre-requisites</strong>
+    strong knowledge of Java and strong programming skills </li>
+
+  <li> <strong>Co-requisites (things you must learn along the way)</strong>
+    Irish voting system and law, the Java Modeling Language, the EBON
+    specification language, the JML tool suite, ESC/Java2 </li>
+
+  <li> <strong>Subject Coverage</strong>
+    software engineering with applied formal methods </li>
+
+  <li> <strong>Project Type</strong>
+    <!-- design and implementation, applied research, basic research -->
+    system implementation using Design by Contract </li>
+      
+  <li> <strong>Hardware/Software</strong>
+    any machine and operating system that runs Java 1.4 </li>
+</ul>
+
+<h3>Description</h3>
+
+<p> Using a verification-centric software process and Design by
+  Contract, implement the Irish voting system law (knows as "votail"
+  in Irish) according to a pre-existing architecture design and formal
+  specification. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+  <li> Become familiar with the Irish voting system law. </li>
+
+  <li> Implement, using JML-annotated Java, the Irish voting system
+    according to the pre-existing architecture design and formal
+    specification. </li>
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+  <li> Write an EBON specification of the system. </li>
+  <li> Generate and execute unit tests using JML-jUnit. </li>
+  <li> Check the Mondex system implementation rigorously with
+    ESC/Java2. </li>
+  <li> Contribute this implementation to
+    the <a href="http://www.fmnet.info/vsr-net/">Verified Software
+    Repository</a>. </li>
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+  <li> Write unit tests corresponding to EBON scenarios using
+    jUnit. </li>
+  <li> Coauthor, submit, and publish a paper on this work. </li>
+  <li> Check the system implementation rigorously with
+    ESC/Java2. </li>
+  <li> Specify and prove some (behavioral and security) properties
+    about the specification. </li>
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+  <li> <a href="spec_votail.html">Specifying the Irish Voting
+      System</a> </li>
+  <li> The <a href="http://www.cev.ie/">Commission for Electronic
+      Voting</a> website </li>
+  <li> The <a href="http://www.fmnet.info/vsr-net/">Verified Software
+      Repository Project</a></li>
+  <li> The <a href="http://www.bon-method.com/">BON specification
+      language website</a> </li>
+  <li> The <a href="http://ebon.sourceforge.net/">Extended BON
+      project</a> </li>
+  <li> The <a href="/documents/whitepapers/code_standards/">KindSoftware
+      Coding Standard</a> </li>
+  <li> The <a href="http://www.jmlspecs.org/">JML tool suite</a> </li>
+  <li> The <a href="/products/opensource/ESCJava2/">Extended
+      Static Checker for Java</a>, ESC/Java2 </li>
+  <li> <a href="http://archive.eiffel.com/doc/manuals/technology/contract/">Design
+      by Contract</a> </li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="impl_votail.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

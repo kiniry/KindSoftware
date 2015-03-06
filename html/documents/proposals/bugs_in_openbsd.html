@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: Detection, Prevention and Analysis of Bugs in OpenBSD</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+   <!--#include virtual="/documents/xml/proposals.xml"-->
+   <!--#include virtual="/documents/proposals/xml/os_and_compilers.xml"-->
+  </li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>Detection, Prevention and Analysis of Bugs in OpenBSD</h2>
+
+<p> <em><strong>Note:</strong> This project was accomplished as a
+2005-2006 Final Year Project by Niall O'Higgins (<a
+href="reports/OHiggins06.pdf">report</a>).</em> </p>
+
+<hr />
+
+<h3> Summary of Niall's Work </h3>
+
+<h4> Detection, Prevention and Analysis of Bugs in OpenBSD </h4>
+<h5> Winner of IBM Open Source Software competition <br />
+     Niall O'Higgins, UCD 2006 </h5>
+
+<p> OpenBSD is widely regarded as the world's most secure operating
+system.  What is it that places it so far ahead of even commercial
+operating systems whose vendors invest millions in security?  The core
+OpenBSD philosophy is that security holes are the result of programmer
+error, that they are another class of bug.  Thus, the best way to
+avoid security holes is to write correct code.  In other words,
+security is a side-effect of software correctness. </p>
+
+<p> The OpenBSD source code has been and continues to be relentlessly
+trawled for bugs. The cause of a bug could be for example due to a
+misunderstanding of an API, an incorrect assumption on the part of the
+programmer, or a simple typo. From time to time, a bug is discovered
+which really represents a whole new class of mistake. Once such a
+class is discovered, the entire source tree is scoured for further
+instances of this error - thus one bug fix may lead to many more,
+often solving problems in other unrelated places before they are even
+noticed. </p>
+
+<p> A large number of these bugs have been located solely by human
+auditing of the source code.  While remarkably successful, there must
+exist automatic approaches to finding software bugs.  One method
+developed by the author specifically targets UNIX command-line
+applications.  Such applications can be viewed as functions which
+transform some input, typically files, standard input and command-line
+arguments, into some output, typically some files, exit codes and
+standard output.  These inputs almost always have interesting boundary
+points, for example a numeric input may be unable to handle huge
+negative numbers or a string input may be unable to handle random
+binary data.  It is possible to automatically extrapolate these
+boundary points and generate large numbers of combinations of input
+data, testing interesting runtime cases far more quickly than any
+human. </p>
+
+<p> A relatively crude proof-of-concept implementation was
+successfully employed during the course of this project, revealing
+many bugs in portions of the OpenBSD source tree.  The results showed
+that this form of automatic application testing, while imperfect, is
+nonetheless very useful in practise for examining software
+correctness. </p>
+
+<hr />
+
+<h3> Original Project Specification </h3>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+
+  <li><strong>Subject Area</strong> Software Engineering in Operating
+    Systems</li>
+  
+  <li><strong>Pre-requisite</strong> Very good knowledge of C and
+    computer architecture</li>
+
+  <li><strong>Co-requisite (things you must learn along the
+    way)</strong> Good knowledge of UNIX (generally) and OpenBSD
+    (specifically), OS-level systems programming, Databases, Web CGI
+    programming</li>
+
+  <li><strong>Subject Coverage</strong> Programming Languages,
+      Compilers, Information Systems, Static Analysis</li>
+
+  <li><strong>Project Type</strong> Analysis, design, and
+    implementation</li>
+
+  <li> <strong>Hardware/Software:</strong> Any machine running
+    OpenBSD</li>
+</ul>
+
+<h3>Description</h3>
+
+<p> <a href="http://www.openbsd.org/">OpenBSD</a> is widely regarded
+as the world's most secure operating system.  It represents the
+  combined effort of hundreds of dedicated individuals, most of whom
+work in their spare time for free, over nearly a decade. </p>
+
+<p> OpenBSD developers try very hard to write code that is correct, a
+goal which has the convenient side effects of producing code which is
+also well-designed, maintainable, clean and secure. </p>
+
+<p> The OpenBSD source code has been and continues to be relentlessly
+trawled for bugs. The cause of a bug could be for example due to a
+misunderstanding of an API, an incorrect assumption on the part of the
+programmer, or a simple typo. From time to time, a bug is discovered
+which really represents a whole new class of mistake. Once such a
+class is discovered, the entire source tree is scoured for further
+instances of this error - thus one bug fix may lead to many more,
+often solving problems in other unrelated places before they are even
+noticed. </p>
+
+<p> Finding, analysing and fixing bugs has been central to the success
+of the OpenBSD project. However, no formal database is maintained of
+the bugs encountered nor the tools and methodologies which help in the
+process of indentfying and fixing them. </p>
+
+<p> This project focuses on (a) identifying and fixing bugs in the
+OpenBSD source code (b) analysing and classifying these bugs, with
+resulting information made available in a searchable Internet database
+(c) exploring the development of software engineering tools and
+processes to aid in this endeavour. </p>
+
+<h3>Mandatory</h3>
+
+<ol>
+  <li> Evolve a structured and systematic methodology to find bugs in
+    the OpenBSD source tree. </li>
+  <li> Design and implement a flexible Internet-accessible database
+    for the storage of bug-data. </li>
+  <li> Develop a concise process for analysing and categorising
+    bugs. </li>
+  <li> Find, fix, analyse and categorise a quantity of bugs in the
+    OpenBSD source tree. </li>
+  <li> Write a paper on the results of this analysis. </li>
+</ol>
+
+<h3>Discretionary</h3>
+
+<ol>
+  <li> Propose guidlines for both the API designer, API implementor
+      and API user to avoid pitfalls in the future. </li>
+  <li> Design software tools to aid in the discovery of bug
+    instances. </li>
+</ol>
+
+<h3>Exceptional</h3>
+
+<ol>
+  <li> Implement software tools which automatically locate instances
+    of a bug class in a source tree. </li>
+</ol>
+
+<h3>Sources of information and preparatory reading</h3>
+
+<ol>
+  <li> The <a href="http://www.openbsd.org/">OpenBSD web
+      site</a> </li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="bugs_in_openbsd.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: An OpenBSD Super-Lint</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+   <!--#include virtual="/documents/xml/proposals.xml"-->
+   <!--#include virtual="/documents/proposals/xml/os_and_compilers.xml"-->
+  </li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>An OpenBSD Super-Lint</h2>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong> Software Engineering </li>
+      
+  <li> <strong>Pre-requisites</strong> Very good knowledge of C </li>
+
+  <li> <strong>Co-requisites (things you must learn along the
+    way)</strong> Good knowledge of UNIX (generally) and OpenBSD
+    (specifically), static program checking, and OS-level systems
+    programming </li>
+      
+  <li> <strong>Subject Coverage</strong> Programming Languages,
+      Compilers, Static Analysis </li>
+
+  <li> <strong>Project Type</strong> Design and Implementation </li>
+      
+  <li> <strong>Hardware</strong> Any computer running OpenBSD </li>
+</ul>
+
+<h3>Description</h3>
+
+<p> <a href="http://www.openbsd.org/">OpenBSD</a> is widely regarded
+as the world's most secure operating system.  It represents the
+combined effort of hundreds of dedicated individuals, most of whom
+work in their spare time for free, over nearly a decade. </p>
+
+<p> OpenBSD developers try very hard to write code that is
+well-designed, clean, maintainable, but above all, <em>secure</em>.  A
+number of techniques are used for such, but most of them are
+relatively <em>ad hoc</em> when compared to the kind of program
+development that that KindSoftware research group regularly
+participates in. </p>
+
+<p> One way to further improve the quality and security of OpenBSD
+code is to use various types of static analysis to reason about the
+code to (perhaps automatically) ensure that it conforms to some form
+of (perhaps lightweight, or entirely implicit) specification. </p>
+
+<p> A number of tools exist to provide this kind of functionality.
+The most rudimentary of them is called "lint" and has been around for
+nearly twenty years.  Lint statically checks C code for standard
+programming errors, but is not very "smart".  </p>
+
+<p> Other, much more advanced, static analysis tools have been
+developed over the years.  One of the most mature of these tools was
+originally called LCLint.  It has seen a number of different
+implementations, the most recent of which is called <a
+href="http://lclint.cs.virginia.edu/">Splint</a>. </p>
+
+<p> The main problem with static analysis of arbitrary C code is that
+(a) C's semantics are under-defined, and (b) aliasing and pointer
+manipulation make reasoning impossible in many situations.  This means
+that tools like Splint are necessarily incomplete, as they cannot
+reason about arbitrary C code and thus many problems in the code
+cannot be detected, and unsound, as some of the problems that these
+tools identify are not in fact errors. </p>
+
+<p> But OpenBSD C code is not arbitrary.  The OpenBSD developers have
+strict coding conventions that significantly restricts the use of C
+programming constructs.  These conventions can thus significantly
+simplify the semantic domain, thereby improving the chances of
+developing a sound and complete automated reasoning framework. </p>
+
+<p> This project focuses on (a) developing local expertise in these
+tools, (b) formalising the conventions used by OpenBSD developers, and
+(c) synthesising these two results. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+
+  <li> Gain familiarity with OpenBSD. </li>
+      
+  <li> Gain familiarity with lightweight static checkers for C like
+       the lint tool. </li>
+
+  <li> Evaluate several research static checkers for systems-level C
+      code. </li>
+
+  <li> Analyse and formalise some of the core OpenBSD development
+      methodologies that simplify the domain semantics for automated
+      reasoning. </li>
+
+  <li> Design, implement, and test a framework for static checking
+      systems-level C code in OpenBSD using a combination of existing
+      <a
+      href="http://en.wikipedia.org/wiki/Free/Libre_Open_Source_Software">FLOSS</a>
+      tools and new techniques and incorporating the results of the
+      previous step. </li>
+
+  <li> Release the framework and tools to the world under an
+      appropriate FLOSS license, hopefully so that it will be
+      incorporated into, and used by, OpenBSD. </li>
+
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+
+  <li> Analyse a single critical OpenBSD component with the new
+      tool. </li>
+
+  <li> Support framework and tool indefinitely and help kick-start
+      community for such. </li>
+      
+  <li> Coauthor, submit, and publish a paper on this work. </li>
+      
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+
+  <li> Analyse a several critical OpenBSD components with the new
+      tool. </li>
+
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+  <li> <a href="http://www.openbsd.org/">OpenBSD</a> </li>
+  <li> The <a href="http://lclint.cs.virginia.edu/faq.html">Splint FAQ</a> </li>
+  <li> <a href="http://www.testingfaqs.org/t-static.html">Static Analysis Tools</a> </li>
+  <li> Look into CodeSurfer/C and CodeSurfer/x86 </li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="superlint.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

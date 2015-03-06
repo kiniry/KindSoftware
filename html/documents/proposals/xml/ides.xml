@@ -1,0 +1,32 @@
+    <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>IDEs</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/reports/Dostal07.pdf">- Navigating Large Source Files using a Fisheye View</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Skinner10.pdf">- An IDE for BON</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Hull10.pdf">- Automatic Refactoring of Java Contracts</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Hicks10.pdf">- Tool-assisted Code-splitting for GWT</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/eiffel_ide.html">- Eiffel IDE</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/verification_facade.html">- IDE Facades</a></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- Kind Tools<!-- </a> --></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>

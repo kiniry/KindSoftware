@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: The Modex Case Study</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+    <!--#include virtual="/documents/xml/proposals.xml"-->
+    <!--#include virtual="/documents/proposals/xml/case_studies.xml"--></li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>The Mondex Case Study</h2>
+
+<ul>
+  <li><strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dermot Cochran</a></li>
+
+  <li><strong>Subject Area</strong>
+    rigorous software engineering</li>
+  
+  <li><strong>Pre-requisite</strong>
+    very good knowledge of Java, basic understanding of assertions and
+    contracts, good knowledge of logic</li>
+
+  <li><strong>Co-requisite (things you must learn along the way)</strong>
+    the Z specification language, writing specifications in JML, using the
+    JML tool suite and ESC/Java2</li>
+
+  <li><strong>Subject Coverage</strong>
+    system design and specification, applied formal methods, static
+    analysis</li>
+
+  <li><strong>Project Type</strong>
+    analysis, design, and implementation</li>
+
+  <li> <strong>Hardware/Software</strong> PC, laptop or workstation
+      capable of running Java and Eclipse </li> </ul>
+</ul>
+
+<h3>Description</h3>
+
+<p> Mondex is a smart card electronic cash system (sometimes called an
+  "electronic purse") that was originally developed by National
+  Westminster Bank and subsequently sold to MasterCard International.
+  Mondex launched in a number of markets during the 1990s, expanding
+  from an original trial in Swindon, UK to Hong Kong and New York.  It
+  was also used on several UK university campuses from the late 1990s,
+  including the University of Exeter (between 1997 and 2001),
+  University of York, University of Nottingham and Aston
+  University. </p>
+
+<p> The Mondex system is an example of a <em>critical software
+    system</em> since it is responsible for (in aggregate) large
+    sums of money.  Therefore, the Mondex system had to be certified
+    to the highest level.  Consultants and academics from the UK
+    specified and proved critical behavioral and security properties
+    about the system using a formal language called "Z"
+    (pronounced "zed").  This formal modeling and verification helped
+    Mondex achieve an ITSEC level E6 certification. </p>
+
+<p> The Mondex system has been used in 2006 as a case study in
+  comparing modern applied formal methods.  Several groups
+  around the world have reviewed, specified, and proven correct the
+  Mondex system using a wide variety of different formal languages,
+  theorem provers, and formal models. </p>
+
+<p> The goal of this project is to design, specify, develop, and test
+  a Java-based realization of the Mondex system.  The Extended BON
+  specification language will be used for high-level analysis,
+  requirements and system structure and medium-level (formal)
+  architecture design, the Java Modeling Language language will be
+  used for low-level behavioral specification, and the JML tool suite
+  and ESC/Java2 will be used to compile, document, test, and
+  statically check the implementation's functional and security
+  properties. </p>
+
+<p> The result of this project will be submitted to
+  the <a href="http://www.fmnet.info/vsr-net/">Verified Software
+  Repository</a> (under construction in the UK, but the QPQ site
+  mentioned below is the prototype) and will thus be a key case study,
+  reference, and benchmark against which future projects will be
+  compared, particularly with respect to the use of these
+  verification-centric tools, technologies, and process. </p>
+
+<p> Note that, while the Z specification is quite large and looks
+  intimidating (and took over a year to write and prove), modern teams
+  have conducted this experiment in only a couple of man-weeks of
+  work, and the Mondex architecture should only have a handful of Java
+  classes with around fifteen invariants.  I.e., Mondex is actually a
+  very small system, from a software engineering standpoint. </p>
+
+<h3>Mandatory</h3>
+
+<ol>
+  <li> Learn basic Z so as to be able to read the Mondex
+    specifications. </li>
+  <li> Review and refine knowledge of JML already gained in
+    Dr. Kiniry's Software Engineering modules. </li>
+  <li> Review and refine knowledge of the Extended BON specification
+    language already gained in Dr. Kiniry's Software Engineering
+    modules. </li>
+  <li> Learn the verification-centric software engineering process
+    (the KindSoftware Process), as specified by Dr. Kiniry. </li>
+  <li> Learn the basic use of the JML compiler, unit testing with
+    JML-jUnit, and documentation generation with jmldoc. </li>
+  <li> Specify the Mondex system in EBON </li>
+  <li> Specify the Mondex system in JML </li>
+  <li> Check the soundness of the JML specifications using
+    ESC/Java2. </li>
+  <li> Implement the Mondex system using the KindSoftware Process
+    according to the EBON specifications and JML contracts (i.e., use
+    Design by Contract). </li>
+  <li> Submit the Mondex system to
+    the <a href="http://www.fmnet.info/vsr-net/">Verified Code
+      Repository</a>. </li>
+</ol>
+
+<h3>Discretionary</h3>
+
+<ol>
+  <li> Generate and execute unit tests using JML-jUnit. </li>
+  <li> Write unit tests corresponding to EBON scenarios using
+    jUnit. </li>
+  <li> Check the Mondex system implementation rigorously with
+    ESC/Java2. </li>
+</ol>
+
+<h3>Exceptional</h3>
+
+<ol>
+  <li> Co-author a paper with Dr. Kiniry on this Mondex system
+    realization. </li>
+</ol>
+
+<h3>Sources of information and preparatory reading</h3>
+
+<ol>
+  <li> The <a href="http://qpq.csl.sri.com/vsr/private/repository/MondexCaseStudy">Mondex
+      Case Study QPQ homepage</a>.</li>
+  <li> The <a href="http://www.fmnet.info/vsr-net/">Verified Software
+      Repository Project</a></li>
+  <li> The <a href="http://en.wikipedia.org/wiki/Mondex">Mondex
+      Wikipedia entry</a>.</li>
+  <li> The <a href="http://en.wikipedia.org/wiki/Z_notation">Z
+      notation</a> for system specification and verification</li>
+  <li> The <a href="http://www.bon-method.com/">BON specification
+      language website</a> </li>
+  <li> The <a href="http://ebon.sourceforge.net/">Extended BON
+      project</a> </li>
+  <li> The <a href="/documents/whitepapers/code_standards/">KindSoftware
+      Coding Standard</a> </li>
+  <li> The <a href="http://www.jmlspecs.org/">JML tool suite</a> </li>
+  <li> The <a href="/products/opensource/ESCJava2/">Extended
+      Static Checker for Java</a>, ESC/Java2 </li>
+  <li> <a href="http://archive.eiffel.com/doc/manuals/technology/contract/">Design
+      by Contract</a> </li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="mondex.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> :: <a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

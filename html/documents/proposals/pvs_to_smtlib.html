@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: Object Logic Interpretation and Translator (PVS to SMT-LIB)</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+    <!--#include virtual="/documents/xml/proposals.xml"-->
+    <!--#include virtual="/documents/proposals/xml/verification.xml"--></li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>Object Logic Interpretation and Translator (PVS to SMT-LIB)</h2>
+
+<p> <strong>Note:</strong> Initial work on this project was
+  accomplished as a 2005 International Summer Internship by <a
+  href="/about/people/ch.html">Cl&eacute;ment Hurlin</a>.  His work is
+  now part of ESC/Java2 (<a
+  href="reports/Hurlin05.pdf">report</a>).</p>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong> Software Engineering with
+    Applied Theoretical Computer Science </li>
+      
+  <li> <strong>Pre-requisites</strong> Strong mathematical
+    background </li>
+
+  <li> <strong>Co-requisites (things you must learn along the
+    way)</strong> Knowledge of higher-order and first-order theorem
+    provers, namely PVS and SMT-LIB provers like Sammy </li>
+
+  <li> <strong>Other possible co-requisites</strong> Learning and
+    programming in Lisp or a language good at doing gross parsing and
+    translation (e.g., Ruby, Python, Perl, etc.) </li>
+      
+  <li> <strong>Subject Coverage</strong> Mathematical Specification
+    Languages, Compilers/Translators, Object Logics </li>
+
+  <li> <strong>Project Type</strong> Design and Implementation of
+    a Mathematically Sound Translator </li>
+      
+  <li> <strong>Hardware/Software</strong> Machine running anything
+    but Windows </li>
+</ul>
+
+<h3>Description</h3>
+
+<p> A <a href="object_logic.html">new object logic</a> for ESC/Java2
+has been written in PVS.  Because this logic was written in such a way
+that we intentionally avoided any higher-order constructs, we can
+translate it into a first-order form.  The SMT-LIB language is one
+such first-order format.  It is widely supported by new, powerful
+first-order provers. </p>
+
+<p> The goal of this project is to specify and write a translator from
+the PVS object logic to an SMT-LIB object logic. The translation must
+be well-specified because we wish to reason <em>about</em> the
+translation (e.g., prove that the translation preserves certain
+properties of the logic).  The translation must be automatic so
+that, as the PVS logic evolves, the SMT-LIB logic co-evolves. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+
+  <li> Learn PVS. </li>
+      
+  <li> Understand the PVS object logic. </li>
+      
+  <li> Learn SMT-LIB. </li>
+
+  <li> Understand the design of the SMT-LIB object logic sketch. </li>
+
+  <li> Specify a translation from the PVS logic to an SMT-LIB logic. </li>
+
+  <li> Design, implement, and test a translator from PVS to SMT-LIB. </li>
+
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+
+  <li> Coauthor, submit, and publish a paper on this work. </li>
+
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+
+  <li> Specify and prove some properties about the translation. </li>
+
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+  <li> <a href="object_logic.html">A New Object Logic and an SMT-LIB Backend for ESC/Java2</a></li>
+  <li> <a href="/products/opensource/ESCJava2/ESCTools/docs/Escjava2-Logics.pdf">The Logics and Calculi of ESC/Java2</a></li>
+  <li> The <a href="http://goedel.cs.uiowa.edu/smtlib/">SMT-LIB web site</a> </li>
+  <li> The <a href="http://pvs.csl.sri.com/">PVS web site</a> </li>
+
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="pvs_to_smtlib.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

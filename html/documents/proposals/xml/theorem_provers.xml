@@ -1,0 +1,28 @@
+    <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>Theorem Provers</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/eclipse_pvs_plugin.html">- A PVS Eclipse Plugin</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/eclipse_metaprl_plugin.html">- A MetaPRL Eclipse Plugin</a></li>
+          <li class="subnavon"><a href="/documents/proposals/pvs4.html">- PVS4</a></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>

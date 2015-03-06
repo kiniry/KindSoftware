@@ -1,0 +1,9 @@
+dynamic memory activity trace + localized dereference analysis to detect leaks
+
+formal specs for critical kernel and lib functions
+
+count function usage in kernel vs. userland code to find high-impact targets
+
+automatic lock identification and insertion in the kernel
+
+overflow!

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: Generation of Ballot Test Data for Vote Counting</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2011 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+    <!--#include virtual="/documents/xml/proposals.xml"-->
+    <!--#include virtual="/documents/proposals/xml/verification.xml"--></li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>Generation of Ballot Test Data for Vote Counting</h2>
+
+  <p> <em> Dermot Cochran is working on this project. </em> </p>
+  
+  <p> Recently we have developed a theory about how to identify
+  interesting test data for an arbitrary voting scheme.  This project
+  requires the application of this theory to a non-trivial voting
+  scheme of your choice, by using an automated theorem proven to find
+  examples of sets of ballots which test each interesting scenario.
+  You would need to generate the complete set of test data by the
+  method and use it to achieve full test coverage of an existing open
+  source implementation of a vote counting scheme.  You should then
+  analyze the test results and explain any discrepancies or
+  inconsistencies found in the implementation being tested.  Ideally,
+  you would release a test generation tool based on your work.  </p>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+      <a href="/about/people/dc.html">Dermot Cochran</a></li>
+      
+  <li> <strong>Subject Area</strong>
+      software engineering </li>
+      
+  <li> <strong>Pre-requisites</strong>
+      strong knowledge of Java and strong programming skills </li>
+
+  <li> <strong>Co-requisites (things you must learn along the way)</strong>
+      Voting systems and electoral law, the Java Modeling Language, the JML
+      tool suite, the Alloy modeling language and the Alloy Analyser API </li>
+
+  <li> <strong>Subject Coverage</strong>
+      software engineering with applied formal methods </li>
+
+  <li> <strong>Project Type</strong>
+      formal system design and specification </li>
+      
+  <li> <strong>Hardware/Software</strong> PC, laptop or workstation
+      capable of running Java and Eclipse </li>
+</ul>
+
+<h3>Description</h3>
+
+<p> Recently we have developed a theory about how to identify
+interesting test data for an arbitrary voting scheme.  This project
+requires the application of this theory to a non-trivial voting scheme
+of your choice, by using an automated theorem proven to find examples
+of sets of ballots which test each interesting scenario.  You would
+need to generate the complete set of test data by the method and use
+it to achieve full test coverage of an existing open source
+implementation of a vote counting scheme.  You should then analyze the
+test results and explain any discrepancies or inconsistencies found in
+the implementation being tested.</p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+  <li> Use the generated ballots to create a complete test suite for
+  an existing voting system. </li>
+  <li> Analyze the test results and explain any discrepancies or
+  inconsistencies found in the implementation being tested. </li>
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+  <li> Coauthor, submit, and publish a paper on this work. </li>
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+  <li>Release a test generation tool based on your work.</li>
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+  <li> The <a href="http://www.fmnet.info/vsr-net/">Verified Software
+      Repository Project</a></li>
+  <li> The <a href="/documents/whitepapers/code_standards/">KindSoftware
+      Coding Standard</a> </li>
+  <li> The <a href="http://www.jmlspecs.org/">JML tool suite</a> </li>
+  <li> The <a href="/products/opensource/ESCJava2/">Extended
+      Static Checker for Java</a>, ESC/Java2 </li>
+  <li> <a href="http://archive.eiffel.com/doc/manuals/technology/contract/">Design
+      by Contract</a> </li>
+  <li><a href="/documents/published/KiniryZimmerman-QSIC09.pdf">A Verification Centric Software Development Process for Java</a></li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2011 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="spec_votail.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

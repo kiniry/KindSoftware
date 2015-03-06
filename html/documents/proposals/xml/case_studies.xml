@@ -1,0 +1,37 @@
+    <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>Case Studies</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/danish_voting.html">- Specifying the Danish Voting System</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Palmer10.pdf">- SensorML on SenseTile</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Chojna10.pdf">- Data Stream Processing on Enterprise Integration Platforms</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/revive_koa.html">- KOA: A Remote Voting Experimentation Platform</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/koa_tally.html">- Full Verification of the KOA Tally System</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/spec_votail.html">- Specifying the Irish Voting System</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/impl_votail.html">- Implementing the Irish Voting System</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/new_koa.html">- New Specification the KOA Remote Voting System</a></li>
+          <li class="subnavon"><a href="/documents/proposals/mondex.html">- The Mondex Case Study</a></li>
+          <li class="subnavon"><a href="/documents/proposals/koa_votecomp.html">- Preparing KOA for VoteComp</a></li>
+          <li class="subnavon"><a href="/documents/proposals/JML_POSIX.html">- JML/POSIX filesystem</a></li>
+          <li class="subnavon"><a href="/documents/proposals/internet_voting.html">- Formal Specification of a Security Protocol for Internet Voting</a></li>
+        </ul>
+      </li>
+    </ul>

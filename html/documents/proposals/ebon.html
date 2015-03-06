@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: An EBON to JML Bicompiler</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+   <!--#include virtual="/documents/xml/proposals.xml"-->
+   <!--#include virtual="/documents/proposals/xml/prog_and_spec_langs.xml"-->
+  </li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>An EBON to JML Bicompiler</h2>
+
+<p> <em> This project is now being worked on by UCD PhD
+student <a href="/about/people/fdf.html">Fintan
+Fairmichael</a>. </em> </p>
+
+<pre>
+Supervisor        Dr Joseph Kiniry
+Subject Area 	  Software Engineering
+Pre-requisite 	  Very good knowledge of at least one OO language and
+                  good knowledge of compilers
+Co-requisite 	  Deep knowledge of Eiffel, the BON specification
+                  language, compilers, and some semantics will be
+                  obtained during the course of this project
+Subject Coverage  Eiffel, BON, Semantics of OO Programming and
+                  Specification Languages, Compiler Design and
+                  Implementation
+Project Type 	  Design &amp; Implementation
+Hardware 	  PC or workstation running nearly any mainstream OS
+
+Description
+JML is the de facto standard behavioral specification language for
+Java. BON is a high-level specification language for describing
+structured systems, including programs, web sites, databases,
+etc. BON, unlike some of its more popular counterparts like UML, has a
+total semantics, is very easy to learn and write, has a graphical and
+textual notation, and can be used for many different domains.
+
+A BON lexer and parser have been written as part of the EBON project
+at SourceForge over the past several years. This high-performance
+parser is written in Eiffel, the first language with which BON was
+used. EBON stands for "Extended BON". It is a richer specification
+language that adds a number of new constructs called "semantic
+properties". These properties are domain-specific and have rich but
+intuitive semantics.
+
+The goal of this project is to take the next steps in the development
+of the EBON architecture, namely the development of an EBON parser, a
+typechecker, and a documentation generator.
+
+Mandatory
+
+1) Learn Eiffel and BON.
+2) Build experience with the Eiffel compilers, libraries, IDEs, and
+the BON language.
+3) Learn about the semantics of OO programming and specification
+languages.
+4) Extend the BON parser to support EBON.
+5) Design and implement an EBON typechecker.
+6) Extend the EBON tool to generate XHTML documentation.
+7) Release a new version of the EBON tool suite. Fame and fortune
+follow.
+
+Discretionary
+
+1) Begin work on the design and implementation of a JML generator.
+2) Implement a graphical visualizer for the EBON language.
+3) Write, submit, and publish a paper on the results.
+
+Exceptional
+
+1) Formally specify and prove the soundness of the EBON typechecker.
+
+Sources of information and preparatory reading
+
+1) Object-Oriented Software Construction by Bertrand Meyer
+http://archive.eiffel.com/doc/oosc/ (should be available at the
+library)
+2) Eiffel: the Reference (under revision)
+http://archive.eiffel.com/nice/language/
+3) Eiffel compilers: EiffelStudio
+http://www.eiffel.com/products/studio52/ SmartEiffel
+http://smarteiffel.loria.fr/ VisualEiffel http://www.object-tools.com/
+EiffelX http://www.maceiffel.com/
+4) Seamless Object-Oriented Software Architecture---Analysis and
+Design of Reliable Systems by Kim Walden and Jean-Marc Nerson
+http://www.bon-method.com/
+5) The EBON web site http://ebon.sourceforge.net/
+6) The Gobo library http://www.gobosoft.com/
+7) The JML web site http://www.jmlspecs.org/
+</pre>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="ebon.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+    <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong>Programing and Specification Languages</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/consistency.html">- Simple Model-Implementation Consistency Testing</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/bonmodelmetrics.html">- BON Model Metrics</a></li>
+          <li class="subnavon"><a href="/documents/proposals/ebon.html">- EBON</a></li>
+          <li class="subnavon"><a href="/documents/proposals/eiffel_experiments.html">- Eiffel Language Experimentation</a></li>
+<!--           <li id="subnavon"><a href="/documents/proposals/eiffel_experiments.html">- FLOSS Eiffel Experiments</a></li> -->
+          <li class="subnavon"><em><a href="/documents/proposals/eiffel_clr_backend.html">- A CLR Backend for a FLOSS Eiffel</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/process_for_spec.html">- A Process for the Specification of Core JDK Classes</a></em></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/jml_for_jdt.html"> -->- A JML Parser for JDT<!-- </a> --></li>
+          <li class="subnavon"><em><a href="/documents/proposals/real.html">- REAL: Experiments in Programming Language Design and Implementation</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Morrissey10.pdf">- Maintaining Consistency between Natural Language Specifications and Software Architectures</a></em></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>

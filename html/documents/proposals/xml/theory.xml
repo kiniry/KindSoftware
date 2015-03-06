@@ -1,0 +1,30 @@
+    <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>Theory</strong>
+        <ul>
+          <li class="subnavon"><a href="/documents/proposals/eiffel_typesystem.html">- Eiffel Typesystem</a></li>
+          <li class="subnavon"><a href="/documents/proposals/object_logic.html">- Java Object Logics</a></li>
+          <li class="subnavon"><a href="/documents/proposals/calculus_extraction.html">- Calculus Extraction</a></li>
+          <li class="subnavon"><a href="/documents/proposals/hoare_logic.html">- Hoare Logic Survey</a></li>
+          <li class="subnavon"><!--<a href="/documents/proposals/.html">-->- A Generic HOL Object Logic<!-- </a> --></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>

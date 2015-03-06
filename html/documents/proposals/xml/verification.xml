@@ -1,0 +1,33 @@
+    <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>Verification</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/ballot_generation.html">- Generation of Ballot Test Data for Vote Counting</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/pvs_to_smtlib.html">- Object Logic Interpretation and Translator (PVS to SMT-LIB)</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/esc_warnings.html">- Automatic Soundness and Completeness Warnings in ESC/Java2</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/sound_loops.html">- Sound Loop Verification in ESC/Java2</a></li>
+          <li class="subnavon"><em><a href="/documents/proposals/spec_soundness.html">- Checking JML Specification Soundness using ESC/Java2</a></em></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/immutability.html"> -->- Observational Immutability in ESC/Java2<!-- </a> --></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/purity.html"> -->- Observational Purity for ESC/Java2<!-- </a> --></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/method_calls.html"> -->- Darvas/Muller Method Call Semantics in ESC/Java2<!-- </a> --></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>

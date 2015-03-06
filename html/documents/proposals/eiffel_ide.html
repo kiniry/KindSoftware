@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: An Eiffel IDE</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+   <!--#include virtual="/documents/xml/proposals.xml"-->
+   <!--#include virtual="/documents/proposals/xml/ides.xml"-->
+  </li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>An Eiffel IDE</h2>
+
+<p> <em><strong>Note:</strong> Some initial work on this project was done
+as a 2005 Summer Internship by <a href="/about/people/rm.html">Rory
+McCann</a> (<a href="reports/McCann05.pdf">report</a>).</em> </p>
+
+<hr />
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong> Software Engineering</li>
+      
+  <li> <strong>Pre-requisites</strong> Very good knowledge of Java</li>
+
+  <li> <strong>Co-requisites (things you must learn along the
+      way)</strong> Good knowledge of the Eclipse Platform and the
+      Visual Eiffel and SmartEiffel GNU Eiffel compilers </li>
+      
+  <li> <strong>Subject Coverage</strong> Integrated Development
+      Environments, Programming Languages, Compilers</li>
+
+  <li> <strong>Project Type</strong> Design and Implementation</li>
+      
+  <li> <strong>Hardware/Software</strong> PC, laptop or workstation
+      capable of running Java and Eclipse </li> </ul>
+</ul>
+
+<h3>Description</h3>
+
+<p> The <a href="http://www.eclipse.org/">Eclipse Platform</a> is a
+generic, plug-in based framework for developing Integrated Development
+Environments.  While Eclipse is written in Java, and is primarily used
+for Java program development, rich plugins have been written to
+support other programming languages.  In particular, the <a
+href="http://www.eclipse.org/cdt/">CDT Project</a> (C/C++ Development
+Tools) has developed a powerful IDE for writing C and C++ programs in
+the Eclipse Platform. </p>
+
+<p> The Eiffel programming language is often cited as the premier
+strongly typed object-oriented programming language.  Eiffel is easy
+to learn, has many rich programming language features like automatic
+memory management, parameterised classes with class-constraints,
+first-order methods, and much more, and shows <a
+href="http://shootout.alioth.debian.org/benchmark.php?test=all&amp;lang=all&amp;sort=fullcpu">very
+high performance</a> (the only languages regularly faster than Eiffel
+are C and OCaml).  There are also a large number of libraries
+available for writing applications in Eiffel. </p>
+
+<p> There are three main Eiffel compilers, one commercial and two
+free. </p>
+
+<p> <a href="http://www.eiffel.com/">Eiffel Software's</a> <a
+href="http://www.eiffel.com/products/studio/">EiffelStudio</a> is a
+rich commercial IDE which can be used for research and teaching, but
+is relatively expensive for commercial development. </p>
+
+<p> The <a
+href="http://en.wikipedia.org/wiki/Free/Libre_Open_Source_Software">FLOSS</a>
+alternatives are both released under the <a
+href="http://www.gnu.org/copyleft/gpl.html">GNU Public License</a>.
+They are <a href="http://www.object-tools.com/">Object Tools'</a> <a
+href="http://www.visual-eiffel.org/">Visual Eiffel</a> and
+INRIA/LORIA's <a href="http://smarteiffel.loria.fr/">SmartEiffel</a>
+compiler. </p>
+
+<p> Unfortunately, both of these systems are just "raw" compilers,
+much like gcc.  They provide high quality command-line interfaces, but
+no FLOSS graphical IDE exists today to support the Eiffel programming
+language. </p>
+
+<p> The aim of this project is to write an Eiffel plugin for the
+Eclipse Platform to support both GNU Eiffel compilers.  Thus, this
+work will entail learning the Eclipse Platform, writing a (set of)
+plugin(s) for it in Java, and interfacing with the Visual Eiffel and
+SmartEiffel compilers. </p>
+
+<p> Students interested in this project need to be very proficient in
+Java, capable of learning about and programming to large, rich APIs,
+and must be comfortable with the ideas behind plugin-centric, modular
+frameworks like Eclipse.  No familiarly with Eclipse or Eiffel is
+necessary, but experience with either is a plus. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+
+  <li> Gain familiarity with the Eclipse Platform, particularly
+      writing plugins for such. </li>
+      
+  <li> Gain familiarity with the I/O interface of the Visual Eiffel
+      and SmartEiffel compilers. </li>
+      
+  <li> Design, implement, and test an Eiffel plugin for the Eclipse
+      Platform supporting the SmartEiffel compiler. </li>
+
+  <li> Release the plugin to the world under an appropriate FLOSS
+      license. </li>
+
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+
+  <li> Design, implement, and test an Eiffel plugin for the Eclipse
+      Platform supporting the Visual Eiffel compiler. </li>
+
+  <li> Design, implement, and test a generic Eiffel compiler plugin
+      for the Eclipse Platform that supports arbitrary Eiffel
+      compilers. </li>
+
+  <li> Support plugin indefinitely and help kickstart community for
+      such. </li>
+      
+  <li> Coauthor, submit, and publish a paper on this work. </li>
+      
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+
+  <li> Modify the Visual Eiffel and SmartEiffel compilers (and related
+      tools) to accomodate their use as plugins more readily. </li>
+
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+  <li> <a href="http://www.eclipse.org/">Eclipse Platform</a> </li>
+  <li> <a href="http://www.visual-eiffel.org/">Visual Eiffel</a> </li>
+  <li> <a href="http://smarteiffel.loria.fr/">SmartEiffel</a> </li>
+  <li> <a href="http://en.wikipedia.org/wiki/Eiffel_programming_language">Eiffel programming language</a> </li>
+<li> The draft <a href="http://www.inf.ethz.ch/personal/meyer/publications/ecma/eiffel-standard-2005.pdf">ECMA Eiffel Standard</a></li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="eiffel_ide.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

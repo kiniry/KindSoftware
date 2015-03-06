@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: A JML/POSIX Filesystem</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
+  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
+  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+  <li id="subnavon">
+    <!--#include virtual="/documents/xml/proposals.xml"-->
+    <!--#include virtual="/documents/proposals/xml/case_studies.xml"--></li>
+  <li><!--#include virtual="/documents/xml/published.xml"--></li>
+  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
+  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
+  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
+  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>A JML/POSIX Filesystem</h2>
+<h3>Participating in the Second Grand Challenge 6 Pilot Project: A Formally Verified Filesystem</h3>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong> Software Engineering </li>
+      
+  <li> <strong>Pre-requisites</strong> Good knowledge of Java and
+    basic knowledge of filesystems </li>
+
+  <li> <strong>Co-requisites (things you must learn along the
+      way)</strong> Strong knowledge of POSIX filesystems, JML, and
+      BON will be obtained during the course of this project </li>
+
+  <li> <strong>Subject Coverage</strong> Software Engineering for
+  Reliable Systems, File Systems </li>
+
+  <li> <strong>Project Type</strong> Design and Implementation </li>
+      
+  <li> <strong>Hardware/Software</strong> PC, laptop or workstation
+      capable of running Java and Eclipse </li> </ul>
+
+<h3>Description</h3>
+
+<p> <em> Some of this text is taken directly from the
+York <a href="http://www.cs.york.ac.uk/circus/mc/abz/">ABZ</a>
+conference web pages. </em> Please see that site for more
+information. </p>
+
+<p> The first VSR pilot project experiment took place during 2006.
+This project involved the successful mechanization of the verification
+of a commercially sanitized version of the first project to meet the
+high-assurance standard, ITSEC Level 6:
+the <a href="/documents/proposals/mondex.html">Mondex</a> smart-card
+banking application.  The original formal specification and design are
+publicly available, and the mechanization was accomplished by over a
+half dozen groups using different theories and tools.  Their work is
+being recorded in a special issue of the Formal Aspects of Computing
+Journal. </p>
+
+<p> In the first conference on Verified Software: Theories, Tools, and
+Experiments, held in Zurich in 2005, Joshi and Holzmann suggested a
+new pilot project for the grand challenge: the specification and
+verification of the POSIX file-store interface of Unix.  This project 
+involves a small subset of POSIX (which is detailed below) suitable
+for flash-memory hardware with strict fault-tolerant requirements to
+be used by forthcoming NASA's Jet Propulsion Laboratory
+missions. </p>
+
+<p> The purpose of this project is to specify, implement, and verify a
+small part of the POSIX file-store interface in JML and Java.
+Previous work at York has specified the core aspects of this system in
+the Z specification language and in JML (primarily as a HashMap).
+This project will build upon that excellent work and we will
+collaborate with York on the results. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+
+  <li> Gain familiarity with the BON specification language. </li>
+
+  <li> Gain familiarity with JML, basic use of ESC/Java2, and the
+      KOA system. </li>
+      
+  <li> Write BON specifications for the full POSIX filesystem, as
+    stipulated by the pilot project's requirements. </li>
+      
+  <li> Write JML specifications for one facet of the POSIX filesystem
+    pilot project (to be determined based upon student interest and
+    skills, timing, etc.). </li>
+
+  <li> Implement said facet using standard tools and practices of
+    KindSoftware research group. </li>
+
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+
+  <li> Enter system design and specification into GC6 pilot project
+    and submit to
+    the <a href="http://www.fmnet.info/vsr-net/">Verified Software
+    Repository</a>. </li>
+
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+
+  <li> Write, submit, and publish a paper on the results. </li>
+
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+
+  <li> <a href="http://www.cs.york.ac.uk/circus/mc/abz/">The ABZ POSIX
+      file-store web site</a> </li>
+
+  <li> "A mini challenge: Build a verifiable filesystem" by R. Joshi
+    and G. J. Holzmann.  Published in FACS, volume 19, number 2, June
+    2007, and available
+    via <a
+    href="http://www.springerlink.com/content/4462w258rtp8330p/fulltext.pdf">SpringerLink</a>
+    via UCD Library web site. </li>
+
+  <li> <a href="http://www.jmlspecs.org/">The JML web site</a> </li>
+      
+  <li> <a href="/products/opensource/ESCJava2/">The ESC/Java2 web
+      site</a> </li>
+
+  <li> Read the two recent papers available via the JML web page: "An
+      overview of JML tools and applications" and "JML: notations and
+      tools supporting detailed design in Java". </li>
+      
+  <li> Download, install, and play around with the JML tool suite and
+      ESC/Java2 to get a feel for the technology. </li>
+      
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="JML_POSIX.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

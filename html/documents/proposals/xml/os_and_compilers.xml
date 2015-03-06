@@ -1,0 +1,33 @@
+    <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>Operating Systems and Compilers</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/contracts_in_openbsd.html">- Contracts in OpenBSD</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/datastructs_in_openbsd.html">- Data Structures in OpenBSD</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/bugs_in_openbsd.html">- Bugs in OpenBSD</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/superlint.html">- OpenBSD Super-Lint</a></li>
+          <li class="subnavon"><a href="/documents/proposals/kernel_locks.html">- Automatic Derivation of Kernel Locks for OpenBSD</a></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- Memory Leak Analysis in OpenBSD<!-- </a> --></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- OCaml in OpenBSD<!-- </a> --></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- Cil Evaluation<!-- </a> --></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>

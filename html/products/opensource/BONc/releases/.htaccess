@@ -1,0 +1,44 @@
+HeaderName header.html
+ReadmeName footer.html
+
+IndexOptions +FancyIndexing +FoldersFirst +IconsAreLinks +SuppressHTMLPreamble +SuppressLastModified +XHTML +HTMLTable
+
+IndexIgnore header.html footer.html 
+
+IndexOrderDefault Descending Size
+
+AddAlt "BONc Release Package" *.tar *.tar.gz *.tar.bz2 *.zip
+AddDescription "Release Package" *.tar *.tar.gz *.tar.bz *.zip
+AddAlt "BONc Debian Release Package" *.deb
+AddDescription "Debian Release Package" *.deb
+
+AddAlt "Frequently Asked Questions" FAQ.txt
+AddDescription "Frequently Asked Questions" FAQ.txt
+
+AddAlt "Installation Instructions" INSTALLATION.txt
+AddDescription "Installation Instructions" INSTALLATION.txt
+
+AddAlt "BONc Licence Information" LICENCE.txt
+AddDescription "BONc Licence Information" LICENCE.txt
+
+AddAlt "Release Notes" RELEASE_NOTES.txt
+AddDescription "Release Notes" RELEASE_NOTES.txt
+
+AddAlt "Readme file" README.txt
+AddDescription "Readme file" README.txt
+
+AddAlt "Update script" update
+AddDescription "Update script" update
+
+AddAlt "Release version number" version
+AddDescription "Release version number" version
+
+AddType text/plain version
+AddType text/plain update
+AddType text/plain changelog
+
+AddIcon /products/opensource/BONc/icons/files_text.png *.txt version update changelog
+AddIconByType /products/opensource/BONc/icons/files_text.png text/plain
+AddIcon /products/opensource/BONc/icons/app_download.png *.deb *.tar* *.zip 
+AddIcon /products/opensource/BONc/icons/folder_yellow.png ^^DIRECTORY^^
+AddIcon /products/opensource/BONc/icons/folder_downloads.png ..

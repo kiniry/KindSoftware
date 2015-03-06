@@ -1,0 +1,24 @@
+HeaderName header.html
+ReadmeName footer.html
+
+IndexOptions +FancyIndexing +FoldersFirst +IconsAreLinks +SuppressHTMLPreamble +SuppressLastModified +XHTML
+
+IndexIgnore header.html footer.html 
+
+IndexOrderDefault Descending Size
+
+AddAlt "Connector system HTML output" connector.html
+AddDescription "Connector system HTML output" connector.html
+
+AddAlt "Monitoring system HTML output" monitoring.html
+AddDescription "Monitoring system HTML output" monitoring.html
+
+AddAlt "Citizen example (from book) HTML output" classchart.html
+AddDescription "Citizen example (from book) HTML output" classchart.html
+
+AddIcon /products/opensource/BONc/icons/files_text.png *.txt version update changelog
+AddIconByType /products/opensource/BONc/icons/files_text.png text/plain
+AddIcon /products/opensource/BONc/icons/app_download.png *.deb *.tar* *.zip 
+AddIcon /products/opensource/BONc/icons/folder_yellow.png ^^DIRECTORY^^
+AddIcon /products/opensource/BONc/icons/folder_downloads.png ..
+AddIcon /products/opensource/BONc/icons/web_file.png *.html

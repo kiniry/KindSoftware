@@ -1,0 +1,1539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+
+<title>BON Documentation: MONITORING_SYSTEM</title>
+
+<script type="text/javascript">
+<!--
+
+var items = ['system_chart:MONITORING_SYSTEM','class_chart:ASSERTION','class_chart:MESSAGE','class_chart:CHECKER','class_chart:LEVEL','class_chart:EVENT','class_chart:LOG','class_chart:STATISTIC','class_chart:TUNER','class_chart:TYPE','class_chart:LOGGER','class_chart:COLLECTOR','cluster_chart:PROCESSING','cluster_chart:EVENTS','event_chart:1','event_chart:2','creation_chart:1','scenario_chart:1','class_dictionary:1'];
+var topOptions = [ 'System Chart', 'system_chart', 'Class Dictionaries', 'class_dictionary', 'Cluster Charts', 'cluster_chart', 'Class Charts', 'class_chart', 'Event Charts', 'event_chart', 'Scenario Charts', 'scenario_chart', 'Creation Charts', 'creation_chart' ];
+var subOptions = [];
+subOptions['system_chart'] = [ 'MONITORING_SYSTEM', 'system_chart:MONITORING_SYSTEM' ];
+subOptions['cluster_chart'] = [ 'EVENTS','cluster_chart:EVENTS','PROCESSING','cluster_chart:PROCESSING' ];
+subOptions['class_chart'] = [ 'ASSERTION','class_chart:ASSERTION','CHECKER','class_chart:CHECKER','COLLECTOR','class_chart:COLLECTOR','EVENT','class_chart:EVENT','LEVEL','class_chart:LEVEL','LOG','class_chart:LOG','LOGGER','class_chart:LOGGER','MESSAGE','class_chart:MESSAGE','STATISTIC','class_chart:STATISTIC','TUNER','class_chart:TUNER','TYPE','class_chart:TYPE' ];
+subOptions['event_chart'] = [ 'Event Chart 1','event_chart:1','Event Chart 2','event_chart:2' ];
+subOptions['creation_chart'] = [ 'Creation Chart 1','creation_chart:1' ];
+subOptions['scenario_chart'] = [ 'Scenario Chart 1','scenario_chart:1' ];
+subOptions['class_dictionary'] = [ 'Class Dictionary 1','class_dictionary:1' ];
+
+
+var showAll = false;
+var sysTitle = 'system_title';
+var topMenu = 'top-menu';
+var subMenu = 'sub-menu';
+
+function setElText(id,text) {
+  var elem = document.getElementById(id);
+  if (elem) {
+    elem.innerHTML = text;
+  }
+}
+
+function toggleShowAll() {
+  showAll = !showAll;
+  if (showAll) {
+    displayAll();
+    setElText('showlink', 'Show One');
+  } else {
+    hideAll();
+    setElText('showlink', 'Show All');
+  }
+  showSelected();
+  return false;
+}
+
+function select(id) {
+  if (showAll) {
+//    setHash(id);
+    return true;
+  } else {
+    showOnly(id);
+    return true;
+  }
+}
+
+function showOnly(id) {
+  var elem = document.getElementById(id);
+  if (elem) {
+    hideAll();
+    showElem(id);
+  }
+}
+
+function hideAll() {
+  for (var i=0; i<items.length; i++) {
+    hideElem(items[i]);
+  }
+}
+
+function displayAll() {
+  for (var i=0; i<items.length; i++) {
+    showElem(items[i]);
+  }
+}
+
+function showElem(id) {
+  var elem = document.getElementById(id);
+  if (elem) {
+    show(elem);
+  }
+}
+
+function hideElem(id) {
+  var elem = document.getElementById(id);
+  if (elem) {
+    hide(elem);
+  }
+}
+
+function hide(elem) {
+  addClass(elem,'hidden');
+}
+
+function show(elem) {
+  removeClass(elem,'hidden');
+}
+
+function addClass(elem,cName) {
+  if (!elem.className) {
+    elem.className = cName;
+  } else if (elem.className.indexOf(cName) == -1) {
+    elem.className += ' ' + cName;
+  }
+}
+
+function removeClass(elem,cName) {
+  if (elem.className) {
+    var toReplace = elem.className.match(' ' + cName);
+    elem.className = elem.className.replace(toReplace, '');
+  }
+}
+
+function setBack(id) {
+//Not yet...
+}
+
+function initialPopulate() {
+  var topSelect = document.getElementById(topMenu);
+  if (topSelect) {
+    topSelect.options.length = 0;
+    for (var i=0; i < topOptions.length; i+=2) {
+      topSelect.options[i/2] = new Option(topOptions[i],topOptions[i+1]);
+    }
+  }
+  if (window.location.hash) {
+    hashSelect(window.location.hash.substr(1));    
+  } else {
+    populate();
+    showSelected();
+  }
+  lastHash = window.location.hash;
+  //Trigger checkHash
+  setInterval(checkHash,100);
+}
+
+function hashSelect(hash) {
+  var parts = hash.split(':');
+  if (parts.length == 2) {
+    linkSelect(parts[0],hash);
+  } else {
+    populate();
+  }
+}
+
+var lastHash = '';
+
+function checkHash() {
+
+  if (window.location.hash) {
+    if (window.location.hash != lastHash) {
+      hashSelect(window.location.hash.substr(1));
+      lastHash = window.location.hash;
+    }
+  }
+}
+
+function setHash(hash) {
+  lastHash = '#' + hash;
+  window.location.hash = hash;
+}
+
+function populate() {
+
+  var subSelect = document.getElementById(subMenu);
+  var topSelect = document.getElementById(topMenu);
+
+  if (subSelect && topSelect) {
+    var selected = topSelect.options[topSelect.selectedIndex].value;
+    if (selected) {
+      var chosenSubOptions = subOptions[selected];
+      subSelect.options.length = 0;
+      for (var i=0; i < chosenSubOptions.length; i+=2) {
+        subSelect.options[i/2] = new Option(chosenSubOptions[i],chosenSubOptions[i+1]);
+      }
+    }
+  }
+}
+
+function showSelected() {
+  var subSelect = document.getElementById(subMenu);
+  if (subSelect) {
+    var selected = subSelect.options[subSelect.selectedIndex].value;
+    if (selected) {
+      select(selected);
+      setHash(selected);
+    }
+  }
+}
+
+function linkSelect(top, sub) {
+  var topSelect = document.getElementById(topMenu);
+  if (topSelect) {
+    for (var i=0; i < topSelect.options.length; i++) {
+      if (topSelect.options[i].value == top) {
+        topSelect.selectedIndex = i;
+        break;
+      }
+    }
+  }  
+  populate();
+  var subSelect = document.getElementById(subMenu);
+  if (subSelect) {
+    for (var i=0; i < subSelect.options.length; i++) {
+      if (subSelect.options[i].value == sub) {
+        subSelect.selectedIndex = i;
+        showSelected();
+        return false;
+      }
+    }
+    showSelected();
+  }
+  return true;
+}
+
+
+//-->
+</script>
+
+<style type="text/css">
+
+.hidden {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+body {
+  font-family: Optima, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+}
+
+.list-entry {
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+#main {
+  padding-bottom: 100px;
+}
+
+#footer {
+  z-index: 1;
+  position: fixed; 
+  bottom: 0px;
+  right: 0px; 
+  width: 100%;
+  border-top: 2px solid #000000;
+  background-color: #cccccc;
+}
+
+#left-footer {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+#left-footer select {
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+#showlink {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  min-width: 125px;
+}
+
+#top-menu {
+  min-width: 160px;
+}
+
+#sub-menu {
+  min-width: 220px;
+}
+
+#right-footer {
+  margin: 5px 5px 0px 0px;
+  padding: 0;
+  text-align: right;
+}
+
+#footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+dl {
+  margin: 0 0 0 10px;
+}
+
+dd {
+  margin-left: 20px;
+} 
+
+.scenario_entry dt {
+  font-weight: bold;
+}
+
+.indexing dt, .explanation dt {
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.top-level {
+  width: 98%;
+  margin: auto;
+}
+
+.outer {
+  width: 100%;
+  background-color: #a2a2a2;
+  border: 2px solid #000000;
+  margin-bottom: 30px;
+}
+
+.type, .name, .part {
+  border: 4px groove #c0c0c0;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+.explanation, .indexing {
+  padding: 5px 5px 5px 10px;
+  background-color: #ffffff;
+  vertical-align: top;
+  border: 4px groove #c0c0c0;
+  padding: 5px 0px 5px 0px;
+}
+
+.name {
+  background-color: #f3f0f0;
+  font-size: 1.1em;
+}
+
+.part {
+  background-color: #cccccc;
+}
+
+.type, .part {
+  width: 25%;
+}
+
+.type {
+  background-color: #bcbcbc;
+}
+
+.name, .indexing, .explanation {
+  width: 50%;
+}
+
+.top, .middle, .bottom {
+  width: 100%;
+}
+
+.bottom table {
+  border: 4px groove #c0c0c0;
+  width: 100%;
+}
+
+.bottom tr {
+  width: 100%;
+}
+
+.bottom td, .bottom th {
+  border: 1px inset #c0c0c0;
+  vertical-align: top;
+  padding: 8px 20px 8px 20px;
+}
+
+.spaced-lines {
+  line-height: 1.5em;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.light-grey {
+  background-color: #f3f0f0;
+}
+
+.grey {
+  background-color: #cccccc;
+}
+</style>
+
+</head>
+<body onload="initialPopulate();">
+
+<div id="main">
+
+<div class="top-level" id="system_chart:MONITORING_SYSTEM">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">SYSTEM</th>
+      <td class="name" colspan="2">MONITORING_SYSTEM</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;This system facilitates the collection, archival, and reporting of system statistics within the system framework. Additionally, it can be leveraged by applications built on top of the system, or any other extension of the framework.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;statistics&#8221;, &#8220;performance&#8221;, &#8220;monitoring&#8221;, &#8220;report&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">Cluster</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:EVENTS" onclick="return linkSelect('cluster_chart','cluster_chart:EVENTS');">EVENTS</a></td>
+            <td class="white">&#8220;Facilities for registering an interest in and recording important events (errors, warnings, or just informational) that occur during the operation of the system/framework or overlying applications.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a></td>
+            <td class="white">&#8220;Facilities for processing and recording events.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:EVENTS">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">EVENTS</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Events are the notion of generic important information that need be reported or recorded. This cluster collects all the different kinds of events that are used in the system.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;events&#8221;, &#8220;messages&#8221;, &#8220;statistics&#8221;, &#8220;assertions&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:ASSERTION" onclick="return linkSelect('class_chart','class_chart:ASSERTION');">ASSERTION</a></td>
+            <td class="white">&#8220;Represents a single type of important predicate that the system should validate. Assertion failures result in everything from messages or statistics being logged to system failure.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:EVENT" onclick="return linkSelect('class_chart','class_chart:EVENT');">EVENT</a></td>
+            <td class="white">&#8220;Represents a single event to be recorded (or that has been recorded) in the event-log. The event includes a source, description, importance, and time, among other things.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></td>
+            <td class="white">&#8220;Represents the importance level of a particular event.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LOG" onclick="return linkSelect('class_chart','class_chart:LOG');">LOG</a></td>
+            <td class="white">&#8220;Manages the storage and retrieval of events that are reported by various parts of the system framework and/or the application built on top of it.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:MESSAGE" onclick="return linkSelect('class_chart','class_chart:MESSAGE');">MESSAGE</a></td>
+            <td class="white">&#8220;Represents a single textual message that needs to be displayed or recorded.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:STATISTIC" onclick="return linkSelect('class_chart','class_chart:STATISTIC');">STATISTIC</a></td>
+            <td class="white">&#8220;This class represents a statistic that can be monitored in the monitoring system. Each statistic has its own unique ID (node-unique, not necessarily globally unique), a description, units, and other useful information that is represented in this class.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></td>
+            <td class="white">&#8220;Represents the type of a particular event. The set of core event types each have such a name and a description.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:PROCESSING">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">PROCESSING</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Facilities for recording statistics (performance, counters, etc.) on the various operations being performed within the system/framework or overlying applications.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;statistics&#8221;, &#8220;performance&#8221;, &#8220;monitoring&#8221;, &#8220;counters&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHECKER" onclick="return linkSelect('class_chart','class_chart:CHECKER');">CHECKER</a></td>
+            <td class="white">&#8220;Checks the state of the system for validity against particular assertions.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:COLLECTOR" onclick="return linkSelect('class_chart','class_chart:COLLECTOR');">COLLECTOR</a></td>
+            <td class="white">&#8220;Performs the collection of particular statistics during the operation of a program.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LOGGER" onclick="return linkSelect('class_chart','class_chart:LOGGER');">LOGGER</a></td>
+            <td class="white">&#8220;Logs particular messages during the operation of a program.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:TUNER" onclick="return linkSelect('class_chart','class_chart:TUNER');">TUNER</a></td>
+            <td class="white">&#8220;'Tune' the monitoring system to collect different information.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:ASSERTION">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">ASSERTION</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Represents a single type of important predicate that the system should validate. Assertion failures result in everything from messages or statistics being logged to system failure.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;EVENTS&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:EVENT">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">EVENT</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Represents a single important event of any kind. The event includes a source, description, importance, and time, among other things.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;EVENTS&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-06 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is the source system of this event?&#8221;<br/>&#8220;What is the source component of this event?&#8221;<br/>&#8220;What type of event is this?&#8221;<br/>&#8220;When was this event generated?&#8221;<br/>&#8220;What is the description of this event?&#8221;<br/>&#8220;How important is this event?&#8221;<br/>&#8220;What is a printable representation of this event?&#8221;<br/>&#8220;Is this event equal to another one?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Create a new event with the following specification.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;All fields of event are set only once, at construction time.&#8221;<br/>&#8220;All fields of event must be specified; none may be left blank.&#8221;<br/>&#8220;Two events are considered to be identical if all fields of both events have identical values.&#8221;<br/>&#8220;Events cannot be cloned.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:LEVEL">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">LEVEL</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Represents the importance level of a particular event.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;EVENTS&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-09-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is the level set to?&#8221;<br/>&#8220;What is the minimum/maximum level?&#8221;<br/>&#8220;How does this level compare with another?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Set the level to a value.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;Levels have upper and lower bounds, thus all level assignments must be bounded appropriately.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:LOG">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">LOG</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Manages the storage and retrieval of events that are reported by various parts of the system framework and/or the application built on top of it.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;EVENTS&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;Which events meet a specified criteria?&#8221;<br/>&#8220;What is the list of all event sources?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Create event.&#8221;<br/>&#8220;Store event.&#8221;<br/>&#8220;Delete event.&#8221;<br/>&#8220;Clear event log.&#8221;<br/>&#8220;Delete events meeting specified criteria.&#8221;<br/>&#8220;Export event log to a file.&#8221;<br/>&#8220;Import event log from a file.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;No event appears twice in a given event log; each event must be unique.&#8221;<br/>&#8220;The event-log must be able to import a log-file exported by any event-log.&#8221;<br/>&#8220;The event-log must be able to export a log-file that can be imported by any event-log.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:MESSAGE">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">MESSAGE</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Represents a single textual message that needs to be displayed or recorded.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;EVENTS&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What textual message does this message contain?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Set textual message.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;Textual message must be valid.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:STATISTIC">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">STATISTIC</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;This class represents a statistic that can be monitored in the monitoring system. Each statistic has its own unique ID (node-unique, not necessarily globally unique), a description, units, and other useful information that is represented in this class.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;EVENTS&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-06 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is the unique ID of this statistic?&#8221;<br/>&#8220;What are its units?&#8221;<br/>&#8220;What is its default scaling factor?&#8221;<br/>&#8220;What is its default start value?&#8221;<br/>&#8220;What is its default increment?&#8221;<br/>&#8220;What is its default decrement?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Create a new statistic by specifying its units, scaling factor, default start value, default increment and default decrement.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;Unique ID must be unique across all statistics on a node.&#8221;<br/>&#8220;All static properties must be specified at, and cannot be changed after, construction time.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:TYPE">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">TYPE</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Represents the type of a particular event. The set of core event types each have such a name and a description.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;EVENTS&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is this types current value?&#8221;<br/>&#8220;Is this type equivalent to another one?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Set the value of this type.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;Types must have some legal value.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:CHECKER">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">CHECKER</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Checks the state of the system for validity against particular assertions.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;PROCESSING&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;Is specified assertion valid?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Make an assertion.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:COLLECTOR">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">COLLECTOR</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Performs the collection of particular statistics during the operation of a program. Individual statistics can be registered for collection, and may be activated or deactivated. The collector can cache statistic collection in memory, and can also write statistics and logging information to a long-term storage device for subsequent analysis.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;PROCESSING&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is the current value for specific statistic?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Report on a particular statistic.&#8221;<br/>&#8220;Report on all statistics.&#8221;<br/>&#8220;Increment a statistic by a specified value.&#8221;<br/>&#8220;Increment a statistic by the default value.&#8221;<br/>&#8220;Decrement a statistic by a specified value.&#8221;<br/>&#8220;Decrement a statistic by the default value.&#8221;<br/>&#8220;Reset a statistic to the default start value.&#8221;<br/>&#8220;Set a statistic to a specific value.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;A newly registered statistic is deactivated by default.&#8221;<br/>&#8220;No two statistics can be registered with the same unique ID.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:LOGGER">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">LOGGER</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Performs the collection of particular statistics during the operation of a program. Individual statistics can be registered for collection, and may be activated or deactivated. The collector can cache statistic collection in memory, and can also write statistics and logging information to a long-term storage device for subsequent analysis.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;PROCESSING&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is the complete current log?&#8221;<br/>&#8220;What was the last message logged?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Clear the log.&#8221;<br/>&#8220;Save the log.&#8221;<br/>&#8220;Close the log.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:TUNER">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">TUNER</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;'Tune' the monitoring system to collect specific types and levels of system statistics, messages, and assertions.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;PROCESSING&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;Is a certain level enabled/disabled?&#8221;<br/>&#8220;Is a certain type enabled/disabled?&#8221;<br/>&#8220;What types are currently registered?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Turn on/off assertions of a particular type.&#8221;<br/>&#8220;Turn on/off assertions above/below a particular level.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;Levels have a specified range.&#8221;<br/>&#8220;All level assignments must be within the specified range.&#8221;<br/>&#8220;Event types must be well-defined strings.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="event_chart:1">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">EVENT</th>
+      <td class="name" colspan="2"><a href="#system_chart:MONITORING_SYSTEM" onclick="return linkSelect('system_chart','system_chart:MONITORING_SYSTEM');">MONITORING_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 1/2</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;Selected internal events triggering system responses leaving the system.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">Internal (outgoing)</th>
+            <th class="grey">Involved object types</th>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Does the current context warrent evaluating a particular event?&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:EVENT" onclick="return linkSelect('class_chart','class_chart:EVENT');">EVENT</a></span>, <span class="list-entry">(<a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Store a statistic.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:STATISTIC" onclick="return linkSelect('class_chart','class_chart:STATISTIC');">STATISTIC</a></span>, <span class="list-entry"><a href="#class_chart:COLLECTOR" onclick="return linkSelect('class_chart','class_chart:COLLECTOR');">COLLECTOR</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Log a message.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MESSAGE" onclick="return linkSelect('class_chart','class_chart:MESSAGE');">MESSAGE</a></span>, <span class="list-entry"><a href="#class_chart:LOGGER" onclick="return linkSelect('class_chart','class_chart:LOGGER');">LOGGER</a></span>, <span class="list-entry"><a href="#class_chart:LOG" onclick="return linkSelect('class_chart','class_chart:LOG');">LOG</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Evaluate an assertion.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:ASSERTION" onclick="return linkSelect('class_chart','class_chart:ASSERTION');">ASSERTION</a></span>, <span class="list-entry"><a href="#class_chart:CHECKER" onclick="return linkSelect('class_chart','class_chart:CHECKER');">CHECKER</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Startup system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry">(<a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Shutdown system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry">(<a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a>)</span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="event_chart:2">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">EVENT</th>
+      <td class="name" colspan="2"><a href="#system_chart:MONITORING_SYSTEM" onclick="return linkSelect('system_chart','system_chart:MONITORING_SYSTEM');">MONITORING_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 2/2</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;Selected external events triggering representative types of behavior.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-19 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">External (incoming)</th>
+            <th class="grey">Involved object types</th>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Initialize monitoring system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry">(<a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Shut down monitoring system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry">(<a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Tune the monitoring systems behavior.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry">(<a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Query the state of the monitoring system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry">(<a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Send a statistic to the monitoring system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:STATISTIC" onclick="return linkSelect('class_chart','class_chart:STATISTIC');">STATISTIC</a></span>, <span class="list-entry"><a href="#class_chart:COLLECTOR" onclick="return linkSelect('class_chart','class_chart:COLLECTOR');">COLLECTOR</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Make an assertion on the system state.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:ASSERTION" onclick="return linkSelect('class_chart','class_chart:ASSERTION');">ASSERTION</a></span>, <span class="list-entry"><a href="#class_chart:CHECKER" onclick="return linkSelect('class_chart','class_chart:CHECKER');">CHECKER</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Send a message to the monitoring system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MESSAGE" onclick="return linkSelect('class_chart','class_chart:MESSAGE');">MESSAGE</a></span>, <span class="list-entry"><a href="#class_chart:LOGGER" onclick="return linkSelect('class_chart','class_chart:LOGGER');">LOGGER</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Ask for the current log or last message.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:LOGGER" onclick="return linkSelect('class_chart','class_chart:LOGGER');">LOGGER</a></span>, <span class="list-entry"><a href="#class_chart:LOG" onclick="return linkSelect('class_chart','class_chart:LOG');">LOG</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Ask for the report on a particular statistic or all statistics in the system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:COLLECTOR" onclick="return linkSelect('class_chart','class_chart:COLLECTOR');">COLLECTOR</a></span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="scenario_chart:1">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">SCENARIOS</th>
+      <td class="name" colspan="2"><a href="#system_chart:MONITORING_SYSTEM" onclick="return linkSelect('system_chart','system_chart:MONITORING_SYSTEM');">MONITORING_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;A set of representative scenarios that describe the important types of behaviour of the monitoring system.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-11 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Turn on/off monitoring.</dt>
+                <dd>&#8220;Turn on/off system monitoring.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Turn on/off logging.</dt>
+                <dd>&#8220;Turn on/off system logging.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Turn on/off debugging.</dt>
+                <dd>&#8220;Turn on/off system debugging.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Tune monitoring, logging, and/or debugging.</dt>
+                <dd>&#8220;Tune the monitoring system so that specific kinds of monitoring, logging, and debugging are enabled disabled.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Log a monitoring event.</dt>
+                <dd>&#8220;Report and record particular monitoring event.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Send a logging message.</dt>
+                <dd>&#8220;Report and record a logging message.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Make an assertion.</dt>
+                <dd>&#8220;Make an assertion or claim that either causes a monitoring event or logging message to be recorded or halts some part of the system because of failure.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Generate statistics.</dt>
+                <dd>&#8220;Request that an instance of the monitoring system report on the system component with which it is associated.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Define an event (statistic/message type/assertion type).</dt>
+                <dd>&#8220;Define a particular event type and add it to the system as appropriate (at compile/design-time, not runtime).&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="creation_chart:1">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CREATION</th>
+      <td class="name" colspan="2"><a href="#system_chart:MONITORING_SYSTEM" onclick="return linkSelect('system_chart','system_chart:MONITORING_SYSTEM');">MONITORING_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;List of classes creating objects in the system.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-06-06 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: monitoring.bon,v 1.5 2001/12/28 00:44:43 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Creates instances of</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:EVENT" onclick="return linkSelect('class_chart','class_chart:EVENT');">EVENT</a></td>
+            <td class="white"><span class="list-entry"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></span>, <span class="list-entry"><a href="#class_chart:MESSAGE" onclick="return linkSelect('class_chart','class_chart:MESSAGE');">MESSAGE</a></span>, <span class="list-entry"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LOG" onclick="return linkSelect('class_chart','class_chart:LOG');">LOG</a></td>
+            <td class="white"><span class="list-entry"><a href="#class_chart:EVENT" onclick="return linkSelect('class_chart','class_chart:EVENT');">EVENT</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LOGGER" onclick="return linkSelect('class_chart','class_chart:LOGGER');">LOGGER</a></td>
+            <td class="white"><span class="list-entry"><a href="#class_chart:LOG" onclick="return linkSelect('class_chart','class_chart:LOG');">LOG</a></span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div><div class="top-level" id="class_dictionary:1">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS DICTIONARY</th>
+      <td class="name" colspan="2"><a href="#system_chart:MONITORING_SYSTEM" onclick="return linkSelect('system_chart','system_chart:MONITORING_SYSTEM');">MONITORING_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;BONc automatically generated class dictionary.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Cluster</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:ASSERTION" onclick="return linkSelect('class_chart','class_chart:ASSERTION');">ASSERTION</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:EVENTS" onclick="return linkSelect('cluster_chart','cluster_chart:EVENTS');">EVENTS</a></span></td>
+            <td class="white">&#8220;Represents a single type of important predicate that the system should validate. Assertion failures result in everything from messages or statistics being logged to system failure.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:MESSAGE" onclick="return linkSelect('class_chart','class_chart:MESSAGE');">MESSAGE</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:EVENTS" onclick="return linkSelect('cluster_chart','cluster_chart:EVENTS');">EVENTS</a></span></td>
+            <td class="white">&#8220;Represents a single textual message that needs to be displayed or recorded.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHECKER" onclick="return linkSelect('class_chart','class_chart:CHECKER');">CHECKER</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a></span></td>
+            <td class="white">&#8220;Checks the state of the system for validity against particular assertions.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:EVENTS" onclick="return linkSelect('cluster_chart','cluster_chart:EVENTS');">EVENTS</a></span></td>
+            <td class="white">&#8220;Represents the importance level of a particular event.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:EVENT" onclick="return linkSelect('class_chart','class_chart:EVENT');">EVENT</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:EVENTS" onclick="return linkSelect('cluster_chart','cluster_chart:EVENTS');">EVENTS</a></span></td>
+            <td class="white">&#8220;Represents a single important event of any kind. The event includes a source, description, importance, and time, among other things.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LOG" onclick="return linkSelect('class_chart','class_chart:LOG');">LOG</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:EVENTS" onclick="return linkSelect('cluster_chart','cluster_chart:EVENTS');">EVENTS</a></span></td>
+            <td class="white">&#8220;Manages the storage and retrieval of events that are reported by various parts of the system framework and/or the application built on top of it.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:STATISTIC" onclick="return linkSelect('class_chart','class_chart:STATISTIC');">STATISTIC</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:EVENTS" onclick="return linkSelect('cluster_chart','cluster_chart:EVENTS');">EVENTS</a></span></td>
+            <td class="white">&#8220;This class represents a statistic that can be monitored in the monitoring system. Each statistic has its own unique ID (node-unique, not necessarily globally unique), a description, units, and other useful information that is represented in this class.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:TUNER" onclick="return linkSelect('class_chart','class_chart:TUNER');">TUNER</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a></span></td>
+            <td class="white">&#8220;'Tune' the monitoring system to collect specific types and levels of system statistics, messages, and assertions.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:EVENTS" onclick="return linkSelect('cluster_chart','cluster_chart:EVENTS');">EVENTS</a></span></td>
+            <td class="white">&#8220;Represents the type of a particular event. The set of core event types each have such a name and a description.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LOGGER" onclick="return linkSelect('class_chart','class_chart:LOGGER');">LOGGER</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a></span></td>
+            <td class="white">&#8220;Performs the collection of particular statistics during the operation of a program. Individual statistics can be registered for collection, and may be activated or deactivated. The collector can cache statistic collection in memory, and can also write statistics and logging information to a long-term storage device for subsequent analysis.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:COLLECTOR" onclick="return linkSelect('class_chart','class_chart:COLLECTOR');">COLLECTOR</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:PROCESSING" onclick="return linkSelect('cluster_chart','cluster_chart:PROCESSING');">PROCESSING</a></span></td>
+            <td class="white">&#8220;Performs the collection of particular statistics during the operation of a program. Individual statistics can be registered for collection, and may be activated or deactivated. The collector can cache statistic collection in memory, and can also write statistics and logging information to a long-term storage device for subsequent analysis.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="footer">
+  <p id="left-footer">
+    <button id="showlink" onclick="return toggleShowAll();">Show all</button>
+    Chart type:
+    <select id="top-menu" onchange="populate(); showSelected();"><option>processing...</option></select>
+    Chart:
+    <select id="sub-menu" onchange="showSelected();"><option>processing...</option></select>
+  </p>
+  <p id="right-footer">
+    Generated by <a href="http://www.kindsoftware.com/products/opensource/BONc">BONc</a> (version: bonc-0.1.4) <a href="http://validator.w3.org/check?uri=referer">XHTML</a> output, Fri Mar 14 03:19:28 GMT 2008.
+  </p>
+</div>
+
+</div> <!-- End main -->
+
+</body>
+</html>

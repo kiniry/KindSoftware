@@ -1,0 +1,25 @@
+Title: Saving Democracy from Technology
+
+Long abstract: 
+
+For the past several decades governments around the world have been
+endangering their own democracies though the reckless use of computers
+in elections, or what is colloquially known as e-voting.  Politicians,
+bureaucrats, and the general public have high expectations for
+e-voting.  Unfortunately, voluminous evidence shows that e-voting
+makes elections more expensive, does not increase voter turnout, and
+removes public control from democracies.  Consequently, virtually the
+entire computer science community is against the introduction of
+computers in elections.  All hope is not lost though.  Computer
+science does have a role in elections.  We can improve the correctness
+and accuracy of elections—not by putting computers in voting booths,
+but in other, more subtle and surprising, ways.
+
+Short abstract:
+
+Governments are endangering democracy with the reckless use of
+e-voting.  The entire computer science research community is against
+this agenda.  Why this is the case, and how computer science should
+have a role in elections, is the focus of this talk.  Unsurprisingly,
+the participation of the "technical electorate" is the key to
+transparency.

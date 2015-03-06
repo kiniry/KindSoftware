@@ -1,0 +1,492 @@
+%
+% $Id: lajug_8_aug_2002.tex 7739 2008-02-15 17:08:37Z dcochran $
+%
+
+\documentclass[%
+%draft,
+final,
+slideColor,
+%slideBW,
+%total,
+nototal,
+nocolorBG,
+%colorBG,
+%ps,
+pdf,
+accumulate,
+%noaccumulate,
+%distiller,
+next,
+%alcatel,
+%alienglow,
+%autumn,
+%azure,
+%contemporain,
+%darkblue,
+%frames,
+%gyom,
+%lignesbleues,
+%nuancegris,
+%pascal,
+%rico,
+%troispoints,
+]{prosper}
+
+%=====================================================================
+
+\usepackage{graphicx}
+\usepackage{prs}
+\usepackage{warn}
+%\usepackage{html}
+\usepackage{url}
+\usepackage{alltt}
+\usepackage{xspace}
+\usepackage{epsfig}
+\usepackage{changebar}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{amsthm}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{eucal}
+%\usepackage{eufrak}
+%\usepackage{oz}
+\usepackage[centredisplay,PostScript=dvips]{diagrams}
+\usepackage{float}
+%\usepackage[dvips]{hyperref}
+\usepackage{trig}
+%\usepackage[graphics]{ite}
+%\usepackage{ite}
+
+% Lucida Bright Fonts
+%\usepackage[LY1]{fontenc}
+%\usepackage[expert,LY1]{lucidabr}
+
+%=====================================================================
+% New commands, macros, etc.
+%=====================================================================
+
+\include{newcommands}
+
+%=====================================================================
+% Title page
+%=====================================================================
+
+\title{Using Java for VLSI Development\\
+\begin{small}and/or\end{small}\\
+Advanced Open Source Java Software Engineering}
+\author{Joseph R.~Kiniry}
+\institution{KindSoftware, LLC and Fulcrum Microsystems, Inc.}
+\slideCaption{LAJUG --- August 2002}
+%\Logo(-1,-1){\includegraphics[width=1cm]{cit_gray_logo.eps}}
+%\displayVersion
+%\DefaultTransition{Replace}
+
+%=====================================================================
+% Beginning
+%=====================================================================
+
+\begin{document}
+\maketitle
+%\special{papersize=297mm,210mm}
+
+%=====================================================================
+% Template
+%=====================================================================
+
+%\begin{slide}{Title}
+%  \begin{itemize}
+%    \item
+%  \end{itemize}
+
+%  \begin{small}
+%  \end{small}
+
+%  \begin{equation*}
+%    \begin{array}{ccc}
+%    \end{array}{ccc}
+%  \end{equation*}
+
+%  \begin{diagram}[textflow]
+%  \end{diagram}
+
+%  \includegraphics[width=8cm]{.eps}
+%\end{slide}
+
+%=====================================================================
+% Slides
+%=====================================================================
+
+\begin{slide}{Java for AVLSI?}
+  \begin{itemize}
+  \item What is AVLSI?
+    \begin{itemize}
+    \item Delay insensitive circuits
+    \item Power invariant
+    \item Design scalability
+    \item Process invariant
+    \end{itemize}
+  \item How is VLSI design typically done?
+    \begin{itemize}
+    \item High level specification (e.g., VHDL)
+    \item Low-level specification (e.g., Verilog)
+    \item Automated layout
+    \end{itemize}
+  \item How are we doing it?
+  \item How is Java used?
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Challenges}
+  \begin{itemize}
+  \item Performance
+    \begin{itemize}
+    \item You try simulating a CPU in Java!
+    \end{itemize}
+  \item Scalability
+    \begin{itemize}
+    \item Massive memory and thread use
+    \end{itemize}
+  \item Robustness
+    \begin{itemize}
+    \item If simulation takes five days and it crashes on day four...
+    \end{itemize}
+  \item \textbf{Correctness!}
+    \begin{itemize}
+    \item Fabricating a chip = no patches
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Design Process}
+  \begin{itemize}
+  \item Multiple specification levels.
+    \begin{itemize}
+    \item Multiple Java realizations
+    \item CSP (Concurrent Sequential Processes)
+    \item Production rules
+    \item Layout
+    \end{itemize}
+  \item Unit testing
+    \begin{itemize}
+    \item Cell, Unit, CPU
+    \item With and without OS
+    \item At multiple refinement levels
+    \end{itemize}
+  \item Cosimulation for behavioral equivalence
+    \begin{itemize}
+    \item Formal refinement checking
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Observations}
+  \begin{itemize}
+  \item (Mis)use of concurrency
+    \begin{itemize}
+    \item Thread per anything
+    \end{itemize}
+  \item Data structure (ab)use
+    \begin{itemize}
+    \item Generic Java data structures
+    \end{itemize}
+  \item Aimless optimization
+    \begin{itemize}
+    \item (Aimless) optimization is the root of all evil.
+    \end{itemize}
+  \item Untracked requirement changes
+    \begin{itemize}
+    \item Complexity has a requires clause
+    \end{itemize}
+  \item Documentation process
+    \begin{itemize}
+    \item Least favorite part coupled with rapid corporate development and hard
+    delivery dates.
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Response}
+  \begin{itemize}
+  \item Commercial tools where necessary
+    \begin{itemize}
+    \item Analysis: JProbe and JProfiler
+    \item Revision control: P4 (was CVS)
+    \item Simulation: Cadence
+    \end{itemize}
+  \item Open Source tools where possible
+    \begin{itemize}
+    \item Custom code coverage: Gretel
+    \item Metrics: Java NCSS, SlocCount
+    \item Documentation: SGML and \LaTeX\
+    \item Specification: JML
+    \item Build system: Ant
+    \end{itemize}
+  \item Process, process, process
+    \begin{itemize}
+    \item Documentation
+    \item \textbf{Specification}
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Results}
+  \begin{itemize}
+  \item Performance
+    \begin{itemize}
+    \item Typical: 10 minute change = 10 percent
+    \item Atypical: one man month = 1000 percent
+    \item ...and nothing in between.
+    \end{itemize}
+  \item Memory use
+    \begin{itemize}
+    \item Garbage collection (ab)use
+      \begin{itemize}
+      \item Iterators, Events, and StringBuffers
+      \end{itemize}
+    \item OS VM abuse
+    \item Overall memory size
+    \end{itemize}
+  \item System montoring
+    \begin{itemize}
+    \item Subsystem tailored to design space
+    \item Optional compilation
+    \item Framework licensing (IDebug)
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Key Aspects}
+  \begin{itemize}
+  \item Lightweight specification
+    \begin{itemize}
+    \item Semantic properties via Javadoc
+    \item Standard system overviews
+      \begin{itemize}
+      \item Abstract
+      \item Overview
+      \item Requirements
+      \item Dictionary
+      \end{itemize}
+    \item System tracking
+      \begin{itemize}
+      \item Development state
+      \item Deliverabes
+      \item Tasks
+      \item Risk analysis
+      \end{itemize}
+    \end{itemize}
+  \item High-level specification
+    \begin{itemize}
+    \item Extended BON
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Key Aspects, cont.}
+  \begin{itemize}
+  \item Detailed specification
+  \item Several alternatives, OS and commerical
+    \begin{itemize}
+    \item iContract, Jass, JML, MetaMata, jContract
+    \end{itemize}
+  \item Design by Contract as a start
+  \item Model-based specification for completeness
+  \item JML = Java Modeling Language
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Semantic Properties}
+  \begin{itemize}
+  \item Domain-specific specification constructs that augment an existing
+    language with richer semantics.
+  \item Used in system analysis, design, implementation, testing, and
+    maintenance via documentation and source-code analysis and
+    transformation tools.
+  \item Three forms: \emph{informal}, \emph{semi-formal}, and
+    \emph{formal}.
+  \item Advance over existing work because:
+    \begin{itemize}
+    \item Specified as annotations, which is popular with programmers.
+    \item More natural model because little-to-no math.
+    \item Higher-level contructs, thus more expressive.
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Example of Annotated Java}
+\tiny
+\begin{verbatim}
+/**
+ * Returns a boolean indicating whether any debugging facilities 
+ * are turned off for a particular thread.
+ *
+ * @concurrency GUARDED
+ * @require (thread != null) Parameters must be valid.
+ * @modify QUERY
+ * @param thread the thread to check.
+ * @return a boolean indicating whether any debugging facilities 
+ * are turned off for the specified thread.
+ * @review kiniry Are the isOff() methods necessary at all?
+ **/
+     
+ public synchronized boolean isOff(Thread thread)
+ {
+   return (!isOn(thread));
+ }
+\end{verbatim}
+\end{slide}
+
+\begin{slide}{Extended BON, cont.}
+  \begin{small}
+    \begin{itemize}
+    \item Extensions - semantically well-understood best practice
+      programming constructs in specific domains.
+      \begin{itemize}
+      \item \emph{concurrency} - sequential, concurrent, guarded.
+      \item \emph{temporal logic contracts} - for run-time testing.
+      \item \emph{modifies} - predicates about state change.
+      \item \emph{generates} - concurrency dynamism.
+      \end{itemize}
+    \item Bijective refinement.
+      \begin{itemize}
+      \item specification changes $\leftrightarrow$ program changes.
+      \end{itemize}
+    \item ``Weak'' language plus quality tools $\Rightarrow$ \newline
+      stronger system than most of industry's best practices.
+    \end{itemize}
+  \end{small}
+\end{slide}
+
+\begin{slide}{Extended BON}
+  \begin{footnotesize}
+    \begin{itemize}
+    \item A lightweight specification language for software.
+    \item A design model checker for multiple languages.
+    \item Extended BON = BON + semantic properties.
+    \item BON - the Business Object Notation.
+      \begin{itemize}
+      \item Textual and graphical syntax.
+      \item Well-understood semantics.
+      \item Seamless, reversible specification language.
+      \end{itemize}
+    \item BON specifications capture important system aspects...
+      \begin{itemize}
+      \item static and dynamic structure, contracts, test cases.
+      \end{itemize}
+    \item ...but are not complete and are relatively weak.
+    \end{itemize}
+  \end{footnotesize}
+\end{slide}
+
+\begin{slide}{JML}
+  \begin{itemize}
+  \item Syntax is extension of Java
+  \item Contracts a la Eiffel
+    \begin{itemize}
+    \item requires, ensures and interplay with inheritance
+    \end{itemize}
+  \item Side-effects (or lack thereof)
+    \begin{itemize}
+    \item pure, assignable
+    \end{itemize}
+  \item Refinement (spec to impl, spec to spec)
+    \begin{itemize}
+    \item also, refines
+    \end{itemize}
+  \item Specification scoping (contract visibility)
+  \item Model variables
+    \begin{itemize}
+    \item Software cosimulation
+    \end{itemize}
+  \item Documentation generation, static analysis, and dynamic run-time checks
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{JML Tools}
+  \begin{itemize}
+  \item JMLDoc
+    \begin{itemize}
+    \item JML plus Javadoc
+    \end{itemize}
+  \item Typechecking
+    \begin{itemize}
+    \item jml
+    \end{itemize}
+  \item Compilation
+    \begin{itemize}
+    \item jmlc
+    \end{itemize}
+  \item Static analysis
+    \begin{itemize}
+    \item ESCJava, LOOP, Daikon, etc.
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{For More Information}
+  \begin{itemize}
+  \item JML
+    \begin{itemize}
+    \item \texttt{http://www.jmlspecs.org/}
+    \end{itemize}
+  \item Extended BON
+    \begin{itemize}
+    \item \texttt{http://ebon.sf.net/}
+    \end{itemize}
+  \item Fulcrum Microsystems
+    \begin{itemize}
+    \item \texttt{http://www.fulcrummicro.com/}
+    \end{itemize}
+  \item KindSoftware
+    \begin{itemize}
+    \item \texttt{http://www.kindsoftware.com/}
+      \begin{itemize}
+      \item IDebug, semantic properties, code standards, formal methods and
+      advanced software engineering consulting, etc.
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+%% \begin{slide}{Title}
+%%   \begin{itemize}
+%%   \item
+%%   \end{itemize}
+%% \end{slide}
+
+%% \begin{slide}{Title}
+%%   \begin{itemize}
+%%   \item
+%%   \end{itemize}
+%% \end{slide}
+
+%% \begin{slide}{Title}
+%%   \begin{itemize}
+%%   \item
+%%   \end{itemize}
+%% \end{slide}
+
+%% \begin{slide}{Title}
+%%   \begin{itemize}
+%%   \item
+%%   \end{itemize}
+%% \end{slide}
+
+%% \begin{slide}{Title}
+%%   \begin{itemize}
+%%   \item
+%%   \end{itemize}
+%% \end{slide}
+
+%---------------------------------------------------------------------
+% End of Document
+%---------------------------------------------------------------------
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+

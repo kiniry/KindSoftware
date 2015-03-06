@@ -1,0 +1,291 @@
+%
+% $Id: lamig_9_sep_2002.tex 7739 2008-02-15 17:08:37Z dcochran $
+%
+
+\documentclass[%
+%draft,
+final,
+slideColor,
+%slideBW,
+%total,
+nototal,
+nocolorBG,
+%colorBG,
+%ps,
+pdf,
+accumulate,
+%noaccumulate,
+%distiller,
+next,
+%alcatel,
+%alienglow,
+%autumn,
+%azure,
+%contemporain,
+%darkblue,
+%frames,
+%gyom,
+%lignesbleues,
+%nuancegris,
+%pascal,
+%rico,
+%troispoints,
+]{prosper}
+
+%=====================================================================
+
+\usepackage{graphicx}
+\usepackage{prs}
+\usepackage{warn}
+%\usepackage{html}
+\usepackage{url}
+\usepackage{alltt}
+\usepackage{xspace}
+\usepackage{epsfig}
+\usepackage{changebar}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{amsthm}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{eucal}
+%\usepackage{eufrak}
+%\usepackage{oz}
+\usepackage[centredisplay,PostScript=dvips]{diagrams}
+\usepackage{float}
+%\usepackage[dvips]{hyperref}
+\usepackage{trig}
+%\usepackage[graphics]{ite}
+%\usepackage{ite}
+
+% Lucida Bright Fonts
+%\usepackage[LY1]{fontenc}
+%\usepackage[expert,LY1]{lucidabr}
+
+%=====================================================================
+% New commands, macros, etc.
+%=====================================================================
+
+\include{newcommands}
+
+%=====================================================================
+% Title page
+%=====================================================================
+
+\title{DALi: Distributed Artificial Life}
+\author{Joseph R.~Kiniry}
+\institution{KindSoftware, LLC and DALi, Inc. (2000)}
+\slideCaption{LAJUG --- August 2002}
+%\Logo(-1,-1){\includegraphics[width=1cm]{cit_gray_logo.eps}}
+%\displayVersion
+%\DefaultTransition{Replace}
+
+%=====================================================================
+% Beginning
+%=====================================================================
+
+\begin{document}
+\maketitle
+%\special{papersize=297mm,210mm}
+
+%=====================================================================
+% Template
+%=====================================================================
+
+%\begin{slide}{Title}
+%  \begin{itemize}
+%    \item
+%  \end{itemize}
+
+%  \begin{small}
+%  \end{small}
+
+%  \begin{equation*}
+%    \begin{array}{ccc}
+%    \end{array}{ccc}
+%  \end{equation*}
+
+%  \begin{diagram}[textflow]
+%  \end{diagram}
+
+%  \includegraphics[width=8cm]{.eps}
+%\end{slide}
+
+%=====================================================================
+% Slides
+%=====================================================================
+
+\begin{slide}{Distributed Artificial Life}
+  \begin{itemize}
+  \item What is Artificial Life?
+    \begin{itemize}
+    \item Digital representations of biological constructs
+    \item Emergent systems
+      \begin{itemize}
+      \item From Conway's Game of Life to DAI
+      \item From Tom Ray to Creatures
+      \end{itemize}
+    \item Used for science, problem solving, and entertainment
+    \end{itemize}
+  \item Why make it distributed?
+    \begin{itemize}
+    \item Three factors:
+      \begin{itemize}
+        \item Scaling
+        \item Scientific
+        \item Social
+      \end{itemize}
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Solving Three Scaling Problems}
+  \begin{itemize}
+  \item Network
+    \begin{itemize}
+    \item ``Massive'' does not mean thousands
+    \item Client-server is easy but very limited
+    \item Keystones are synchronization and security
+    \end{itemize}
+  \item Content Creation
+    \begin{itemize}
+    \item The two man-month rule $\longrightarrow$\\
+      day-per-species rule
+    \item Application to static and dynamic content
+    \item Unexpected angles
+    \end{itemize}
+  \item Dynamism
+    \begin{itemize}
+    \item Thesis: open systems are more interesting
+    \item Tired of canned, prepackaged experiences
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Potential ``Customers''}
+  \begin{itemize}
+  \item Massive Multiplayer
+    \begin{itemize}
+    \item Sony, Turbine, Microsoft, etc.
+    \end{itemize}
+  \item Wireless Gaming
+    \begin{itemize}
+    \item PDA phenomenon
+    \end{itemize}
+  \item Intel and Sun
+    \begin{itemize}
+    \item How to burn CPU cycles
+    \item Evidence that Java can be\\high-performance and WORA
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Technical Components}
+  \begin{itemize}
+  \item Distributed systems
+    \begin{itemize}
+    \item Networking and Messaging
+    \item Mobile agents
+    \end{itemize}
+  \item Simulation and interaction
+    \begin{itemize}
+    \item Physics
+    \item 3D visualization
+    \end{itemize}
+  \item Emergent systems
+    \begin{itemize}
+    \item Learning systems
+    \item Artificial life
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Artificial Life}
+  \begin{itemize}
+  \item Thesis: Declarative specification of basic entities
+    \begin{itemize}
+    \item Simulate with sufficient detail and realism results
+    \item Limits and goals
+    \end{itemize}
+  \item Process of species creation:
+    \begin{itemize}
+    \item Digital genome
+    \item Genotype to phenotype
+    \item Skeleton and musculature
+    \item Biochemistry
+    \item Senses
+    \item Basic and higher-level behaviors
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{The Technology Demo}
+  \begin{itemize}
+  \item DALiWorld - a simulation of an ocean
+  \item Reasons for choice
+    \begin{itemize}
+    \item Technical and business
+    \end{itemize}
+  \item Challenges in domain
+    \begin{itemize}
+    \item Physics
+    \item Visualization
+    \item Entity scaling
+    \end{itemize}
+  \item Fun technical aspects
+    \begin{itemize}
+    \item Camera submarine
+    \item Buoyancy and orientation
+    \item Initial search points
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Comparisons}
+  \begin{itemize}
+  \item Biods, Biomorphs, and Biota
+  \item Santa Fe Institute and Swarm
+  \item MIT/Computer Museum Virtual Fishtank
+  \item Sims, Ray, and Avida
+  \item Creatures
+  \item Black and White
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{Post-Mortum}
+  \begin{itemize}
+  \item Who is the customer?
+  \item Gating external technologies
+    \begin{itemize}
+    \item Rendering
+    \item JITs and native libraries
+    \end{itemize}
+  \item Characterization of effort
+  \item Democratic business
+  \item Social aspects
+  \end{itemize}
+\end{slide}
+
+\begin{slide}{What's Next?}
+  \begin{itemize}
+  \item DALi, Inc.
+  \item My research
+    \begin{itemize}
+    \item Independent but similar goals
+    \item Flatland, dinosaurs, and bugs
+    \item Evolution and the semantic web
+    \end{itemize}
+  \end{itemize}
+\end{slide}
+
+%---------------------------------------------------------------------
+% End of Document
+%---------------------------------------------------------------------
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+

@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+
+    <title>KindSoftware</title>
+
+    <link href="/stylesheets/kind.css" type="text/css" rel="stylesheet"/>
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2005 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li>
+  <!--#include virtual="/documents/xml/overview.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/mech_theory.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/news.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/proposals.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/published.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/reports.xml" -->
+  </li>
+  <li id="subnavon">
+  <!--#include virtual="/documents/xml/talks.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/tutorials.xml" -->
+  </li>
+  <li>
+  <!--#include virtual="/documents/xml/whitepapers.xml" -->
+  </li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>AIST Slides</h2>
+
+<h3><a href="/documents/talks/Effectively_Using_JML.pdf">
+Effectively Using JML</a><br />
+Software Engineering Processes incorporating Formal Specification</h3>
+
+<p> Using a formal methodology, like that embodied by JML, for
+software construction is more than learning a specification language,
+a set of tools, and hiring some experts---it also means successfully
+applying the ideas, tools, and techniques in a coherent way to the
+*process* of software construction.  Typically, this process is
+realizing in one of two extremes, what I call "Contract the Design"
+(annotating software you did not write) or "Design by Contract"
+(annotating software you are writing).  This talk will discuss the
+core facets of a successful JML-centric software process at these two
+extremes.  A case study embodying these facets, an Internet voting
+tally/counting application developed with JML for the Dutch
+government, will also be discussed. </p>
+
+<h3><a href="/documents/talks/Using_ESCJava2.pdf">
+Using ESC/Java2 Architecture, Hints, and Tricks</a></h3>
+
+<p> Software engineering with formal methods is difficult but can be
+very rewarding.  Using the basic features of tools like ESC/Java2 is
+quite easy, but as soon as moderately complex verification is
+attempted, a deeper understanding of the tool and its underlying
+theory and architecture is necessary.  This talk will discuss the
+architecture of ESC/Java2, how to incorporate ESC/Java2 into a
+verification-centric software development process, and how to manage
+specification and program code complexity.  This talk also discusses
+some of the standard hints and tricks used in program specification to
+deal with typical verification challenges. </p>
+
+<h3><a href="/documents/talks/Formal_Methods_for_VLSI.pdf">
+Using Formal Methods for VLSI Development</a><br />
+Using Java and JML in the Real World</h3>
+
+<p> Formal methods have been successfully used in non-software
+industries for many years, most notably in VLSI design firms like
+Intel, Sun, Hewlett-Packard, SGI, Motorola, and IBM.  Recently, some
+firms have begun to use Java for CAD tool development, primarily
+because existing tools were inappropriate for new technologies like
+asynchronous VLSI (AVLSI).  This talk will discussed the adoption of
+Java and JML at the leading AVLSI firm Fulcrum Microsystems.  In
+particular, it discusses what AVLSI is, and how and why Java and JML
+were incorporated into Fulcrum's software engineering process. </p>
+
+<h3><a href="/documents/talks/JML_Models.pdf">
+Models are the `M' in JML</a><br />
+Using ADT Models in Formal Specification with JML</h3>
+
+<p> Writing complex abstract specifications in JML means writing
+model-based specifications.  Models are mathematical abstractions like
+sets, lists, and relations that are used to specify abstract behavior
+in software systems.  JML models are realized in a suite of a few
+dozen functional, ADT-based, richly specified, executable Java
+classes.  This talk will discuss OO/ADT-based models, how JML realizes
+those models, how models are designed and implemented, and how to use
+models in specification, testing, and verification. </p>
+
+<h3><a href="/documents/talks/ESCJava2_Object_Logic.pdf">
+The ESC/Java2 Calculi and Object Logics</a>:<br />
+Implications on Specification and Verification</h3>
+
+<p> ESC/Java2 is an extended static checker for Java.  It can
+automatically, modularly verify that some Java programs conform to
+formal specifications written in the Java Modeling Language, a
+behavioral interface specification language for Java.  This talk will
+discuss JML and ESC/Java2, and pay particular attention to how
+ESC/Java2's (a) program calculus for generating verification
+conditions and (b) object logic for specifying Java semantics play key
+roles in the specification and verification of real-world, non-trivial
+Java software.  Software engineers interested in formal program
+development, theorem prover users and developers, and programming
+language semantics and verification researchers will find this talk
+particularly illuminating. </p>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2005 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="aist.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

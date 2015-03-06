@@ -1,0 +1,328 @@
+This is pdfeTeXk, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=pdfetex 2007.4.10)  16 JAN 2008 10:59
+entering extended mode
+ file:line:error style messages enabled.
+**./jml_homework.texinfo
+(./jml_homework.texinfo (/opt/local/share/texmf-dist/tex/texinfo/texinfo.tex
+Loading texinfo [version 2005-01-30.17]: Basics,
+\bindingoffset=\dimen16
+\normaloffset=\dimen17
+\pagewidth=\dimen18
+\pageheight=\dimen19
+\outerhsize=\dimen20
+\outervsize=\dimen21
+\cornerlong=\dimen22
+\cornerthick=\dimen23
+\topandbottommargin=\dimen24
+\headlinebox=\box16
+\footlinebox=\box17
+\margin=\insert252
+\EMsimple=\toks13
+\groupbox=\box18
+\groupinvalidhelp=\toks14
+\mil=\dimen25
+\exdentamount=\skip18
+\inmarginspacing=\skip19
+ pdf,
+\tempnum=\count27
+\lnkcount=\count28
+\filename=\toks15
+\filenamelength=\count29
+\pgn=\count30
+\toksA=\toks16
+\toksB=\toks17
+\toksC=\toks18
+\toksD=\toks19
+\boxA=\box19
+\countA=\count31
+
+(/opt/local/share/texmf-dist/tex/plain/pdfcolor/pdfcolor.tex) fonts,
+\sffam=\fam8
+\textleading=\dimen26
+\fontdepth=\count32
+
+page headings,
+\titlepagetopglue=\skip20
+\titlepagebottomglue=\skip21
+\evenheadline=\toks20
+\oddheadline=\toks21
+\evenfootline=\toks22
+\oddfootline=\toks23
+ tables,
+\tableindent=\dimen27
+\itemindent=\dimen28
+\itemmargin=\dimen29
+\itemmax=\dimen30
+\itemno=\count33
+\multitableparskip=\skip22
+\multitableparindent=\skip23
+\multitablecolspace=\dimen31
+\multitablelinespace=\skip24
+\colcount=\count34
+\everytab=\toks24
+ conditionals,
+\doignorecount=\count35
+ indexing,
+\secondaryindent=\skip25
+\partialpage=\box20
+\doublecolumnhsize=\dimen32
+ sectioning,
+\unnumberedno=\count36
+\chapno=\count37
+\secno=\count38
+\subsecno=\count39
+\subsubsecno=\count40
+\appendixno=\count41
+\absseclevel=\count42
+\secbase=\count43
+\chapheadingskip=\skip26
+\secheadingskip=\skip27
+\subsecheadingskip=\skip28
+ toc,
+\tocfile=\write0
+\contentsrightmargin=\skip29
+\savepageno=\count44
+\lastnegativepageno=\count45
+\tocindent=\dimen33
+ environments,
+\errorbox=\box21
+\lispnarrowing=\skip30
+\envskipamount=\skip31
+\circthick=\dimen34
+\cartouter=\dimen35
+\cartinner=\dimen36
+\normbskip=\skip32
+\normpskip=\skip33
+\normlskip=\skip34
+\lskip=\skip35
+\rskip=\skip36
+\tabw=\dimen37
+
+defuns,
+\defbodyindent=\skip37
+\defargsindent=\skip38
+\deflastargmargin=\skip39
+\parencount=\count46
+\brackcount=\count47
+ macros,
+\paramno=\count48
+\macname=\toks25
+ cross references,
+\auxfile=\write1
+\savesfregister=\count49
+ insertions,
+\footnoteno=\count50
+\SAVEfootins=\box22
+\SAVEmargin=\box23
+
+(/opt/local/share/texmf-dist/tex/generic/epsf/epsf.tex
+\epsffilein=\read1
+\epsfframemargin=\dimen38
+\epsfframethickness=\dimen39
+\epsfrsize=\dimen40
+\epsftmp=\dimen41
+\epsftsize=\dimen42
+\epsfxsize=\dimen43
+\epsfysize=\dimen44
+\pspoints=\dimen45
+\epsfnoopenhelp=\toks26
+)
+\noepsfhelp=\toks27
+ localization,
+\nolanghelp=\toks28
+\defaultparindent=\dimen46
+
+and turning on texinfo input format.) (./jml_homework.aux)
+\openout1 = `jml_homework.aux'.
+
+@cpindfile=@write2
+@fnindfile=@write3
+@vrindfile=@write4
+@tpindfile=@write5
+@kyindfile=@write6
+@pgindfile=@write7
+ [1
+\openout2 = `jml_homework.cp'.
+
+\openout3 = `jml_homework.fn'.
+
+\openout4 = `jml_homework.vr'.
+
+\openout5 = `jml_homework.tp'.
+
+\openout6 = `jml_homework.ky'.
+
+\openout7 = `jml_homework.pg'.
+
+{/opt/local/share/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./jml_hom
+ework.toc)
+[-1] (./jml_homework.toc) (./jml_homework.toc) (Introduction) [1]
+\openout0 = `jml_homework.toc'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--163
+ []@textrm The Ex-tended Static Checker for Java (ESC/Java ver-sion 1).
+
+@hbox(8.2125+2.73749)x469.47046, glue set 10.59758
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@textrm T
+.@textrm h
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 163--168
+ @textrm for short) from the SoS Group at the Uni-ver-sity of Ni-jmegen and Dav
+id Cok.
+
+@hbox(8.2125+2.73749)x469.47046, glue set 3.23785
+.@glue(@leftskip) 21.68121
+.@textrm f
+.@textrm o
+.@textrm r
+.@glue 3.65 plus 1.825 minus 1.21666
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--171
+ []@textrm The LOOP com-piler from the SoS Group at the Uni-ver-sity of Ni-jmeg
+en.
+
+@hbox(7.60416+2.12917)x469.47046, glue set 4.9908
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@textrm T
+.@textrm h
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--174
+ []@textrm The Daikon in-vari-ant de-tec-tor from the Pro-gram Anal-y-sis Group
+ at MIT.
+
+@hbox(7.60416+2.12917)x469.47046, glue set 5.08221
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@textrm T
+.@textrm h
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 2343) in paragraph at lines 174--177
+ []@textrm The ChAsE frame ax-iom checker from Lemme project at IN-RIA Sophia-A
+ntipolis.
+
+@hbox(7.60416+2.12917)x469.47046, glue set 2.8653
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@textrm T
+.@textrm h
+.@textrm e
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--183
+ []@textrm The Bo-gor tool from the SpEx project at Kansas State Uni-ver-sity.
+
+@hbox(7.60416+2.12917)x469.47046, glue set 7.05305
+.@glue(@leftskip) 21.68121
+.@hbox(4.86667+0.0)x0.0, glue set - 12.70244fil
+..@glue 0.0 plus 1.0fil minus 1.0fil
+..@mathon
+..@textsy ^^O
+..@mathoff
+..@kern 7.22743
+.@textrm T
+.@textrm h
+.@textrm e
+.etc.
+
+(Core JML Constructs) [2] [3] (./problems/JavaAssertions.java.texinfo [4])
+(./problems/JmlAssertions.java.texinfo [5] [6]) [7]
+Underfull \hbox (badness 5741) in paragraph at lines 382--385
+[]@textrm For the fol-low-ing dis-cus-sion we will re-fer to the an-swer key fo
+und in the class
+
+@hbox(7.60416+2.12917)x469.47046, glue set 3.86148
+.@hbox(0.0+0.0)x0.0
+.@textrm F
+.@kern-0.91252
+.@textrm o
+.@textrm r
+.etc.
+
+(./problems/JmlAssertionsAndAssumptionsKey.java.texinfo [8] [9]) [10]
+(./problems/PrePostConditions.java.texinfo [11]) [12] [13]
+Underfull \hbox (badness 5161) in paragraph at lines 654--659
+[]@textrm Also note that Java @textit er-rors @textrm are @textit very @textrm 
+rarely spec-i-fied and are not rea-soned about
+
+@hbox(7.60416+2.12917)x469.47046, glue set 3.72519
+.@hbox(0.0+0.0)x0.0
+.@textrm A
+.@textrm l
+.@textrm s
+.@textrm o
+.etc.
+
+
+Underfull \hbox (badness 2941) in paragraph at lines 654--659
+@textrm at all us-ing ESC/Java2. Also, Java ``run-time ex-cep-tions'' (de-scen-
+dents of the class
+
+@hbox(8.2125+2.73749)x469.47046, glue set 3.0876
+.@textrm a
+.@textrm t
+.@glue 3.65 plus 1.825 minus 1.21666
+.@textrm a
+.@textrm l
+.etc.
+
+(./problems/BogusFrameConditions.java.texinfo [14]) [15] [16]
+(Using JML and ESC/Java2) [17] (Copying) [18] (Index) [19] (./jml_homework.cps)
+[20] ) 
+Here is how much of TeX's memory you used:
+ 1775 strings out of 97341
+ 19823 string characters out of 1211661
+ 46484 words of memory out of 1000000
+ 2795 multiletter control sequences out of 10000+50000
+ 32127 words of font info for 112 fonts, out of 500000 for 2000
+ 51 hyphenation exceptions out of 1000
+ 13i,6n,16p,246b,402s stack positions out of 1500i,500n,5000p,200000b,5000s
+PDF statistics:
+ 285 PDF objects out of 300000
+ 49 named destinations out of 131072
+ 185 words of extra memory for PDF output out of 65536
+</opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmti9.pfb></opt/local
+/share/texmf-dist/fonts/type1/bluesky/cm/cmr9.pfb></opt/local/share/texmf-dist/
+fonts/type1/bluesky/cm/cmsltt10.pfb></opt/local/share/texmf-dist/fonts/type1/bl
+uesky/cm/cmsl10.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmb10.p
+fb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmti10.pfb></opt/local/s
+hare/texmf-dist/fonts/type1/bluesky/cm/cmbxti10.pfb></opt/local/share/texmf-dis
+t/fonts/type1/bluesky/cm/cmsy10.pfb></opt/local/share/texmf-dist/fonts/type1/bl
+uesky/cm/cmtt12.pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmbx12.
+pfb></opt/local/share/texmf-dist/fonts/type1/bluesky/cm/cmtt10.pfb></opt/local/
+share/texmf-dist/fonts/type1/bluesky/cm/cmr10.pfb>
+Output written on jml_homework.pdf (23 pages, 159170 bytes).

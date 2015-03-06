@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: ESC/Java2 FAQ</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2006 Joseph Kiniry, KindSoftware LLC, 2007-2008 Dermot Cochran" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectiontwo">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/bee.jpg" border="0" width="180" height="100" alt="Open Source Software" name="bee" />
+
+<!-- Sub menu within sidebar -->
+<!--#include virtual="/menus/OS/ESCJava2/selected.xml" -->
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>ESC/Java2 FAQ</h2>
+
+<p> If you have any questions that you'd like added to this FAQ,
+please email your suggestions to either of the mailing lists. Thanks!</p>
+<ol>
+
+  <li> <a class="faq_name" name="what">
+      <em>What is ESC/Java2?</em></a>
+
+      <p> The <em>Extended Static Checker for Java version 2</em>
+      (ESC/Java2) is a programming tool that attempts to find common
+      run-time errors in Java programs by static analysis of Java
+      programs and their JML annotations.  Users can control the
+      amount and kinds of checking that ESC/Java2 performs by
+      annotating their program with specially formatted comments
+      called <em>pragmas</em>. Pragmas are written in the
+      <a href="http://www.jmlspecs.org/">Java Modeling Language</a>
+      (JML), a behavioral interface specification language for
+      Java. </p>
+  </li>
+
+  <li> <a  class="faq_name" name="name">
+      <em>Where did the name "ESC/Java2" come from?</em></a>
+
+      <p> The original extended static checkers were called
+      <em>ESC/Modula-III</em> (the extended static checker for the
+      Modula-III programming language) and <em>ESC/Java</em> (the
+      extended static checker for Java).  The final version of
+      ESC/Java to "ship" from Compaq SRC was version 1.2.4.  Thus,
+      when we began development on a new, updated, Open Source
+      version of ESC/Java with tons of new features, it seemed
+      fitting to bump a major version number.  Thus, ESC/Java
+      version 2, or <em>ESC/Java2</em> for short, was born. </p>
+  </li>
+      
+  <li> <a class="faq_name" name="latest">
+      <em>What is the latest release of ESC/Java2?  What is the
+        development schedule for future releases?</em></a>
+
+      <p> The latest release of ESC/Java2 is version 2.0.5. It is the
+        16th release of ESC/Java2 and its 1st stable release. </p>
+  </li>
+
+  <li> <a class="faq_name" name="design">
+      <em>I have looked at the ESC/Java2 source, and the design of the
+      front-end (the lexer, parser, typechecker) confuse me because
+      they do not seem to be really "object-oriented".  Why is the
+      front-end designed like this?</em></a>
+     
+    <p> ESC/Java2's frontend is inherited from SRC ESC/Java, which was
+       written by several scientists and interns at Digital's Systems
+       Research Lab in the late 1990s.  While the original authors
+       sometimes claim that the architecture has an "object-oriented"
+       design, most would say that it is, instead, a "structured"
+       design, given the heavy use of static variables to represent
+       the state of the parser, for example. </p>
+
+    <p> I (Joe K.)  believe that this is (at least partially) due to
+       several factors including: (a) the small size and close
+       relationship of the original team, (b) the original team was
+       very experienced with writing programs in modular programming
+       languages but not object-oriented programming languages, and
+       (c) the desire that the front-end be highly efficient both in
+       time and space.  As a result, while because of (a) and (b) the
+       design is a bit difficult to initially understand and modify,
+       due to (c) it is very efficient. </p>
+      
+    <p> We have attempted to remedy this situation in the ESC/Java2
+       project in two ways.  First, we have been writing architecture
+       documentation and supplimentary materials to introduce new
+       developers to ESC/Java2.  See, for example, the extensive
+       "ESC/Java2 Implementation Notes" and the forthcoming "Extending
+       ESC/Java2" booklet. Second, we have been writing formal
+       specifiations of the architecture and running the JML tool
+       suite and ESC/Java2 <em>on itself</em>. </p> </li>
+
+  <li> <a class="faq_name" name="java2"></a>
+      <em>Can I run ESC/Java2 in a Java 1.5 VM or reason about Java
+        1.5 source code?</em>
+
+    <p> ESC/Java2 is written with Java 1.4 and <em>only</em> runs in a
+      Java 1.4 or 1.5 virtual machine.  While ESC/Java2 should work in any
+      Java 1.4 or 1.5 virtual machine, we strongly suggest using the latest
+      stable release (1.4.2_09 at the time of this writing). </p>
+
+    <p> ESC/Java2 does not parse Java 1.5
+      code, thus cannot reason about Java 1.5 programs.  There are no
+      plans at this time to support Java 1.5 source code within the
+      ESC/Java2 framework.  Work is ongoing to build a new extended
+      static checker based upon the Eclipse JDT.
+      Contact <a href="/about/people/jrk.html">Joe Kiniry</a> for more
+      information about this project. </p> </li>
+
+  <li> <a class="faq_name" name="license">
+      <em>What is the ESC/Java2 license like?</em></a>
+
+      <p> See the <a href="license.html">license</a> page on this site
+      for more information. Essentially, we are still contrained by the
+      original Compaq license, but we hope to make all of our
+      changes available under a liberal Open Source BSD-like license in
+      the near future.  We also hope that Compaq will someday
+      release the original source under a more mainstream, liberal
+      license (e.g., GPL, BSD, or MIT license). </p> </li>
+
+  <li> <a class="faq_name" name="contributors">
+      <em>Who has contributed to ESC/Java2?</em></a>
+
+      <p>
+      Contributors to ESC/Java2, direct and indirect, whether they know it or
+      not, include:
+      Michiel Alsters,
+      Cees-Bart Breunesse,
+      Mark Brown,
+      Patrice Chalin,
+      Rod Chapman,
+      Michel Charpentier,
+      Yoonsik Cheon,
+      Curt Clifton,
+      Dermot Cochran,
+      David Cok,
+      Jean-francois Dazy, <!--fix c-->
+      Barry Denby,
+      David Detlefs,
+      Jean-Michel Douin,
+      Fintan Fairmichael,
+      Cormac Flanagan,
+      Conor Gallagher,
+      Radu Grigore,
+      Martin Hoffmann,
+      Engelbert Hubbers,
+      Marieke Huisman,
+      Cl&eacute;ment Hurlin,
+      Bart Jacobs (RUN),
+      Mikol&aacute;&scaron; Janota,
+      Joe Kiniry,
+      Gary Leavens,
+      Rustan Leino,
+      Mark Lillibridge,
+      Claude Marche,
+      Todd Millstein,
+      Alan Morkan,
+      Peter Muller, <!-- fix u -->
+      David Naumann,
+      Greg Nelson,
+      Martijn Oostdijk,
+      Wolter Pieters,
+      Erik Poll,
+      Frederic Rioux,
+      Edwin Rodriguez,
+      Clyde Ruby,
+      Will Sargent,
+      Jim Saxe,
+      Aleksy Schubert,
+      Silvija Seres,
+      Raymie Stata.
+      Cesare Tinelli,
+      Martijn Warnier,
+      and
+      Daniel Zimmerman.
+      </p>
+
+      <p> Apologies if we have missed anyone, as I only update this
+      list ever few months.  Please
+      email <a href="/about/people/jrk.html">Joe</a> if you think I
+      need a nudge. </p></li>
+
+  <li> <a class="faq_name" name="history">
+      <em>What is the history of ESC/Java2?</em></a>
+
+      <p> ESC/Java2 is the direct descendant of the
+      <em>Compaq Extended Static Checker for Java</em>.
+      The main group responsible for extended static checking research
+      was at Digital Equipment Corporation's Systems Research Lab
+      (SRC) in the mid-to-late 1990s.
+
+      That group consisted of many excellent researchers including
+      Cormac Flanagan,
+      Mark Lillibridge,
+      Greg Nelson,
+      Jim Saxe,
+      and
+      Raymie Stata.
+      The project was lead by K. Rustan M. Leino.
+
+      <a href="http://www.soe.ucsc.edu/~cormac/">Cormac</a> and
+      <a href="http://www.cse.ucsc.edu/~raymie/">Raymie</a>
+      are now at UCSC.
+      <a href="http://research.microsoft.com/~leino/">Rustan</a>
+      now leads a group at Microsoft Research working on Spec#, a kind
+      of JML for C#.
+      <a href="http://research.compaq.com/SRC/staff/gnelson/bio.html">Greg</a>
+      is still at Hewlett-Packard (who bought Compaq in 2002) and
+      works on digital printing technologies.
+      <a href="http://research.compaq.com/SRC/staff/saxe/bio.html">Jim</a>
+      and
+      <a href="http://research.compaq.com/SRC/personal/mdl/home.html">Mark</a>
+      are perhaps also still at Hewlett-Packard.
+
+      The main authors of ESC/Java2 are David Cok and Joe Kiniry.
+      David is Chief Technologist for the Photographic Center within
+      Kodak's R&amp;D Laboratories in Rochester, New York.  Joe is a
+      Lecturer in Computer Science at University College Dublin.</p>
+  </li>
+      
+  <li> <a class="faq_name" name="source">
+      <em>How do I get the source for ESC/Java2 or pre-built
+        executables?</em></a>
+
+      <p> You can download the latest ESC/Java2 source code and
+      executables via the one of the ESCJava2 release home page
+      mirrors:</p>
+      <ul>
+        <li> the JMLSpecs SourceForge projecct </li>
+        <li>
+            the <a
+            href="/products/opensource/ESCJava2/">Software
+            Engineering with Applied Formal Methods Group</a> at
+            the <a href="http://www.csi.ucd.ie/">School of Computer
+            Science and Informatics </a>
+            at <a href="http://www.ucd.ie/">University College
+            Dublin</a> </li>
+        <li> <a href="/products/opensource/ESCJava2/">KindSoftware</a> </li>
+      </ul>
+  </li>
+
+  <li> <a class="faq_name" name="versions">
+      <em>Are previous versions of ESC/Java available?</em></a>
+
+      <p> You can download H.P./Compaq SRC ESC/Java (version 1.2.4)
+      directly from HP's
+      <a href="http://www.hpl.hp.com/downloads/crl/jtk/">Java
+      Programming Toolkit Source Release</a> web page.  Note that the
+      SRC no longer actually exists and there is no guarantee that the
+      SRC web page will remain online in the future (we have already
+      chased it around a few times).  We have previous versions of
+      ESC/Java2 (version 2.0a0, 2.0a1, etc.) available as well, but
+      given every version of ESC/Java2 is better in every way that its
+      predecessor, we see no reason to keep old versions online.  If
+      you <em>really</em> need an older version, please email us and
+      we'll get it to you. </p>
+  </li>
+      
+  <li> <a class="faq_name" name="contribute">
+      <em>How can I contribute?</em></a>
+
+      <p> You can contribute in many, many ways to ESC/Java2 and
+      related projects. </p>
+
+      <p> Most importantly, user feedback is extremely valuable to
+      us. What are you doing with ESC/Java2?  What problems are you
+      having?  What successes have you had?  What kind of programs are
+      you trying to check?  What new features would you like to see?
+      You can raise a bug report or feature request via our <a
+      href="/trac/mobius">Trac</a>.
+      </p>
+
+      <p> Only the very core classes of Java have JML specifications.
+      So another very valuable way to contribute to not just
+      ESC/Java2, but the entire JML community, is to write specs!
+      Writing JML specifications for the classes you use is the best
+      way to learn JML, the JML tools, and ESC/Java2.  It is also an
+      excellent way to learn the intimate details of the packages you
+      use.  We find that after having written the spec for a class you
+      often understand it better than the original authors! </p>
+
+      <p> There are many <a href="/documents/proposals/">proposed
+      research project descriptions</a> available on the KindSoftware
+      web site that involve program specification and verification in
+      some fashion. Feel free to review these projects, take good
+      ideas, and contact Joe with questions or comments. </p>
+
+      <p> You can build a new tool that is based upon, or uses
+      ESC/Java2 as a component. This approach has been followed by
+      several contributors already.  For example, see
+      <a href="http://springerlink.metapress.com/openurl.asp?genre=article&amp;issn=0302-9743&amp;volume=2890&amp;spage=214">Engelbert Hubbers's work</a>
+      on integrating several JML-based tools into a
+      single framework and Christoph Csallner's work called
+      <a href="http://www.cc.gatech.edu/~csallnch/cnc/">CnC</a> which takes
+      ESC/Java2-generated counterexamples and compiles them into JUnit
+      test cases. </p>
+      
+      <p> Finally, we welcome new developers to contribute to
+      ESC/Java2.  For example, some independent submissions include:
+      Will Sargent wrote the ESC/Java2 Ant task, Jean-Michel Douin and
+      Jean-francois Dazy contributed a Windows batch file, and Aleksy
+      Schubert added the <code>-L</code> switch. </p>
+      
+      <p> If you wish to contribute but do not quite know where to
+      start or what needs doing, just
+      <a href="mailto:kiniry@acm.org,cok@frontiernet.net">email us</a>
+      and let us know your interests and background and we will try to
+      point you in the right direction. </p></li>
+
+  <li> <a class="faq_name" name="tools">
+      <em>What tools are used to develop ESC/Java2?</em></a>
+
+      <p> Each developer uses his or her own set of tools.  Since
+      ESC/Java2 is written in Java and is completely
+      platform independent, we do not force the use of any particular
+      development environment.  Joe uses a heavily enhanced Emacs and
+      all of the tools mentioned in the KindSoftware 
+      <a href="/documents/whitepapers/code_standards/tools.html">code standard</a>,
+      David used <tt>vim</tt> and a shell until recently moving to
+      <a href="http://www.eclipse.org/">Eclipse</a>. </p>
+  </li>
+
+  <li> <a class="faq_name" name="documentation">
+      <em>What is the primary documentation on ESC/Java2?</em></a>
+
+      <p> We have not written an updated User's Guide for
+      ESC/Java2.  The
+      <a href="ESCTools/docs/ESCJAVA-UsersManual.html">User's Guide of ESC/Java</a>
+      is still highly relevant.</p>
+
+      <p> The subversion repository of ESC/Java2 contains all of the
+      <a href="ESCTools/docs/design-notes/">original ESC/Java design documents</a>
+      from SRC.  These documents provide background information on the
+      design, purpose, and history of SRC ESC/Java. </p>
+
+      <p> We are also writing several documents about various aspects
+      of ESC/Java2.  These are not exhaustive, but contain large
+      amounts of useful information.</p>
+      <ul>
+        <li> <a href="ESCTools/docs/Escjava2-ImplementationNotes.pdf">ESC/Java2 Implementation Notes</a> </li>
+        <li> <a href="ESCTools/docs/Escjava2-Logics.pdf">The Logics and Calculi of ESC/Java2</a> </li>
+        <li> <a href="ESCTools/docs/Escjava2-Provers.pdf">The Provers of ESC/Java2</a> </li>
+        <li> <a href="ESCTools/docs/Escjava2-Extending.pdf">Extending ESC/Java2</a> </li>
+      </ul>
+  </li>
+
+  <li> <a class="faq_name" name="universities">
+      <em>What university classes use ESC/Java2?</em></a>
+
+      <p> A partial list of instructors using ESC/Java2 to teach
+      (currently or in the past, in no particular order) includes:</p>
+      <ul>
+        <li> <a href="http://www.essex.ac.uk/">Norbert Volker</a> at Essex </li> 
+        <li> <a href="http://www.tffenterprises.com/~dmz/">Daniel Zimmerman</a> at Caltech. </li>
+        <li> <a href="http://www.cs.concordia.ca/~chalin/">Patrice Chalin</a> Concordia University </li>
+        <li> Joe Kiniry, Martijn Oostdijk, Engelbert Hubbers, and Erik Poll at Radboud University Nijmegen while teaching an OOTI course at the Technical Institute of Eindhoven </li>
+        <li> <a href="http://www.cs.iastate.edu/~leavens/">Gary Leavens</a> at Iowa State University </li>
+        <li> Jean-Michel Douin and Jean-francois <!--fix c--> Dazy at the Conservatoire National des Arts et Metiers Paris </li>
+        <li> Angelo Gargantini at University of Catania in Italy </li>
+        <li> <a href="http://www.cis.ksu.edu/~hatcliff/">John Hatcliff</a> at Kansas State University </li>
+        <li> Matt Dwyer while at KSU and perhaps while at the University of Nebraska </li>
+        <!-- <li> Doug Lea at SUNY Oswego </li> -->
+        <li> <a href="http://www.cs.waikato.ac.nz/~marku/">Mark Utting</a> and <a href="http://www.cs.waikato.ac.nz/cs/Staff/jgc.html">John G. Cleary</a> at the University of Waikato in Hamilton, New Zealand </li>
+        <li> Denis Lugiez at the University Aix-Marseille I in Marseille, France </li>
+        <li> Andres Koetter <!-- (Andres.Koetter@gmx.de) --> </li>
+        <li> Carl Pulley at ACME Labs in the UK </li>
+        <li> <a href="http://www.cs.stir.ac.uk/~twi/">Thomas Wilson</a> at the University of Stirling in Scotland </li>
+        <li> <a href="http://www.cs.stevens-tech.edu/~naumann/"></a>David Naumann at Stevens Institute of Technology </li>
+        <li> <a href="http://www.loria.fr/~mery/">Dominique Mery</a> at LORIA CNRS </li>
+        <li> <a href="http://www.cs.virginia.edu/cs201j/">CS201J Engineering Software</a> at the <a href="http://www.cs.virginia.edu/">University of Virginia</a></li>
+        <li> <a href="http://www.cs.cmu.edu/~aldrich/">Jonathan Aldrich</a> uses the JML tools and ESC/Java2 in his course <a href="http://www.cs.cmu.edu/~aldrich/courses/413/">Introduction to Software Engineering</a> at CMU.</li>
+      </ul>
+      
+      <p> ESC/Java2 has been used to teach programming in Java, software
+      engineering, (applied) formal methods, programming language semantics,
+      program specification and verification, and security.  It has also
+      been used to help grade Java programs.
+      </p>
+  </li>
+
+  <li> <a class="faq_name" name="groups">
+      <em>What research groups or individuals are using
+        ESC/Java2?</em></a>
+
+      <p> A partial list of groups and researchers using or extending
+      ESC/Java2 or Simplify (currently or in the past, in no particular
+      order) includes:</p>
+      <ul>
+        <li> <a href="http://www.dcs.ed.ac.uk/home/dts/">Don Sannella's</a> group at the University of Edinburgh <!-- (Perla Ines Velasco) --> </li>
+        <li> <a href="http://www.cs.iastate.edu/~leavens/">Gary Leavens's</a> group at Iowa State University </li>
+        <li> <a href="http://www.cs.concordia.ca/~faculty/chalin/">Patrice Chalin's</a> group at Concordia University </li>
+        <li> <a href="http://www.cs.vt.edu/~edwards/">Steve Edwards's</a> group at the University of Vermont </li>
+        <li> <!--schmidt_peter@gmx.at-->Peter Schmidt at an undisclosed university in Austria</li>
+        <li> Richard Knight at the University of North Carolina (Charlotte) <!--double-check this--> </li>
+        <li> <a href="http://www.ira.uka.de/">Steffen Schlager's</a> group at the University of Karlsruhe </li>
+        <li> Jean-Michel Douin and Jean-francois <!--fix c--> Dazy at the Conservatoire National des Arts et Metiers Paris </li>
+        <li> the <a href="http://www.cis.ksu.edu/">SAnToS lab</a> at Kansas State University </li>
+        <li> <a href="http://people.cs.cmu.edu/person/52652.html">Timothy Halloran</a> at Carnegie Mellon University </li> <!-- double-check this -->
+        <li> <a href="http://www.cs.yorku.ca/~oz/">Ozan Yigit</a> at York University in Canada </li>
+        <li> <a href="http://www-users.cs.york.ac.uk/~leo/">Leonardo Freitas</a> at University of York (previously at the University of Kent) </li>
+        <li> <a href="http://www.cs.umd.edu/~rutar/">Nick Rutar</a> at the University of Maryland </li>
+        <li> Nichole Rauch at informatik.uni-kl.de </li>
+        <li> Adnan Agbaria at UIUC </li>
+        <li> Hiroshi Wanatabe's group at the Center for Verification and Semantics, National Institute of Advanced Industrial Science and Technology (AIST) in Amagasaki, Japan </li>
+        <li> David Notkin's group at the University of Washington <!-- (Tao Xie) --> </li>
+        <!-- <li> Tristan Behrens (tri.be@gmx.de) </li> -->
+        <li> <a href="http://www.cc.gatech.edu/~csallnch/">Christoph Csallner's</a> group at Georgia Tech</li>
+        <li> Marieke Huisman's students (Julien Groslambert) at the Franche-Comte <!-- fix e --> University </li>
+        <li> Jun Yuan <!-- (jyuantx@gmail.com) --> </li>
+        <li> Carl Pulley at ACME Labs in the UK </li>
+        <li> <a href="http://www.cs.may.ie/">Rosemary Monahan's</a> group at the National University of Ireland, Maynooth <!-- (Damien Fox and Claire Bailey) --> </li>
+        <li> Daniel Moisset <!-- (dmoisset@arnet.com.ar) --> at ? </li>
+        <li> Ke Sun, an MSc student at Eindhoven </li>
+      </ul>
+  </li>
+
+  <li> <a class="faq_name" name="companies">
+      <em>What companies have used ESC/Java2 in some manner (currently
+      or in the past, in no particular order)?</em></a>
+
+      <p> A partial list of companies includes: </p>
+      <ul>
+        <li> the Formal Methods and Security group, Smart Cards Research, Axalto (a Schlumberger Company), France <!-- (email from Nejib Jemli)  --></li>
+        <li> DoCoMo Labs in San Jose, California <!-- (email from David Espinoa and Ajay Chander) --> </li>
+        <li> the Center for Verification and Semantics, National Institute of Advanced Industrial Science and Technology (AIST) in Amagasaki, Japan </li>
+        <li> tma.com.vn in Vietnam <!-- (email from Hoanh Nguyen and Vy Vo) --> </li>
+        <li> T.J. Watson Research Labs at IBM <!-- (email from Roman Ginis and ?) --> </li>
+        <li> RapidMoney Corporation <!-- (email from Barry McKeon) --> </li>
+        <li> ACME Labs </li>
+        <li> Sun Microsystems </li>
+      </ul>
+  </li>
+
+  <li> <a class="faq_name" name="incorporate">
+      <em>What research tools incorporate ESC/Java2 or Simplify in
+      some way?</em></a>
+
+      <p> We are aware of the following tools.  If you have developed
+      a new tool, please let us know.</p>
+      <ul>
+        <li> Engelbert Hubbers integrated several JML-based
+            tools into a single framework </li>
+        <li> Christoph Csallner's developed
+            <a href="http://www.cc.gatech.edu/~csallnch/cnc/">CnC</a>
+            which takes ESC/Java2-generated counterexamples and
+            compiles them into JUnit test cases </li>
+        <li> The <a href="http://research.microsoft.com/specsharp/">Spec#</a>
+            system at <a href="http://research.microsoft.com/">Microsoft 
+            Research</a> </li>
+      </ul>
+      <p>Also, comparisons of ESC/Java2 with other tools have been
+      written.  For example, see this recent
+      <a href="http://www.cs.umd.edu/~jfoster/papers/issre04-abstract.html">ISSRE paper</a>
+      by Rutar, Almazan, and Foster which describes a "meta-tool" to
+      combine many approaches, including extended static checking.
+      </p></li>
+
+  <li> <a class="faq_name" name="learning">
+      <em>If I want to learn about extended static checking or related
+      topics (source code-based verification, formal annotations,
+      object logics, etc.), where should I look?</em></a>
+
+      <p> Jonathan Bowen's <a href="http://www.afm.sbu.ac.uk/">Formal Methods</a>
+      web pages are an excellent starting point for this kind of work.  The
+      <a href="http://www.jmlspecs.org/">JML</a> web site is the key website
+      for all things JML-related. The Spec# project at Microsoft
+      Research is one of the other most active research groups in this
+      domain. </p> <!-- look up Spec# URL -->
+  </li>
+
+  <li> <a class="faq_name" name="simplify">
+      <em>What is the future of Simplify?</em></a>
+    
+      <p> Simplify was written by Greg Nelson and others at SRC.  It
+      is implemented in Modula-III.  The only recent development on
+      Simplify that has taken place is our port of it to Mac OS X.  We
+      do not plan on doing any development on Simplify, as the world
+      of first-order theorem provers has changed quite a bit over the
+      past decade or so.  Instead, we are working on integrating
+      ESC/Java2 with new-generation SMT-LIB provers. As of mid-2011
+      there was a rumor that H.P. has decided to release Simplify
+      under an Open Source license, but we have yet to see an official
+      announcement. </p>
+  </li>
+      
+  <li> <a class="faq_name" name="process">
+      <em>How can I integrate ESC/Java2 into my development
+        process?</em></a>
+
+      <p> ESC/Java2 generates warnings and error messages in the
+      standard output format of various GNU tools like gcc.  Thus, if
+      your development environment understands the output of any such
+      tools, it will work with ESC/Java2. </p>
+
+      <p> For example, by using a Makefile and compile-mode in Emacs,
+      one can execute the tool and directly jump to the indicated
+      lines in warnings and errors with a push of a button. </p>
+
+      <p> We are writing a booklet at the moment, entitled "The Mobius
+      Software Development Process," that discusses these issues in
+      detail using a series of case studies. </p>
+  </li>
+
+  <li> <a class="faq_name" name="ides">
+      <em>Does ESC/Java2 support any modern Java IDEs such as
+      Eclipse?</em></a>
+
+      <p> David Cok has implemented a minimal GUI for ESC/Java2. By
+      running the ESC/Java2 jar file directly, you will see the GUI. </p>
+      
+      <p> David also initiated the implementation of an excellent
+      Eclipse plug-in for ESC/Java2.  This work is now continued by
+      various <a href="http://mobius.inria.fr/">Mobius</a> partners.
+      Please see
+      the <a href="http://jmleclipse.projects.cis.ksu.edu/docs/esc-java.shtml">KSU homepage</a>
+      for more details. </p>
+
+      <p> An ESC/Java plug-in for Eclipse has also been written by
+      researchers at the University of Virginia.  Please see their
+      <a href="http://www.cs.virginia.edu/cs201j/plugin/">Engineering Software</a>
+      webpage for more information. </p>
+  </li>
+
+  <li> <a class="faq_name" name="mailing_lists">
+      <em>Where do discussions about ESC/Java2 take place?</em></a>
+      
+      <p> There are two mailing lists that focus on ESC/Java2:</p>
+        <ol>
+          <li> The <a
+          href="https://lists.sourceforge.net/lists/listinfo/jmlspecs-escjava">JMLSpecs-ESCJava</a>
+          mailing list is the "users" mailing list where one can ask
+          questions of experienced users and the developers of
+          ESC/Java2.  Subscribe to this list by registering
+          at <a
+          href="http://www.sourceforge.net/">SourceForge</a>. </li>
+          <li> The <a
+          href="https://srg-smtp.ucd.ie/mailman/listinfo/escjava-developers">ESCJava-Developers</a>
+          list is used by ESC/Java2 developers to discuss new
+          features, bugs, designs, research, etc. </li>
+        </ol>
+  </li>
+
+<!--   <li> <em>What papers have been written about or use ESC/Java2?</em> -->
+      
+<!--       <p> Answer. </p> -->
+<!--   </li> -->
+
+<!--   <li> <em>What systems/models/theories have been influenced by ESC/Java and ESC/Java2?</em> -->
+      
+<!--       <p> Answer. </p> -->
+<!--   </li> -->
+
+<!--   <li> <em>What is the state of research in extended static checking?</em> -->
+
+<!--       <p> Answer. </p> -->
+<!--   </li> -->
+      
+<li> <em>What is the future of ESC/Java2?</em>
+
+  <p> ESC/Java2 is no longer under development.  It has been replaced
+    by the ESC component
+    of <a href="http://jmleclipse.projects.cis.ksu.edu/">JMLEclipse</a>
+    from Patrice Chalin, Jooyong Lee, and Robby and the ESC component
+    of <a href="http://sourceforge.net/apps/trac/jmlspecs/wiki/OpenJml">OpenJML</a>
+    by David Cok.  Contact those respective authors for more
+    information about these new generations of extended static
+    checkers for Java. </p>
+</li>
+
+<!--   <li> <em>How can I specify and verify multi-threaded programs?  Does ESC/Java2 understand concurrent Java programs?</em> -->
+
+<!--       <p> Answer. </p> -->
+<!--   </li> -->
+
+<!--   <li> <em>How does ESC/Java2 relate to Spec# from Microsoft Research?</em> -->
+
+<!--       <p> Answer. </p> -->
+<!--   </li> -->
+
+<!--   <li> <em>How does ESC/Java2 relate/compare to X?</em> -->
+
+<!--       <p> Answer. </p> -->
+<!--   </li> -->
+
+<!--   <li> <em>How does ESC/Java2 basically work?</em> -->
+
+<!--       <p> Answer. </p> -->
+<!--   </li> -->
+
+<!--   <li> <em>What's all this I hear about ESC/Java2's lack of soundness and completeness?</em> -->
+
+<!--       <p> Answer. </p> -->
+<!--   </li> -->
+
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 2004&#8211;2008 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="faq.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

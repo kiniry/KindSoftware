@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: NIII-R0413.aux
+The style file: abbrv.bst
+I found no \bibdata command---while reading file NIII-R0413.aux
+Warning--I didn't find a database entry for "Flanagan-etal02"
+Warning--I didn't find a database entry for "jmlpapers"
+Warning--I didn't find a database entry for "Leavens-etal00"
+Warning--I didn't find a database entry for "Hub03"
+Warning--I didn't find a database entry for "HOP04"
+Warning--I didn't find a database entry for "Burdy-etal03"
+Warning--I didn't find a database entry for "Bogor03"
+Warning--I didn't find a database entry for "NimmerErnst01"
+Warning--I didn't find a database entry for "flanagan01houdini"
+Warning--I didn't find a database entry for "Leino-Poetzsch-Heffter-Zhou02"
+Warning--I didn't find a database entry for "Cheon-etal03"
+Warning--I didn't find a database entry for "Leavens-etal03a"
+Warning--I didn't find a database entry for "Chalin03"
+Warning--I didn't find a database entry for "MeijerPoll01"
+Warning--I didn't find a database entry for "BergJ01"
+Warning--I didn't find a database entry for "BurdyRequet02"
+Warning--I didn't find a database entry for "MarchePaulinMohringUrbain04"
+Warning--I didn't find a database entry for "BreunesseJacobsBerg02"
+Warning--I didn't find a database entry for "CatanoHuisman02"
+Warning--I didn't find a database entry for "GroceVisser03"
+You've used 0 entries,
+            2118 wiz_defined-function locations,
+            534 strings with 4221 characters,
+and the built_in function-call counts, 18 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There was 1 error message)

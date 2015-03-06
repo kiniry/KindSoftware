@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.4)
+The top-level auxiliary file: CASSIS2004.aux
+The style file: abbrv.bst
+Database file #1: abbrev.bib
+Database file #2: PASTE2004.bib
+Database file #3: CASSIS2004.bib
+You've used 28 entries,
+            2118 wiz_defined-function locations,
+            1024 strings with 17200 characters,
+and the built_in function-call counts, 11257 in all, are:
+= -- 1113
+> -- 573
+< -- 27
++ -- 218
+- -- 186
+* -- 811
+:= -- 1795
+add.period$ -- 100
+call.type$ -- 28
+change.case$ -- 166
+chr.to.int$ -- 0
+cite$ -- 28
+duplicate$ -- 456
+empty$ -- 840
+format.name$ -- 186
+if$ -- 2442
+int.to.chr$ -- 0
+int.to.str$ -- 28
+missing$ -- 21
+newline$ -- 145
+num.names$ -- 74
+pop$ -- 185
+preamble$ -- 1
+purify$ -- 138
+quote$ -- 0
+skip$ -- 345
+stack$ -- 0
+substring$ -- 570
+swap$ -- 171
+text.length$ -- 27
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 112
+warning$ -- 0
+while$ -- 104
+width$ -- 30
+write$ -- 337

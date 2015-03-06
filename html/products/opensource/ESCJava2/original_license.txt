@@ -1,0 +1,56 @@
+SOFTWARE LICENSE AGREEMENT
+
+Compaq Computer Corporation, a Delaware corporation with offices at 20555 SH 249, Houston, TX, (COMPAQ) and you the CUSTOMER agree as follows:
+1. DEFINITIONS
+
+1.1 SOFTWARE shall mean the computer program in binary form, and any associated information, that you are about to download.
+
+1.2 INTELLECTUAL PROPERTY RIGHTS shall mean:
+
+    * A. All rights, title and interests in all trade secrets, and all trade secret rights arising under the common law, state law, federal law and laws of foreign countries.
+    * B. All rights, title and interests in all reissue, division, continuation or continuation-in-part patent applications throughout the world now or hereafter filed and all patents issuing therefrom.
+    * C. All rights, title and interests in all mask work rights, all copyrights and all other literary property and author rights, whether or not copyrightable, throughout the world.
+    * D. All rights, title and interests in all know-how and show-how whether or not protected by copyright or trade secret.
+
+2. LICENSE GRANT
+
+2.1 Subject to the terms and conditions of this Agreement, COMPAQ hereby grants CUSTOMER a non-exclusive, worldwide, non-transferable, royalty-free license for the term of this Agreement to duplicate and use SOFTWARE solely for internal, non-commercial, research purposes.
+
+2.2 CUSTOMER agrees not to distribute the SOFTWARE in any form, other than for CUSTOMER's own internal, non-commercial, research purposes.
+
+2.3 CUSTOMER agrees to refrain from and is expressly prohibited from reverse engineering, reverse compilation, disassembly or decomposition of the SOFTWARE.
+3. TECHNOLOGY TRANSFER
+
+3.1 COMPAQ shall provide the SOFTWARE in machine readable form to CUSTOMER.
+
+3.2 COMPAQ is under no obligation to supply error corrections or updates to the SOFTWARE as they become available, or to provide training, support or consulting for the SOFTWARE.
+4. INTELLECTUAL PROPERTY
+
+4.1 CUSTOMER acknowledges and agrees that COMPAQ owns all rights, title and interests in and to the SOFTWARE and all Intellectual Property Rights therein.
+5. TERM AND TERMINATION
+
+5.1 Term. This Agreement will continue in full force and effect perpetually, unless terminated under this Section 5.
+
+5.2 Termination. If CUSTOMER shall fail to perform or observe any of the terms and conditions to be performed or observed by it under this Agreement, COMPAQ shall give written notice to CUSTOMER specifying the respects in which they have failed to perform or observe the conditions of this Agreement. In the event that any default so indicated is not remedied within thirty (30) days after receipt of such notice, COMPAQ may in its sole discretion thereafter elect to terminate this Agreement, and this Agreement and all the obligations owed and rights granted herein to CUSTOMER shall immediately terminate.
+
+5.3 Effect of Termination: The parties agree that the termination of this Agreement shall not release either party from any other liability which shall have accrued to the other party at the time such termination becomes effective, nor affect in any manner the survival of any right, duty or obligation of either party. In the event of any termination of this Agreement for any reason, CUSTOMER shall return all original and all whole or partial copies of the SOFTWARE provided to CUSTOMER under this Agreement. CUSTOMER further shall cease to use and distribute the SOFTWARE in all forms immediately upon date of termination.
+6. DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY
+
+6.1 The SOFTWARE is provided by COMPAQ on an "AS IS" basis and without warranty or representation of the quality, characteristics or functionality of the SOFTWARE including but not limited to whether it is error-free, virus free, Y2K compliant or will operate in accordance with the performance requirements of CUSTOMER. COMPAQ HEREBY DISCLAIMS ALL EXPRESS AND IMPLIED WARRANTIES, INCLUDING ANY WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+6.2 CUSTOMER will hold COMPAQ harmless against all liabilities, demands, damages, expenses, or losses arising out of use by CUSTOMER of SOFTWARE or information furnished under this agreement.
+
+6.3 In no event shall COMPAQ be liable to CUSTOMER for any lost profits, or any form of special, incidental, indirect, consequential, or punitive damages of any kind whether in an action in contract, tort (including negligence), product liability or otherwise, whether or not foreseeable and whether or not COMPAQ has been informed in advance of the possibility of such damages including, without limitation, any damages claimed upon any termination of this Agreement. COMPAQ makes no representations or warranties that any making, using, selling, offering for sale, importation, licensing, duplication, derivation, distribution or other disposition of the SOFTWARE will be free from infringement of any intellectual property rights owned by a third party. COMPAQ will have no obligation to defend, indemnify, or hold harmless CUSTOMER, its employees, sub-contractors or transferees from any suit, action or claim alleging infringement of any third party’s proprietary intellectual property rights.
+7. GENERAL TERMS
+
+7.1 Choice of Law. This Agreement shall be governed by the internal laws of the State of Texas excluding its conflict of laws rules.
+
+7.2 CUSTOMER Assignment. This Agreement imposes personal obligations on CUSTOMER. CUSTOMER shall not assign any rights under this Agreement without the written consent of COMPAQ.
+
+7.3 Export Law Compliance. The SOFTWARE obtained under this Agreement may be subject to U.S. and other government export control regulations. CUSTOMER agrees that it will comply with these regulations whenever it exports or re-exports a controlled product or technical data obtained from COMPAQ or any product produced directly from the SOFTWARE.
+
+7.4 Waiver of Breach. The waiver of a breach hereunder may be effected only by a writing signed by COMPAQ and shall not constitute a waiver of any other breach.
+
+7.5 Severability. If a court finds that any provision of this Agreement is invalid or unenforceable, that provision will be enforced to the maximum extent permitted by law, and the other provisions of this Agreement will remain in full force and effect. Furthermore, the parties agree to substitute for the invalid or unenforceable provision a valid and enforceable provision which most closely approximates the intent and economic effect of the invalid or unenforceable provision.
+
+7.6 Complete Integration. CUSTOMER acknowledges that it has read this Agreement, understands it and agrees to be bound by its terms and further agrees that it is the complete and exclusive statement of the Agreement between the parties which supersedes all communications and understanding between the parties relating to the subject matter of this Agreement.

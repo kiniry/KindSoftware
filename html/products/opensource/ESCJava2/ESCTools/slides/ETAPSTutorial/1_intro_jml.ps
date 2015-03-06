@@ -1,0 +1,4122 @@
+%!PS-Adobe-2.0
+%%Creator: dvips(k) 5.95a Copyright 2005 Radical Eye Software
+%%Title: 1_intro_jml.dvi
+%%Pages: 42
+%%PageOrder: Ascend
+%%BoundingBox: 0 0 595 842
+%%DocumentFonts: Helvetica-BoldOblique Helvetica Helvetica-Bold CMBSY10
+%%+ Courier-Bold CMSY10 Helvetica-Oblique
+%%DocumentPaperSizes: a4
+%%EndComments
+%DVIPSWebPage: (www.radicaleye.com)
+%DVIPSCommandLine: dvips -Ppdf -G0 1_intro_jml.dvi
+%DVIPSParameters: dpi=8000
+%DVIPSSource:  TeX output 2008.01.16:1058
+%%BeginProcSet: tex.pro 0 0
+%!
+/TeXDict 300 dict def TeXDict begin/N{def}def/B{bind def}N/S{exch}N/X{S
+N}B/A{dup}B/TR{translate}N/isls false N/vsize 11 72 mul N/hsize 8.5 72
+mul N/landplus90{false}def/@rigin{isls{[0 landplus90{1 -1}{-1 1}ifelse 0
+0 0]concat}if 72 Resolution div 72 VResolution div neg scale isls{
+landplus90{VResolution 72 div vsize mul 0 exch}{Resolution -72 div hsize
+mul 0}ifelse TR}if Resolution VResolution vsize -72 div 1 add mul TR[
+matrix currentmatrix{A A round sub abs 0.00001 lt{round}if}forall round
+exch round exch]setmatrix}N/@landscape{/isls true N}B/@manualfeed{
+statusdict/manualfeed true put}B/@copies{/#copies X}B/FMat[1 0 0 -1 0 0]
+N/FBB[0 0 0 0]N/nn 0 N/IEn 0 N/ctr 0 N/df-tail{/nn 8 dict N nn begin
+/FontType 3 N/FontMatrix fntrx N/FontBBox FBB N string/base X array
+/BitMaps X/BuildChar{CharBuilder}N/Encoding IEn N end A{/foo setfont}2
+array copy cvx N load 0 nn put/ctr 0 N[}B/sf 0 N/df{/sf 1 N/fntrx FMat N
+df-tail}B/dfs{div/sf X/fntrx[sf 0 0 sf neg 0 0]N df-tail}B/E{pop nn A
+definefont setfont}B/Cw{Cd A length 5 sub get}B/Ch{Cd A length 4 sub get
+}B/Cx{128 Cd A length 3 sub get sub}B/Cy{Cd A length 2 sub get 127 sub}
+B/Cdx{Cd A length 1 sub get}B/Ci{Cd A type/stringtype ne{ctr get/ctr ctr
+1 add N}if}B/CharBuilder{save 3 1 roll S A/base get 2 index get S
+/BitMaps get S get/Cd X pop/ctr 0 N Cdx 0 Cx Cy Ch sub Cx Cw add Cy
+setcachedevice Cw Ch true[1 0 0 -1 -.1 Cx sub Cy .1 sub]{Ci}imagemask
+restore}B/D{/cc X A type/stringtype ne{]}if nn/base get cc ctr put nn
+/BitMaps get S ctr S sf 1 ne{A A length 1 sub A 2 index S get sf div put
+}if put/ctr ctr 1 add N}B/I{cc 1 add D}B/bop{userdict/bop-hook known{
+bop-hook}if/SI save N @rigin 0 0 moveto/V matrix currentmatrix A 1 get A
+mul exch 0 get A mul add .99 lt{/QV}{/RV}ifelse load def pop pop}N/eop{
+SI restore userdict/eop-hook known{eop-hook}if showpage}N/@start{
+userdict/start-hook known{start-hook}if pop/VResolution X/Resolution X
+1000 div/DVImag X/IEn 256 array N 2 string 0 1 255{IEn S A 360 add 36 4
+index cvrs cvn put}for pop 65781.76 div/vsize X 65781.76 div/hsize X}N
+/p{show}N/RMat[1 0 0 -1 0 0]N/BDot 260 string N/Rx 0 N/Ry 0 N/V{}B/RV/v{
+/Ry X/Rx X V}B statusdict begin/product where{pop false[(Display)(NeXT)
+(LaserWriter 16/600)]{A length product length le{A length product exch 0
+exch getinterval eq{pop true exit}if}{pop}ifelse}forall}{false}ifelse
+end{{gsave TR -.1 .1 TR 1 1 scale Rx Ry false RMat{BDot}imagemask
+grestore}}{{gsave TR -.1 .1 TR Rx Ry scale 1 1 false RMat{BDot}
+imagemask grestore}}ifelse B/QV{gsave newpath transform round exch round
+exch itransform moveto Rx 0 rlineto 0 Ry neg rlineto Rx neg 0 rlineto
+fill grestore}B/a{moveto}B/delta 0 N/tail{A/delta X 0 rmoveto}B/M{S p
+delta add tail}B/b{S p tail}B/c{-4 M}B/d{-3 M}B/e{-2 M}B/f{-1 M}B/g{0 M}
+B/h{1 M}B/i{2 M}B/j{3 M}B/k{4 M}B/w{0 rmoveto}B/l{p -4 w}B/m{p -3 w}B/n{
+p -2 w}B/o{p -1 w}B/q{p 1 w}B/r{p 2 w}B/s{p 3 w}B/t{p 4 w}B/x{0 S
+rmoveto}B/y{3 2 roll p a}B/bos{/SS save N}B/eos{SS restore}B end
+
+%%EndProcSet
+%%BeginProcSet: alt-rule.pro 0 0
+%!
+% Patch by TVZ
+% Makes dvips files draw rules with stroke rather than fill.
+% Makes narrow rules more predictable at low resolutions
+% after distilling to PDF.
+% May have unknown consequences for very thick rules.
+% Tested only with dvips 5.85(k).
+TeXDict begin
+/QV {
+  gsave newpath /ruleY X /ruleX X
+  Rx Ry gt
+  { ruleX ruleY Ry 2 div sub moveto Rx 0 rlineto Ry }
+  { ruleX Rx 2 div add ruleY moveto 0 Ry neg rlineto Rx }
+  ifelse
+  setlinewidth 0 setlinecap stroke grestore
+} bind def
+end
+
+%%EndProcSet
+%%BeginProcSet: pstricks.pro 0 0
+%!
+% PostScript prologue for pstricks.tex.
+% Version 97 patch 3, 98/06/01
+% For distribution, see pstricks.tex.
+%
+/tx@Dict 200 dict def tx@Dict begin
+/ADict 25 dict def
+/CM { matrix currentmatrix } bind def
+/SLW /setlinewidth load def
+/CLW /currentlinewidth load def
+/CP /currentpoint load def
+/ED { exch def } bind def
+/L /lineto load def
+/T /translate load def
+/TMatrix { } def
+/RAngle { 0 } def
+/Atan { /atan load stopped { pop pop 0 } if } def
+/Div { dup 0 eq { pop } { div } ifelse } def
+/NET { neg exch neg exch T } def
+/Pyth { dup mul exch dup mul add sqrt } def
+/PtoC { 2 copy cos mul 3 1 roll sin mul } def
+/PathLength@ { /z z y y1 sub x x1 sub Pyth add def /y1 y def /x1 x def }
+def
+/PathLength { flattenpath /z 0 def { /y1 ED /x1 ED /y2 y1 def /x2 x1 def
+} { /y ED /x ED PathLength@ } {} { /y y2 def /x x2 def PathLength@ }
+/pathforall load stopped { pop pop pop pop } if z } def
+/STP { .996264 dup scale } def
+/STV { SDict begin normalscale end STP  } def
+/DashLine { dup 0 gt { /a .5 def PathLength exch div } { pop /a 1 def
+PathLength } ifelse /b ED /x ED /y ED /z y x add def b a .5 sub 2 mul y
+mul sub z Div round z mul a .5 sub 2 mul y mul add b exch Div dup y mul
+/y ED x mul /x ED x 0 gt y 0 gt and { [ y x ] 1 a sub y mul } { [ 1 0 ]
+0 } ifelse setdash stroke } def
+/DotLine { /b PathLength def /a ED /z ED /y CLW def /z y z add def a 0 gt
+{ /b b a div def } { a 0 eq { /b b y sub def } { a -3 eq { /b b y add
+def } if } ifelse } ifelse [ 0 b b z Div round Div dup 0 le { pop 1 } if
+] a 0 gt { 0 } { y 2 div a -2 gt { neg } if } ifelse setdash 1
+setlinecap stroke } def
+/LineFill { gsave abs CLW add /a ED a 0 dtransform round exch round exch
+2 copy idtransform exch Atan rotate idtransform pop /a ED .25 .25
+% DG/SR modification begin - Dec. 12, 1997 - Patch 2
+%itransform translate pathbbox /y2 ED a Div ceiling cvi /x2 ED /y1 ED a
+itransform pathbbox /y2 ED a Div ceiling cvi /x2 ED /y1 ED a
+% DG/SR modification end
+Div cvi /x1 ED /y2 y2 y1 sub def clip newpath 2 setlinecap systemdict
+/setstrokeadjust known { true setstrokeadjust } if x2 x1 sub 1 add { x1
+% DG/SR modification begin - Jun.  1, 1998 - Patch 3 (from Michael Vulis)
+% a mul y1 moveto 0 y2 rlineto stroke /x1 x1 1 add def } repeat grestore }
+% def
+a mul y1 moveto 0 y2 rlineto stroke /x1 x1 1 add def } repeat grestore
+pop pop } def
+% DG/SR modification end
+/BeginArrow { ADict begin /@mtrx CM def gsave 2 copy T 2 index sub neg
+exch 3 index sub exch Atan rotate newpath } def
+/EndArrow { @mtrx setmatrix CP grestore end } def
+/Arrow { CLW mul add dup 2 div /w ED mul dup /h ED mul /a ED { 0 h T 1 -1
+scale } if w neg h moveto 0 0 L w h L w neg a neg rlineto gsave fill
+grestore } def
+/Tbar { CLW mul add /z ED z -2 div CLW 2 div moveto z 0 rlineto stroke 0
+CLW moveto } def
+/Bracket { CLW mul add dup CLW sub 2 div /x ED mul CLW add /y ED /z CLW 2
+div def x neg y moveto x neg CLW 2 div L x CLW 2 div L x y L stroke 0
+CLW moveto } def
+/RoundBracket { CLW mul add dup 2 div /x ED mul /y ED /mtrx CM def 0 CLW
+2 div T x y mul 0 ne { x y scale } if 1 1 moveto .85 .5 .35 0 0 0
+curveto -.35 0 -.85 .5 -1 1 curveto mtrx setmatrix stroke 0 CLW moveto }
+def
+/SD { 0 360 arc fill } def
+/EndDot { { /z DS def } { /z 0 def } ifelse /b ED 0 z DS SD b { 0 z DS
+CLW sub SD } if 0 DS z add CLW 4 div sub moveto } def
+/Shadow { [ { /moveto load } { /lineto load } { /curveto load } {
+/closepath load } /pathforall load stopped { pop pop pop pop CP /moveto
+load } if ] cvx newpath 3 1 roll T exec } def
+/NArray { aload length 2 div dup dup cvi eq not { exch pop } if /n exch
+cvi def } def
+/NArray { /f ED counttomark 2 div dup cvi /n ED n eq not { exch pop } if
+f { ] aload /Points ED } { n 2 mul 1 add -1 roll pop } ifelse } def
+/Line { NArray n 0 eq not { n 1 eq { 0 0 /n 2 def } if ArrowA /n n 2 sub
+def n { Lineto } repeat CP 4 2 roll ArrowB L pop pop } if } def
+/Arcto { /a [ 6 -2 roll ] cvx def a r /arcto load stopped { 5 } { 4 }
+ifelse { pop } repeat a } def
+/CheckClosed { dup n 2 mul 1 sub index eq 2 index n 2 mul 1 add index eq
+and { pop pop /n n 1 sub def } if } def
+/Polygon { NArray n 2 eq { 0 0 /n 3 def } if n 3 lt { n { pop pop }
+repeat } { n 3 gt { CheckClosed } if n 2 mul -2 roll /y0 ED /x0 ED /y1
+ED /x1 ED x1 y1 /x1 x0 x1 add 2 div def /y1 y0 y1 add 2 div def x1 y1
+moveto /n n 2 sub def n { Lineto } repeat x1 y1 x0 y0 6 4 roll Lineto
+Lineto pop pop closepath } ifelse } def
+/Diamond { /mtrx CM def T rotate /h ED /w ED dup 0 eq { pop } { CLW mul
+neg /d ED /a w h Atan def /h d a sin Div h add def /w d a cos Div w add
+def } ifelse mark w 2 div h 2 div w 0 0 h neg w neg 0 0 h w 2 div h 2
+div /ArrowA { moveto } def /ArrowB { } def false Line closepath mtrx
+setmatrix } def
+% DG modification begin - Jan. 15, 1997
+%/Triangle { /mtrx CM def translate rotate /h ED 2 div /w ED dup 0 eq {
+%pop } { CLW mul /d ED /h h d w h Atan sin Div sub def /w w d h w Atan 2
+%div dup cos exch sin Div mul sub def } ifelse mark 0 d w neg d 0 h w d 0
+%d /ArrowA { moveto } def /ArrowB { } def false Line closepath mtrx
+%setmatrix } def
+/Triangle { /mtrx CM def translate rotate /h ED 2 div /w ED dup
+CLW mul /d ED /h h d w h Atan sin Div sub def /w w d h w Atan 2
+div dup cos exch sin Div mul sub def mark 0 d w neg d 0 h w d 0
+d /ArrowA { moveto } def /ArrowB { } def false Line closepath mtrx
+% DG/SR modification begin - Jun.  1, 1998 - Patch 3 (from Michael Vulis)
+% setmatrix } def
+setmatrix pop } def
+% DG/SR modification end
+/CCA { /y ED /x ED 2 copy y sub /dy1 ED x sub /dx1 ED /l1 dx1 dy1 Pyth
+def } def
+/CCA { /y ED /x ED 2 copy y sub /dy1 ED x sub /dx1 ED /l1 dx1 dy1 Pyth
+def } def
+/CC { /l0 l1 def /x1 x dx sub def /y1 y dy sub def /dx0 dx1 def /dy0 dy1
+def CCA /dx dx0 l1 c exp mul dx1 l0 c exp mul add def /dy dy0 l1 c exp
+mul dy1 l0 c exp mul add def /m dx0 dy0 Atan dx1 dy1 Atan sub 2 div cos
+abs b exp a mul dx dy Pyth Div 2 div def /x2 x l0 dx mul m mul sub def
+/y2 y l0 dy mul m mul sub def /dx l1 dx mul m mul neg def /dy l1 dy mul
+m mul neg def } def
+/IC { /c c 1 add def c 0 lt { /c 0 def } { c 3 gt { /c 3 def } if }
+ifelse /a a 2 mul 3 div 45 cos b exp div def CCA /dx 0 def /dy 0 def }
+def
+/BOC { IC CC x2 y2 x1 y1 ArrowA CP 4 2 roll x y curveto } def
+/NC { CC x1 y1 x2 y2 x y curveto } def
+/EOC { x dx sub y dy sub 4 2 roll ArrowB 2 copy curveto } def
+/BAC { IC CC x y moveto CC x1 y1 CP ArrowA } def
+/NAC { x2 y2 x y curveto CC x1 y1 } def
+/EAC { x2 y2 x y ArrowB curveto pop pop } def
+/OpenCurve { NArray n 3 lt { n { pop pop } repeat } { BOC /n n 3 sub def
+n { NC } repeat EOC } ifelse } def
+/AltCurve { { false NArray n 2 mul 2 roll [ n 2 mul 3 sub 1 roll ] aload
+/Points ED n 2 mul -2 roll } { false NArray } ifelse n 4 lt { n { pop
+pop } repeat } { BAC /n n 4 sub def n { NAC } repeat EAC } ifelse } def
+/ClosedCurve { NArray n 3 lt { n { pop pop } repeat } { n 3 gt {
+CheckClosed } if 6 copy n 2 mul 6 add 6 roll IC CC x y moveto n { NC }
+repeat closepath pop pop } ifelse } def
+/SQ { /r ED r r moveto r r neg L r neg r neg L r neg r L fill } def
+/ST { /y ED /x ED x y moveto x neg y L 0 x L fill } def
+/SP { /r ED gsave 0 r moveto 4 { 72 rotate 0 r L } repeat fill grestore }
+def
+/FontDot { DS 2 mul dup matrix scale matrix concatmatrix exch matrix
+rotate matrix concatmatrix exch findfont exch makefont setfont } def
+/Rect { x1 y1 y2 add 2 div moveto x1 y2 lineto x2 y2 lineto x2 y1 lineto
+x1 y1 lineto closepath } def
+/OvalFrame { x1 x2 eq y1 y2 eq or { pop pop x1 y1 moveto x2 y2 L } { y1
+y2 sub abs x1 x2 sub abs 2 copy gt { exch pop } { pop } ifelse 2 div
+exch { dup 3 1 roll mul exch } if 2 copy lt { pop } { exch pop } ifelse
+/b ED x1 y1 y2 add 2 div moveto x1 y2 x2 y2 b arcto x2 y2 x2 y1 b arcto
+x2 y1 x1 y1 b arcto x1 y1 x1 y2 b arcto 16 { pop } repeat closepath }
+ifelse } def
+/Frame { CLW mul /a ED 3 -1 roll 2 copy gt { exch } if a sub /y2 ED a add
+/y1 ED 2 copy gt { exch } if a sub /x2 ED a add /x1 ED 1 index 0 eq {
+pop pop Rect } { OvalFrame } ifelse } def
+/BezierNArray { /f ED counttomark 2 div dup cvi /n ED n eq not { exch pop
+} if n 1 sub neg 3 mod 3 add 3 mod { 0 0 /n n 1 add def } repeat f { ]
+aload /Points ED } { n 2 mul 1 add -1 roll pop } ifelse } def
+/OpenBezier { BezierNArray n 1 eq { pop pop } { ArrowA n 4 sub 3 idiv { 6
+2 roll 4 2 roll curveto } repeat 6 2 roll 4 2 roll ArrowB curveto }
+ifelse } def
+/ClosedBezier { BezierNArray n 1 eq { pop pop } { moveto n 1 sub 3 idiv {
+6 2 roll 4 2 roll curveto } repeat closepath } ifelse } def
+/BezierShowPoints { gsave Points aload length 2 div cvi /n ED moveto n 1
+sub { lineto } repeat CLW 2 div SLW [ 4 4 ] 0 setdash stroke grestore }
+def
+/Parab { /y0 exch def /x0 exch def /y1 exch def /x1 exch def /dx x0 x1
+sub 3 div def /dy y0 y1 sub 3 div def x0 dx sub y0 dy add x1 y1 ArrowA
+x0 dx add y0 dy add x0 2 mul x1 sub y1 ArrowB curveto /Points [ x1 y1 x0
+y0 x0 2 mul x1 sub y1 ] def } def
+/Grid { newpath /a 4 string def /b ED /c ED /n ED cvi dup 1 lt { pop 1 }
+if /s ED s div dup 0 eq { pop 1 } if /dy ED s div dup 0 eq { pop 1 } if
+/dx ED dy div round dy mul /y0 ED dx div round dx mul /x0 ED dy div
+round cvi /y2 ED dx div round cvi /x2 ED dy div round cvi /y1 ED dx div
+round cvi /x1 ED /h y2 y1 sub 0 gt { 1 } { -1 } ifelse def /w x2 x1 sub
+0 gt { 1 } { -1 } ifelse def b 0 gt { /z1 b 4 div CLW 2 div add def
+/Helvetica findfont b scalefont setfont /b b .95 mul CLW 2 div add def }
+if systemdict /setstrokeadjust known { true setstrokeadjust /t { } def }
+{ /t { transform 0.25 sub round 0.25 add exch 0.25 sub round 0.25 add
+exch itransform } bind def } ifelse gsave n 0 gt { 1 setlinecap [ 0 dy n
+div ] dy n div 2 div setdash } { 2 setlinecap } ifelse /i x1 def /f y1
+dy mul n 0 gt { dy n div 2 div h mul sub } if def /g y2 dy mul n 0 gt {
+dy n div 2 div h mul add } if def x2 x1 sub w mul 1 add dup 1000 gt {
+pop 1000 } if { i dx mul dup y0 moveto b 0 gt { gsave c i a cvs dup
+stringwidth pop /z2 ED w 0 gt {z1} {z1 z2 add neg} ifelse h 0 gt {b neg}
+{z1} ifelse rmoveto show grestore } if dup t f moveto g t L stroke /i i
+w add def } repeat grestore gsave n 0 gt
+% DG/SR modification begin - Nov. 7, 1997 - Patch 1
+%{ 1 setlinecap [ 0 dx n div ] dy n div 2 div setdash }
+{ 1 setlinecap [ 0 dx n div ] dx n div 2 div setdash }
+% DG/SR modification end
+{ 2 setlinecap } ifelse /i y1 def /f x1 dx mul
+n 0 gt { dx n div 2 div w mul sub } if def /g x2 dx mul n 0 gt { dx n
+div 2 div w mul add } if def y2 y1 sub h mul 1 add dup 1000 gt { pop
+1000 } if { newpath i dy mul dup x0 exch moveto b 0 gt { gsave c i a cvs
+dup stringwidth pop /z2 ED w 0 gt {z1 z2 add neg} {z1} ifelse h 0 gt
+{z1} {b neg} ifelse rmoveto show grestore } if dup f exch t moveto g
+exch t L stroke /i i h add def } repeat grestore } def
+/ArcArrow { /d ED /b ED /a ED gsave newpath 0 -1000 moveto clip newpath 0
+1 0 0 b grestore c mul /e ED pop pop pop r a e d PtoC y add exch x add
+exch r a PtoC y add exch x add exch b pop pop pop pop a e d CLW 8 div c
+mul neg d } def
+/Ellipse { /mtrx CM def T scale 0 0 1 5 3 roll arc mtrx setmatrix } def
+/Rot { CP CP translate 3 -1 roll neg rotate NET  } def
+/RotBegin { tx@Dict /TMatrix known not { /TMatrix { } def /RAngle { 0 }
+def } if /TMatrix [ TMatrix CM ] cvx def /a ED a Rot /RAngle [ RAngle
+dup a add ] cvx def } def
+/RotEnd { /TMatrix [ TMatrix setmatrix ] cvx def /RAngle [ RAngle pop ]
+cvx def } def
+/PutCoor { gsave CP T CM STV exch exec moveto setmatrix CP grestore } def
+/PutBegin { /TMatrix [ TMatrix CM ] cvx def CP 4 2 roll T moveto } def
+/PutEnd { CP /TMatrix [ TMatrix setmatrix ] cvx def moveto } def
+/Uput { /a ED add 2 div /h ED 2 div /w ED /s a sin def /c a cos def /b s
+abs c abs 2 copy gt dup /q ED { pop } { exch pop } ifelse def /w1 c b
+div w mul def /h1 s b div h mul def q { w1 abs w sub dup c mul abs } {
+h1 abs h sub dup s mul abs } ifelse } def
+/UUput { /z ED abs /y ED /x ED q { x s div c mul abs y gt } { x c div s
+mul abs y gt } ifelse { x x mul y y mul sub z z mul add sqrt z add } { q
+{ x s div } { x c div } ifelse abs } ifelse a PtoC h1 add exch w1 add
+exch } def
+/BeginOL { dup (all) eq exch TheOL eq or { IfVisible not { Visible
+/IfVisible true def } if } { IfVisible { Invisible /IfVisible false def
+} if } ifelse } def
+/InitOL { /OLUnit [ 3000 3000 matrix defaultmatrix dtransform ] cvx def
+/Visible { CP OLUnit idtransform T moveto } def /Invisible { CP OLUnit
+neg exch neg exch idtransform T moveto } def /BOL { BeginOL } def
+/IfVisible true def } def
+end
+% END pstricks.pro
+
+%%EndProcSet
+%%BeginProcSet: pst-dots.pro 0 0
+%!PS-Adobe-2.0
+%%Title: Dot Font for PSTricks
+%%Creator: Timothy Van Zandt <tvz@Princeton.EDU>
+%%Creation Date: May 7, 1993
+%% Version 97 patch 1, 99/12/16
+%% Modified by Etienne Riga <etienne.riga@skynet.be> - Dec. 16, 1999
+%% to add /Diamond, /SolidDiamond and /BoldDiamond
+10 dict dup begin
+  /FontType 3 def
+  /FontMatrix [ .001 0 0 .001 0 0 ] def
+  /FontBBox [ 0 0 0 0 ] def
+  /Encoding 256 array def
+  0 1 255 { Encoding exch /.notdef put } for
+  Encoding
+    dup (b) 0 get /Bullet put
+    dup (c) 0 get /Circle put
+    dup (C) 0 get /BoldCircle put
+    dup (u) 0 get /SolidTriangle put
+    dup (t) 0 get /Triangle put
+    dup (T) 0 get /BoldTriangle put
+    dup (r) 0 get /SolidSquare put
+    dup (s) 0 get /Square put
+    dup (S) 0 get /BoldSquare put
+    dup (q) 0 get /SolidPentagon put
+    dup (p) 0 get /Pentagon put
+    dup (P) 0 get /BoldPentagon put
+% DG/SR modification begin - Dec. 16, 1999 - From Etienne Riga
+    dup (l) 0 get /SolidDiamond put
+    dup (d) 0 get /Diamond put
+        (D) 0 get /BoldDiamond put
+% DG/SR modification end
+  /Metrics 13 dict def
+  Metrics begin
+    /Bullet        1000   def
+    /Circle        1000   def
+    /BoldCircle    1000   def
+    /SolidTriangle 1344   def
+    /Triangle      1344   def
+    /BoldTriangle  1344   def
+    /SolidSquare    886   def
+    /Square         886   def
+    /BoldSquare     886   def
+    /SolidPentagon 1093.2 def
+    /Pentagon      1093.2 def
+    /BoldPentagon  1093.2 def
+% DG/SR modification begin - Dec. 16, 1999 - From Etienne Riga
+    /SolidDiamond  1008   def
+    /Diamond       1008   def
+    /BoldDiamond   1008   def
+% DG/SR modification end
+    /.notdef 0 def
+  end
+  /BBoxes 13 dict def
+  BBoxes begin
+    /Circle        { -550 -550 550 550 } def
+    /BoldCircle    /Circle load def
+    /Bullet        /Circle load def
+    /Triangle      { -571.5 -330 571.5 660 } def
+    /BoldTriangle  /Triangle load def
+    /SolidTriangle /Triangle load def
+    /Square        { -450 -450 450 450 } def
+    /BoldSquare    /Square load def
+    /SolidSquare   /Square load def
+    /Pentagon      { -546.6 -465 546.6 574.7 } def
+    /BoldPentagon  /Pentagon load def
+    /SolidPentagon /Pentagon load def
+% DG/SR modification begin - Dec. 16, 1999 - From Etienne Riga
+    /Diamond       { -428.5 -742.5 428.5 742.5 } def
+    /BoldDiamond   /Diamond load def
+    /SolidDiamond  /Diamond load def
+% DG/SR modification end
+    /.notdef { 0 0 0 0 } def
+  end
+  /CharProcs 20 dict def
+  CharProcs begin
+    /Adjust {
+      2 copy dtransform floor .5 add exch floor .5 add exch idtransform
+      3 -1 roll div 3 1 roll exch div exch scale
+    } def
+    /CirclePath    { 0 0 500 0 360 arc closepath } def
+    /Bullet        { 500 500 Adjust CirclePath fill } def
+    /Circle        { 500 500 Adjust CirclePath .9 .9 scale CirclePath
+                     eofill } def
+    /BoldCircle    { 500 500 Adjust CirclePath .8 .8 scale CirclePath
+                     eofill } def
+    /BoldCircle    { CirclePath .8 .8 scale CirclePath eofill } def
+    /TrianglePath  { 0  660 moveto -571.5 -330 lineto 571.5 -330 lineto
+                     closepath } def
+    /SolidTriangle { TrianglePath fill } def
+    /Triangle      { TrianglePath .85 .85 scale TrianglePath eofill } def
+    /BoldTriangle  { TrianglePath .7 .7 scale TrianglePath eofill } def
+    /SquarePath    { -450 450 moveto 450 450 lineto 450 -450 lineto
+                     -450 -450 lineto closepath } def
+    /SolidSquare   { SquarePath fill } def
+    /Square        { SquarePath .89 .89 scale SquarePath eofill } def
+    /BoldSquare    { SquarePath .78 .78 scale SquarePath eofill } def
+    /PentagonPath  {
+      -337.8 -465   moveto
+       337.8 -465   lineto
+       546.6  177.6 lineto
+         0    574.7 lineto
+      -546.6  177.6 lineto
+      closepath
+    } def
+    /SolidPentagon { PentagonPath fill } def
+    /Pentagon      { PentagonPath .89 .89 scale PentagonPath eofill } def
+    /BoldPentagon  { PentagonPath .78 .78 scale PentagonPath eofill } def
+% DG/SR modification begin - Dec. 16, 1999 - From Etienne Riga
+    /DiamondPath   { 0 742.5 moveto -428.5 0 lineto 0 -742.5 lineto
+                     428.5 0 lineto closepath } def
+    /SolidDiamond  { DiamondPath fill } def
+    /Diamond       { DiamondPath .85 .85 scale DiamondPath eofill } def
+    /BoldDiamond   { DiamondPath .7 .7 scale DiamondPath eofill } def
+% DG/SR modification end
+    /.notdef { } def
+  end
+  /BuildGlyph {
+    exch
+    begin
+      Metrics 1 index get exec 0
+      BBoxes 3 index get exec
+      setcachedevice
+      CharProcs begin load exec end
+    end
+  } def
+  /BuildChar {
+    1 index /Encoding get exch get
+    1 index /BuildGlyph get exec
+  } bind def
+end
+/PSTricksDotFont exch definefont pop
+%END pst-dots.pro
+
+%%EndProcSet
+%%BeginProcSet: pst-grad.pro 0 0
+%!
+% PostScript prologue for pst-grad.tex.
+% Version 1.04, 2004/06/23 (adding %GradientCircle style - D.G.)
+% prepared by Herbert Voss
+% For copying restrictions, see pstricks.tex.
+%
+% For the PSTricks gradient fillstyle.%
+% Based on some EPS files by leeweyr!bill@nuchat.sccsi.com (W. R. Lee).%
+% Syntax:% D.G. modification begin - Apr.  9, %1998
+%%%%%% R0 G0 B0 R1 G1 B1 NumLines MidPoint Angle GradientFill
+%   ifGradientCircle GradientScale %GradientPosX GradientPosY
+%     R0 G0 B0 R1 G1 B1 NumLines MidPoint %Angle GradientFill
+% D.G. modification end
+%
+/tx@GradientDict 40 dict def
+tx@GradientDict begin
+/GradientFill {
+ rotate
+ /MidPoint ED
+ /NumLines ED
+ /LastBlue ED
+ /LastGreen ED
+  /LastRed ED
+  /FirstBlue ED
+  /FirstGreen ED
+/FirstRed ED
+% D.G. modification begin - Apr.  9, 1998
+/GradientPosY ED
+/GradientPosX ED
+  /GradientScale ED
+  /ifGradientCircle ED
+% D.G. modification end
+  % This avoids gaps due to rounding errors:
+    clip
+  pathbbox           %leave llx,lly,urx,ury on stack
+% D.G. modification begin - Apr. 10, 1998
+  4 copy /ury ED /urx ED /lly ED /llx ED
+% D.G. modification end
+  /y ED /x ED
+% D.G. modification begin - Apr. 10, 1998
+ifGradientCircle
+   {0 GradientPosX eq
+    {0 GradientPosX eq {2 copy translate} if} if}
+   {2 copy translate} ifelse
+% D.G. modification end
+    y sub neg /y ED
+  x sub neg /x ED  % This avoids gaps due to rounding errors:
+  LastRed FirstRed add 2 div
+   LastGreen FirstGreen add 2 div
+  LastBlue FirstBlue add 2 div
+    setrgbcolor
+% D.G. modification begin - Jul. 23, 1997 / Apr.  9, 1998
+  ifGradientCircle
+   {/YSizePerLine y NumLines div def
+    /CurrentY y 2 div def
+    /MidLine NumLines 2 div 1 MidPoint sub mul abs cvi def}
+       {fill
+    /YSizePerLine y NumLines div def
+        /CurrentY 0 def
+    /MidLine NumLines 1 MidPoint sub mul abs cvi def} ifelse
+% DG modification end
+  MidLine NumLines 2 sub gt
+    { /MidLine NumLines def }
+  { MidLine 2 lt { /MidLine 0 def } if }
+   ifelse
+    MidLine 0 gt
+      {
+    /Red FirstRed def
+       /Green FirstGreen def
+           /Blue FirstBlue def
+    /RedIncrement LastRed FirstRed sub MidLine 1 sub div def
+    /GreenIncrement LastGreen FirstGreen sub MidLine 1 sub div def
+    /BlueIncrement LastBlue FirstBlue sub MidLine 1 sub div def
+    MidLine { GradientLoop } repeat
+      } if
+       MidLine NumLines lt
+         {
+    /Red LastRed def
+       /Green LastGreen def
+       /Blue LastBlue def
+    /RedIncrement FirstRed LastRed sub NumLines MidLine sub 1 sub div def
+    /GreenIncrement FirstGreen LastGreen sub NumLines MidLine sub 1 sub div def
+    /BlueIncrement FirstBlue LastBlue sub NumLines MidLine sub 1 sub div def
+    NumLines MidLine sub { GradientLoop } repeat  }
+     if
+     } def/GradientLoop {
+% D.G. modification begin - Jul. 23, 1997 / Apr.  9, 1998
+  ifGradientCircle
+   {CurrentY 0 gt {
+% The default center used is the center of the bounding box of the object
+      0 GradientPosX eq        {0 GradientPosX eq
+           {/GradientPosX urx llx sub 2 div def
+            /GradientPosY ury lly sub 2 div def} if} if
+      GradientPosX GradientPosY CurrentY GradientScale mul 0 360 arc
+      Red Green Blue setrgbcolor fill
+      /CurrentY CurrentY YSizePerLine sub def
+      /Blue Blue BlueIncrement add def
+      /Green Green GreenIncrement add def
+      /Red Red RedIncrement add def} if}   {0 CurrentY moveto    x 0 rlineto
+    0 YSizePerLine rlineto    x neg 0 rlineto    closepath
+    Red Green Blue setrgbcolor fill    /CurrentY CurrentY YSizePerLine add def
+    /Blue Blue BlueIncrement add def    /Green Green GreenIncrement add def
+    /Red Red RedIncrement add def} ifelse% D.G. modification end
+    }def
+    end
+% END pst-grad.pro
+
+%%EndProcSet
+%%BeginProcSet: pst-node.pro 0 0
+%!
+% PostScript prologue for pst-node.tex.
+% Version 97 patch 1, 97/05/09.
+% For distribution, see pstricks.tex.
+%
+/tx@NodeDict 400 dict def tx@NodeDict begin
+tx@Dict begin /T /translate load def end
+/NewNode { gsave /next ED dict dup 3 1 roll def exch { dup 3 1 roll def }
+if begin tx@Dict begin STV CP T exec end /NodeMtrx CM def next end
+grestore } def
+/InitPnode { /Y ED /X ED /NodePos { NodeSep Cos mul NodeSep Sin mul } def
+} def
+/InitCnode { /r ED /Y ED /X ED /NodePos { NodeSep r add dup Cos mul exch
+Sin mul } def } def
+/GetRnodePos { Cos 0 gt { /dx r NodeSep add def } { /dx l NodeSep sub def
+} ifelse Sin 0 gt { /dy u NodeSep add def } { /dy d NodeSep sub def }
+ifelse dx Sin mul abs dy Cos mul abs gt { dy Cos mul Sin div dy } { dx
+dup Sin mul Cos Div } ifelse } def
+/InitRnode { /Y ED /X ED X sub /r ED /l X neg def Y add neg /d ED Y sub
+/u ED /NodePos { GetRnodePos } def } def
+/DiaNodePos { w h mul w Sin mul abs h Cos mul abs add Div NodeSep add dup
+Cos mul exch Sin mul } def
+/TriNodePos { Sin s lt { d NodeSep sub dup Cos mul Sin Div exch } { w h
+mul w Sin mul h Cos abs mul add Div NodeSep add dup Cos mul exch Sin mul
+} ifelse } def
+/InitTriNode { sub 2 div exch 2 div exch 2 copy T 2 copy 4 index index /d
+ED pop pop pop pop -90 mul rotate /NodeMtrx CM def /X 0 def /Y 0 def d
+sub abs neg /d ED d add /h ED 2 div h mul h d sub Div /w ED /s d w Atan
+sin def /NodePos { TriNodePos } def } def
+/OvalNodePos { /ww w NodeSep add def /hh h NodeSep add def Sin ww mul Cos
+hh mul Atan dup cos ww mul exch sin hh mul } def
+/GetCenter { begin X Y NodeMtrx transform CM itransform end } def
+/XYPos { dup sin exch cos Do /Cos ED /Sin ED /Dist ED Cos 0 gt { Dist
+Dist Sin mul Cos div } { Cos 0 lt { Dist neg Dist Sin mul Cos div neg }
+{ 0 Dist Sin mul } ifelse } ifelse Do } def
+/GetEdge { dup 0 eq { pop begin 1 0 NodeMtrx dtransform CM idtransform
+exch atan sub dup sin /Sin ED cos /Cos ED /NodeSep ED NodePos NodeMtrx
+dtransform CM idtransform end } { 1 eq {{exch}} {{}} ifelse /Do ED pop
+XYPos } ifelse } def
+/AddOffset { 1 index 0 eq { pop pop } { 2 copy 5 2 roll cos mul add 4 1
+roll sin mul sub exch } ifelse } def
+/GetEdgeA { NodeSepA AngleA NodeA NodeSepTypeA GetEdge OffsetA AngleA
+AddOffset yA add /yA1 ED xA add /xA1 ED } def
+/GetEdgeB { NodeSepB AngleB NodeB NodeSepTypeB GetEdge OffsetB AngleB
+AddOffset yB add /yB1 ED xB add /xB1 ED } def
+/GetArmA { ArmTypeA 0 eq { /xA2 ArmA AngleA cos mul xA1 add def /yA2 ArmA
+AngleA sin mul yA1 add def } { ArmTypeA 1 eq {{exch}} {{}} ifelse /Do ED
+ArmA AngleA XYPos OffsetA AngleA AddOffset yA add /yA2 ED xA add /xA2 ED
+} ifelse } def
+/GetArmB { ArmTypeB 0 eq { /xB2 ArmB AngleB cos mul xB1 add def /yB2 ArmB
+AngleB sin mul yB1 add def } { ArmTypeB 1 eq {{exch}} {{}} ifelse /Do ED
+ArmB AngleB XYPos OffsetB AngleB AddOffset yB add /yB2 ED xB add /xB2 ED
+} ifelse } def
+/InitNC { /b ED /a ED /NodeSepTypeB ED /NodeSepTypeA ED /NodeSepB ED
+/NodeSepA ED /OffsetB ED /OffsetA ED tx@NodeDict a known tx@NodeDict b
+known and dup { /NodeA a load def /NodeB b load def NodeA GetCenter /yA
+ED /xA ED NodeB GetCenter /yB ED /xB ED } if } def
+/LPutLine { 4 copy 3 -1 roll sub neg 3 1 roll sub Atan /NAngle ED 1 t sub
+mul 3 1 roll 1 t sub mul 4 1 roll t mul add /Y ED t mul add /X ED } def
+/LPutLines { mark LPutVar counttomark 2 div 1 sub /n ED t floor dup n gt
+{ pop n 1 sub /t 1 def } { dup t sub neg /t ED } ifelse cvi 2 mul { pop
+} repeat LPutLine cleartomark } def
+/BezierMidpoint { /y3 ED /x3 ED /y2 ED /x2 ED /y1 ED /x1 ED /y0 ED /x0 ED
+/t ED /cx x1 x0 sub 3 mul def /cy y1 y0 sub 3 mul def /bx x2 x1 sub 3
+mul cx sub def /by y2 y1 sub 3 mul cy sub def /ax x3 x0 sub cx sub bx
+sub def /ay y3 y0 sub cy sub by sub def ax t 3 exp mul bx t t mul mul
+add cx t mul add x0 add ay t 3 exp mul by t t mul mul add cy t mul add
+y0 add 3 ay t t mul mul mul 2 by t mul mul add cy add 3 ax t t mul mul
+mul 2 bx t mul mul add cx add atan /NAngle ED /Y ED /X ED } def
+/HPosBegin { yB yA ge { /t 1 t sub def } if /Y yB yA sub t mul yA add def
+} def
+/HPosEnd { /X Y yyA sub yyB yyA sub Div xxB xxA sub mul xxA add def
+/NAngle yyB yyA sub xxB xxA sub Atan def } def
+/HPutLine { HPosBegin /yyA ED /xxA ED /yyB ED /xxB ED HPosEnd  } def
+/HPutLines { HPosBegin yB yA ge { /check { le } def } { /check { ge } def
+} ifelse /xxA xA def /yyA yA def mark xB yB LPutVar { dup Y check { exit
+} { /yyA ED /xxA ED } ifelse } loop /yyB ED /xxB ED cleartomark HPosEnd 
+} def
+/VPosBegin { xB xA lt { /t 1 t sub def } if /X xB xA sub t mul xA add def
+} def
+/VPosEnd { /Y X xxA sub xxB xxA sub Div yyB yyA sub mul yyA add def
+/NAngle yyB yyA sub xxB xxA sub Atan def } def
+/VPutLine { VPosBegin /yyA ED /xxA ED /yyB ED /xxB ED VPosEnd  } def
+/VPutLines { VPosBegin xB xA ge { /check { le } def } { /check { ge } def
+} ifelse /xxA xA def /yyA yA def mark xB yB LPutVar { 1 index X check {
+exit } { /yyA ED /xxA ED } ifelse } loop /yyB ED /xxB ED cleartomark
+VPosEnd  } def
+/HPutCurve { gsave newpath /SaveLPutVar /LPutVar load def LPutVar 8 -2
+roll moveto curveto flattenpath /LPutVar [ {} {} {} {} pathforall ] cvx
+def grestore exec /LPutVar /SaveLPutVar load def } def
+/NCCoor { /AngleA yB yA sub xB xA sub Atan def /AngleB AngleA 180 add def
+GetEdgeA GetEdgeB /LPutVar [ xB1 yB1 xA1 yA1 ] cvx def /LPutPos {
+LPutVar LPutLine } def /HPutPos { LPutVar HPutLine } def /VPutPos {
+LPutVar VPutLine } def LPutVar } def
+/NCLine { NCCoor tx@Dict begin ArrowA CP 4 2 roll ArrowB lineto pop pop
+end } def
+/NCLines { false NArray n 0 eq { NCLine } { 2 copy yA sub exch xA sub
+Atan /AngleA ED n 2 mul dup index exch index yB sub exch xB sub Atan
+/AngleB ED GetEdgeA GetEdgeB /LPutVar [ xB1 yB1 n 2 mul 4 add 4 roll xA1
+yA1 ] cvx def mark LPutVar tx@Dict begin false Line end /LPutPos {
+LPutLines } def /HPutPos { HPutLines } def /VPutPos { VPutLines } def }
+ifelse } def
+/NCCurve { GetEdgeA GetEdgeB xA1 xB1 sub yA1 yB1 sub Pyth 2 div dup 3 -1
+roll mul /ArmA ED mul /ArmB ED /ArmTypeA 0 def /ArmTypeB 0 def GetArmA
+GetArmB xA2 yA2 xA1 yA1 tx@Dict begin ArrowA end xB2 yB2 xB1 yB1 tx@Dict
+begin ArrowB end curveto /LPutVar [ xA1 yA1 xA2 yA2 xB2 yB2 xB1 yB1 ]
+cvx def /LPutPos { t LPutVar BezierMidpoint } def /HPutPos { { HPutLines
+} HPutCurve } def /VPutPos { { VPutLines } HPutCurve } def } def
+/NCAngles { GetEdgeA GetEdgeB GetArmA GetArmB /mtrx AngleA matrix rotate
+def xA2 yA2 mtrx transform pop xB2 yB2 mtrx transform exch pop mtrx
+itransform /y0 ED /x0 ED mark ArmB 0 ne { xB1 yB1 } if xB2 yB2 x0 y0 xA2
+yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict begin false Line end /LPutVar [ xB1
+yB1 xB2 yB2 x0 y0 xA2 yA2 xA1 yA1 ] cvx def /LPutPos { LPutLines } def
+/HPutPos { HPutLines } def /VPutPos { VPutLines } def } def
+/NCAngle { GetEdgeA GetEdgeB GetArmB /mtrx AngleA matrix rotate def xB2
+yB2 mtrx itransform pop xA1 yA1 mtrx itransform exch pop mtrx transform
+/y0 ED /x0 ED mark ArmB 0 ne { xB1 yB1 } if xB2 yB2 x0 y0 xA1 yA1
+tx@Dict begin false Line end /LPutVar [ xB1 yB1 xB2 yB2 x0 y0 xA1 yA1 ]
+cvx def /LPutPos { LPutLines } def /HPutPos { HPutLines } def /VPutPos {
+VPutLines } def } def
+/NCBar { GetEdgeA GetEdgeB GetArmA GetArmB /mtrx AngleA matrix rotate def
+xA2 yA2 mtrx itransform pop xB2 yB2 mtrx itransform pop sub dup 0 mtrx
+transform 3 -1 roll 0 gt { /yB2 exch yB2 add def /xB2 exch xB2 add def }
+{ /yA2 exch neg yA2 add def /xA2 exch neg xA2 add def } ifelse mark ArmB
+0 ne { xB1 yB1 } if xB2 yB2 xA2 yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict
+begin false Line end /LPutVar [ xB1 yB1 xB2 yB2 xA2 yA2 xA1 yA1 ] cvx
+def /LPutPos { LPutLines } def /HPutPos { HPutLines } def /VPutPos {
+VPutLines } def } def
+/NCDiag { GetEdgeA GetEdgeB GetArmA GetArmB mark ArmB 0 ne { xB1 yB1 } if
+xB2 yB2 xA2 yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict begin false Line end
+/LPutVar [ xB1 yB1 xB2 yB2 xA2 yA2 xA1 yA1 ] cvx def /LPutPos {
+LPutLines } def /HPutPos { HPutLines } def /VPutPos { VPutLines } def }
+def
+/NCDiagg { GetEdgeA GetArmA yB yA2 sub xB xA2 sub Atan 180 add /AngleB ED
+GetEdgeB mark xB1 yB1 xA2 yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict begin
+false Line end /LPutVar [ xB1 yB1 xA2 yA2 xA1 yA1 ] cvx def /LPutPos {
+LPutLines } def /HPutPos { HPutLines } def /VPutPos { VPutLines } def }
+def
+/NCLoop { GetEdgeA GetEdgeB GetArmA GetArmB /mtrx AngleA matrix rotate
+def xA2 yA2 mtrx transform loopsize add /yA3 ED /xA3 ED /xB3 xB2 yB2
+mtrx transform pop def xB3 yA3 mtrx itransform /yB3 ED /xB3 ED xA3 yA3
+mtrx itransform /yA3 ED /xA3 ED mark ArmB 0 ne { xB1 yB1 } if xB2 yB2
+xB3 yB3 xA3 yA3 xA2 yA2 ArmA 0 ne { xA1 yA1 } if tx@Dict begin false
+Line end /LPutVar [ xB1 yB1 xB2 yB2 xB3 yB3 xA3 yA3 xA2 yA2 xA1 yA1 ]
+cvx def /LPutPos { LPutLines } def /HPutPos { HPutLines } def /VPutPos {
+VPutLines } def } def
+% DG/SR modification begin - May 9, 1997 - Patch 1
+%/NCCircle { 0 0 NodesepA nodeA \tx@GetEdge pop xA sub 2 div dup 2 exp r
+%r mul sub abs sqrt atan 2 mul /a ED r AngleA 90 add PtoC yA add exch xA add
+%exch 2 copy /LPutVar [ 4 2 roll r AngleA ] cvx def /LPutPos { LPutVar t 360
+%mul add dup 5 1 roll 90 sub \tx@PtoC 3 -1 roll add /Y ED add /X ED /NAngle ED
+/NCCircle { NodeSepA 0 NodeA 0 GetEdge pop 2 div dup 2 exp r
+r mul sub abs sqrt atan 2 mul /a ED r AngleA 90 add PtoC yA add exch xA add
+exch 2 copy /LPutVar [ 4 2 roll r AngleA ] cvx def /LPutPos { LPutVar t 360
+mul add dup 5 1 roll 90 sub PtoC 3 -1 roll add /Y ED add /X ED /NAngle ED
+% DG/SR modification end
+} def /HPutPos { LPutPos } def /VPutPos { LPutPos } def r AngleA 90 sub a add
+AngleA 270 add a sub tx@Dict begin /angleB ED /angleA ED /r ED /c 57.2957 r
+Div def /y ED /x ED } def
+/NCBox { /d ED /h ED /AngleB yB yA sub xB xA sub Atan def /AngleA AngleB
+180 add def GetEdgeA GetEdgeB /dx d AngleB sin mul def /dy d AngleB cos
+mul neg def /hx h AngleB sin mul neg def /hy h AngleB cos mul def
+/LPutVar [ xA1 hx add yA1 hy add xB1 hx add yB1 hy add xB1 dx add yB1 dy
+add xA1 dx add yA1 dy add ] cvx def /LPutPos { LPutLines } def /HPutPos
+{ xB yB xA yA LPutLine } def /VPutPos { HPutPos } def mark LPutVar
+tx@Dict begin false Polygon end } def
+/NCArcBox { /l ED neg /d ED /h ED /a ED /AngleA yB yA sub xB xA sub Atan
+def /AngleB AngleA 180 add def /tA AngleA a sub 90 add def /tB tA a 2
+mul add def /r xB xA sub tA cos tB cos sub Div dup 0 eq { pop 1 } if def
+/x0 xA r tA cos mul add def /y0 yA r tA sin mul add def /c 57.2958 r div
+def /AngleA AngleA a sub 180 add def /AngleB AngleB a add 180 add def
+GetEdgeA GetEdgeB /AngleA tA 180 add yA yA1 sub xA xA1 sub Pyth c mul
+sub def /AngleB tB 180 add yB yB1 sub xB xB1 sub Pyth c mul add def l 0
+eq { x0 y0 r h add AngleA AngleB arc x0 y0 r d add AngleB AngleA arcn }
+{ x0 y0 translate /tA AngleA l c mul add def /tB AngleB l c mul sub def
+0 0 r h add tA tB arc r h add AngleB PtoC r d add AngleB PtoC 2 copy 6 2
+roll l arcto 4 { pop } repeat r d add tB PtoC l arcto 4 { pop } repeat 0
+0 r d add tB tA arcn r d add AngleA PtoC r h add AngleA PtoC 2 copy 6 2
+roll l arcto 4 { pop } repeat r h add tA PtoC l arcto 4 { pop } repeat }
+ifelse closepath /LPutVar [ x0 y0 r AngleA AngleB h d ] cvx def /LPutPos
+{ LPutVar /d ED /h ED /AngleB ED /AngleA ED /r ED /y0 ED /x0 ED t 1 le {
+r h add AngleA 1 t sub mul AngleB t mul add dup 90 add /NAngle ED PtoC }
+{ t 2 lt { /NAngle AngleB 180 add def r 2 t sub h mul t 1 sub d mul add
+add AngleB PtoC } { t 3 lt { r d add AngleB 3 t sub mul AngleA 2 t sub
+mul add dup 90 sub /NAngle ED PtoC } { /NAngle AngleA 180 add def r 4 t
+sub d mul t 3 sub h mul add add AngleA PtoC } ifelse } ifelse } ifelse
+y0 add /Y ED x0 add /X ED } def /HPutPos { LPutPos } def /VPutPos {
+LPutPos } def } def
+/Tfan { /AngleA yB yA sub xB xA sub Atan def GetEdgeA w xA1 xB sub yA1 yB
+sub Pyth Pyth w Div CLW 2 div mul 2 div dup AngleA sin mul yA1 add /yA1
+ED AngleA cos mul xA1 add /xA1 ED /LPutVar [ xA1 yA1 m { xB w add yB xB
+w sub yB } { xB yB w sub xB yB w add } ifelse xA1 yA1 ] cvx def /LPutPos
+{ LPutLines } def /VPutPos@ { LPutVar flag { 8 4 roll pop pop pop pop }
+{ pop pop pop pop 4 2 roll } ifelse } def /VPutPos { VPutPos@ VPutLine }
+def /HPutPos { VPutPos@ HPutLine } def mark LPutVar tx@Dict begin
+/ArrowA { moveto } def /ArrowB { } def false Line closepath end } def
+/LPutCoor { NAngle tx@Dict begin /NAngle ED end gsave CM STV CP Y sub neg
+exch X sub neg exch moveto setmatrix CP grestore } def
+/LPut { tx@NodeDict /LPutPos known { LPutPos } { CP /Y ED /X ED /NAngle 0
+def } ifelse LPutCoor  } def
+/HPutAdjust { Sin Cos mul 0 eq { 0 } { d Cos mul Sin div flag not { neg }
+if h Cos mul Sin div flag { neg } if 2 copy gt { pop } { exch pop }
+ifelse } ifelse s add flag { r add neg } { l add } ifelse X add /X ED }
+def
+/VPutAdjust { Sin Cos mul 0 eq { 0 } { l Sin mul Cos div flag { neg } if
+r Sin mul Cos div flag not { neg } if 2 copy gt { pop } { exch pop }
+ifelse } ifelse s add flag { d add } { h add neg } ifelse Y add /Y ED }
+def
+end
+% END pst-node.pro
+
+%%EndProcSet
+%%BeginProcSet: pst-text.pro 0 0
+%!
+% PostScript header file pst-text.pro
+% Version 97, 94/04/20; patched MV 10-09-99 00:36
+% For distribution, see pstricks.tex.
+
+/tx@TextPathDict 40 dict def
+tx@TextPathDict begin
+
+% Syntax:  <dist> PathPosition -
+% Function: Searches for position of currentpath distance <dist> from
+%           beginning. Sets (X,Y)=position, and Angle=tangent.
+/PathPosition
+{ /targetdist exch def
+  /pathdist 0 def
+  /continue true def
+  /X { newx } def /Y { newy } def /Angle 0 def
+  gsave
+    flattenpath
+    { movetoproc }  { linetoproc } { } { firstx firsty linetoproc }
+    /pathforall load stopped { pop pop pop pop /X 0 def /Y 0 def } if
+  grestore
+} def
+
+/movetoproc { continue { @movetoproc } { pop pop } ifelse } def
+
+/@movetoproc
+{ /newy exch def /newx exch def
+  /firstx newx def /firsty newy def
+} def
+
+/linetoproc { continue { @linetoproc } { pop pop } ifelse } def
+
+/@linetoproc
+{
+  /oldx newx def /oldy newy def
+  /newy exch def /newx exch def
+  /dx newx oldx sub def
+  /dy newy oldy sub def
+  /dist dx dup mul dy dup mul add sqrt def
+  /pathdist pathdist dist add def
+  pathdist targetdist ge
+  { pathdist targetdist sub dist div dup
+    dy mul neg newy add /Y exch def
+    dx mul neg newx add /X exch def
+    /Angle dy dx atan def
+    /continue false def
+  } if
+} def
+
+/TextPathShow
+{ /String exch def
+  /CharCount 0 def
+  String length
+  { String CharCount 1 getinterval ShowChar
+    /CharCount CharCount 1 add def
+  } repeat
+} def
+
+% Syntax: <pathlength> <position> InitTextPath -
+/InitTextPath
+{ gsave
+    currentpoint /Y exch def /X exch def
+    exch X Hoffset sub sub mul
+    Voffset Hoffset sub add
+    neg X add /Hoffset exch def
+    /Voffset Y def
+  grestore
+} def
+
+/Transform
+{ PathPosition
+  dup
+  Angle cos mul Y add exch
+  Angle sin mul neg X add exch
+  translate
+  Angle rotate
+} def
+
+/ShowChar
+{ /Char exch def
+  gsave
+    Char end stringwidth
+    tx@TextPathDict begin
+    2 div /Sy exch def 2 div /Sx exch def
+
+%%%  MV 10-09-99 00:36
+    /sc?currentpoint where {pop sc?currentpoint} {currentpoint} ifelse
+%   currentpoint
+
+    Voffset sub Sy add exch
+    Hoffset sub Sx add
+    Transform
+    Sx neg Sy neg moveto
+    Char end tx@TextPathSavedShow
+    tx@TextPathDict begin
+  grestore
+  Sx 2 mul Sy 2 mul rmoveto
+} def
+
+end
+% END pst-text.pro
+
+%%EndProcSet
+%%BeginProcSet: 8r.enc 0 0
+% File 8r.enc  TeX Base 1 Encoding  Revision 2.0  2002-10-30
+%
+% @@psencodingfile@{
+%   author    = "S. Rahtz, P. MacKay, Alan Jeffrey, B. Horn, K. Berry,
+%                W. Schmidt, P. Lehman",
+%   version   = "2.0",
+%   date      = "30 October 2002",
+%   filename  = "8r.enc",
+%   email     = "tex-fonts@@tug.org",
+%   docstring = "This is the encoding vector for Type1 and TrueType
+%                fonts to be used with TeX.  This file is part of the
+%                PSNFSS bundle, version 9"
+% @}
+% 
+% The idea is to have all the characters normally included in Type 1 fonts
+% available for typesetting. This is effectively the characters in Adobe
+% Standard encoding, ISO Latin 1, Windows ANSI including the euro symbol,
+% MacRoman, and some extra characters from Lucida.
+% 
+% Character code assignments were made as follows:
+% 
+% (1) the Windows ANSI characters are almost all in their Windows ANSI
+% positions, because some Windows users cannot easily reencode the
+% fonts, and it makes no difference on other systems. The only Windows
+% ANSI characters not available are those that make no sense for
+% typesetting -- rubout (127 decimal), nobreakspace (160), softhyphen
+% (173). quotesingle and grave are moved just because it's such an
+% irritation not having them in TeX positions.
+% 
+% (2) Remaining characters are assigned arbitrarily to the lower part
+% of the range, avoiding 0, 10 and 13 in case we meet dumb software.
+% 
+% (3) Y&Y Lucida Bright includes some extra text characters; in the
+% hopes that other PostScript fonts, perhaps created for public
+% consumption, will include them, they are included starting at 0x12.
+% These are /dotlessj /ff /ffi /ffl.
+% 
+% (4) hyphen appears twice for compatibility with both ASCII and Windows.
+%
+% (5) /Euro was assigned to 128, as in Windows ANSI
+%
+% (6) Missing characters from MacRoman encoding incorporated as follows:
+%
+%     PostScript      MacRoman        TeXBase1
+%     --------------  --------------  --------------
+%     /notequal       173             0x16
+%     /infinity       176             0x17
+%     /lessequal      178             0x18
+%     /greaterequal   179             0x19
+%     /partialdiff    182             0x1A
+%     /summation      183             0x1B
+%     /product        184             0x1C
+%     /pi             185             0x1D
+%     /integral       186             0x81
+%     /Omega          189             0x8D
+%     /radical        195             0x8E
+%     /approxequal    197             0x8F
+%     /Delta          198             0x9D
+%     /lozenge        215             0x9E
+%
+/TeXBase1Encoding [
+% 0x00
+ /.notdef /dotaccent /fi /fl
+ /fraction /hungarumlaut /Lslash /lslash
+ /ogonek /ring /.notdef /breve
+ /minus /.notdef /Zcaron /zcaron
+% 0x10
+ /caron /dotlessi /dotlessj /ff
+ /ffi /ffl /notequal /infinity
+ /lessequal /greaterequal /partialdiff /summation
+ /product /pi /grave /quotesingle
+% 0x20
+ /space /exclam /quotedbl /numbersign
+ /dollar /percent /ampersand /quoteright
+ /parenleft /parenright /asterisk /plus
+ /comma /hyphen /period /slash
+% 0x30
+ /zero /one /two /three
+ /four /five /six /seven
+ /eight /nine /colon /semicolon
+ /less /equal /greater /question
+% 0x40
+ /at /A /B /C
+ /D /E /F /G
+ /H /I /J /K
+ /L /M /N /O
+% 0x50
+ /P /Q /R /S
+ /T /U /V /W
+ /X /Y /Z /bracketleft
+ /backslash /bracketright /asciicircum /underscore
+% 0x60
+ /quoteleft /a /b /c
+ /d /e /f /g
+ /h /i /j /k
+ /l /m /n /o
+% 0x70
+ /p /q /r /s
+ /t /u /v /w
+ /x /y /z /braceleft
+ /bar /braceright /asciitilde /.notdef
+% 0x80
+ /Euro /integral /quotesinglbase /florin
+ /quotedblbase /ellipsis /dagger /daggerdbl
+ /circumflex /perthousand /Scaron /guilsinglleft
+ /OE /Omega /radical /approxequal
+% 0x90
+ /.notdef /.notdef /.notdef /quotedblleft
+ /quotedblright /bullet /endash /emdash
+ /tilde /trademark /scaron /guilsinglright
+ /oe /Delta /lozenge /Ydieresis
+% 0xA0
+ /.notdef /exclamdown /cent /sterling
+ /currency /yen /brokenbar /section
+ /dieresis /copyright /ordfeminine /guillemotleft
+ /logicalnot /hyphen /registered /macron
+% 0xD0
+ /degree /plusminus /twosuperior /threesuperior
+ /acute /mu /paragraph /periodcentered
+ /cedilla /onesuperior /ordmasculine /guillemotright
+ /onequarter /onehalf /threequarters /questiondown
+% 0xC0
+ /Agrave /Aacute /Acircumflex /Atilde
+ /Adieresis /Aring /AE /Ccedilla
+ /Egrave /Eacute /Ecircumflex /Edieresis
+ /Igrave /Iacute /Icircumflex /Idieresis
+% 0xD0
+ /Eth /Ntilde /Ograve /Oacute
+ /Ocircumflex /Otilde /Odieresis /multiply
+ /Oslash /Ugrave /Uacute /Ucircumflex
+ /Udieresis /Yacute /Thorn /germandbls
+% 0xE0
+ /agrave /aacute /acircumflex /atilde
+ /adieresis /aring /ae /ccedilla
+ /egrave /eacute /ecircumflex /edieresis
+ /igrave /iacute /icircumflex /idieresis
+% 0xF0
+ /eth /ntilde /ograve /oacute
+ /ocircumflex /otilde /odieresis /divide
+ /oslash /ugrave /uacute /ucircumflex
+ /udieresis /yacute /thorn /ydieresis
+] def
+
+
+%%EndProcSet
+%%BeginProcSet: texps.pro 0 0
+%!
+TeXDict begin/rf{findfont dup length 1 add dict begin{1 index/FID ne 2
+index/UniqueID ne and{def}{pop pop}ifelse}forall[1 index 0 6 -1 roll
+exec 0 exch 5 -1 roll VResolution Resolution div mul neg 0 0]FontType 0
+ne{/Metrics exch def dict begin Encoding{exch dup type/integertype ne{
+pop pop 1 sub dup 0 le{pop}{[}ifelse}{FontMatrix 0 get div Metrics 0 get
+div def}ifelse}forall Metrics/Metrics currentdict end def}{{1 index type
+/nametype eq{exit}if exch pop}loop}ifelse[2 index currentdict end
+definefont 3 -1 roll makefont/setfont cvx]cvx def}def/ObliqueSlant{dup
+sin S cos div neg}B/SlantFont{4 index mul add}def/ExtendFont{3 -1 roll
+mul exch}def/ReEncodeFont{CharStrings rcheck{/Encoding false def dup[
+exch{dup CharStrings exch known not{pop/.notdef/Encoding true def}if}
+forall Encoding{]exch pop}{cleartomark}ifelse}if/Encoding exch def}def
+end
+
+%%EndProcSet
+%%BeginProcSet: special.pro 0 0
+%!
+TeXDict begin/SDict 200 dict N SDict begin/@SpecialDefaults{/hs 612 N
+/vs 792 N/ho 0 N/vo 0 N/hsc 1 N/vsc 1 N/ang 0 N/CLIP 0 N/rwiSeen false N
+/rhiSeen false N/letter{}N/note{}N/a4{}N/legal{}N}B/@scaleunit 100 N
+/@hscale{@scaleunit div/hsc X}B/@vscale{@scaleunit div/vsc X}B/@hsize{
+/hs X/CLIP 1 N}B/@vsize{/vs X/CLIP 1 N}B/@clip{/CLIP 2 N}B/@hoffset{/ho
+X}B/@voffset{/vo X}B/@angle{/ang X}B/@rwi{10 div/rwi X/rwiSeen true N}B
+/@rhi{10 div/rhi X/rhiSeen true N}B/@llx{/llx X}B/@lly{/lly X}B/@urx{
+/urx X}B/@ury{/ury X}B/magscale true def end/@MacSetUp{userdict/md known
+{userdict/md get type/dicttype eq{userdict begin md length 10 add md
+maxlength ge{/md md dup length 20 add dict copy def}if end md begin
+/letter{}N/note{}N/legal{}N/od{txpose 1 0 mtx defaultmatrix dtransform S
+atan/pa X newpath clippath mark{transform{itransform moveto}}{transform{
+itransform lineto}}{6 -2 roll transform 6 -2 roll transform 6 -2 roll
+transform{itransform 6 2 roll itransform 6 2 roll itransform 6 2 roll
+curveto}}{{closepath}}pathforall newpath counttomark array astore/gc xdf
+pop ct 39 0 put 10 fz 0 fs 2 F/|______Courier fnt invertflag{PaintBlack}
+if}N/txpose{pxs pys scale ppr aload pop por{noflips{pop S neg S TR pop 1
+-1 scale}if xflip yflip and{pop S neg S TR 180 rotate 1 -1 scale ppr 3
+get ppr 1 get neg sub neg ppr 2 get ppr 0 get neg sub neg TR}if xflip
+yflip not and{pop S neg S TR pop 180 rotate ppr 3 get ppr 1 get neg sub
+neg 0 TR}if yflip xflip not and{ppr 1 get neg ppr 0 get neg TR}if}{
+noflips{TR pop pop 270 rotate 1 -1 scale}if xflip yflip and{TR pop pop
+90 rotate 1 -1 scale ppr 3 get ppr 1 get neg sub neg ppr 2 get ppr 0 get
+neg sub neg TR}if xflip yflip not and{TR pop pop 90 rotate ppr 3 get ppr
+1 get neg sub neg 0 TR}if yflip xflip not and{TR pop pop 270 rotate ppr
+2 get ppr 0 get neg sub neg 0 S TR}if}ifelse scaleby96{ppr aload pop 4
+-1 roll add 2 div 3 1 roll add 2 div 2 copy TR .96 dup scale neg S neg S
+TR}if}N/cp{pop pop showpage pm restore}N end}if}if}N/normalscale{
+Resolution 72 div VResolution 72 div neg scale magscale{DVImag dup scale
+}if 0 setgray}N/psfts{S 65781.76 div N}N/startTexFig{/psf$SavedState
+save N userdict maxlength dict begin/magscale true def normalscale
+currentpoint TR/psf$ury psfts/psf$urx psfts/psf$lly psfts/psf$llx psfts
+/psf$y psfts/psf$x psfts currentpoint/psf$cy X/psf$cx X/psf$sx psf$x
+psf$urx psf$llx sub div N/psf$sy psf$y psf$ury psf$lly sub div N psf$sx
+psf$sy scale psf$cx psf$sx div psf$llx sub psf$cy psf$sy div psf$ury sub
+TR/showpage{}N/erasepage{}N/setpagedevice{pop}N/copypage{}N/p 3 def
+@MacSetUp}N/doclip{psf$llx psf$lly psf$urx psf$ury currentpoint 6 2 roll
+newpath 4 copy 4 2 roll moveto 6 -1 roll S lineto S lineto S lineto
+closepath clip newpath moveto}N/endTexFig{end psf$SavedState restore}N
+/@beginspecial{SDict begin/SpecialSave save N gsave normalscale
+currentpoint TR @SpecialDefaults count/ocount X/dcount countdictstack N}
+N/@setspecial{CLIP 1 eq{newpath 0 0 moveto hs 0 rlineto 0 vs rlineto hs
+neg 0 rlineto closepath clip}if ho vo TR hsc vsc scale ang rotate
+rwiSeen{rwi urx llx sub div rhiSeen{rhi ury lly sub div}{dup}ifelse
+scale llx neg lly neg TR}{rhiSeen{rhi ury lly sub div dup scale llx neg
+lly neg TR}if}ifelse CLIP 2 eq{newpath llx lly moveto urx lly lineto urx
+ury lineto llx ury lineto closepath clip}if/showpage{}N/erasepage{}N
+/setpagedevice{pop}N/copypage{}N newpath}N/@endspecial{count ocount sub{
+pop}repeat countdictstack dcount sub{end}repeat grestore SpecialSave
+restore end}N/@defspecial{SDict begin}N/@fedspecial{end}B/li{lineto}B
+/rl{rlineto}B/rc{rcurveto}B/np{/SaveX currentpoint/SaveY X N 1
+setlinecap newpath}N/st{stroke SaveX SaveY moveto}N/fil{fill SaveX SaveY
+moveto}N/ellipse{/endangle X/startangle X/yrad X/xrad X/savematrix
+matrix currentmatrix N TR xrad yrad scale 0 0 1 startangle endangle arc
+savematrix setmatrix}N end
+
+%%EndProcSet
+%%BeginProcSet: color.pro 0 0
+%!
+TeXDict begin/setcmykcolor where{pop}{/setcmykcolor{dup 10 eq{pop
+setrgbcolor}{1 sub 4 1 roll 3{3 index add neg dup 0 lt{pop 0}if 3 1 roll
+}repeat setrgbcolor pop}ifelse}B}ifelse/TeXcolorcmyk{setcmykcolor}def
+/TeXcolorrgb{setrgbcolor}def/TeXcolorgrey{setgray}def/TeXcolorgray{
+setgray}def/TeXcolorhsb{sethsbcolor}def/currentcmykcolor where{pop}{
+/currentcmykcolor{currentrgbcolor 10}B}ifelse/DC{exch dup userdict exch
+known{pop pop}{X}ifelse}B/GreenYellow{0.15 0 0.69 0 setcmykcolor}DC
+/Yellow{0 0 1 0 setcmykcolor}DC/Goldenrod{0 0.10 0.84 0 setcmykcolor}DC
+/Dandelion{0 0.29 0.84 0 setcmykcolor}DC/Apricot{0 0.32 0.52 0
+setcmykcolor}DC/Peach{0 0.50 0.70 0 setcmykcolor}DC/Melon{0 0.46 0.50 0
+setcmykcolor}DC/YellowOrange{0 0.42 1 0 setcmykcolor}DC/Orange{0 0.61
+0.87 0 setcmykcolor}DC/BurntOrange{0 0.51 1 0 setcmykcolor}DC
+/Bittersweet{0 0.75 1 0.24 setcmykcolor}DC/RedOrange{0 0.77 0.87 0
+setcmykcolor}DC/Mahogany{0 0.85 0.87 0.35 setcmykcolor}DC/Maroon{0 0.87
+0.68 0.32 setcmykcolor}DC/BrickRed{0 0.89 0.94 0.28 setcmykcolor}DC/Red{
+0 1 1 0 setcmykcolor}DC/OrangeRed{0 1 0.50 0 setcmykcolor}DC/RubineRed{
+0 1 0.13 0 setcmykcolor}DC/WildStrawberry{0 0.96 0.39 0 setcmykcolor}DC
+/Salmon{0 0.53 0.38 0 setcmykcolor}DC/CarnationPink{0 0.63 0 0
+setcmykcolor}DC/Magenta{0 1 0 0 setcmykcolor}DC/VioletRed{0 0.81 0 0
+setcmykcolor}DC/Rhodamine{0 0.82 0 0 setcmykcolor}DC/Mulberry{0.34 0.90
+0 0.02 setcmykcolor}DC/RedViolet{0.07 0.90 0 0.34 setcmykcolor}DC
+/Fuchsia{0.47 0.91 0 0.08 setcmykcolor}DC/Lavender{0 0.48 0 0
+setcmykcolor}DC/Thistle{0.12 0.59 0 0 setcmykcolor}DC/Orchid{0.32 0.64 0
+0 setcmykcolor}DC/DarkOrchid{0.40 0.80 0.20 0 setcmykcolor}DC/Purple{
+0.45 0.86 0 0 setcmykcolor}DC/Plum{0.50 1 0 0 setcmykcolor}DC/Violet{
+0.79 0.88 0 0 setcmykcolor}DC/RoyalPurple{0.75 0.90 0 0 setcmykcolor}DC
+/BlueViolet{0.86 0.91 0 0.04 setcmykcolor}DC/Periwinkle{0.57 0.55 0 0
+setcmykcolor}DC/CadetBlue{0.62 0.57 0.23 0 setcmykcolor}DC
+/CornflowerBlue{0.65 0.13 0 0 setcmykcolor}DC/MidnightBlue{0.98 0.13 0
+0.43 setcmykcolor}DC/NavyBlue{0.94 0.54 0 0 setcmykcolor}DC/RoyalBlue{1
+0.50 0 0 setcmykcolor}DC/Blue{1 1 0 0 setcmykcolor}DC/Cerulean{0.94 0.11
+0 0 setcmykcolor}DC/Cyan{1 0 0 0 setcmykcolor}DC/ProcessBlue{0.96 0 0 0
+setcmykcolor}DC/SkyBlue{0.62 0 0.12 0 setcmykcolor}DC/Turquoise{0.85 0
+0.20 0 setcmykcolor}DC/TealBlue{0.86 0 0.34 0.02 setcmykcolor}DC
+/Aquamarine{0.82 0 0.30 0 setcmykcolor}DC/BlueGreen{0.85 0 0.33 0
+setcmykcolor}DC/Emerald{1 0 0.50 0 setcmykcolor}DC/JungleGreen{0.99 0
+0.52 0 setcmykcolor}DC/SeaGreen{0.69 0 0.50 0 setcmykcolor}DC/Green{1 0
+1 0 setcmykcolor}DC/ForestGreen{0.91 0 0.88 0.12 setcmykcolor}DC
+/PineGreen{0.92 0 0.59 0.25 setcmykcolor}DC/LimeGreen{0.50 0 1 0
+setcmykcolor}DC/YellowGreen{0.44 0 0.74 0 setcmykcolor}DC/SpringGreen{
+0.26 0 0.76 0 setcmykcolor}DC/OliveGreen{0.64 0 0.95 0.40 setcmykcolor}
+DC/RawSienna{0 0.72 1 0.45 setcmykcolor}DC/Sepia{0 0.83 1 0.70
+setcmykcolor}DC/Brown{0 0.81 1 0.60 setcmykcolor}DC/Tan{0.14 0.42 0.56 0
+setcmykcolor}DC/Gray{0 0 0 0.50 setcmykcolor}DC/Black{0 0 0 1
+setcmykcolor}DC/White{0 0 0 0 setcmykcolor}DC end
+
+%%EndProcSet
+TeXDict begin @defspecial
+
+ /DvipsToPDF { 72.27 mul Resolution div } def /PDFToDvips { 72.27 div
+Resolution mul } def /HyperBorder { 1 PDFToDvips } def /H.V {pdf@hoff
+pdf@voff null} def /H.B {/Rect[pdf@llx pdf@lly pdf@urx pdf@ury]} def
+/H.S { currentpoint HyperBorder add /pdf@lly exch def dup DvipsToPDF
+/pdf@hoff exch def HyperBorder sub /pdf@llx exch def } def /H.L { 2
+sub dup /HyperBasePt exch def PDFToDvips /HyperBaseDvips exch def currentpoint
+HyperBaseDvips sub /pdf@ury exch def /pdf@urx exch def } def /H.A {
+H.L currentpoint exch pop vsize 72 sub exch DvipsToPDF HyperBasePt
+sub sub /pdf@voff exch def } def /H.R { currentpoint HyperBorder sub
+/pdf@ury exch def HyperBorder add /pdf@urx exch def currentpoint exch
+pop vsize 72 sub exch DvipsToPDF sub /pdf@voff exch def } def systemdict
+/pdfmark known not {userdict /pdfmark systemdict /cleartomark get put}
+if
+ 
+@fedspecial end
+%%BeginFont: CMBSY10
+%!PS-AdobeFont-1.1: CMBSY10 1.00
+%%CreationDate: 1992 Jul 23 21:21:18
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.00) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMBSY10) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Bold) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMBSY10 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 15 /bullet put
+dup 110 /backslash put
+readonly def
+/FontBBox{-27 -940 1332 825}readonly def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052A014267B7904EB3C0D3BD0B83D891
+016CA6CA4B712ADEB258FAAB9A130EE605E61F77FC1B738ABC7C51CD46EF8171
+9098D5FEE67660E69A7AB91B58F29A4D79E57022F783EB0FBBB6D4F4EC35014F
+D2DECBA99459A4C59DF0C6EBA150284454E707DC2100C15B76B4C19B84363758
+469A6C558785B226332152109871A9883487DD7710949204DDCF837E6A8708B8
+2BDBF16FBC7512FAA308A093FE5CF17EFB0FFE6C69FEBA8389DCC1923D30683D
+A8CD93F7195D5A07BA2F18CB3FD5FFEDA4D83BF758062134D84AC0100187A6CD
+1F80F5DC15B47D73F69655445AD218A8AD78C16EF96F385C9E2D46F8A330C7B5
+A859EB0610C78FC5CE39715A1C5458D30498C0A339504A74C7E8F84B3DEC1516
+B3ABAA0A06DEDCD5F9FEAA5AC4AE8D5A5BA5EC0B64784454F58049E13467D705
+8F13A22BDED5F93EDDCAB7A1886A5168D25B120F8BBCC23546BC7398D4E3EC17
+138921404C390EB84C3CC243C0FF3DEC9EBFFF3DEA73365F1E4BC2F3AB911B2F
+780946F4F6F49935A54EF955D9894FEB37239C896CF98240162F6A6E9677EA24
+06BEE1F04463C033047F7F972C560213C7A02BFEE5AE5AE5BF72377CED942A6D
+8059E59CF03CD6782BD34BC02AA4FD1BA25A5CBE32569D7FED28EFB4C0F5F7C8
+6DADC1A047CB514E19B36A84D4DB390FFE5B841C390666FE27C712E23E22FC84
+A8670626E8B72700B9EE9F06F2121264C1CF69FEEC3E20897D0D9057032830FE
+A18A4BA2AD5CE10EE4FED4BB9E2A9C06965779827D7CBA93926793A7161454E3
+C5AC6A3AAEB75EC64556142508DE6E37B71058F8B97C1A9B4CEBF74FBD2D6D84
+F5DAA2B04AD30B313070B33789935E83DB470FAB8EC65165679F247964BD0C20
+78291B6E13C29E8B86429C1B90C396729D6BDE4CCF24BE000390D798DA73BBEC
+AC5C9B1AC19B2C660CF1CDEC05289F6CAEF0E43465E3627DE26670BAA825429B
+4B8FE57928267D5EBE38C5BF93F90304EB89DE120F81362FB5A3D374AB25B33C
+D03A8E9E176E41C964625E58A65EA958EF2B089933C06B71E29249A96D5A2395
+DE687A0C60B837B5657AC237317F2BCF9DBDAC804F7F0469AE640110010CDFEA
+D4F2F711DDA5F458BF6043EE4B1B616EE864B93D68DF7D2AF7D0C6CED96EF389
+29929CF30CFD065E72E6EA4EA3296EF92760C0B374778BC82C11CD2A4425531F
+E289E53E01D3A021F086812215859B5CEE2CD7FED44EC7E2145C6D9B5316B3A8
+C85D9F73E749B6EFB8D78811DF4909D39D58032D202CFC3F9A54BBD80878689A
+DFD7098E1F25A29C121B32682DE4A7098B02F166D7168DE96B4E6F9CEADAA0F2
+E5145300E7BA8BF96F2886EDE2463331F4BAC8E31950DC65FF39F1B319CD66A5
+7E32F6C0CA5305EBE7AE97AA84ACBE861C93FEF83D857DB1931C10FB0947F06F
+4F74532C309E2A9517608361FBEC62AD9BB9DA81E91D6700CA4038A8904D8E85
+25B74F885EA5CB0A4964CFE035CC1E8FBB2D7C6001C19A10757890
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+%%BeginFont: CMSY10
+%!PS-AdobeFont-1.1: CMSY10 1.0
+%%CreationDate: 1991 Aug 15 07:20:57
+% Copyright (C) 1997 American Mathematical Society. All Rights Reserved.
+11 dict begin
+/FontInfo 7 dict dup begin
+/version (1.0) readonly def
+/Notice (Copyright (C) 1997 American Mathematical Society. All Rights Reserved) readonly def
+/FullName (CMSY10) readonly def
+/FamilyName (Computer Modern) readonly def
+/Weight (Medium) readonly def
+/ItalicAngle -14.035 def
+/isFixedPitch false def
+end readonly def
+/FontName /CMSY10 def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 102 /braceleft put
+dup 103 /braceright put
+readonly def
+/FontBBox{-29 -960 1116 775}readonly def
+currentdict end
+currentfile eexec
+D9D66F633B846A97B686A97E45A3D0AA052F09F9C8ADE9D907C058B87E9B6964
+7D53359E51216774A4EAA1E2B58EC3176BD1184A633B951372B4198D4E8C5EF4
+A213ACB58AA0A658908035BF2ED8531779838A960DFE2B27EA49C37156989C85
+E21B3ABF72E39A89232CD9F4237FC80C9E64E8425AA3BEF7DED60B122A52922A
+221A37D9A807DD01161779DDE7D31FF2B87F97C73D63EECDDA4C49501773468A
+27D1663E0B62F461F6E40A5D6676D1D12B51E641C1D4E8E2771864FC104F8CBF
+5B78EC1D88228725F1C453A678F58A7E1B7BD7CA700717D288EB8DA1F57C4F09
+0ABF1D42C5DDD0C384C7E22F8F8047BE1D4C1CC8E33368FB1AC82B4E96146730
+DE3302B2E6B819CB6AE455B1AF3187FFE8071AA57EF8A6616B9CB7941D44EC7A
+71A7BB3DF755178D7D2E4BB69859EFA4BBC30BD6BB1531133FD4D9438FF99F09
+4ECC068A324D75B5F696B8688EEB2F17E5ED34CCD6D047A4E3806D000C199D7C
+515DB70A8D4F6146FE068DC1E5DE8BC57036431151EC603C8BCFE359BBD953AD
+5F3D998C69E42AA96AA212AD55B676FA2B4F6B519575404233C09AF99014AB95
+767523D9E1F8806E766AC0DD6D81028C3AA9C7536D88D3C2DB6D9949F844935E
+420963F40430452DEAAC1F500BFB1C2473C54B9987BE449F042633C7038D5AEB
+7E1E11C50911EBCF0979F8192E056A2B2EE9785EB73B1AB874116AD5AA74F32C
+BF57FC28FFED335DFD9261AC7A624EAA93BEBC2C0F8B3F898DDA1490D59C6C4B
+A651746C8EAD41BDAA1AF4056AFE98D2D3AE3CCEB9C67FE3A63385470EA42968
+34268684A674675AB9EDBB5BFCA81224B22D4ECF40D1F31A39481AC68A87F252
+F4E7C1C340A26E0D514BACCAA51898758A7E7B63D2E7F34E91554151433F0FD2
+4901D3DE9A5FB9306552DC57EAB729AA07780927E1ECCB5D1F59A09A1E3FFF2D
+922B6C9B58CB20D687A72B9C22D4EC926771541EDA3B75559510DB21BA4461EA
+960B8E5AF4D31D08E8F235D677A9F6EFDB01926967743942C23955678E438F51
+E5E22E2FA2AA7894755053C32B39277B82C00B3D9BE9957CF3ED626852FFFC31
+6E5F0F7489198136A3284B31CC94299EED05B8FA66B8D33F7C47367790D23CD5
+303B0C8E58B0E51BEA9325282F19A3D361A3BEA6BB0CCD09BE735D810E7E0A79
+D1A9C580CFC8CF9FF685D63ECDCCC024C235448BA632F00C3C5BC0E86F44B90A
+293817CC93035E5E18548A7E157C2887309BF84C167D8DBED024BB
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndFont 
+TeXDict begin 39158280 55380996 2074 8000 8000 (1_intro_jml.dvi)
+@start /Fa 240[1320 15[{}1 2295.84 /CMBSY10 rf /Fb 133[1148
+1276 1276 1786 1276 1403 765 1276 893 1403 1403 1403
+1403 2041 638 1276 638 638 1403 1403 765 1276 1403 1276
+1403 1276 7[1531 4[1403 1531 1658 2[1786 1658 1912 1403
+1658 1276 638 1[1786 1403 1531 1658 1658 1658 1658 18[638
+765 638 2[765 765 37[1403 2[{TeXBase1Encoding ReEncodeFont}50
+2295.84 /Helvetica-Bold rf /Fc 107[765 765 26[1148 1[1148
+1276 638 1148 765 1[1276 1276 1276 1912 510 2[510 1[1276
+638 1276 1276 1148 1[1276 16[1531 1[1658 4[638 3[1531
+12[1276 3[1276 1[1276 1276 1276 3[638 44[{TeXBase1Encoding ReEncodeFont}
+30 2295.84 /Helvetica-Oblique rf /Fd 137[1357 1[1357
+1[1357 3[1357 1[1357 2[1357 1[1357 1[1357 1[1357 1[1357
+1[1357 6[1357 9[1357 1357 1357 6[1357 1[1357 1357 1357
+1357 2[1357 1357 1357 10[1357 1357 5[1357 1357 1[1357
+38[{TeXBase1Encoding ReEncodeFont}28 2261.4 /Courier-Bold
+rf /Fe 136[1493 1[1493 1[1493 1493 1[1493 1493 1493 1493
+1493 1[1493 2[1493 1[1493 1[1493 52[1493 46[{
+TeXBase1Encoding ReEncodeFont}14 2487.54 /Courier-Bold
+rf /Ff 134[1404 1404 1965 1404 1543 841 1404 982 1[1543
+1543 1543 2245 702 2[702 3[1404 1543 1404 1[1404 94[1543
+2[{TeXBase1Encoding ReEncodeFont}19 2525.42 /Helvetica-BoldOblique
+rf /Fg 152[1378 1378 102[{}2 2755 /CMSY10 rf /Fh 145[1584
+110[{}1 2755 /CMBSY10 rf /Fi 131[1628 2[1628 1628 1628
+1628 1628 1628 1628 1628 1628 1628 1628 1628 1628 1628
+1628 1628 1628 1628 1628 1628 1628 1628 1628 1628 1628
+1[1628 1[1628 1[1628 2[1628 1628 3[1628 1628 1[1628 2[1628
+1628 5[1628 1628 1628 1[1628 1628 1628 1[1628 1628 1628
+1628 5[1628 2[1628 1628 1628 1628 1628 1628 1628 1628
+1628 1628 1628 1[1628 3[1628 1628 33[{TeXBase1Encoding ReEncodeFont}61
+2713.68 /Courier-Bold rf /Fj 134[1398 2[1398 1[837 1398
+978 3[1536 1[699 6[1398 2[1536 1398 20[1536 4[1956 24[699
+46[{TeXBase1Encoding ReEncodeFont}13 2513.94 /Helvetica-Bold
+rf /Fk 136[2345 3[2345 2345 1[2345 2345 1[2345 2345 1[2345
+2[2345 1[2345 1[2345 52[2345 46[{TeXBase1Encoding ReEncodeFont}12
+3907.69 /Courier-Bold rf /Fl 137[2647 2909 1[2647 1852
+2[2909 2909 1[1324 2[1324 2909 2909 1586 2647 2909 2[2647
+12[2909 6[3966 2909 1[2647 74[{TeXBase1Encoding ReEncodeFont}18
+4761.56 /Helvetica-Bold rf /Fm 145[1446 94[1446 15[{}2
+2513.94 /CMBSY10 rf /Fn 105[1404 1[1263 1263 25[1404
+1404 1965 1404 1543 841 1404 982 1543 1543 1543 1543
+2245 702 1404 702 702 1543 1543 841 1404 1543 1404 1543
+1404 1[1404 5[1684 1[2384 1684 1823 1543 1684 1823 1[1684
+1965 1823 2104 1543 1823 1404 702 1823 1965 1543 1684
+1823 1823 1823 1823 2462 2[1475 2[841 5[1404 1[1404 1404
+1[702 702 841 702 1475 1[841 841 702 1823 2[1404 1[841
+30[1543 2[{TeXBase1Encoding ReEncodeFont}70 2525.42 /Helvetica-Bold
+rf /Fo 134[1838 1838 2572 1838 2020 1101 1838 1286 2020
+2020 2020 2020 2939 919 1838 1[919 2020 2020 1101 1838
+2020 1838 2020 1838 1[1838 7[3121 3[2205 2387 2[2572
+1[2754 2020 1[1838 4[2205 2387 2387 1[2387 14[1838 2[919
+1[1101 919 2[1101 1101 40[{TeXBase1Encoding ReEncodeFont}42
+3306 /Helvetica-Bold rf /Fp 192[701 63[{TeXBase1Encoding ReEncodeFont}1
+1147.92 /Helvetica-Bold rf /Fq 105[638 28[574 2[574 638
+319 1[382 1[638 638 638 1[255 574 1[255 3[638 638 2[638
+12[701 766 2[766 2[956 638 766 574 4[766 829 829 9[638
+638 638 638 638 638 638 638 638 638 319 319 382 319 5[766
+38[{TeXBase1Encoding ReEncodeFont}40 1147.92 /Helvetica
+rf /Fr 134[1276 2[1276 1403 765 1276 893 1[1403 1403
+1403 2041 638 1276 638 638 1[1403 1[1276 1403 1[1403
+1276 11[1658 2[1658 3[1658 2[1658 5[1531 1658 1658 22[638
+44[{TeXBase1Encoding ReEncodeFont}27 2295.84 /Helvetica-BoldOblique
+rf /Fs 134[1838 2[1838 3[1286 2[2020 2020 1[919 1838
+1[919 3[1838 2020 2[1838 16[2205 4[2387 1838 4[2205 2387
+2387 22[919 44[{TeXBase1Encoding ReEncodeFont}18 3306
+/Helvetica-BoldOblique rf /Ft 138[2909 1586 1[1852 2[2909
+2909 4[1324 4[2909 2647 21[3966 2909 1[2647 1324 73[{
+TeXBase1Encoding ReEncodeFont}12 4761.56 /Helvetica-BoldOblique
+rf end
+%%EndProlog
+%%BeginSetup
+%%Feature: *Resolution 8000dpi
+TeXDict begin
+%%PaperSize: A4
+ end
+%%EndSetup
+%%Page: 1 1
+TeXDict begin 1 0 bop 0 TeXcolorgray 1 TeXcolorgray 0
+TeXcolorgray 1 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray
+0 TeXcolorgray 1 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray
+0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray
+0 TeXcolorgray 0.25 TeXcolorgray 0 TeXcolorgray 0.5 TeXcolorgray
+0 TeXcolorgray 0 0.1 0.95 TeXcolorrgb 0 TeXcolorgray
+0 1 1 TeXcolorrgb 0 TeXcolorgray 0.75 TeXcolorgray 0
+TeXcolorgray -8000 79998 a
+SDict begin [ /Page 1 /View [ /Fit ] /PageMode /UseOutlines  /DOCVIEW
+pdfmark end
+ -8000 79998 a -8000 79998
+a
+SDict begin [ /CropBox [10 40 594 880] /PAGES pdfmark end
+ -8000 79998 a -8000 79998 a
+SDict begin [ {Catalog} << /ViewerPreferences<</FitWindow true/CenterWindow
+true>>>> /PUT pdfmark end
+ -8000 79998 a -8000 79998
+a
+SDict begin H.S end
+ -8000 79998 a -8000 79998 a
+SDict begin 12 H.A end
+ -8000 79998 a -8000 79998
+a
+SDict begin [ /View [/XYZ H.V] /Dest (Doc-Start) cvn H.B /DEST pdfmark
+end
+ -8000 79998 a 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998 79998 a 59037 45999
+a
+SDict begin [ /Rotate 90 /PAGES pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Title () /Subject () /Creator (LaTeX with hyperref package)
+/Author () /Producer (dvips + Distiller) /Keywords () /DOCINFO pdfmark
+end
+ 59037 45999 a 0 TeXcolorgray
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 75398 37312
+a Ft(Intr)-95 b(oduction)1324 b(to)g(JML)p 0 TeXcolorgray
+1 0 0 TeXcolorrgb 70511 42932 a Fs(Da)-50 b(vid)920 b(Cok,)f(Joe)g
+(Kinir)33 b(y)-264 b(,)919 b(and)g(Erik)g(P)-132 b(oll)p
+0 TeXcolorgray 69380 49241 a Fr(Eastman)639 b(K)-80 b(odak)638
+b(Compan)-46 b(y)-184 b(,)639 b(Univer)-34 b(sity)639
+b(Colleg)23 b(e)638 b(Dub)-23 b(lin,)79528 52492 y(and)638
+b(Radboud)f(Univer)-34 b(sity)639 b(Nijmeg)23 b(en)128957
+69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+107035 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34
+b(y)319 b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.1/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 2 2
+TeXDict begin 2 1 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /Page 2/View [ /XYZ null null null ] /Title (Outline of this tutorial)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 100463 21923 a Fo(Outline)920
+b(of)e(this)h(tutorial)p 0 TeXcolorgray 62304 29477 a
+Fn(Fir)-38 b(st)p 0 TeXcolorgray 65156 33260 a Fm(\017)p
+0 TeXcolorgray 1653 w Fn(intr)-50 b(oduction)702 b(to)p
+0.133 0.56 0 TeXcolorrgb 702 w(JML)p 0 TeXcolorgray 0
+TeXcolorgray 65156 37044 a Fm(\017)p 0 TeXcolorgray 1653
+w Fn(o)-50 b(ver)25 b(vie)-38 b(w)702 b(of)g(tool)g(suppor)50
+b(t)703 b(f)-50 b(or)702 b(JML,)g(esp.)h(runtime)68255
+39967 y(asser)50 b(tion)703 b(c)-25 b(hec)-50 b(king)702
+b(\(using)p 0.133 0.56 0 TeXcolorrgb 702 w(jmlrac)p 0
+TeXcolorgray(\))h(and)f(e)-38 b(xtended)703 b(static)68255
+42929 y(c)-25 b(hec)-50 b(king)p 0.133 0.56 0 TeXcolorrgb
+702 w(ESC/Ja)-38 b(v)-50 b(a2)p 0 TeXcolorgray 62304
+46912 a(Then)p 0 TeXcolorgray 65156 50696 a Fm(\017)p
+0 TeXcolorgray 1653 w Fn(ESC/Ja)-38 b(v)-50 b(a2:)870
+b(Use)702 b(and)h(Features)p 0 TeXcolorgray 65156 54480
+a Fm(\017)p 0 TeXcolorgray 1653 w Fn(ESC/Ja)-38 b(v)-50
+b(a2:)870 b(W)-101 b(arnings)p 0 TeXcolorgray 65156 58516
+a Fm(\017)p 0 TeXcolorgray 1653 w Fn(Speci\002cation)703
+b(tips)f(and)g(pitfalls)p 0 TeXcolorgray 65156 62514
+a Fm(\017)p 0 TeXcolorgray 1653 w Fn(Ad)-38 b(v)-50 b(anced)702
+b(JML:)g(more)h(tips)f(and)g(pitfalls)62304 66512 y(inter)-38
+b(sper)g(sed)704 b(with)d(demos.)128957 69620 y
+ 0 setgray
+ 128957
+69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 107035
+76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34 b(y)319
+b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.2/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 3 3
+TeXDict begin 3 2 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 62304 40120 a
+SDict begin [ /Page 3/View [ /XYZ null null null ] /Title ({\Large \red The Java Modeling Language \\ JML \\ [2ex] {\large \black \texttt {www.jmlspecs.org}}})
+/OUT pdfmark end
+ 62304 40120 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 65108 43593 a Fl(The)1325
+b(Ja)-71 b(v)-95 b(a)1324 b(Modeling)h(Langua)-48 b(g)48
+b(e)93470 50366 y(JML)p 0 TeXcolorgray 79475 58654 a
+Fk(www.jmlspecs.org)p 1 0 0 TeXcolorrgb 0 TeXcolorgray
+128957 69620 a
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 107035 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34
+b(y)319 b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.3/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 4 4
+TeXDict begin 4 3 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620 a
+ tx@Dict begin (0) BOL end
+ 59037
+69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /Page 4/View [ /XYZ null null null ] /Title (JML {\footnotesize {\black by Gary Leavens et al.}})
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 100795 21443 a Fo(JML)p
+0 TeXcolorgray 919 w Fj(b)-50 b(y)698 b(Gar)25 b(y)698
+b(Lea)-38 b(vens)698 b(et)h(al.)p 1 0 0 TeXcolorrgb 0
+TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 62304 26790 a
+Fn(Formal)k(speci\002cation)f(langua)-25 b(g)25 b(e)p
+0 TeXcolorgray 703 w(f)-50 b(or)702 b(Ja)-38 b(v)-50
+b(a)p 0 TeXcolorgray 65156 32204 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(to)702 b(specify)g(beha)-38 b(viour)703 b(of)f(Ja)-38
+b(v)-50 b(a)702 b(c)-50 b(lasses)p 0 TeXcolorgray 65156
+36202 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(to)702 b(recor)-50
+b(d)702 b(design)h(&implementation)g(decisions)62304
+41616 y(b)-50 b(y)702 b(ad)-25 b(ding)p 0.133 0.56 0
+TeXcolorrgb 702 w(asser)50 b(tions)p 0 TeXcolorgray 703
+w(to)702 b(Ja)-38 b(v)-50 b(a)702 b(sour)-50 b(ce)703
+b(code)25 b(,)702 b(eg)p 0 TeXcolorgray 65156 47030 a
+Fm(\017)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 2355
+w Fn(preconditions)p 0 TeXcolorgray 0 TeXcolorgray 65156
+51028 a Fm(\017)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+2355 w Fn(postconditions)p 0 TeXcolorgray 0 TeXcolorgray
+65156 55026 a Fm(\017)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+2355 w Fn(in)-101 b(v)-50 b(ariants)p 0 TeXcolorgray
+62304 60187 a(as)702 b(in)g(Eiff)-25 b(el)703 b(\(Design)f(b)-50
+b(y)702 b(Contract\),)h(b)-50 b(ut)701 b(more)i(e)-38
+b(xpressive)50 b(.)62304 62127 y
+ tx@Dict begin (1) BOL end
+ 62304 62127 a 0.9 0.9 1
+TeXcolorrgb 0 TeXcolorgray 63794 66017 a @beginspecial
+@setspecial
+ tx@Dict begin STP newpath 0.8 SLW 0  setgray  0.2 true 6.49054 neg
+8.93794 neg 314.82758 14.51501 .5 Frame  gsave 3.0 -45 PtoC Shadow
+0.25  setgray gsave fill grestore stroke grestore gsave 0.9 0.9 1 
+setrgbcolor gsave fill grestore stroke grestore gsave 0.9 0.9 1  setrgbcolor
+fill grestore gsave 0.8 SLW 0  setgray 0 setlinecap stroke  grestore
+end
+ 
+@endspecial Fn(Goal:)869 b(JML)701 b(should)i(be)f(easy)g
+(to)g(use)h(f)-50 b(or)702 b(an)-50 b(y)701 b(Ja)-38
+b(v)-50 b(a)703 b(pr)-50 b(ogrammer)-152 b(.)136560 66017
+y
+ tx@Dict begin (0) BOL end
+ 136560 66017 a 128957 69620 a
+ 0 setgray
+ 128957 69620 a 128957
+69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+107035 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34
+b(y)319 b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.4/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 4 5
+TeXDict begin 4 4 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0 TeXcolorrgb
+100795 21443 a Fo(JML)p 0 TeXcolorgray 919 w Fj(b)-50
+b(y)698 b(Gar)25 b(y)698 b(Lea)-38 b(vens)698 b(et)h(al.)p
+1 0 0 TeXcolorrgb 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+62304 26790 a Fn(Formal)k(speci\002cation)f(langua)-25
+b(g)25 b(e)p 0 TeXcolorgray 703 w(f)-50 b(or)702 b(Ja)-38
+b(v)-50 b(a)p 0 TeXcolorgray 65156 32204 a Fm(\017)p
+0 TeXcolorgray 1653 w Fn(to)702 b(specify)g(beha)-38
+b(viour)703 b(of)f(Ja)-38 b(v)-50 b(a)702 b(c)-50 b(lasses)p
+0 TeXcolorgray 65156 36202 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(to)702 b(recor)-50 b(d)702 b(design)h(&implementation)g
+(decisions)62304 41616 y(b)-50 b(y)702 b(ad)-25 b(ding)p
+0.133 0.56 0 TeXcolorrgb 702 w(asser)50 b(tions)p 0 TeXcolorgray
+703 w(to)702 b(Ja)-38 b(v)-50 b(a)702 b(sour)-50 b(ce)703
+b(code)25 b(,)702 b(eg)p 0 TeXcolorgray 65156 47030 a
+Fm(\017)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 2355
+w Fn(preconditions)p 0 TeXcolorgray 0 TeXcolorgray 65156
+51028 a Fm(\017)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+2355 w Fn(postconditions)p 0 TeXcolorgray 0 TeXcolorgray
+65156 55026 a Fm(\017)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+2355 w Fn(in)-101 b(v)-50 b(ariants)p 0 TeXcolorgray
+62304 60187 a(as)702 b(in)g(Eiff)-25 b(el)703 b(\(Design)f(b)-50
+b(y)702 b(Contract\),)h(b)-50 b(ut)701 b(more)i(e)-38
+b(xpressive)50 b(.)p 0.9 0.9 1 TeXcolorrgb 0 TeXcolorgray
+63794 66017 a @beginspecial @setspecial
+ tx@Dict begin STP newpath 0.8 SLW 0  setgray  0.2 true 6.49054 neg
+8.93794 neg 314.82758 14.51501 .5 Frame  gsave 3.0 -45 PtoC Shadow
+0.25  setgray gsave fill grestore stroke grestore gsave 0.9 0.9 1 
+setrgbcolor gsave fill grestore stroke grestore gsave 0.9 0.9 1  setrgbcolor
+fill grestore gsave 0.8 SLW 0  setgray 0 setlinecap stroke  grestore
+end
+ 
+@endspecial(Goal:)869
+b(JML)701 b(should)i(be)f(easy)g(to)g(use)h(f)-50 b(or)702
+b(an)-50 b(y)701 b(Ja)-38 b(v)-50 b(a)703 b(pr)-50 b(ogrammer)-152
+b(.)128957 69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 107035 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34
+b(y)319 b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.4/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 5 6
+TeXDict begin 5 5 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /Page 6/View [ /XYZ null null null ] /Title (JML) /OUT
+pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 128200 21923 a Fo(JML)p
+0 TeXcolorgray 62304 26735 a Fn(T)-202 b(o)702 b(make)g(JML)g(easy)h
+(to)f(use:)p 0 TeXcolorgray 65156 33454 a Fm(\017)p 0
+TeXcolorgray 1653 w Fn(JML)g(asser)50 b(tions)703 b(are)g(ad)-25
+b(ded)702 b(as)g(comments)h(in)f(.ja)-38 b(v)-50 b(a)702
+b(\002le)25 b(,)68255 36377 y(between)p 0.133 0.56 0
+TeXcolorrgb 702 w Fi(/)80689 36792 y(*)82317 36377 y(@)p
+0 TeXcolorgray 703 w Fn(.)419 b(.)g(.)p 0.133 0.56 0
+TeXcolorrgb 419 w Fi(@)89639 36792 y(*)91267 36377 y(/)p
+0 TeXcolorgray Fn(,)703 b(or)f(after)p 0.133 0.56 0 TeXcolorrgb
+703 w Fi(//@)p 0 TeXcolorgray Fn(,)p 0 TeXcolorgray 65156
+41654 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(Pr)-50 b(oper)50
+b(ties)703 b(are)g(speci\002ed)g(as)f(Ja)-38 b(v)-50
+b(a)702 b(boolean)g(e)-38 b(xpressions,)68255 44620 y(e)g(xtended)702
+b(with)g(a)g(f)-25 b(e)-38 b(w)702 b(operator)-38 b(s)703
+b(\()p 0.133 0.56 0 TeXcolorrgb Fm(n)p Fn(old,)f Fm(n)p
+Fn(f)-50 b(orall,)702 b Fm(n)p Fn(result,)68255 47648
+y(.)419 b(.)g(.)p 0 TeXcolorgray 419 w(\).)p 0 TeXcolorgray
+65156 53024 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(using)702
+b(a)g(f)-25 b(e)-38 b(w)702 b(ke)-38 b(yw)-50 b(or)g(ds)702
+b(\()p 0.133 0.56 0 TeXcolorrgb Fi(requires)p Fn(,)h
+Fi(ensures)p Fn(,)68255 55932 y Fi(signals)p Fn(,)g Fi(assignable)p
+Fn(,)h Fi(pure)p Fn(,)f Fi(invariant)p Fn(,)68255 58756
+y Fi(non)p 73302 58756 815 92 v 977 w(null)p Fn(,)g(.)419
+b(.)g(.)p 0 TeXcolorgray 419 w(\))128957 69620 y
+ 0 setgray
+ 128957
+69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 107035
+76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34 b(y)319
+b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.5/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 6 7
+TeXDict begin 6 6 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /Page 7/View [ /XYZ null null null ] /Title (requires, ensures)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 107251 21279 a Fo(requires,)919
+b(ensures)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+62304 26790 a Fn(Pre-)p 0 TeXcolorgray 703 w(and)p 0.2 0.36 0.77
+TeXcolorrgb 702 w(post-conditions)p 0 TeXcolorgray 703
+w(f)-50 b(or)701 b(method)i(can)f(be)g(speci\002ed.)p
+0 TeXcolorgray 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+63932 35165 a Fi(/)65560 35580 y(*)67188 35165 y(@)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1629 w(requires)p
+0 TeXcolorgray 1630 w(amount)1629 b(>=)g(0;)p 0.2 0.36 0.77
+TeXcolorrgb 70445 39093 a(ensures)p 0 TeXcolorgray 3258
+w(balance)g(==)g Fh(n)p Fi(old\(balance-amount\))j(&&)85099
+43021 y Fh(n)p Fi(result)d(==)g(balance;)p 0.133 0.56 0
+TeXcolorrgb 67189 46949 a(@)68817 47364 y(*)70445 46949
+y(/)p 0 TeXcolorgray 65560 50877 a(public)h(int)p 0.133 0.56 0
+TeXcolorrgb 1629 w(debit)p 0 TeXcolorgray(\(int)g(amount\))f
+Fg(f)68817 54805 y Fi(...)65560 58734 y Fg(g)62304 64670
+y Fn(Here)703 b Fh(n)p Fi(old\(balance\))i Fn(ref)-25
+b(er)-38 b(s)702 b(to)g(the)h(v)-50 b(alue)702 b(of)g
+Fi(balance)62304 67759 y Fn(bef)-50 b(ore)702 b(e)-38
+b(x)-25 b(ecution)703 b(of)f(the)g(method.)128957 69620
+y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+107035 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34
+b(y)319 b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.6/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 7 8
+TeXDict begin 7 7 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /Page 8/View [ /XYZ null null null ] /Title (requires, ensures)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 107251 21279 a Fo(requires,)919
+b(ensures)p 0 TeXcolorgray 62304 26735 a Fn(JML)702 b(specs)g(can)h(be)
+f(as)g(str)-50 b(ong)702 b(or)h(as)f(weak)g(as)g(y)-63
+b(ou)702 b(want.)p 0 TeXcolorgray 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 63932 35110 a Fi(/)65560 35525 y(*)67188
+35110 y(@)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+1629 w(requires)p 0 TeXcolorgray 1630 w(amount)1629 b(>=)g(0;)p
+0.2 0.36 0.77 TeXcolorrgb 70445 39038 a(ensures)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 3258 w(true)p 0 TeXcolorgray(;)p
+0.133 0.56 0 TeXcolorrgb 67189 42967 a(@)68817 43382
+y(*)70445 42967 y(/)p 0 TeXcolorgray 65560 46895 a(public)h(int)p
+0.133 0.56 0 TeXcolorrgb 1629 w(debit)p 0 TeXcolorgray(\(int)g
+(amount\))f Fg(f)68817 50823 y Fi(...)65560 54751 y Fg(g)62304
+60688 y Fn(This)702 b(default)g(postcondition)h(\223)p
+Fi(ensures)1629 b(true)p Fn(\224)703 b(can)f(be)62304
+63611 y(omitted.)128957 69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 107035 76484 a Fq(Da)-23 b(vid)319
+b(Cok,)g(Joe)h(Kinir)34 b(y)319 b(&)g(Er)17 b(ik)319
+b(P)-57 b(oll)318 b(-)h(ESC/J)-23 b(a)g(v)-29 b(a2)320
+b(&)e(JML)i(T)-138 b(utor)17 b(ial)p 0 TeXcolorgray 640
+w(\226)319 b(p)-40 b(.7/)p Fp(??)p 0 TeXcolorgray 59998
+79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 8 9
+TeXDict begin 8 8 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /Page 9/View [ /XYZ null null null ] /Title (Design-by-Contract)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 104206 21228 a Fo(Design-b)-66
+b(y-Contract)p 0 TeXcolorgray 62304 26790 a Fn(Pre-)703
+b(and)f(postconditions)h(de\002ne)f(a)p 0.2 0.36 0.77
+TeXcolorrgb 702 w(contract)p 0 TeXcolorgray 703 w(between)g(a)g(c)-50
+b(lass)62304 29713 y(and)702 b(its)g(c)-50 b(lients:)p
+0 TeXcolorgray 65156 34874 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(Client)702 b(m)-50 b(ust)p 0.133 0.56 0 TeXcolorrgb
+702 w(ensure)703 b(precondition)p 0 TeXcolorgray 703
+w(and)f(ma)-50 b(y)p 0.133 0.56 0 TeXcolorrgb 702 w(assume)68255
+37797 y(postcondition)p 0 TeXcolorgray 0 TeXcolorgray
+65156 41794 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(Method)702
+b(ma)-50 b(y)p 0.133 0.56 0 TeXcolorrgb 701 w(assume)703
+b(precondition)p 0 TeXcolorgray 703 w(and)f(m)-50 b(ust)p
+0.133 0.56 0 TeXcolorrgb 702 w(ensure)68255 44717 y(postcondition)p
+0 TeXcolorgray 62304 51470 a(Eg,)702 b(in)h(the)f(e)-38
+b(xample)702 b(specs)h(f)-50 b(or)702 b Fi(debit)p Fn(,)h(it)f(is)g
+(the)g(ob)-25 b(ligation)702 b(of)62304 54432 y(the)g(c)-50
+b(lient)702 b(to)g(ensure)h(that)f Fi(amount)h Fn(is)f(positive)50
+b(.)870 b(The)702 b Fi(requires)62304 57355 y Fn(c)-50
+b(lause)702 b(makes)h(this)p 0.133 0.56 0 TeXcolorrgb
+702 w(e)-38 b(xplicit)p 0 TeXcolorgray(.)128957 69620
+y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+107035 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34
+b(y)319 b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.8/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 9 10
+TeXDict begin 9 9 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+ 59998
+79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999 a
+SDict begin H.S end
+ 59037
+45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999 a
+SDict begin H.R end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999 a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037
+45999 a 59037 45999 a
+SDict begin [ /Page 10/View [ /XYZ null null null ] /Title (signals)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 123420 21228 a Fo(signals)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 62304 26790
+a Fn(Exceptional)703 b(postconditions)p 0 TeXcolorgray
+703 w(can)f(also)g(be)g(speci\002ed.)p 0 TeXcolorgray
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 63932 33821 a
+Fi(/)65560 34236 y(*)67188 33821 y(@)p 0 TeXcolorgray
+0 TeXcolorgray 1629 w(requires)p 0 TeXcolorgray 1630
+w(amount)1629 b(>=)g(0;)p 0 TeXcolorgray 70445 37749
+a(ensures)p 0 TeXcolorgray 3258 w(true;)p 0.2 0.36 0.77
+TeXcolorrgb 70445 41677 a(signals)h(\(BankException)h(e\))86727
+45606 y(amount)e(>)g(balance)14655 b(&&)86727 49534 y(balance)1630
+b(==)e Fh(n)p Fi(old\(balance\))j(&&)86727 53462 y
+(e.getReason\(\).equals\("Amount)j(too)1629 b(big"\);)p
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 67189 57390 a(@)68817
+57805 y(*)70445 57390 y(/)p 0 TeXcolorgray 65560 61318
+a(public)h(int)p 0.133 0.56 0 TeXcolorrgb 1629 w(debit)p
+0 TeXcolorgray(\(int)g(amount\))f(throws)h(BankException)h
+Fg(f)67189 65246 y Fi(...)65560 69174 y Fg(g)128957 69620
+y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+107035 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)h(Kinir)34
+b(y)319 b(&)g(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)320 b(&)e(JML)i(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.9/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 10 11
+TeXDict begin 10 10 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 11/View [ /XYZ null null null ] /Title (signals)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 123420 21228 a Fo(signals)p
+0 TeXcolorgray 62304 26790 a Fn(Exceptions)703 b(mentioned)f(in)g(thr)
+-50 b(o)-38 b(ws)702 b(c)-50 b(lause)702 b(are)h(allo)-38
+b(wed)702 b(b)-50 b(y)62304 29713 y(default.)869 b(T)-202
+b(o)702 b(c)-25 b(hang)25 b(e)702 b(this,)h(there)f(are)h(three)f
+(options:)p 0 TeXcolorgray 65156 35093 a Fm(\017)p 0
+TeXcolorgray 1653 w Fn(T)-202 b(o)702 b Ff(rule)g(out)g(all)h
+Fn(e)-38 b(xceptions,)703 b(use)f(a)p 0.2 0.36 0.77 TeXcolorrgb
+702 w(normal_beha)-38 b(vior)p 0 TeXcolorgray 0 TeXcolorgray
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 73004 40096 a
+Fi(/)74632 40511 y(*)76260 40096 y(@)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1628 w(normal)p 89447 40096
+815 92 v 979 w(behavior)p 0 TeXcolorgray 0 TeXcolorgray
+81280 44024 a(requires)p 0 TeXcolorgray 1630 w(...)p
+0 TeXcolorgray 81280 47952 a(ensures)p 0 TeXcolorgray
+3258 w(...)p 0.133 0.56 0 TeXcolorrgb 74768 51880 a(@)76396
+52295 y(*)78024 51880 y(/)p 0 TeXcolorgray 0 TeXcolorgray
+65156 56873 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(T)-202
+b(o)702 b Ff(rule)g(out)g(par)50 b(ticular)704 b Fn(e)-38
+b(xception)703 b Fi(E)p Fn(,)f(ad)-25 b(d)p 0 TeXcolorgray
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 71511 61876
+a Fi(signals)p 0 TeXcolorgray 1630 w(\(E\))p 0.133 0.56 0
+TeXcolorrgb 1629 w(false)p 0 TeXcolorgray(;)p 0 TeXcolorgray
+65156 66946 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(T)-202
+b(o)702 b Ff(allo)-38 b(w)702 b(onl)-38 b(y)702 b(some)h(e)-38
+b(xceptions)p Fn(,)703 b(ad)-25 b(d)p 0 TeXcolorgray
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 71511 71949
+a Fi(signals_only)p 0 TeXcolorgray 1631 w(E1,)1629 b(...,)g(E2;)128957
+69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.10/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 11 12
+TeXDict begin 11 11 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 12/View [ /XYZ null null null ] /Title (invariant)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 121231 21923 a Fo(in)-132
+b(v)-66 b(ariant)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+62304 26790 a Fn(In)-101 b(v)-50 b(ariants)p 0 TeXcolorgray
+702 w(\(aka)703 b Ff(c)-50 b(lass)702 b Fn(in)-101 b(v)-50
+b(ariants\))702 b(are)h(pr)-50 b(oper)50 b(ties)703 b(that)f(m)-50
+b(ust)702 b(be)62304 29713 y(maintained)g(b)-50 b(y)702
+b(all)g(methods,)h(e)50 b(.g.,)p 0 TeXcolorgray 0 TeXcolorgray
+62304 34159 a Fi(public)1629 b(class)p 0.133 0.56 0 TeXcolorrgb
+3258 w(Wallet)p 0 TeXcolorgray 1629 w Fg(f)65560 38088
+y Fi(public)h(static)f(final)g(short)p 0.133 0.56 0 TeXcolorrgb
+1630 w(MAX_BAL)p 0 TeXcolorgray 1629 w(=)g(1000;)65560
+42016 y(private)h(short)p 0.133 0.56 0 TeXcolorrgb 1629
+w(balance)p 0 TeXcolorgray(;)p 0.133 0.56 0 TeXcolorrgb
+67189 45944 a(/)68817 46359 y(*)70445 45944 y(@)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1628 w(invariant)g(0)f(<=)f(balance)i(&&)
+98124 49872 y(balance)g(<=)f(MAX_BAL;)p 0 TeXcolorgray
+0.133 0.56 0 TeXcolorrgb 70445 53800 a(@)72073 54215
+y(*)73701 53800 y(/)p 0 TeXcolorgray 65560 56509 a(...)62304
+59737 y Fn(In)-101 b(v)-50 b(ariants)702 b(are)h(implicitl)-38
+b(y)703 b(inc)-50 b(luded)702 b(in)g(all)g(pre-)g(and)62304
+62660 y(postconditions.)62304 67536 y(In)-101 b(v)-50
+b(ariants)702 b(m)-50 b(ust)702 b Ff(also)g Fn(be)h(preser)25
+b(ved)703 b(if)f(e)-38 b(xception)703 b(is)f(thr)-50
+b(o)-38 b(wn!)128957 69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319
+b(Cok,)g(Joe)g(Kinir)34 b(y)320 b(&)f(Er)17 b(ik)319
+b(P)-57 b(oll)318 b(-)h(ESC/J)-23 b(a)g(v)-29 b(a2)319
+b(&)g(JML)h(T)-138 b(utor)17 b(ial)p 0 TeXcolorgray 640
+w(\226)319 b(p)-40 b(.11/)p Fp(??)p 0 TeXcolorgray 59998
+79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 12 13
+TeXDict begin 12 12 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 13/View [ /XYZ null null null ] /Title (invariant)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 121231 21923 a Fo(in)-132
+b(v)-66 b(ariant)p 0 TeXcolorgray 62304 26790 a Fn(In)-101
+b(v)-50 b(ariants)702 b(document)h(design)f(decisions,)h(e)50
+b(.g.,)p 0 TeXcolorgray 0 TeXcolorgray 63932 31236 a
+Fi(public)1630 b(class)p 0.133 0.56 0 TeXcolorrgb 1629
+w(Directory)p 0 TeXcolorgray 1630 w Fg(f)63932 35165
+y Fi(private)g(File[])p 0.133 0.56 0 TeXcolorrgb 1629
+w(files)p 0 TeXcolorgray(;)p 0.133 0.56 0 TeXcolorrgb
+63932 39093 a(/)65560 39508 y(*)67188 39093 y(@)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1629 w(invariant)p 0 TeXcolorgray
+70445 43021 a(files)f(!=)g(null)70445 46949 y(&&)70445
+50877 y(\()p Fh(n)p Fi(forall)h(int)f(i;)f(0)h(<=)f(i)h(&&)f(i)h(<)f
+(files.length;)93240 54805 y(;)g(files[i])i(!=)f(null)g(&&)96496
+58734 y(files[i].getParent\(\))k(==)1628 b(this\);)p
+0.133 0.56 0 TeXcolorrgb 67189 61443 a(@)68817 61858
+y(*)70445 61443 y(/)p 0 TeXcolorgray 62304 66838 a Fn(Making)702
+b(them)p 0.133 0.56 0 TeXcolorrgb 702 w(e)-38 b(xplicit)p
+0 TeXcolorgray 703 w(helps)702 b(in)g(under)-38 b(standing)703
+b(the)f(code)50 b(.)128957 69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319
+b(Cok,)g(Joe)g(Kinir)34 b(y)320 b(&)f(Er)17 b(ik)319
+b(P)-57 b(oll)318 b(-)h(ESC/J)-23 b(a)g(v)-29 b(a2)319
+b(&)g(JML)h(T)-138 b(utor)17 b(ial)p 0 TeXcolorgray 640
+w(\226)319 b(p)-40 b(.12/)p Fp(??)p 0 TeXcolorgray 59998
+79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 13 14
+TeXDict begin 13 13 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 14/View [ /XYZ null null null ] /Title (non\_null)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 121069 21567 a Fo(non_n)-33
+b(ull)p 0 TeXcolorgray 62304 26790 a Fn(Man)-50 b(y)701
+b(in)-101 b(v)-50 b(ariants,)703 b(pre-)f(and)h(postconditions)f(are)h
+(about)62304 29713 y(ref)-25 b(erences)703 b(not)f(being)g
+Fe(null)p Fn(.)p 0.2 0.36 0.77 TeXcolorrgb 867 w(non_n)-25
+b(ull)p 0 TeXcolorgray 702 w(is)703 b(a)f(con)-101 b(venient)62304
+32675 y(shor)50 b(t-hand)703 b(f)-50 b(or)702 b(these)50
+b(.)p 0 TeXcolorgray 0 TeXcolorgray 63932 37121 a Fi(public)1630
+b(class)f(Directory)h Fg(f)65560 44978 y Fi(private)p
+0.133 0.56 0 TeXcolorrgb 1630 w(/)80214 45393 y(*)81842
+44978 y(@)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+1629 w(non)p 90146 44978 815 92 v 977 w(null)p 0 TeXcolorgray
+0.133 0.56 0 TeXcolorrgb 1629 w(@)100729 45393 y(*)102357
+44978 y(/)p 0 TeXcolorgray 1629 w(File[])g(files;)65560
+52834 y(void)f(createSubdir\()p 0.133 0.56 0 TeXcolorrgb(/)96493
+53249 y(*)98121 52834 y(@)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 1632 w(non)p 106428 52834 V 977 w(null)p
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 1629 w(@)117011
+53249 y(*)118639 52834 y(/)p 0 TeXcolorgray 1629 w(String)h(name\))p
+Fg(f)67189 56762 y Fi(...)p 0.133 0.56 0 TeXcolorrgb
+67189 60690 a(/)68817 61105 y(*)70445 60690 y(@)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1628 w(non)p 78748 60690 V
+978 w(null)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+1629 w(@)89332 61105 y(*)90960 60690 y(/)p 0 TeXcolorgray
+1629 w(Directory)g(getParent\(\))p Fg(f)67189 64618 y
+Fi(...)128957 69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.13/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 14 15
+TeXDict begin 14 14 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 15/View [ /XYZ null null null ] /Title (assert)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 125007 21923 a Fo(asser)66
+b(t)p 0 TeXcolorgray 62304 26790 a Fn(An)p 0.2 0.36 0.77
+TeXcolorrgb 702 w Fi(assert)p 0 TeXcolorgray 704 w Fn(c)-50
+b(lause)702 b(speci\002es)g(a)h(pr)-50 b(oper)50 b(ty)703
+b(that)f(should)g(hold)g(at)62304 29713 y(some)g(point)g(in)h(the)f
+(code)25 b(,)702 b(e)50 b(.g.,)p 0 TeXcolorgray 0 TeXcolorgray
+63932 34159 a Fi(if)1629 b(\(i)f(<=)h(0)f(||)h(j)f(<)h(0\))f
+Fg(f)72073 38088 y Fi(...)65560 42016 y Fg(g)g Fi(else)h(if)g(\(j)f(<)h
+(5\))f Fg(f)p 0.133 0.56 0 TeXcolorrgb 72073 45944 a
+Fi(//@)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1629
+w(assert)h(i)g(>)f(0)h(&&)f(0)h(<)f(j)g(&&)h(j)g(<)f(5;)p
+0 TeXcolorgray 72073 49872 a(...)65560 53800 y Fg(g)g
+Fi(else)h Fg(f)p 0.133 0.56 0 TeXcolorrgb 72073 57728
+a Fi(//@)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1629
+w(assert)g(i)g(>)f(0)h(&&)f(j)h(>)f(5;)p 0 TeXcolorgray
+72073 61656 a(...)65560 64365 y Fg(g)128957 69620 y
+ 0 setgray
+ 128957
+69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397
+76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.14/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 15 16
+TeXDict begin 15 15 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 16/View [ /XYZ null null null ] /Title (assert)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 125007 21923 a Fo(asser)66
+b(t)p 0 TeXcolorgray 62304 26790 a Fn(JML)702 b(ke)-38
+b(yw)-50 b(or)g(d)701 b Fi(assert)j Fn(no)-38 b(w)702
+b(also)g(in)g(Ja)-38 b(v)-50 b(a)702 b(\(since)h(Ja)-38
+b(v)-50 b(a)702 b(1.4\).)62304 31090 y(Still,)h(asser)50
+b(t)703 b(in)f(JML)g(is)g(more)h(e)-38 b(xpressive)25
+b(,)703 b(f)-50 b(or)702 b(e)-38 b(xample)703 b(in)p
+0 TeXcolorgray 0 TeXcolorgray 65560 35537 a Fi(...)65560
+39465 y(for)1629 b(\(n)g(=)f(0;)h(n)f(<)h(a.length;)h(n++\))73701
+43393 y(if)f(\(a[n]==null\))i(break;)p 0.133 0.56 0 TeXcolorrgb
+63932 47321 a(/)65560 47736 y(*)67188 47321 y(@)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1629 w(assert)e(\()p Fh(n)p
+Fi(forall)h(int)f(i;)g(0)f(<=)h(i)f(&&)h(i)f(<)g(n;)107894
+51249 y(a[i])h(!=)f(null\);)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 67189 53959 a(@)68817 54374 y(*)70445 53959
+y(/)p 0 TeXcolorgray 128957 69620 a
+ 0 setgray
+ 128957 69620 a 0
+TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397 76484 a
+Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320 b(&)f(Er)17
+b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23 b(a)g(v)-29
+b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p 0 TeXcolorgray
+640 w(\226)319 b(p)-40 b(.15/)p Fp(??)p 0 TeXcolorgray
+59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 16 17
+TeXDict begin 16 16 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 17/View [ /XYZ null null null ] /Title (assignable)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 117757 21228 a Fo(assignab)-33
+b(le)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 62304
+26790 a Fn(Frame)703 b(pr)-50 b(oper)50 b(ties)p 0 TeXcolorgray
+703 w(limit)702 b(possib)-25 b(le)702 b(side-eff)-25
+b(ects)703 b(of)f(methods.)p 0 TeXcolorgray 0 TeXcolorgray
+0.133 0.56 0 TeXcolorrgb 65560 31236 a Fi(/)67188 31652
+y(*)68816 31236 y(@)p 0 TeXcolorgray 4886 w(requires)1629
+b(amount)h(>=)e(0;)p 0.2 0.36 0.77 TeXcolorrgb 72073
+35165 a(assignable)p 0 TeXcolorgray 1630 w(balance;)76958
+39093 y(ensures)h(balance)h(==)f Fh(n)p Fi(old\(balance\)-amount;)p
+0.133 0.56 0 TeXcolorrgb 67189 43021 a(@)68817 43436
+y(*)70445 43021 y(/)p 0 TeXcolorgray 65560 46949 a(public)h(int)p
+0.133 0.56 0 TeXcolorrgb 1629 w(debit)p 0 TeXcolorgray(\(int)g
+(amount\))f Fg(f)f(g)68817 50877 y Fi(...)62304 56814
+y Fn(E.g.,)703 b Fi(debit)g Fn(can)f Ff(onl)-38 b(y)702
+b Fn(assign)h(to)f(the)g(\002eld)g Fi(balance)p Fn(.)62304
+59776 y(NB)h(this)f(does)g Ff(not)g Fn(f)-50 b(ollo)-38
+b(w)702 b(fr)-50 b(om)702 b(the)g(post-condition.)62304
+64300 y(Default)h(assignab)-25 b(le)702 b(c)-50 b(lause:)869
+b Fi(assignable)1630 b Fh(n)p Fi(everything)p Fn(.)128957
+69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.16/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 17 18
+TeXDict begin 17 17 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 18/View [ /XYZ null null null ] /Title (pure) /OUT
+pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 127648 21279 a Fo(pure)p
+0 TeXcolorgray 62304 26790 a Fn(A)p 0.2 0.36 0.77 TeXcolorrgb
+702 w(method)703 b(without)e(side-eff)-25 b(ects)p 0
+TeXcolorgray 703 w(is)702 b(called)p 0.2 0.36 0.77 TeXcolorrgb
+702 w(pure)p 0 TeXcolorgray(.)p 0 TeXcolorgray 0 TeXcolorgray
+65560 35165 a Fi(public)p 0.133 0.56 0 TeXcolorrgb 1630
+w(/)78586 35580 y(*)80214 35165 y(@)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1629 w(pure)p 0 TeXcolorgray
+0.133 0.56 0 TeXcolorrgb 1629 w(@)93240 35580 y(*)94868
+35165 y(/)p 0 TeXcolorgray 1628 w(int)1629 b(getBalance\(\))p
+Fg(f)p Fi(...)65560 43021 y(Directory)p 0.133 0.56 0
+TeXcolorrgb 1630 w(/)83470 43436 y(*)85098 43021 y(@)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1629 w(pure)g(non)p
+101543 43021 815 92 v 978 w(null)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 1629 w(@)112127 43436 y(*)113755 43021 y(/)p
+0 TeXcolorgray 1629 w(getParent\(\))p Fg(f)p Fi(...)p
+Fg(g)62304 52886 y Fn(Pure)703 b(method)f(are)h(implicitl)-38
+b(y)702 b Fi(assignable)1631 b Fh(n)p Fi(nothing)p Fn(.)62304
+57352 y(Pure)703 b(methods,)f(and)h(onl)-38 b(y)702 b(pure)g(methods,)h
+(can)f(be)g(used)h Ff(in)62304 60275 y Fn(speci\002cations,)g(eg.)p
+0 TeXcolorgray 0 TeXcolorgray 63661 64045 a Fd(//@)1356
+b(invariant)g(0<=getBalance\(\))e(&&)i(getBalance\(\)<=MAX_BALANCE;)
+128957 69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.17/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 18 19
+TeXDict begin 18 18 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 19/View [ /XYZ null null null ] /Title (JML recap)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 118461 21279 a Fo(JML)919
+b(recap)p 0 TeXcolorgray 62304 26790 a Fn(The)702 b(JML)g(ke)-38
+b(yw)-50 b(or)g(ds)702 b(discussed)h(so)f(far:)p 0.133 0.56 0
+TeXcolorrgb 0 TeXcolorgray 65156 30733 a Fm(\017)p 0.133 0.56 0
+TeXcolorrgb 1653 w Fi(requires)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 0 TeXcolorgray 65156 34517 a Fm(\017)p 0.133 0.56 0
+TeXcolorrgb 1653 w Fi(ensures)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 0 TeXcolorgray 65156 38301 a Fm(\017)p 0.133 0.56 0
+TeXcolorrgb 1653 w Fi(signals)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 0 TeXcolorgray 65156 42107 a Fm(\017)p 0.133 0.56 0
+TeXcolorrgb 1653 w Fi(assignable)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 0 TeXcolorgray 65156 45914 a Fm(\017)p 0.133 0.56 0
+TeXcolorrgb 1653 w Fi(normal)p 78186 45914 815 92 v 978
+w(behavior)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+0 TeXcolorgray 65156 49697 a Fm(\017)p 0.133 0.56 0 TeXcolorrgb
+1653 w Fi(invariant)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+0 TeXcolorgray 65156 53481 a Fm(\017)p 0.133 0.56 0 TeXcolorrgb
+1653 w Fi(non)p 73302 53481 V 977 w(null)p 0 TeXcolorgray
+0.133 0.56 0 TeXcolorrgb 0 TeXcolorgray 65156 57265 a
+Fm(\017)p 0.133 0.56 0 TeXcolorrgb 1653 w Fi(pure)p 0
+TeXcolorgray 0.133 0.56 0 TeXcolorrgb 0 TeXcolorgray
+65156 61349 a Fm(\017)p 0.133 0.56 0 TeXcolorrgb 1653
+w Fh(n)p Fi(old)p Fn(,)h Fh(n)p Fi(forall)p Fn(,)g Fh(n)p
+Fi(exists)p Fn(,)g Fh(n)p Fi(result)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 62304 65513 a Fn(This)f(is)g(all)h(y)-63
+b(ou)702 b(need)g(to)g(kno)-38 b(w)702 b(to)g(g)25 b(et)703
+b(star)50 b(ted!)p 0 TeXcolorgray 128957 69620 a
+ 0 setgray
+ 128957
+69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397
+76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.18/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 19 20
+TeXDict begin 19 19 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 62304 40120 a
+SDict begin [ /Page 20/View [ /XYZ null null null ] /Title ({\Large \red Tools for JML})
+/OUT pdfmark end
+ 62304 40120 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 82861 43593 a Fl(T)-381
+b(ools)1325 b(f)-95 b(or)1324 b(JML)p 0 TeXcolorgray
+128957 69620 a
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.19/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 20 21
+TeXDict begin 20 20 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 21/View [ /XYZ null null null ] /Title (tools for JML)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 114124 21923 a Fo(tools)919
+b(f)-66 b(or)918 b(JML)p 0 TeXcolorgray 0 TeXcolorgray
+65156 29477 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb
+1873 w Fn(par)-38 b(sing)p 0 TeXcolorgray 703 w(and)p
+1 0 0 TeXcolorrgb 702 w(typec)-25 b(hec)-50 b(king)p
+0 TeXcolorgray 101623 29477 a
+ tx@Dict begin (1) BOL end
+ 101623 29477 a 0 TeXcolorgray
+65156 33513 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb
+1873 w Fn(runtime)703 b(asser)50 b(tion)703 b(c)-25 b(hec)-50
+b(king)p 0 TeXcolorgray(:)p 0.2 0.36 0.77 TeXcolorrgb
+68255 36475 a(test)p 0 TeXcolorgray 702 w(f)g(or)702
+b(violations)g(of)g(asser)50 b(tions)p 0.2 0.36 0.77
+TeXcolorrgb 704 w(during)702 b(e)-38 b(x)-25 b(ecution)p
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 68255 39438 a(jmlrac)p
+0 TeXcolorgray 75694 39438 a
+ tx@Dict begin (0) BOL end
+ 75694 39438 a 77801 39438
+a
+ tx@Dict begin (1) BOL end
+ 77801 39438 a 0 TeXcolorgray 65156 43435 a Fm(\017)p
+0 TeXcolorgray 1 0 0 TeXcolorrgb 1873 w Fn(e)-38 b(xtended)703
+b(static)f(c)-25 b(hec)-50 b(king)p 0 TeXcolorgray 702
+w(ie)50 b(.)869 b(automated)703 b(pr)-50 b(ogram)68255
+46397 y(veri\002cation:)p 0.2 0.36 0.77 TeXcolorrgb 68255
+49106 a(pr)g(o)g(ve)p 0 TeXcolorgray 701 w(that)703 b(contracts)f(are)h
+(ne)-38 b(ver)703 b(violated)p 0.2 0.36 0.77 TeXcolorrgb
+702 w(at)f(compile-time)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 68255 52029 a(ESC/Ja)-38 b(v)-50 b(a2)p 0
+TeXcolorgray 68255 54738 a(This)702 b(is)g(pr)-50 b(ogram)703
+b(veri\002cation,)g(not)f(just)g(testing.)121530 54738
+y
+ tx@Dict begin (0) BOL end
+ 121530 54738 a 128957 69620 a
+ 0 setgray
+ 128957 69620 a 128957
+69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.20/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 20 22
+TeXDict begin 20 21 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 114124 21923 a Fo(tools)919 b(f)-66 b(or)918
+b(JML)p 0 TeXcolorgray 0 TeXcolorgray 65156 29477 a Fm(\017)p
+0 TeXcolorgray 1 0 0 TeXcolorrgb 1873 w Fn(par)-38 b(sing)p
+0 TeXcolorgray 703 w(and)p 1 0 0 TeXcolorrgb 702 w(typec)-25
+b(hec)-50 b(king)p 0 TeXcolorgray 0 TeXcolorgray 65156
+33513 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb 1873
+w Fn(runtime)703 b(asser)50 b(tion)703 b(c)-25 b(hec)-50
+b(king)p 0 TeXcolorgray(:)p 0.2 0.36 0.77 TeXcolorrgb
+68255 36475 a(test)p 0 TeXcolorgray 702 w(f)g(or)702
+b(violations)g(of)g(asser)50 b(tions)p 0.2 0.36 0.77
+TeXcolorrgb 704 w(during)702 b(e)-38 b(x)-25 b(ecution)p
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 68255 39438 a(jmlrac)p
+0 TeXcolorgray 77801 39438 a
+ tx@Dict begin (1) BOL end
+ 77801 39438 a 0 TeXcolorgray
+65156 43435 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb
+1873 w Fn(e)-38 b(xtended)703 b(static)f(c)-25 b(hec)-50
+b(king)p 0 TeXcolorgray 702 w(ie)50 b(.)869 b(automated)703
+b(pr)-50 b(ogram)68255 46397 y(veri\002cation:)p 0.2 0.36 0.77
+TeXcolorrgb 68255 49106 a(pr)g(o)g(ve)p 0 TeXcolorgray
+701 w(that)703 b(contracts)f(are)h(ne)-38 b(ver)703 b(violated)p
+0.2 0.36 0.77 TeXcolorrgb 702 w(at)f(compile-time)p 0
+TeXcolorgray 0.133 0.56 0 TeXcolorrgb 68255 52029 a(ESC/Ja)-38
+b(v)-50 b(a2)p 0 TeXcolorgray 68255 54738 a(This)702
+b(is)g(pr)-50 b(ogram)703 b(veri\002cation,)g(not)f(just)g(testing.)
+121530 54738 y
+ tx@Dict begin (0) BOL end
+ 121530 54738 a 128957 69620 a
+ 0 setgray
+ 128957 69620
+a 128957 69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.20/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 20 23
+TeXDict begin 20 22 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 114124 21923 a Fo(tools)919 b(f)-66 b(or)918
+b(JML)p 0 TeXcolorgray 0 TeXcolorgray 65156 29477 a Fm(\017)p
+0 TeXcolorgray 1 0 0 TeXcolorrgb 1873 w Fn(par)-38 b(sing)p
+0 TeXcolorgray 703 w(and)p 1 0 0 TeXcolorrgb 702 w(typec)-25
+b(hec)-50 b(king)p 0 TeXcolorgray 0 TeXcolorgray 65156
+33513 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb 1873
+w Fn(runtime)703 b(asser)50 b(tion)703 b(c)-25 b(hec)-50
+b(king)p 0 TeXcolorgray(:)p 0.2 0.36 0.77 TeXcolorrgb
+68255 36475 a(test)p 0 TeXcolorgray 702 w(f)g(or)702
+b(violations)g(of)g(asser)50 b(tions)p 0.2 0.36 0.77
+TeXcolorrgb 704 w(during)702 b(e)-38 b(x)-25 b(ecution)p
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 68255 39438 a(jmlrac)p
+0 TeXcolorgray 0 TeXcolorgray 65156 43435 a Fm(\017)p
+0 TeXcolorgray 1 0 0 TeXcolorrgb 1873 w Fn(e)-38 b(xtended)703
+b(static)f(c)-25 b(hec)-50 b(king)p 0 TeXcolorgray 702
+w(ie)50 b(.)869 b(automated)703 b(pr)-50 b(ogram)68255
+46397 y(veri\002cation:)p 0.2 0.36 0.77 TeXcolorrgb 68255
+49106 a(pr)g(o)g(ve)p 0 TeXcolorgray 701 w(that)703 b(contracts)f(are)h
+(ne)-38 b(ver)703 b(violated)p 0.2 0.36 0.77 TeXcolorrgb
+702 w(at)f(compile-time)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 68255 52029 a(ESC/Ja)-38 b(v)-50 b(a2)p 0
+TeXcolorgray 68255 54738 a(This)702 b(is)g(pr)-50 b(ogram)703
+b(veri\002cation,)g(not)f(just)g(testing.)128957 69620
+y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.20/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 21 24
+TeXDict begin 21 23 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 24/View [ /XYZ null null null ] /Title (runtime assertion checking)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 91855 21228 a Fo(runtime)919
+b(asser)66 b(tion)919 b(c)-33 b(hec)-66 b(king)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 62304 26790 a Fn(jmlrac)703
+b(compiler)p 0 TeXcolorgray 703 w(b)-50 b(y)701 b(Gar)25
+b(y)703 b(Lea)-38 b(vens,)703 b(Y)-253 b(oonsik)703 b(Cheon,)g(et)f
+(al.)869 b(at)62304 29713 y(Io)-38 b(wa)702 b(State)h(Univ)-202
+b(.)p 0 TeXcolorgray 65156 34840 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(translates)p 0.2 0.36 0.77 TeXcolorrgb 703
+w(JML)702 b(asser)50 b(tions)p 0 TeXcolorgray 703 w(into)p
+0.2 0.36 0.77 TeXcolorrgb 702 w(runtime)703 b(c)-25 b(hec)-50
+b(ks)p 0 TeXcolorgray(:)p 0 TeXcolorgray 0 TeXcolorgray
+72883 38086 a(during)703 b(e)-38 b(x)-25 b(ecution,)702
+b Ff(all)g Fn(asser)50 b(tions)704 b(are)f(tested)f(and)72883
+41048 y(an)-50 b(y)702 b(violation)g(of)g(an)h(asser)50
+b(tion)703 b(pr)-50 b(oduces)702 b(an)72883 43917 y(Err)-50
+b(or)-152 b(.)62304 44486 y
+ tx@Dict begin (1) BOL end
+ 62304 44486 a 0 TeXcolorgray
+65156 48238 a Fm(\017)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 1873 w Fn(c)-25 b(heap)702 b(&)h(easy)p 0
+TeXcolorgray 702 w(to)f(do)g(as)g(par)50 b(t)703 b(of)f(e)-38
+b(xisting)703 b(testing)f(practice)133159 48238 y
+ tx@Dict begin (0) BOL end
+ 133159
+48238 a 68255 50947 a
+ tx@Dict begin (1) BOL end
+ 68255 50947 a 0 TeXcolorgray 65156
+54731 a Fm(\017)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+1873 w Fn(better)h(testing)f(and)g(better)h(f)-25 b(eedbac)-50
+b(k)p 0 TeXcolorgray(,)701 b(because)p 0.133 0.56 0 TeXcolorrgb
+703 w(more)68255 57693 y(pr)-50 b(oper)50 b(ties)p 0
+TeXcolorgray 703 w(are)703 b(tested,)f(at)p 0.133 0.56 0
+TeXcolorrgb 702 w(more)h(places)p 0 TeXcolorgray 702
+w(in)f(the)g(code)126358 57693 y
+ tx@Dict begin (0) BOL end
+ 126358 57693 a 128465
+57693 a
+ tx@Dict begin (1) BOL end
+ 128465 57693 a 68255 60451 a Fc(Eg,)639 b(\223In)-46
+b(v)-57 b(ar)34 b(iant)639 b(violated)h(in)e(line)h(8000\224)1277
+b(after)640 b(1)e(min)-23 b(ute)640 b(instead)g(of)68255
+63197 y(\223NullP)-115 b(ointerException)640 b(in)e(line)h(2000\224)
+1278 b(after)639 b(4)g(min)-23 b(utes)119859 63197 y
+ tx@Dict begin (0) BOL end
+
+119859 63197 a 62304 66094 a
+ tx@Dict begin (1) BOL end
+ 62304 66094 a 2400 x Fn(Of)702
+b(cour)-38 b(se)25 b(,)703 b(an)f(asser)50 b(tion)703
+b(violation)g(can)f(be)g(an)h Ff(err)-50 b(or)702 b(in)g(code)p
+0.133 0.56 0 TeXcolorrgb 703 w Fn(or)p 0 TeXcolorgray
+62304 71318 a(an)g Ff(err)-50 b(or)703 b(in)f(speci\002cation)p
+Fn(.)91585 71318 y
+ tx@Dict begin (0) BOL end
+ 91585 71318 a 62304 71841 a
+ tx@Dict begin (1) BOL end
+ 62304
+71841 a 4354 x Fn(The)p 0.2 0.36 0.77 TeXcolorrgb 702
+w(jmlunit)p 0 TeXcolorgray 702 w(tool)g(combines)h(jmlrac)g(and)p
+0.133 0.56 0 TeXcolorrgb 702 w(unit)f(testing)p 0 TeXcolorgray(.)121943
+76195 y
+ tx@Dict begin (0) BOL end
+ 121943 76195 a 128957 69620 a
+ 0 setgray
+ 128957 69620 a
+128957 69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.21/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 21 25
+TeXDict begin 21 24 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 91855 21228 a Fo(runtime)919 b(asser)66 b(tion)919
+b(c)-33 b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 62304 26790 a Fn(jmlrac)703 b(compiler)p
+0 TeXcolorgray 703 w(b)-50 b(y)701 b(Gar)25 b(y)703 b(Lea)-38
+b(vens,)703 b(Y)-253 b(oonsik)703 b(Cheon,)g(et)f(al.)869
+b(at)62304 29713 y(Io)-38 b(wa)702 b(State)h(Univ)-202
+b(.)p 0 TeXcolorgray 65156 34840 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(translates)p 0.2 0.36 0.77 TeXcolorrgb 703
+w(JML)702 b(asser)50 b(tions)p 0 TeXcolorgray 703 w(into)p
+0.2 0.36 0.77 TeXcolorrgb 702 w(runtime)703 b(c)-25 b(hec)-50
+b(ks)p 0 TeXcolorgray(:)p 0 TeXcolorgray 0 TeXcolorgray
+72883 38086 a(during)703 b(e)-38 b(x)-25 b(ecution,)702
+b Ff(all)g Fn(asser)50 b(tions)704 b(are)f(tested)f(and)72883
+41048 y(an)-50 b(y)702 b(violation)g(of)g(an)h(asser)50
+b(tion)703 b(pr)-50 b(oduces)702 b(an)72883 43917 y(Err)-50
+b(or)-152 b(.)p 0 TeXcolorgray 65156 47701 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Fn(c)-25
+b(heap)702 b(&)h(easy)p 0 TeXcolorgray 702 w(to)f(do)g(as)g(par)50
+b(t)703 b(of)f(e)-38 b(xisting)703 b(testing)f(practice)p
+0 TeXcolorgray 65156 51738 a Fm(\017)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1873 w Fn(better)h(testing)f(and)g(better)h
+(f)-25 b(eedbac)-50 b(k)p 0 TeXcolorgray(,)701 b(because)p
+0.133 0.56 0 TeXcolorrgb 703 w(more)68255 54700 y(pr)-50
+b(oper)50 b(ties)p 0 TeXcolorgray 703 w(are)703 b(tested,)f(at)p
+0.133 0.56 0 TeXcolorrgb 702 w(more)h(places)p 0 TeXcolorgray
+702 w(in)f(the)g(code)128465 54700 y
+ tx@Dict begin (1) BOL end
+ 128465 54700 a 68255
+57457 a Fc(Eg,)639 b(\223In)-46 b(v)-57 b(ar)34 b(iant)639
+b(violated)h(in)e(line)h(8000\224)1277 b(after)640 b(1)e(min)-23
+b(ute)640 b(instead)g(of)68255 60203 y(\223NullP)-115
+b(ointerException)640 b(in)e(line)h(2000\224)1278 b(after)639
+b(4)g(min)-23 b(utes)119859 60203 y
+ tx@Dict begin (0) BOL end
+ 119859 60203 a 62304
+63100 a
+ tx@Dict begin (1) BOL end
+ 62304 63100 a 2400 x Fn(Of)702 b(cour)-38 b(se)25
+b(,)703 b(an)f(asser)50 b(tion)703 b(violation)g(can)f(be)g(an)h
+Ff(err)-50 b(or)702 b(in)g(code)p 0.133 0.56 0 TeXcolorrgb
+703 w Fn(or)p 0 TeXcolorgray 62304 68325 a(an)g Ff(err)-50
+b(or)703 b(in)f(speci\002cation)p Fn(.)91585 68325 y
+ tx@Dict begin (0) BOL end
+
+91585 68325 a 62304 68847 a
+ tx@Dict begin (1) BOL end
+ 62304 68847 a 4354 x Fn(The)p
+0.2 0.36 0.77 TeXcolorrgb 702 w(jmlunit)p 0 TeXcolorgray
+702 w(tool)g(combines)h(jmlrac)g(and)p 0.133 0.56 0 TeXcolorrgb
+702 w(unit)f(testing)p 0 TeXcolorgray(.)121943 73201
+y
+ tx@Dict begin (0) BOL end
+ 121943 73201 a 128957 69620 a
+ 0 setgray
+ 128957 69620 a 128957
+69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.21/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 21 26
+TeXDict begin 21 25 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 91855 21228 a Fo(runtime)919 b(asser)66 b(tion)919
+b(c)-33 b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 62304 26790 a Fn(jmlrac)703 b(compiler)p
+0 TeXcolorgray 703 w(b)-50 b(y)701 b(Gar)25 b(y)703 b(Lea)-38
+b(vens,)703 b(Y)-253 b(oonsik)703 b(Cheon,)g(et)f(al.)869
+b(at)62304 29713 y(Io)-38 b(wa)702 b(State)h(Univ)-202
+b(.)p 0 TeXcolorgray 65156 34840 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(translates)p 0.2 0.36 0.77 TeXcolorrgb 703
+w(JML)702 b(asser)50 b(tions)p 0 TeXcolorgray 703 w(into)p
+0.2 0.36 0.77 TeXcolorrgb 702 w(runtime)703 b(c)-25 b(hec)-50
+b(ks)p 0 TeXcolorgray(:)p 0 TeXcolorgray 0 TeXcolorgray
+72883 38086 a(during)703 b(e)-38 b(x)-25 b(ecution,)702
+b Ff(all)g Fn(asser)50 b(tions)704 b(are)f(tested)f(and)72883
+41048 y(an)-50 b(y)702 b(violation)g(of)g(an)h(asser)50
+b(tion)703 b(pr)-50 b(oduces)702 b(an)72883 43917 y(Err)-50
+b(or)-152 b(.)p 0 TeXcolorgray 65156 47701 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Fn(c)-25
+b(heap)702 b(&)h(easy)p 0 TeXcolorgray 702 w(to)f(do)g(as)g(par)50
+b(t)703 b(of)f(e)-38 b(xisting)703 b(testing)f(practice)p
+0 TeXcolorgray 65156 51738 a Fm(\017)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1873 w Fn(better)h(testing)f(and)g(better)h
+(f)-25 b(eedbac)-50 b(k)p 0 TeXcolorgray(,)701 b(because)p
+0.133 0.56 0 TeXcolorrgb 703 w(more)68255 54700 y(pr)-50
+b(oper)50 b(ties)p 0 TeXcolorgray 703 w(are)703 b(tested,)f(at)p
+0.133 0.56 0 TeXcolorrgb 702 w(more)h(places)p 0 TeXcolorgray
+702 w(in)f(the)g(code)68255 57457 y Fc(Eg,)639 b(\223In)-46
+b(v)-57 b(ar)34 b(iant)639 b(violated)h(in)e(line)h(8000\224)1277
+b(after)640 b(1)e(min)-23 b(ute)640 b(instead)g(of)68255
+60203 y(\223NullP)-115 b(ointerException)640 b(in)e(line)h(2000\224)
+1278 b(after)639 b(4)g(min)-23 b(utes)62304 63100 y
+ tx@Dict begin (1) BOL end
+ 62304
+63100 a 2400 x Fn(Of)702 b(cour)-38 b(se)25 b(,)703 b(an)f(asser)50
+b(tion)703 b(violation)g(can)f(be)g(an)h Ff(err)-50 b(or)702
+b(in)g(code)p 0.133 0.56 0 TeXcolorrgb 703 w Fn(or)p
+0 TeXcolorgray 62304 68325 a(an)g Ff(err)-50 b(or)703
+b(in)f(speci\002cation)p Fn(.)91585 68325 y
+ tx@Dict begin (0) BOL end
+ 91585 68325
+a 62304 68847 a
+ tx@Dict begin (1) BOL end
+ 62304 68847 a 4354 x Fn(The)p 0.2 0.36 0.77
+TeXcolorrgb 702 w(jmlunit)p 0 TeXcolorgray 702 w(tool)g(combines)h
+(jmlrac)g(and)p 0.133 0.56 0 TeXcolorrgb 702 w(unit)f(testing)p
+0 TeXcolorgray(.)121943 73201 y
+ tx@Dict begin (0) BOL end
+ 121943 73201 a 128957
+69620 a
+ 0 setgray
+ 128957 69620 a 128957 69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397 76484
+a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.21/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 21 27
+TeXDict begin 21 26 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 91855 21228 a Fo(runtime)919 b(asser)66 b(tion)919
+b(c)-33 b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 62304 26790 a Fn(jmlrac)703 b(compiler)p
+0 TeXcolorgray 703 w(b)-50 b(y)701 b(Gar)25 b(y)703 b(Lea)-38
+b(vens,)703 b(Y)-253 b(oonsik)703 b(Cheon,)g(et)f(al.)869
+b(at)62304 29713 y(Io)-38 b(wa)702 b(State)h(Univ)-202
+b(.)p 0 TeXcolorgray 65156 34840 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(translates)p 0.2 0.36 0.77 TeXcolorrgb 703
+w(JML)702 b(asser)50 b(tions)p 0 TeXcolorgray 703 w(into)p
+0.2 0.36 0.77 TeXcolorrgb 702 w(runtime)703 b(c)-25 b(hec)-50
+b(ks)p 0 TeXcolorgray(:)p 0 TeXcolorgray 0 TeXcolorgray
+72883 38086 a(during)703 b(e)-38 b(x)-25 b(ecution,)702
+b Ff(all)g Fn(asser)50 b(tions)704 b(are)f(tested)f(and)72883
+41048 y(an)-50 b(y)702 b(violation)g(of)g(an)h(asser)50
+b(tion)703 b(pr)-50 b(oduces)702 b(an)72883 43917 y(Err)-50
+b(or)-152 b(.)p 0 TeXcolorgray 65156 47701 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Fn(c)-25
+b(heap)702 b(&)h(easy)p 0 TeXcolorgray 702 w(to)f(do)g(as)g(par)50
+b(t)703 b(of)f(e)-38 b(xisting)703 b(testing)f(practice)p
+0 TeXcolorgray 65156 51738 a Fm(\017)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1873 w Fn(better)h(testing)f(and)g(better)h
+(f)-25 b(eedbac)-50 b(k)p 0 TeXcolorgray(,)701 b(because)p
+0.133 0.56 0 TeXcolorrgb 703 w(more)68255 54700 y(pr)-50
+b(oper)50 b(ties)p 0 TeXcolorgray 703 w(are)703 b(tested,)f(at)p
+0.133 0.56 0 TeXcolorrgb 702 w(more)h(places)p 0 TeXcolorgray
+702 w(in)f(the)g(code)68255 57457 y Fc(Eg,)639 b(\223In)-46
+b(v)-57 b(ar)34 b(iant)639 b(violated)h(in)e(line)h(8000\224)1277
+b(after)640 b(1)e(min)-23 b(ute)640 b(instead)g(of)68255
+60203 y(\223NullP)-115 b(ointerException)640 b(in)e(line)h(2000\224)
+1278 b(after)639 b(4)g(min)-23 b(utes)62304 65500 y Fn(Of)702
+b(cour)-38 b(se)25 b(,)703 b(an)f(asser)50 b(tion)703
+b(violation)g(can)f(be)g(an)h Ff(err)-50 b(or)702 b(in)g(code)p
+0.133 0.56 0 TeXcolorrgb 703 w Fn(or)p 0 TeXcolorgray
+62304 68325 a(an)g Ff(err)-50 b(or)703 b(in)f(speci\002cation)p
+Fn(.)62304 68847 y
+ tx@Dict begin (1) BOL end
+ 62304 68847 a 4354 x Fn(The)p 0.2 0.36 0.77
+TeXcolorrgb 702 w(jmlunit)p 0 TeXcolorgray 702 w(tool)g(combines)h
+(jmlrac)g(and)p 0.133 0.56 0 TeXcolorrgb 702 w(unit)f(testing)p
+0 TeXcolorgray(.)121943 73201 y
+ tx@Dict begin (0) BOL end
+ 121943 73201 a 128957
+69620 a
+ 0 setgray
+ 128957 69620 a 128957 69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397 76484
+a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.21/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 21 28
+TeXDict begin 21 27 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 91855 21228 a Fo(runtime)919 b(asser)66 b(tion)919
+b(c)-33 b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 62304 26790 a Fn(jmlrac)703 b(compiler)p
+0 TeXcolorgray 703 w(b)-50 b(y)701 b(Gar)25 b(y)703 b(Lea)-38
+b(vens,)703 b(Y)-253 b(oonsik)703 b(Cheon,)g(et)f(al.)869
+b(at)62304 29713 y(Io)-38 b(wa)702 b(State)h(Univ)-202
+b(.)p 0 TeXcolorgray 65156 34840 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(translates)p 0.2 0.36 0.77 TeXcolorrgb 703
+w(JML)702 b(asser)50 b(tions)p 0 TeXcolorgray 703 w(into)p
+0.2 0.36 0.77 TeXcolorrgb 702 w(runtime)703 b(c)-25 b(hec)-50
+b(ks)p 0 TeXcolorgray(:)p 0 TeXcolorgray 0 TeXcolorgray
+72883 38086 a(during)703 b(e)-38 b(x)-25 b(ecution,)702
+b Ff(all)g Fn(asser)50 b(tions)704 b(are)f(tested)f(and)72883
+41048 y(an)-50 b(y)702 b(violation)g(of)g(an)h(asser)50
+b(tion)703 b(pr)-50 b(oduces)702 b(an)72883 43917 y(Err)-50
+b(or)-152 b(.)p 0 TeXcolorgray 65156 47701 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Fn(c)-25
+b(heap)702 b(&)h(easy)p 0 TeXcolorgray 702 w(to)f(do)g(as)g(par)50
+b(t)703 b(of)f(e)-38 b(xisting)703 b(testing)f(practice)p
+0 TeXcolorgray 65156 51738 a Fm(\017)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 1873 w Fn(better)h(testing)f(and)g(better)h
+(f)-25 b(eedbac)-50 b(k)p 0 TeXcolorgray(,)701 b(because)p
+0.133 0.56 0 TeXcolorrgb 703 w(more)68255 54700 y(pr)-50
+b(oper)50 b(ties)p 0 TeXcolorgray 703 w(are)703 b(tested,)f(at)p
+0.133 0.56 0 TeXcolorrgb 702 w(more)h(places)p 0 TeXcolorgray
+702 w(in)f(the)g(code)68255 57457 y Fc(Eg,)639 b(\223In)-46
+b(v)-57 b(ar)34 b(iant)639 b(violated)h(in)e(line)h(8000\224)1277
+b(after)640 b(1)e(min)-23 b(ute)640 b(instead)g(of)68255
+60203 y(\223NullP)-115 b(ointerException)640 b(in)e(line)h(2000\224)
+1278 b(after)639 b(4)g(min)-23 b(utes)62304 65500 y Fn(Of)702
+b(cour)-38 b(se)25 b(,)703 b(an)f(asser)50 b(tion)703
+b(violation)g(can)f(be)g(an)h Ff(err)-50 b(or)702 b(in)g(code)p
+0.133 0.56 0 TeXcolorrgb 703 w Fn(or)p 0 TeXcolorgray
+62304 68325 a(an)g Ff(err)-50 b(or)703 b(in)f(speci\002cation)p
+Fn(.)62304 73201 y(The)p 0.2 0.36 0.77 TeXcolorrgb 702
+w(jmlunit)p 0 TeXcolorgray 702 w(tool)g(combines)h(jmlrac)g(and)p
+0.133 0.56 0 TeXcolorrgb 702 w(unit)f(testing)p 0 TeXcolorgray(.)128957
+69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.21/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 22 29
+TeXDict begin 22 28 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 29/View [ /XYZ null null null ] /Title (runtime assertion checking)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 91855 21228 a Fo(runtime)919
+b(asser)66 b(tion)919 b(c)-33 b(hec)-66 b(king)p 0 TeXcolorgray
+62304 26790 a Fn(jmlrac)703 b(can)f(g)25 b(enerate)703
+b(complicated)g(test-code)f(f)-50 b(or)702 b(free)50
+b(.)870 b(E.g.,)702 b(f)-50 b(or)p 0 TeXcolorgray 0 TeXcolorgray
+0.133 0.56 0 TeXcolorrgb 63932 31236 a Fi(/)65560 31652
+y(*)67188 31236 y(@)p 0 TeXcolorgray 1629 w(...)p 0.2 0.36 0.77
+TeXcolorrgb 70445 35165 a(signals)1630 b(\(Exception\))89983
+39093 y(balance)g(==)f Fh(n)p Fi(old\(balance\);)p 0
+TeXcolorgray 0.133 0.56 0 TeXcolorrgb 67189 43021 a(@)68817
+43436 y(*)70445 43021 y(/)p 0 TeXcolorgray 65560 46949
+a(public)h(int)p 0.133 0.56 0 TeXcolorrgb 1629 w(debit)p
+0 TeXcolorgray(\(int)g(amount\))f Fg(f)f Fi(...)h Fg(g)62304
+52886 y Fn(it)702 b(will)g(test)g(that)p 0.133 0.56 0
+TeXcolorrgb 702 w(if)g Fi(debit)h Fn(thr)-50 b(o)-38
+b(ws)702 b(an)g(e)-38 b(xception,)703 b(the)f(balance)62304
+55809 y(hasn't)g(c)-25 b(hang)25 b(ed,)703 b(and)f(all)g(in)-101
+b(v)-50 b(ariants)703 b(still)f(hold)p 0 TeXcolorgray(.)62304
+61750 y Fb(jmlrac)640 b(e)-34 b(ven)639 b(c)-23 b(hec)-46
+b(ks)640 b Fh(n)p Fi(forall)g Fb(if)d(the)h(domain)h(of)e
+(quanti\002cation)h(is)62304 64671 y(\002nite)46 b(.)128957
+69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.22/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 23 30
+TeXDict begin 23 29 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 30/View [ /XYZ null null null ] /Title (extended static checking)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 95643 21228 a Fo(e)-50
+b(xtended)920 b(static)f(c)-33 b(hec)-66 b(king)p 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 62304 26790 a Fn(ESC/Ja)-38
+b(v)-50 b(a\(2\))p 0 TeXcolorgray 0 TeXcolorgray 65156
+30787 a Fm(\017)p 0 TeXcolorgray 1873 w Fn(e)-38 b(xtended)703
+b(static)f(c)-25 b(hec)-50 b(king)702 b(=)g(full)-38
+b(y)702 b(automated)g(pr)-50 b(ogram)68255 33749 y(veri\002cation,)703
+b(with)f(some)g(compr)-50 b(omises)703 b(to)f(ac)-25
+b(hie)-38 b(ve)702 b(full)68255 36672 y(automation)83268
+36672 y
+ tx@Dict begin (1) BOL end
+ 83268 36672 a 0 TeXcolorgray 65156 40456 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Ff(tries)h
+Fn(to)f Ff(pr)-50 b(o)g(ve)701 b Fn(correctness)j(of)e
+(speci\002cations,)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+68255 43379 a(at)g(compile-time)25 b(,)703 b(full)-38
+b(y)702 b(automaticall)-38 b(y)p 0 TeXcolorgray 111570
+43379 a
+ tx@Dict begin (1) BOL end
+ 111570 43379 a 0 TeXcolorgray 65156 47377 a Fm(\017)p
+0 TeXcolorgray 1 0 0 TeXcolorrgb 1850 w Ff(not)679 b(sound)p
+0 TeXcolorgray Fn(:)857 b(ESC/Ja)-38 b(v)-50 b(a)681
+b(ma)-50 b(y)679 b(miss)g(an)g(err)-50 b(or)680 b(that)f(is)g(actuall)
+-38 b(y)68255 50167 y(present)78781 50167 y
+ tx@Dict begin (1) BOL end
+ 78781 50167
+a 0 TeXcolorgray 65156 54165 a Fm(\017)p 0 TeXcolorgray
+1 0 0 TeXcolorrgb 1873 w Ff(not)702 b(complete)p 0 TeXcolorgray
+Fn(:)869 b(ESC/Ja)-38 b(v)-50 b(a)703 b(ma)-50 b(y)702
+b(warn)h(of)f(err)-50 b(or)-38 b(s)703 b(that)f(are)68255
+57088 y(impossib)-25 b(le)82826 57088 y
+ tx@Dict begin (1) BOL end
+ 82826 57088 a
+0 TeXcolorgray 65156 61085 a Fm(\017)p 0 TeXcolorgray
+1873 w Fn(b)-50 b(ut)p 0.2 0.36 0.77 TeXcolorrgb 701
+w(\002nds)703 b(lots)f(of)g(potential)g(b)-50 b(ugs)702
+b(quic)-50 b(kl)-38 b(y)p 0 TeXcolorgray 115995 61085
+a
+ tx@Dict begin (1) BOL end
+ 115995 61085 a 0 TeXcolorgray 65156 65122 a Fm(\017)p
+0 TeXcolorgray 1653 w Fn(good)702 b(at)g(pr)-50 b(o)g(ving)702
+b(absence)g(of)g(runtime)h(e)-38 b(xceptions)703 b Fb(\(eg)68255
+68084 y(Null-,)637 b(Arra)-46 b(yInde)-34 b(xOutOfBounds-,)637
+b(ClassCast-\))703 b Fn(and)f(verifying)68255 71046 y(relativel)-38
+b(y)703 b(simple)f(pr)-50 b(oper)50 b(ties.)102491 71046
+y
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491 71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491
+71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491 71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a
+102491 71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 128957 69620 a
+ 0 setgray
+ 128957 69620
+a 128957 69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.23/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 23 31
+TeXDict begin 23 30 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 95643 21228 a Fo(e)-50 b(xtended)920 b(static)f(c)-33
+b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+62304 26790 a Fn(ESC/Ja)-38 b(v)-50 b(a\(2\))p 0 TeXcolorgray
+0 TeXcolorgray 65156 30787 a Fm(\017)p 0 TeXcolorgray
+1873 w Fn(e)-38 b(xtended)703 b(static)f(c)-25 b(hec)-50
+b(king)702 b(=)g(full)-38 b(y)702 b(automated)g(pr)-50
+b(ogram)68255 33749 y(veri\002cation,)703 b(with)f(some)g(compr)-50
+b(omises)703 b(to)f(ac)-25 b(hie)-38 b(ve)702 b(full)68255
+36672 y(automation)p 0 TeXcolorgray 65156 40456 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Ff(tries)h
+Fn(to)f Ff(pr)-50 b(o)g(ve)701 b Fn(correctness)j(of)e
+(speci\002cations,)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+68255 43379 a(at)g(compile-time)25 b(,)703 b(full)-38
+b(y)702 b(automaticall)-38 b(y)p 0 TeXcolorgray 111570
+43379 a
+ tx@Dict begin (1) BOL end
+ 111570 43379 a 0 TeXcolorgray 65156 47377 a Fm(\017)p
+0 TeXcolorgray 1 0 0 TeXcolorrgb 1850 w Ff(not)679 b(sound)p
+0 TeXcolorgray Fn(:)857 b(ESC/Ja)-38 b(v)-50 b(a)681
+b(ma)-50 b(y)679 b(miss)g(an)g(err)-50 b(or)680 b(that)f(is)g(actuall)
+-38 b(y)68255 50167 y(present)78781 50167 y
+ tx@Dict begin (1) BOL end
+ 78781 50167
+a 0 TeXcolorgray 65156 54165 a Fm(\017)p 0 TeXcolorgray
+1 0 0 TeXcolorrgb 1873 w Ff(not)702 b(complete)p 0 TeXcolorgray
+Fn(:)869 b(ESC/Ja)-38 b(v)-50 b(a)703 b(ma)-50 b(y)702
+b(warn)h(of)f(err)-50 b(or)-38 b(s)703 b(that)f(are)68255
+57088 y(impossib)-25 b(le)82826 57088 y
+ tx@Dict begin (1) BOL end
+ 82826 57088 a
+0 TeXcolorgray 65156 61085 a Fm(\017)p 0 TeXcolorgray
+1873 w Fn(b)-50 b(ut)p 0.2 0.36 0.77 TeXcolorrgb 701
+w(\002nds)703 b(lots)f(of)g(potential)g(b)-50 b(ugs)702
+b(quic)-50 b(kl)-38 b(y)p 0 TeXcolorgray 115995 61085
+a
+ tx@Dict begin (1) BOL end
+ 115995 61085 a 0 TeXcolorgray 65156 65122 a Fm(\017)p
+0 TeXcolorgray 1653 w Fn(good)702 b(at)g(pr)-50 b(o)g(ving)702
+b(absence)g(of)g(runtime)h(e)-38 b(xceptions)703 b Fb(\(eg)68255
+68084 y(Null-,)637 b(Arra)-46 b(yInde)-34 b(xOutOfBounds-,)637
+b(ClassCast-\))703 b Fn(and)f(verifying)68255 71046 y(relativel)-38
+b(y)703 b(simple)f(pr)-50 b(oper)50 b(ties.)102491 71046
+y
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491 71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491
+71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491 71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a
+128957 69620 a
+ 0 setgray
+ 128957 69620 a 128957 69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620
+a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397 76484
+a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.23/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 23 32
+TeXDict begin 23 31 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 95643 21228 a Fo(e)-50 b(xtended)920 b(static)f(c)-33
+b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+62304 26790 a Fn(ESC/Ja)-38 b(v)-50 b(a\(2\))p 0 TeXcolorgray
+0 TeXcolorgray 65156 30787 a Fm(\017)p 0 TeXcolorgray
+1873 w Fn(e)-38 b(xtended)703 b(static)f(c)-25 b(hec)-50
+b(king)702 b(=)g(full)-38 b(y)702 b(automated)g(pr)-50
+b(ogram)68255 33749 y(veri\002cation,)703 b(with)f(some)g(compr)-50
+b(omises)703 b(to)f(ac)-25 b(hie)-38 b(ve)702 b(full)68255
+36672 y(automation)p 0 TeXcolorgray 65156 40456 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Ff(tries)h
+Fn(to)f Ff(pr)-50 b(o)g(ve)701 b Fn(correctness)j(of)e
+(speci\002cations,)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+68255 43379 a(at)g(compile-time)25 b(,)703 b(full)-38
+b(y)702 b(automaticall)-38 b(y)p 0 TeXcolorgray 0 TeXcolorgray
+65156 47377 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb
+1850 w Ff(not)679 b(sound)p 0 TeXcolorgray Fn(:)857 b(ESC/Ja)-38
+b(v)-50 b(a)681 b(ma)-50 b(y)679 b(miss)g(an)g(err)-50
+b(or)680 b(that)f(is)g(actuall)-38 b(y)68255 50167 y(present)78781
+50167 y
+ tx@Dict begin (1) BOL end
+ 78781 50167 a 0 TeXcolorgray 65156 54165 a Fm(\017)p
+0 TeXcolorgray 1 0 0 TeXcolorrgb 1873 w Ff(not)702 b(complete)p
+0 TeXcolorgray Fn(:)869 b(ESC/Ja)-38 b(v)-50 b(a)703
+b(ma)-50 b(y)702 b(warn)h(of)f(err)-50 b(or)-38 b(s)703
+b(that)f(are)68255 57088 y(impossib)-25 b(le)82826 57088
+y
+ tx@Dict begin (1) BOL end
+ 82826 57088 a 0 TeXcolorgray 65156 61085 a Fm(\017)p
+0 TeXcolorgray 1873 w Fn(b)-50 b(ut)p 0.2 0.36 0.77 TeXcolorrgb
+701 w(\002nds)703 b(lots)f(of)g(potential)g(b)-50 b(ugs)702
+b(quic)-50 b(kl)-38 b(y)p 0 TeXcolorgray 115995 61085
+a
+ tx@Dict begin (1) BOL end
+ 115995 61085 a 0 TeXcolorgray 65156 65122 a Fm(\017)p
+0 TeXcolorgray 1653 w Fn(good)702 b(at)g(pr)-50 b(o)g(ving)702
+b(absence)g(of)g(runtime)h(e)-38 b(xceptions)703 b Fb(\(eg)68255
+68084 y(Null-,)637 b(Arra)-46 b(yInde)-34 b(xOutOfBounds-,)637
+b(ClassCast-\))703 b Fn(and)f(verifying)68255 71046 y(relativel)-38
+b(y)703 b(simple)f(pr)-50 b(oper)50 b(ties.)102491 71046
+y
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491 71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491
+71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 128957 69620 a
+ 0 setgray
+ 128957 69620 a
+128957 69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.23/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 23 33
+TeXDict begin 23 32 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 95643 21228 a Fo(e)-50 b(xtended)920 b(static)f(c)-33
+b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+62304 26790 a Fn(ESC/Ja)-38 b(v)-50 b(a\(2\))p 0 TeXcolorgray
+0 TeXcolorgray 65156 30787 a Fm(\017)p 0 TeXcolorgray
+1873 w Fn(e)-38 b(xtended)703 b(static)f(c)-25 b(hec)-50
+b(king)702 b(=)g(full)-38 b(y)702 b(automated)g(pr)-50
+b(ogram)68255 33749 y(veri\002cation,)703 b(with)f(some)g(compr)-50
+b(omises)703 b(to)f(ac)-25 b(hie)-38 b(ve)702 b(full)68255
+36672 y(automation)p 0 TeXcolorgray 65156 40456 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Ff(tries)h
+Fn(to)f Ff(pr)-50 b(o)g(ve)701 b Fn(correctness)j(of)e
+(speci\002cations,)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+68255 43379 a(at)g(compile-time)25 b(,)703 b(full)-38
+b(y)702 b(automaticall)-38 b(y)p 0 TeXcolorgray 0 TeXcolorgray
+65156 47377 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb
+1850 w Ff(not)679 b(sound)p 0 TeXcolorgray Fn(:)857 b(ESC/Ja)-38
+b(v)-50 b(a)681 b(ma)-50 b(y)679 b(miss)g(an)g(err)-50
+b(or)680 b(that)f(is)g(actuall)-38 b(y)68255 50167 y(present)p
+0 TeXcolorgray 65156 54165 a Fm(\017)p 0 TeXcolorgray
+1 0 0 TeXcolorrgb 1873 w Ff(not)702 b(complete)p 0 TeXcolorgray
+Fn(:)869 b(ESC/Ja)-38 b(v)-50 b(a)703 b(ma)-50 b(y)702
+b(warn)h(of)f(err)-50 b(or)-38 b(s)703 b(that)f(are)68255
+57088 y(impossib)-25 b(le)82826 57088 y
+ tx@Dict begin (1) BOL end
+ 82826 57088 a
+0 TeXcolorgray 65156 61085 a Fm(\017)p 0 TeXcolorgray
+1873 w Fn(b)-50 b(ut)p 0.2 0.36 0.77 TeXcolorrgb 701
+w(\002nds)703 b(lots)f(of)g(potential)g(b)-50 b(ugs)702
+b(quic)-50 b(kl)-38 b(y)p 0 TeXcolorgray 115995 61085
+a
+ tx@Dict begin (1) BOL end
+ 115995 61085 a 0 TeXcolorgray 65156 65122 a Fm(\017)p
+0 TeXcolorgray 1653 w Fn(good)702 b(at)g(pr)-50 b(o)g(ving)702
+b(absence)g(of)g(runtime)h(e)-38 b(xceptions)703 b Fb(\(eg)68255
+68084 y(Null-,)637 b(Arra)-46 b(yInde)-34 b(xOutOfBounds-,)637
+b(ClassCast-\))703 b Fn(and)f(verifying)68255 71046 y(relativel)-38
+b(y)703 b(simple)f(pr)-50 b(oper)50 b(ties.)102491 71046
+y
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 102491 71046 a
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 128957
+69620 a
+ 0 setgray
+ 128957 69620 a 128957 69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397 76484
+a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.23/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 23 34
+TeXDict begin 23 33 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 69620 a
+ tx@Dict begin InitOL /TheOL (0) def end
+ 59037 69620 a 59037 69620
+a
+ tx@Dict begin (0) BOL end
+ 59037 69620 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 95643 21228 a Fo(e)-50 b(xtended)920 b(static)f(c)-33
+b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+62304 26790 a Fn(ESC/Ja)-38 b(v)-50 b(a\(2\))p 0 TeXcolorgray
+0 TeXcolorgray 65156 30787 a Fm(\017)p 0 TeXcolorgray
+1873 w Fn(e)-38 b(xtended)703 b(static)f(c)-25 b(hec)-50
+b(king)702 b(=)g(full)-38 b(y)702 b(automated)g(pr)-50
+b(ogram)68255 33749 y(veri\002cation,)703 b(with)f(some)g(compr)-50
+b(omises)703 b(to)f(ac)-25 b(hie)-38 b(ve)702 b(full)68255
+36672 y(automation)p 0 TeXcolorgray 65156 40456 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Ff(tries)h
+Fn(to)f Ff(pr)-50 b(o)g(ve)701 b Fn(correctness)j(of)e
+(speci\002cations,)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+68255 43379 a(at)g(compile-time)25 b(,)703 b(full)-38
+b(y)702 b(automaticall)-38 b(y)p 0 TeXcolorgray 0 TeXcolorgray
+65156 47377 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb
+1850 w Ff(not)679 b(sound)p 0 TeXcolorgray Fn(:)857 b(ESC/Ja)-38
+b(v)-50 b(a)681 b(ma)-50 b(y)679 b(miss)g(an)g(err)-50
+b(or)680 b(that)f(is)g(actuall)-38 b(y)68255 50167 y(present)p
+0 TeXcolorgray 65156 54165 a Fm(\017)p 0 TeXcolorgray
+1 0 0 TeXcolorrgb 1873 w Ff(not)702 b(complete)p 0 TeXcolorgray
+Fn(:)869 b(ESC/Ja)-38 b(v)-50 b(a)703 b(ma)-50 b(y)702
+b(warn)h(of)f(err)-50 b(or)-38 b(s)703 b(that)f(are)68255
+57088 y(impossib)-25 b(le)p 0 TeXcolorgray 65156 61085
+a Fm(\017)p 0 TeXcolorgray 1873 w Fn(b)-50 b(ut)p 0.2 0.36 0.77
+TeXcolorrgb 701 w(\002nds)703 b(lots)f(of)g(potential)g(b)-50
+b(ugs)702 b(quic)-50 b(kl)-38 b(y)p 0 TeXcolorgray 115995
+61085 a
+ tx@Dict begin (1) BOL end
+ 115995 61085 a 0 TeXcolorgray 65156 65122 a Fm(\017)p
+0 TeXcolorgray 1653 w Fn(good)702 b(at)g(pr)-50 b(o)g(ving)702
+b(absence)g(of)g(runtime)h(e)-38 b(xceptions)703 b Fb(\(eg)68255
+68084 y(Null-,)637 b(Arra)-46 b(yInde)-34 b(xOutOfBounds-,)637
+b(ClassCast-\))703 b Fn(and)f(verifying)68255 71046 y(relativel)-38
+b(y)703 b(simple)f(pr)-50 b(oper)50 b(ties.)102491 71046
+y
+ tx@Dict begin (0) BOL end
+ 102491 71046 a 128957 69620 a
+ 0 setgray
+ 128957 69620 a 128957
+69620 a
+ tx@Dict begin (all) BOL end
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.23/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 23 35
+TeXDict begin 23 34 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb 0 TeXcolorgray 1 0 0
+TeXcolorrgb 95643 21228 a Fo(e)-50 b(xtended)920 b(static)f(c)-33
+b(hec)-66 b(king)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+62304 26790 a Fn(ESC/Ja)-38 b(v)-50 b(a\(2\))p 0 TeXcolorgray
+0 TeXcolorgray 65156 30787 a Fm(\017)p 0 TeXcolorgray
+1873 w Fn(e)-38 b(xtended)703 b(static)f(c)-25 b(hec)-50
+b(king)702 b(=)g(full)-38 b(y)702 b(automated)g(pr)-50
+b(ogram)68255 33749 y(veri\002cation,)703 b(with)f(some)g(compr)-50
+b(omises)703 b(to)f(ac)-25 b(hie)-38 b(ve)702 b(full)68255
+36672 y(automation)p 0 TeXcolorgray 65156 40456 a Fm(\017)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 1873 w Ff(tries)h
+Fn(to)f Ff(pr)-50 b(o)g(ve)701 b Fn(correctness)j(of)e
+(speci\002cations,)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb
+68255 43379 a(at)g(compile-time)25 b(,)703 b(full)-38
+b(y)702 b(automaticall)-38 b(y)p 0 TeXcolorgray 0 TeXcolorgray
+65156 47377 a Fm(\017)p 0 TeXcolorgray 1 0 0 TeXcolorrgb
+1850 w Ff(not)679 b(sound)p 0 TeXcolorgray Fn(:)857 b(ESC/Ja)-38
+b(v)-50 b(a)681 b(ma)-50 b(y)679 b(miss)g(an)g(err)-50
+b(or)680 b(that)f(is)g(actuall)-38 b(y)68255 50167 y(present)p
+0 TeXcolorgray 65156 54165 a Fm(\017)p 0 TeXcolorgray
+1 0 0 TeXcolorrgb 1873 w Ff(not)702 b(complete)p 0 TeXcolorgray
+Fn(:)869 b(ESC/Ja)-38 b(v)-50 b(a)703 b(ma)-50 b(y)702
+b(warn)h(of)f(err)-50 b(or)-38 b(s)703 b(that)f(are)68255
+57088 y(impossib)-25 b(le)p 0 TeXcolorgray 65156 61085
+a Fm(\017)p 0 TeXcolorgray 1873 w Fn(b)-50 b(ut)p 0.2 0.36 0.77
+TeXcolorrgb 701 w(\002nds)703 b(lots)f(of)g(potential)g(b)-50
+b(ugs)702 b(quic)-50 b(kl)-38 b(y)p 0 TeXcolorgray 0
+TeXcolorgray 65156 65122 a Fm(\017)p 0 TeXcolorgray 1653
+w Fn(good)702 b(at)g(pr)-50 b(o)g(ving)702 b(absence)g(of)g(runtime)h
+(e)-38 b(xceptions)703 b Fb(\(eg)68255 68084 y(Null-,)637
+b(Arra)-46 b(yInde)-34 b(xOutOfBounds-,)637 b(ClassCast-\))703
+b Fn(and)f(verifying)68255 71046 y(relativel)-38 b(y)703
+b(simple)f(pr)-50 b(oper)50 b(ties.)128957 69620 y
+ 0 setgray
+ 128957
+69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397
+76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.23/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 24 36
+TeXDict begin 24 35 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 36/View [ /XYZ null null null ] /Title (ESC/Java(2)
+credits ) /OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 103141 21279 a Fo(ESC/Ja)-50
+b(v)-66 b(a\(2\))920 b(credits)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 0 TeXcolorgray 65156 26790 a Fm(\017)p 0.2 0.36 0.77
+TeXcolorrgb 1653 w Fn(ESC/Ja)-38 b(v)-50 b(a)p 0 TeXcolorgray
+703 w(originall)-38 b(y)703 b(de)-38 b(veloped)703 b(at)f(DEC)h(SRC)g
+(\226)g(later)68255 29752 y(Compaq,)f(and)h(no)-38 b(w)702
+b(HP)g(Resear)-50 b(c)-25 b(h)703 b(\226)f(b)-50 b(y)702
+b(Rustan)g(Leino,)68255 32675 y(Cormac)h(Flana)-25 b(gan,)702
+b(Mark)g(Lillibridg)25 b(e)g(,)704 b(Greg)e(Nelson,)68255
+35637 y(Ra)-50 b(ymie)702 b(Stata,)h(and)f(James)h(Sax)-25
+b(e)50 b(.)p 0.2 0.36 0.77 TeXcolorrgb 0 TeXcolorgray
+65156 39634 a Fm(\017)p 0.2 0.36 0.77 TeXcolorrgb 1653
+w Fn(ESC/Ja)-38 b(v)-50 b(a2)p 0 TeXcolorgray(,)703 b(e)-38
+b(xtension)703 b(that)f(suppor)50 b(ts)703 b(more)g(of)f(JML,)68255
+42557 y(de)-38 b(veloped)703 b(b)-50 b(y)701 b(Da)-38
+b(vid)703 b(Cok)g(and)f(Joe)g(Kinir)25 b(y)-202 b(.)128957
+69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.24/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 25 37
+TeXDict begin 25 36 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 37/View [ /XYZ null null null ] /Title (static checking vs runtime checking)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 78237 21228 a Fo(static)920
+b(c)-33 b(hec)-66 b(king)919 b(vs)g(runtime)g(c)-33 b(hec)-66
+b(king)p 0 TeXcolorgray 62304 26790 a Fn(One)702 b(of)g(the)g(asser)50
+b(tions)704 b(belo)-38 b(w)702 b(is)g(wr)-50 b(ong:)p
+0 TeXcolorgray 0 TeXcolorgray 65560 31236 a Fi(if)1629
+b(\(i)g(<=)f(0)h(||)f(j)h(<)f(0\))h Fg(f)72073 35165
+y Fi(...)67189 39093 y Fg(g)e Fi(else)i(if)g(\(j)g(<)f(5\))h
+Fg(f)p 0.133 0.56 0 TeXcolorrgb 75330 43021 a Fi(//@)f(assert)i(i)e(>)h
+(0)f(&&)h(0)f(<)g(j)h(&&)g(j)f(<)g(5;)p 0 TeXcolorgray
+73701 46949 a(...)67189 50877 y Fg(g)f Fi(else)i Fg(f)p
+0.133 0.56 0 TeXcolorrgb 75330 54805 a Fi(//@)f(assert)i(i)e(>)h(0)f
+(&&)h(j)f(>)g(5;)p 0 TeXcolorgray 73701 58734 a(...)67189
+62662 y Fg(g)62304 66269 y Fn(Runtime)703 b(asser)50
+b(tion)703 b(c)-25 b(hec)-50 b(king)p 0.2 0.36 0.77 TeXcolorrgb
+702 w Ff(ma)g(y)p 0 TeXcolorgray 702 w Fn(detect)702
+b(this)g(with)g(a)62304 69231 y(comprehensive)h(test)f(suite)50
+b(.)62304 72154 y(ESC/Ja)-38 b(v)-50 b(a2)p 0.2 0.36 0.77
+TeXcolorrgb 703 w Ff(will)p 0 TeXcolorgray 702 w Fn(detect)703
+b(this)f(at)g(compile-time)50 b(.)128957 69620 y
+ 0 setgray
+ 128957
+69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397
+76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.25/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 26 38
+TeXDict begin 26 37 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 38/View [ /XYZ null null null ] /Title (static checking vs runtime checking)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 78237 21228 a Fo(static)920
+b(c)-33 b(hec)-66 b(king)919 b(vs)g(runtime)g(c)-33 b(hec)-66
+b(king)p 0 TeXcolorgray 62304 26790 a Fn(Impor)50 b(tant)703
+b(diff)-25 b(erences:)p 0 TeXcolorgray 65156 32131 a
+Fm(\017)p 0 TeXcolorgray 1653 w Fn(ESC/Ja)-38 b(v)-50
+b(a2)703 b(c)-25 b(hec)-50 b(ks)702 b(specs)h(at)p 0.2 0.36 0.77
+TeXcolorrgb 702 w(compile-time)p 0 TeXcolorgray(,)68255
+35054 y(jmlrac)g(c)-25 b(hec)-50 b(ks)701 b(specs)i(at)p
+0.133 0.56 0 TeXcolorrgb 702 w(run-time)p 0 TeXcolorgray
+0 TeXcolorgray 65156 39051 a Fm(\017)p 0 TeXcolorgray
+1653 w Fn(ESC/Ja)-38 b(v)-50 b(a2)p 0.2 0.36 0.77 TeXcolorrgb
+703 w(pr)g(o)g(ves)p 0 TeXcolorgray 702 w(correctness)704
+b(of)e(specs,)68255 41974 y(jml)g(onl)-38 b(y)p 0.133 0.56 0
+TeXcolorrgb 702 w(tests)p 0 TeXcolorgray 703 w(correctness)703
+b(of)f(specs.)68255 44843 y(Hence)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 69910 47630 a Fa(\017)p 0 TeXcolorgray 0
+TeXcolorgray 72883 48089 a Fn(ESC/Ja)-38 b(v)-50 b(a2)704
+b(independent)e(of)g(an)-50 b(y)702 b(test)g(suite)25
+b(,)72883 51012 y(results)703 b(of)f(runtime)h(testing)f(onl)-38
+b(y)702 b(as)g(good)h(as)f(the)g(test)72883 53974 y(suite)25
+b(,)p 0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 69910 56877
+a Fa(\017)p 0 TeXcolorgray 0 TeXcolorgray 72883 57336
+a Fn(ESC/Ja)-38 b(v)-50 b(a2)704 b(pr)-50 b(o)g(vides)701
+b(higher)i(degree)g(of)f(con\002dence)50 b(.)72883 61676
+y(The)702 b(price)h(f)-50 b(or)702 b(this:)869 b(y)-63
+b(ou)702 b(ha)-38 b(ve)702 b(to)g(specify)h(all)f(pre-)h(and)72883
+64599 y(postconditions)c(of)g(methods)g(\(inc)-50 b(l.)867
+b(API)700 b(methods\))f(and)72883 67521 y(in)-101 b(v)-50
+b(ariants)703 b(needed)f(f)-50 b(or)p 0.2 0.36 0.77 TeXcolorrgb
+702 w(modular)703 b(veri\002cation)p 0 TeXcolorgray 128957
+69620 a
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+106397 76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34
+b(y)320 b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.26/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 27 39
+TeXDict begin 27 38 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 39/View [ /XYZ null null null ] /Title (more JML tools)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 110381 21923 a Fo(more)919
+b(JML)g(tools)p 0 TeXcolorgray 0 TeXcolorgray 65156 26790
+a Fm(\017)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+1873 w Fn(ja)-38 b(v)-50 b(adoc-style)702 b(documentation)p
+0 TeXcolorgray(:)p 0.133 0.56 0 TeXcolorrgb 870 w(jmldoc)p
+0 TeXcolorgray 0 TeXcolorgray 65156 30787 a Fm(\017)p
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 1873 w Fn(Ec)-50
+b(lipse)p 0 TeXcolorgray 702 w(plugin)p 0 TeXcolorgray
+65156 34824 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(Other)702
+b(full)p 0.2 0.36 0.77 TeXcolorrgb 702 w(veri\002cation)p
+0 TeXcolorgray 703 w(tools:)p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 69910 37611 a Fa(\017)p 0 TeXcolorgray 0
+TeXcolorgray 0.133 0.56 0 TeXcolorrgb 73103 38071 a Fn(LOOP)g(tool)g(+)
+g(PVS)p 0 TeXcolorgray 704 w(\(Nijmeg)25 b(en\))p 0 TeXcolorgray
+0.133 0.56 0 TeXcolorrgb 69910 41111 a Fa(\017)p 0 TeXcolorgray
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 73103 41570 a
+Fn(J)-50 b(A)-101 b(CK)p 0 TeXcolorgray 703 w(\(Gemplus/INRIA\))p
+0 TeXcolorgray 0.133 0.56 0 TeXcolorrgb 69910 44571 a
+Fa(\017)p 0 TeXcolorgray 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 73103 45030 a Fn(Krakatoa)704 b(tool)e(+)f(Coq)p
+0 TeXcolorgray 703 w(\(INRIA\))p 0 TeXcolorgray 0.133 0.56 0
+TeXcolorrgb 69910 48031 a Fa(\017)p 0 TeXcolorgray 0
+TeXcolorgray 0.133 0.56 0 TeXcolorrgb 73103 48491 a Fn(K)-38
+b(eY)p 0 TeXcolorgray 703 w(\(Chalmer)g(s)704 b(+)e(German)-50
+b(y\))68255 51951 y(These)698 b(tools)h(also)f(allo)-38
+b(w)p 0.2 0.36 0.77 TeXcolorrgb 698 w(interactive)p 0
+TeXcolorgray 699 w(veri\002cation)699 b(\(whereas)68255
+54874 y(ESC/Ja)-38 b(v)-50 b(a2)703 b(onl)-38 b(y)703
+b(aims)f(at)p 0.2 0.36 0.77 TeXcolorrgb 702 w(full)-38
+b(y)702 b(automatic)p 0 TeXcolorgray 703 w(veri\002cation\))68255
+57797 y(and)g(can)g(theref)-50 b(ore)703 b(handle)f(more)h(comple)-38
+b(x)703 b(pr)-50 b(oper)50 b(ties.)p 0 TeXcolorgray 65156
+61794 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(runtime)p
+0.2 0.36 0.77 TeXcolorrgb 702 w(detection)703 b(of)f(in)-101
+b(v)-50 b(ariants)p 0 TeXcolorgray(:)p 0.133 0.56 0 TeXcolorrgb
+869 w(Daik)-38 b(on)p 0 TeXcolorgray 703 w(\(Mic)-25
+b(hael)702 b(Ernst,)68255 64717 y(MIT\))p 0 TeXcolorgray
+65156 68715 a Fm(\017)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 1873 w Fn(model-c)-25 b(hec)-50 b(king)p
+0 TeXcolorgray 702 w(m)g(ulti-threaded)702 b(pr)-50 b(ograms:)p
+0.133 0.56 0 TeXcolorrgb 870 w(Bogor)p 0 TeXcolorgray
+68255 71677 a(\(Kansas)703 b(State\))62304 77018 y(See)g
+Fe(www.jmlspecs.org)128957 69620 y
+ 0 setgray
+ 128957 69620 a 0 TeXcolorgray
+0.2 0.36 0.77 TeXcolorrgb 106397 76484 a Fq(Da)-23 b(vid)319
+b(Cok,)g(Joe)g(Kinir)34 b(y)320 b(&)f(Er)17 b(ik)319
+b(P)-57 b(oll)318 b(-)h(ESC/J)-23 b(a)g(v)-29 b(a2)319
+b(&)g(JML)h(T)-138 b(utor)17 b(ial)p 0 TeXcolorgray 640
+w(\226)319 b(p)-40 b(.27/)p Fp(??)p 0 TeXcolorgray 59998
+79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 28 40
+TeXDict begin 28 39 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 40/View [ /XYZ null null null ] /Title (Related Work)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 113886 21923 a Fo(Related)919
+b(W)-198 b(ork)p 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb
+0 TeXcolorgray 65156 26790 a Fm(\017)p 0.2 0.36 0.77
+TeXcolorrgb 1653 w Fn(jContract)p 0 TeXcolorgray 703
+w(tool)702 b(f)-50 b(or)702 b(Ja)-38 b(v)-50 b(a)702
+b(b)-50 b(y)p 0.133 0.56 0 TeXcolorrgb 702 w(P)-76 b(arasoft)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 0 TeXcolorgray
+65156 30787 a Fm(\017)p 0.2 0.36 0.77 TeXcolorrgb 1653
+w Fn(Spec#)p 0 TeXcolorgray 703 w(f)-50 b(or)p 0.133 0.56 0
+TeXcolorrgb 701 w(C#)p 0 TeXcolorgray 703 w(b)g(y)p 0.133 0.56 0
+TeXcolorrgb 702 w(Micr)g(osoft)p 0 TeXcolorgray 0.2 0.36 0.77
+TeXcolorrgb 0 TeXcolorgray 65156 34785 a Fm(\017)p 0.2 0.36 0.77
+TeXcolorrgb 1653 w Fn(Spark-Ada)p 0 TeXcolorgray 703
+w(f)g(or)702 b(subset)h(of)f(Ada)g(b)-50 b(y)p 0.133 0.56 0
+TeXcolorrgb 702 w(Praxis)703 b(Critical)68255 37708 y(Systems)g(Ltd.)p
+0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 0 TeXcolorgray
+65156 41706 a Fm(\017)p 0.2 0.36 0.77 TeXcolorrgb 1653
+w Fn(OCL)p 0 TeXcolorgray 702 w(speci\002cation)g(langua)-25
+b(g)25 b(e)702 b(f)-50 b(or)p 0.133 0.56 0 TeXcolorrgb
+702 w(UML)p 0 TeXcolorgray 128957 69620 a
+ 0 setgray
+ 128957 69620
+a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397 76484
+a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.28/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 29 41
+TeXDict begin 29 40 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 41/View [ /XYZ null null null ] /Title (Acknowledgements)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 103849 21228 a Fo(Ac)-66
+b(kno)-50 b(wledg)33 b(ements)p 0 TeXcolorgray 62304
+26790 a Fn(Man)-50 b(y)701 b(people)i(and)f(gr)-50 b(oups)702
+b(ha)-38 b(ve)703 b(contrib)-50 b(uted)702 b(to)g(JML)g(and)62304
+29697 y(related)h(tools.)p 0 TeXcolorgray 65156 34825
+a Fm(\017)p 0 TeXcolorgray 1653 w Fb(Gar)23 b(y)639 b(Lea)-34
+b(vens)640 b(leads)f(the)f(JML)h(eff)-46 b(or)46 b(t)637
+b(at)h(Io)-34 b(wa)639 b(St.)789 b(Contrib)-46 b(utor)-34
+b(s)68255 37534 y(inc)-46 b(lude)639 b(Alber)46 b(t)637
+b(Baker)-138 b(,)640 b(Cl)-34 b(yde)638 b(Rub)-46 b(y)-184
+b(,)639 b(Cur)46 b(tis)638 b(Clifton,)f(Y)-230 b(oonsik)68255
+40243 y(Cheon,)637 b(Anand)h(Ganapath)-46 b(y)-184 b(,)640
+b(Abha)-46 b(y)638 b(Bhorkar)-138 b(,)639 b(Arun)e(Ra)-23
+b(gha)-34 b(v)-46 b(an,)68255 42986 y(Kristina)638 b(Bo)-46
+b(ysen,)639 b(Da)-34 b(vid)639 b(Behr)-46 b(oozi.)789
+b(Katie)639 b(Bec)-46 b(ker)-138 b(,)640 b(Elisabeth)68255
+45695 y(Sea)-23 b(gren,)639 b(Brandon)f(Shilling,)h(Katie)f(Bec)-46
+b(ker)-138 b(,)640 b(Ajani)f(Thomas,)g(and)68255 48404
+y(Ar)46 b(thur)637 b(Thomas.)p 0 TeXcolorgray 65156 52188
+a Fm(\017)p 0 TeXcolorgray 1653 w Fb(The)h(ESC)g(pr)-46
+b(oject)639 b(at)f(SRC)g(inc)-46 b(luded)638 b(Rustan)g(Leino,)h
+(Cormac)68255 54897 y(Flana)-23 b(gan,)639 b(Mark)g(Lillibridg)23
+b(e)g(,)639 b(Greg)g(Nelson,)g(Ra)-46 b(ymie)639 b(Stata,)g(and)68255
+57641 y(James)h(Sax)-23 b(e)46 b(.)p 0 TeXcolorgray 65156
+61425 a Fm(\017)p 0 TeXcolorgray 1653 w Fb(More)639 b(people)f(at)g
+(man)-46 b(y)639 b(diff)-23 b(erent)638 b(places)i(are)f(contrib)-46
+b(uting)637 b(to)68255 64134 y(JML)128957 69620 y
+ 0 setgray
+ 128957
+69620 a 0 TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397
+76484 a Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320
+b(&)f(Er)17 b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23
+b(a)g(v)-29 b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p
+0 TeXcolorgray 640 w(\226)319 b(p)-40 b(.29/)p Fp(??)p
+0 TeXcolorgray 59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Page: 30 42
+TeXDict begin 30 41 bop 0 TeXcolorgray 59998 79998 a
+ tx@Dict begin 90 Rot  end
+
+59998 79998 a 59037 45999 a
+SDict begin /product where{pop product(Distiller)search{pop pop pop
+version(.)search{exch pop exch pop(3011)eq{gsave newpath 0 0 moveto
+closepath clip/Courier findfont 10 scalefont setfont 72 72 moveto(.)show
+grestore}if}{pop}ifelse}{pop}ifelse}if end
+ 59037 45999 a 59037 45999
+a
+SDict begin H.S end
+ 59037 45999 a 0 TeXcolorgray 0 TeXcolorgray 59037 45999
+a
+SDict begin H.R end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /View [/XYZ H.V] /Dest (page.1) cvn H.B /DEST pdfmark
+end
+ 59037 45999 a 59037 45999
+a
+SDict begin [ {ThisPage}<</Trans << /S /R >> >> /PUT pdfmark end
+ 59037 45999 a 59037 45999 a
+SDict begin [ /Page 42/View [ /XYZ null null null ] /Title (More information)
+/OUT pdfmark end
+ 59037 45999 a 1 0 0 TeXcolorrgb
+0 TeXcolorgray 1 0 0 TeXcolorrgb 107879 21923 a Fo(More)919
+b(inf)-66 b(ormation)p 0 TeXcolorgray 62304 26790 a Fn(These)702
+b(websites)h(and)f(mailing)g(lists)h(can)f(pr)-50 b(o)g(vide)702
+b(more)62304 29752 y(inf)-50 b(ormation)702 b(\(and)g(ha)-38
+b(ve)703 b(links)f(to)g(e)-38 b(ven)703 b(more\):)p 0
+TeXcolorgray 65156 35093 a Fm(\017)p 0 TeXcolorgray 1653
+w Fn(JML:)f(www)-101 b(.jmlspecs.or)-38 b(g)p 0 TeXcolorgray
+65156 39130 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(mailing)702
+b(lists:)869 b(jmlspecs-interest@lists.sour)-50 b(cef)g(or)-38
+b(g)25 b(e)50 b(.net)68255 42092 y(jmlspecs-de)-38 b(veloper)g
+(s@lists.sour)-50 b(cef)g(or)-38 b(g)25 b(e)50 b(.net)p
+0 TeXcolorgray 0 TeXcolorgray 0 TeXcolorgray 65156 49659
+a Fm(\017)p 0 TeXcolorgray 1653 w Fn(ESC/Ja)-38 b(v)-50
+b(a2:)68255 52369 y(http://secure)50 b(.ucd.ie/pr)-50
+b(oducts/opensour)g(ce/ESCJa)-38 b(v)-50 b(a2/)p 0 TeXcolorgray
+65156 56366 a Fm(\017)p 0 TeXcolorgray 1653 w Fn(ESC/Ja)-38
+b(v)-50 b(a:)870 b(http://www)-101 b(.resear)-50 b(c)-25
+b(h.compaq.com/SRC/esc/)p 0 TeXcolorgray 65156 60364
+a Fm(\017)p 0 TeXcolorgray 1653 w Fn(mailing)702 b(list:)869
+b(jmlspecs-escja)-38 b(v)-50 b(a@lists.sour)g(cef)g(or)-38
+b(g)25 b(e)50 b(.net)128957 69620 y
+ 0 setgray
+ 128957 69620 a 0
+TeXcolorgray 0.2 0.36 0.77 TeXcolorrgb 106397 76484 a
+Fq(Da)-23 b(vid)319 b(Cok,)g(Joe)g(Kinir)34 b(y)320 b(&)f(Er)17
+b(ik)319 b(P)-57 b(oll)318 b(-)h(ESC/J)-23 b(a)g(v)-29
+b(a2)319 b(&)g(JML)h(T)-138 b(utor)17 b(ial)p 0 TeXcolorgray
+640 w(\226)319 b(p)-40 b(.30/)p Fp(??)p 0 TeXcolorgray
+59998 79998 a
+ tx@Dict begin -90 Rot  end
+ 59998 79998 a eop end
+%%Trailer
+
+userdict /end-hook known{end-hook}if
+%%EOF

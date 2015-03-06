@@ -1,0 +1,979 @@
+This is pdfeTeX, Version 3.141592-1.21a-2.2 (Web2C 7.5.4) (format=latex 2007.4.10)  16 JAN 2008 10:58
+entering extended mode
+**escjava2-warnings
+
+(/Users/dermotcochran/Documents/workspace_mobius/ESCJava2/slides/ECOOPTutorial-
+cok/escjava2-warnings.tex
+LaTeX2e <2003/12/01>
+Babel <v3.8d> and hyphenation patterns for american, french, german, ngerman, b
+ahasa, basque, bulgarian, catalan, croatian, czech, danish, dutch, esperanto, e
+stonian, finnish, greek, icelandic, irish, italian, latin, magyar, norsk, polis
+h, portuges, romanian, russian, serbian, slovak, slovene, spanish, swedish, tur
+kish, ukrainian, nohyphenation, loaded.
+
+(/Users/dermotcochran/Documents/workspace_mobius/ESCJava2/slides/ECOOPTutorial-
+cok/prosper.cls
+Document Class: prosper 2001/01/23, v. 1.1
+(c) 2000 Frederic Goualard, CWI, The Netherlands
+CVSId: $Id: prosper.cls 1142 2004-07-05 11:46:57Z cok $
+ 
+(/opt/local/share/texmf-dist/tex/latex/seminar/seminar.cls
+Document Class: seminar 1997/10/13, 1.4
+Document Style: `seminar' v1.4 <1997/10/13> (tvz)
+\slidewidth=\dimen102
+\slideheight=\dimen103
+\footheight=\dimen104
+(/opt/local/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2004/02/16 v1.4f Standard LaTeX document class
+(/opt/local/share/texmf-dist/tex/latex/base/leqno.clo
+File: leqno.clo 1998/08/17 v1.1c Standard LaTeX option (left equation numbers)
+)
+(/opt/local/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2004/02/16 v1.4f Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen105
+)
+(/opt/local/share/texmf-dist/tex/latex/seminar/sem-page.sty)
+\before@document=\toks14
+\after@document=\toks15
+\before@enddocument=\toks16
+\c@slide=\count87
+\slide@count=\count88
+\@slidebox=\box26
+\not@slidebox=\box27
+\slide@hook=\toks17
+\after@slide=\toks18
+\slide@footins=\insert233
+\slide@listdepth=\count89
+\saved@specials=\box28
+\before@newslide=\toks19
+\after@slidepage=\toks20
+\slidesep=\skip43
+\c@note=\count90
+\slideframewidth=\dimen106
+\slideframesep=\dimen107
+\semin=\dimen108
+\semcm=\dimen109
+)
+(/opt/local/share/texmf-dist/tex/latex/seminar/seminar.con)
+(/opt/local/share/texmf-dist/tex/latex/seminar/semcolor.sty
+Style Option: `semcolor' for doc style `seminar' 1.01 <2004/05/18> (tvz)
+File: semcolor.sty 2004/05/18 v1.01 (tvz)
+(/opt/local/share/texmf-dist/tex/latex/pstricks/pstricks.sty
+Package: pstricks 2004/05/12 v0.2l LaTeX wrapper for `PSTricks' (RN,HV)
+
+(/opt/local/share/texmf-dist/tex/generic/pstricks/pstricks.tex
+`PSTricks' v1.04  <2004/06/22> (tvz)
+\pst@dima=\dimen110
+\pst@dimb=\dimen111
+\pst@dimc=\dimen112
+\pst@dimd=\dimen113
+\pst@dimg=\dimen114
+\pst@dimh=\dimen115
+\pst@hbox=\box29
+\pst@boxg=\box30
+\pst@cnta=\count91
+\pst@cntb=\count92
+\pst@cntc=\count93
+\pst@cntd=\count94
+\pst@cntg=\count95
+\pst@cnth=\count96
+\pst@toks=\toks21
+(/opt/local/share/texmf-dist/tex/generic/pstricks/pstricks.con)
+\psunit=\dimen116
+\psxunit=\dimen117
+\psyunit=\dimen118
+\pslinewidth=\dimen119
+\pst@customdefs=\toks22
+\pslinearc=\dimen120
+\everypsbox=\toks23
+\psframesep=\dimen121
+\pslabelsep=\dimen122
+\theoverlaybox=\box31
+)
+File: pstricks.tex 2004/06/22 v1.04 `PSTricks' (tvz)
+
+(/opt/local/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2004/07/04 v2.00 LaTeX color extensions (UK)
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/color.cfg
+File: color.cfg 2005/02/03 v1.3 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Package option `override' ignored on input line 128.
+Package xcolor Info: Driver file: dvips.def on input line 136.
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)
+Package xcolor Info: Color model `cmy' added on input line 972.
+Package xcolor Info: Color model `HTML' added on input line 1000.
+Package xcolor Info: Color model `HSB' added on input line 1006.
+Package xcolor Info: Color model `Gray' added on input line 1012.
+)))
+(/opt/local/share/texmf-dist/tex/latex/seminar/semlayer.sty
+\@@slidebox=\box32
+\c@overlay=\count97
+)
+(/opt/local/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+(/opt/local/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2001/07/07 v1.0n Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/local/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt/local/share/texmf-dist/tex/latex/graphics/graphics.cfg
+File: graphics.cfg 2005/02/03 v1.3 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 80.
+)
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
+)
+(/opt/local/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2003/11/30 v6.74m Hypertext links for LaTeX
+\@linkdim=\dimen125
+\Hy@linkcounter=\count98
+\Hy@pagecounter=\count99
+
+(/opt/local/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2003/11/30 v6.74m Hyperref: PDFDocEncoding definition (HO)
+)
+(/opt/local/share/texmf-dist/tex/latex/hyperref/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive and teTeX
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 1830.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 1830.
+Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 1830.
+Package hyperref Info: Hyper figures OFF on input line 1880.
+Package hyperref Info: Link nesting OFF on input line 1885.
+Package hyperref Info: Hyper index ON on input line 1888.
+Package hyperref Info: Plain pages ON on input line 1893.
+Package hyperref Info: Backreferencing OFF on input line 1900.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 2004.
+(/opt/local/share/texmf-local/tex/latex/html/url.sty
+Package: url 1999/03/02  ver 1.4  Verb mode for urls, email addresses, and file
+ names
+)
+LaTeX Info: Redefining \url on input line 2143.
+\Fld@menulength=\count100
+\Field@Width=\dimen126
+\Fld@charsize=\dimen127
+\Choice@toks=\toks25
+\Field@toks=\toks26
+Package hyperref Info: Hyper figures OFF on input line 2618.
+Package hyperref Info: Link nesting OFF on input line 2623.
+Package hyperref Info: Hyper index ON on input line 2626.
+Package hyperref Info: backreferencing OFF on input line 2633.
+Package hyperref Info: Link coloring OFF on input line 2638.
+\c@Item=\count101
+\c@Hfootnote=\count102
+)
+*hyperref using driver hdvips*
+(/opt/local/share/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2003/11/30 v6.74m Hyperref driver for dvips
+
+(/opt/local/share/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2003/11/30 v6.74m Hyperref definitions for pdfmark specials
+\pdf@docset=\toks27
+\pdf@box=\box33
+\pdf@toks=\toks28
+\pdf@defaulttoks=\toks29
+\Fld@listcount=\count103
+\@outlinefile=\write3
+))
+(/opt/local/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\slideWidth=\skip44
+\c@trueSlideCounter=\count104
+
+(/Users/dermotcochran/Documents/workspace_mobius/ESCJava2/slides/ECOOPTutorial-
+cok/PPRcok.sty
+
+LaTeX Warning: You have requested package `PPRcok',
+               but the package provides `PPRerik'.
+
+Package: PPRerik 
+(/opt/local/share/texmf-dist/tex/latex/seminar/semhelv.sty
+Style Option: `semhelv' for the `seminar' doc style 1.4 <2000/05/08> (tvz)
+Modified by Stefan (see source for details)
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 8.20007pt on input line 176.
+) (/opt/local/share/texmf-dist/tex/latex/pstricks/pst-grad.sty
+Package: pst-grad 2004/07/15 package wrapper for pst-grad.tex
+
+(/opt/local/share/texmf-dist/tex/generic/pstricks/pst-grad.tex
+ v1.04, 2004/06/24)
+File: pst-grad.tex 2004/06/24 1.04 `pst-grad' (tvz)
+))
+\c@item@step=\count105
+\c@overlay@page=\count106
+\theoverlays=\box34
+\c@overlaysCount=\count107
+\c@limitOverlays=\count108
+) (/opt/local/share/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/opt/local/share/texmf-dist/tex/latex/pstricks/pst-node.sty
+Package: pst-node 2004/07/15 package wrapper for pst-node.tex
+
+(/opt/local/share/texmf-dist/tex/generic/pstricks/pst-node.tex
+ v97 patch 11, 2000/11/09
+\psrow=\count109
+\pscol=\count110
+\psmatrixcnt=\count111
+\psrowsep=\skip45
+\pscolsep=\skip46
+)
+File: pst-node.tex 2000/11/09 97 patch 11 `pst-node' (tvz)
+)
+(/opt/local/share/texmf-dist/tex/latex/pstricks/pst-text.sty
+Package: pst-text 2004/07/15 package wrapper for pst-text.tex
+
+(/opt/local/share/texmf-dist/tex/generic/pstricks/pst-text.tex
+ v97, 1997/03/25)
+File: pst-text.tex 1997/03/25 97 `pst-text' (tvz)
+) (/opt/local/share/texmf-dist/tex/latex/pstricks/pst-3d.sty
+Package: pst-3d 2004/07/15 package wrapper for pst-3d.tex
+
+(/opt/local/share/texmf-dist/tex/generic/pstricks/pst-3d.tex  v97, 1997/03/25)
+File: pst-3d.tex 1997/03/25 97 `pst-3d' (tvz)
+) (/opt/local/share/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2004/02/22 v1.99f Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/opt/local/share/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+(/opt/local/share/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks30
+\verbatim@line=\toks31
+\verbatim@in@stream=\read1
+)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xy.sty
+(/opt/local/share/texmf-dist/tex/generic/xypic/xy.tex Bootstrap'ing: catcodes,
+docmode, (/opt/local/share/texmf-dist/tex/generic/xypic/xyrecat.tex)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xyidioms.tex)
+
+ Xy-pic version 3.7 <1999/02/16>
+ Copyright (c) 1991-1998 by Kristoffer H. Rose <krisrose@ens-lyon.fr>
+ Xy-pic is free software: see the User's Guide for details.
+
+Loading kernel: messages; fonts; allocations: state,
+\X@c=\dimen128
+\Y@c=\dimen129
+\U@c=\dimen130
+\D@c=\dimen131
+\L@c=\dimen132
+\R@c=\dimen133
+\Edge@c=\toks32
+\X@p=\dimen134
+\Y@p=\dimen135
+\U@p=\dimen136
+\D@p=\dimen137
+\L@p=\dimen138
+\R@p=\dimen139
+\Edge@p=\toks33
+\X@origin=\dimen140
+\Y@origin=\dimen141
+\X@xbase=\dimen142
+\Y@xbase=\dimen143
+\X@ybase=\dimen144
+\Y@ybase=\dimen145
+\X@min=\dimen146
+\Y@min=\dimen147
+\X@max=\dimen148
+\Y@max=\dimen149
+\lastobjectbox@=\box35
+\zerodotbox@=\box36
+\almostz@=\dimen150
+ direction,
+\d@X=\dimen151
+\d@Y=\dimen152
+\K@=\count112
+\KK@=\count113
+\Direction=\count114
+\K@dXdY=\dimen153
+\K@dYdX=\dimen154
+\xyread@=\read2
+\xywrite@=\write4
+\csp@=\count115
+\quotPTK@=\dimen155
+
+utility macros; pictures: \xy, positions,
+\swaptoks@@=\toks34
+\connectobjectbox@@=\box37
+ objects,
+\styletoks@=\toks35
+ decorations;
+kernel objects: directionals, circles, text; options; algorithms: directions,
+edges, connections;  Xy-pic loaded)
+Package: xy 1999/02/16 Xy-pic version 3.7
+
+(/opt/local/share/texmf-dist/tex/generic/xypic/xyall.tex
+ Xy-pic option: All features v.3.3
+(/opt/local/share/texmf-dist/tex/generic/xypic/xycurve.tex
+ Xy-pic option: Curve and Spline extension v.3.7 curve,
+\crv@cnt@=\count116
+\crvpts@=\toks36
+\splinebox@=\box38
+\splineval@=\dimen156
+\splinedepth@=\dimen157
+\splinetol@=\dimen158
+\splinelength@=\dimen159
+ circles,
+\L@=\dimen160
+ loaded)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xyframe.tex
+ Xy-pic option: Frame and Bracket extension v.3.7 loaded)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xycmtip.tex
+ Xy-pic option: Computer Modern tip extension v.3.3
+(/opt/local/share/texmf-dist/tex/generic/xypic/xytips.tex
+ Xy-pic option: More Tips extension v.3.3 loaded) loaded)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xyline.tex
+ Xy-pic option: Line styles extension v.3.6
+\xylinethick@=\dimen161
+ loaded)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xyrotate.tex
+ Xy-pic option: Rotate and Scale extension v.3.3 loaded)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xycolor.tex
+ Xy-pic option: Colour extension v.3.3 loaded)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xymatrix.tex
+ Xy-pic option: Matrix feature v.3.4
+\Row=\count117
+\Col=\count118
+\queue@=\toks37
+\queue@@=\toks38
+\qcount@=\count119
+\qcount@@=\count120
+\matrixsize@=\count121
+ loaded)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xyarrow.tex
+ Xy-pic option: Arrow and Path feature v.3.5 path, \ar, loaded)
+(/opt/local/share/texmf-dist/tex/generic/xypic/xygraph.tex
+ Xy-pic option: Graph feature v.3.7 loaded) loaded))
+(/Users/dermotcochran/Documents/workspace_mobius/ESCJava2/slides/ECOOPTutorial-
+cok/escjava2-warnings.aux)
+\openout1 = `escjava2-warnings.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
+LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 97.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 97.
+
+(/opt/local/share/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 97.
+Package hyperref Info: Link coloring OFF on input line 97.
+
+(/opt/local/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2003/12/03 v2.21 Cross-referencing by name of section
+\c@section@level=\count122
+)
+LaTeX Info: Redefining \ref on input line 97.
+LaTeX Info: Redefining \pageref on input line 97.
+
+(/Users/dermotcochran/Documents/workspace_mobius/ESCJava2/slides/ECOOPTutorial-
+cok/escjava2-warnings.out)
+(/Users/dermotcochran/Documents/workspace_mobius/ESCJava2/slides/ECOOPTutorial-
+cok/escjava2-warnings.out)
+\openout3 = `escjava2-warnings.out'.
+
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 14.16972pt on input line 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 11.80809pt on input line 99.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 99.
+
+(/opt/local/share/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 99.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 99.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 99.
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 99.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/m/it' will be
+(Font)              scaled to size 8.20007pt on input line 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/bx/it' in size <10> not available
+
+(Font)              Font shape `OT1/helvetica/b/it' tried instead on input line
+ 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/b/it' will be
+(Font)              scaled to size 8.20007pt on input line 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/bx/it' in size <14.4> not availab
+le
+(Font)              Font shape `OT1/helvetica/b/it' tried instead on input line
+ 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/b/it' will be
+(Font)              scaled to size 11.80809pt on input line 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/bx/it' in size <12> not available
+
+(Font)              Font shape `OT1/helvetica/b/it' tried instead on input line
+ 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/b/it' will be
+(Font)              scaled to size 9.84009pt on input line 99.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 99.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 5.74005pt on input line 99.
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 4.10004pt on input line 99.
+ [1
+
+
+] [2
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 125.
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 9.02008pt on input line 131.
+LaTeX Font Info:    Font shape `OT1/helvetica/m/it' will be
+(Font)              scaled to size 9.02008pt on input line 131.
+ [3
+
+]
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 142.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 142.
+
+
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
+(Font)              size <5> substituted on input line 142.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
+(Font)              size <5> substituted on input line 142.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <11> on input line 142.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7.69997> on input line 142.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5.5> on input line 142.
+[4
+
+] [5
+
+] [6
+
+]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 195.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 195.
+ [7
+
+] [8
+
+] [9
+
+]
+LaTeX Font Info:    Font shape `OT1/helvetica/m/n' will be
+(Font)              scaled to size 6.56006pt on input line 248.
+LaTeX Font Info:    Font shape `OT1/courier/m/n' will be
+(Font)              scaled to size 7.88pt on input line 248.
+ [10
+
+] [11
+
+] [12
+
+]
+File: examples/CastWarning.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 311--311
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 315--315
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+File: examples/CastWarningOK.java  (verbatim)
+[13
+
+]
+File: examples/CastWarningOK2.java  (verbatim)
+ [14
+
+]
+File: examples/NullWarning.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 348--348
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 352--352
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+File: examples/NullWarningOK.java  (verbatim)
+[15
+
+]
+File: examples/ArrayStoreWarning.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 384--384
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (22.70747pt too wide) in paragraph at lines 385--385
+[]\OT1/courier/m/n/8 ArrayStoreWarning.java:4: Warning: Type of right-hand side
+ possibly not[] 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 389--389
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+File: examples/ArrayStoreWarningOK.java  (verbatim)
+[16
+
+]
+File: examples/Index.java  (verbatim)
+ [17
+
+] [18
+
+]
+File: examples/PrePost.java  (verbatim)
+ [19
+
+] [20
+
+] [21
+
+]
+File: examples/ModifiesWarning.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 509--509
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (69.98744pt too wide) in paragraph at lines 510--510
+[]\OT1/courier/m/n/8 ModifiesWarning.java:7: Warning: Possible violation of mod
+ifies clause (Modifies)[] 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 516--516
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+[22
+
+] [23
+
+]
+File: examples/NonNullInit.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 556--556
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 564--564
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+[24
+
+]
+File: examples/NonNull.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 581--581
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 589--589
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+[25
+
+]
+File: examples/NonNullOK.java  (verbatim)
+File: examples/NonNullOK2.java  (verbatim)
+File: examples/NonNullOK3.java  (verbatim)
+ [26
+
+] [27
+
+]
+File: examples/AssertWarning.java  (verbatim)
+ [28
+
+]
+File: examples/LoopInvWarning.java  (verbatim)
+ [29
+
+] [30
+
+]
+File: examples/Invariant.java  (verbatim)
+ [31
+
+]
+File: examples/Initially.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 754--754
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (8.52348pt too wide) in paragraph at lines 755--755
+[]\OT1/courier/m/n/8 Initially.java:5: Warning: Possible violation of initially
+ condition[] 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 762--762
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+[32
+
+] [33
+
+] [34
+
+] [35
+
+] [36
+
+]
+File: examples/Ex.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 877--877
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 885--885
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+[37
+
+] [38
+
+] [39
+
+]
+File: examples/RaceWarning.java  (verbatim)
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 957--957
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+-------------- 
+ []
+
+
+Overfull \hbox (27.43547pt too wide) in paragraph at lines 964--964
+[]\OT1/courier/m/n/8 ----------------------------------------------------------
+--------------[] 
+ []
+
+[40
+
+] [41
+
+]
+File: examples/DeadlockWarning.java  (verbatim)
+ [42
+
+] [43
+
+] [44
+
+]
+File: examples/Trace.java  (verbatim)
+
+Overfull \hbox (8.52348pt too wide) in paragraph at lines 1064--1064
+[]\OT1/courier/m/n/8 Trace.java:8: Warning: Postcondition possibly not establis
+hed (Post) 
+ []
+
+[45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+]
+LaTeX Font Info:    Font shape `OT1/courier/m/n' will be
+(Font)              scaled to size 10.835pt on input line 1177.
+ [50
+
+] [51
+
+]
+Overfull \hbox (8.52348pt too wide) in paragraph at lines 1237--1237
+[]                 \OT1/courier/m/n/8 (\forall int i; 0<=i && i < a.length;  a[
+i]>=0); */[] 
+ []
+
+
+Overfull \hbox (36.89146pt too wide) in paragraph at lines 1250--1250
+[]\OT1/courier/m/n/8 Alias.java:12: Warning: Possible violation of object invar
+iant (Invariant) 
+ []
+
+[52
+
+] [53
+
+]
+LaTeX Font Info:    Font shape `OT1/helvetica/m/it' will be
+(Font)              scaled to size 6.56006pt on input line 1332.
+ [54
+
+] [55
+
+] [56
+
+] [57
+
+] [58
+
+]
+File: examples/Inconsistent.java  (verbatim)
+ [59
+
+]
+File: examples/Inconsistent2.java  (verbatim)
+ [60
+
+]
+File: examples/Exposed.java  (verbatim)
+ [61
+
+]
+Overfull \hbox (46.34746pt too wide) in paragraph at lines 1489--1489
+[]                                    \OT1/courier/m/n/8 Object[] dest, int des
+tPos, int length);[] 
+ []
+
+
+Overfull \hbox (46.34746pt too wide) in paragraph at lines 1495--1495
+[]\OT1/courier/m/n/8 ensures (\forall int i; 0<=i && i<length; dest[destPos+i] 
+== src[srcPos+i]); 
+ []
+
+[62
+
+]
+Overfull \hbox (46.34746pt too wide) in paragraph at lines 1513--1513
+[]                                    \OT1/courier/m/n/8 Object[] dest, int des
+tPos, int length);[] 
+ []
+
+
+Overfull \hbox (46.34746pt too wide) in paragraph at lines 1519--1519
+[]\OT1/courier/m/n/8 ensures (\forall int i; 0<=i && i<length; dest[destPos+i] 
+== src[srcPos+i]); 
+ []
+
+[63
+
+]
+Overfull \hbox (46.34746pt too wide) in paragraph at lines 1539--1539
+[]                                    \OT1/courier/m/n/8 Object[] dest, int des
+tPos, int length);[] 
+ []
+
+
+Overfull \hbox (46.34746pt too wide) in paragraph at lines 1545--1545
+[]\OT1/courier/m/n/8 ensures (\forall int i; 0<=i && i<length; dest[destPos+i] 
+== src[srcPos+i]); 
+ []
+
+
+Overfull \hbox (3.79549pt too wide) in paragraph at lines 1556--1556
+[]                            \OT1/courier/m/n/8 dest[destPos+i] == \old(src[sr
+cPos+i]);[] 
+ []
+
+[64
+
+]
+Overfull \hbox (46.34746pt too wide) in paragraph at lines 1573--1573
+[]                                    \OT1/courier/m/n/8 Object[] dest, int des
+tPos, int length);[] 
+ []
+
+
+Overfull \hbox (46.34746pt too wide) in paragraph at lines 1579--1579
+[]\OT1/courier/m/n/8 ensures (\forall int i; 0<=i && i<length; dest[destPos+i] 
+== src[srcPos+i]); 
+ []
+
+
+Overfull \hbox (3.79549pt too wide) in paragraph at lines 1590--1590
+[]                            \OT1/courier/m/n/8 dest[destPos+i] == \old(src[sr
+cPos+i]);[] 
+ []
+
+
+Overfull \hbox (36.89146pt too wide) in paragraph at lines 1597--1597
+[]                              \OT1/courier/m/n/8 (destPos+length <= i && i < 
+destPos.length);[] 
+ []
+
+[65
+
+] [66
+
+] [67
+
+]
+LaTeX Font Info:    Font shape `OT1/helvetica/m/it' will be
+(Font)              scaled to size 11.80809pt on input line 1647.
+ [68
+
+]
+(/Users/dermotcochran/Documents/workspace_mobius/ESCJava2/slides/ECOOPTutorial-
+cok/escjava2-warnings.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7383 strings out of 94501
+ 96304 string characters out of 1174996
+ 203699 words of memory out of 1000000
+ 10404 multiletter control sequences out of 10000+50000
+ 34480 words of font info for 69 fonts, out of 500000 for 2000
+ 580 hyphenation exceptions out of 1000
+ 43i,14n,44p,334b,767s stack positions out of 1500i,500n,5000p,200000b,5000s
+
+Output written on escjava2-warnings.dvi (68 pages, 145628 bytes).

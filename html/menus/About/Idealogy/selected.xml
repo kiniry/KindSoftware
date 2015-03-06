@@ -1,0 +1,23 @@
+<!-- Automatically generated menu content. Do not edit. -->
+<div id="subnav">
+<ul>
+<!-- AKindCommunity -->
+<li><a href="/about/">A Kind Community</a></li>
+<!-- Education -->
+<li><a href="/about/education/">Education</a></li>
+<!-- WhoWeAre -->
+<li><a href="/about/people/">Who We Are</a></li>
+<!-- Idealogy -->
+<li id="subnavon"><a href="/about/ideology/">Ideology</a>
+<ul>
+  <li><a href="/about/ideology/technical.html">Technical</a></li>
+  <li><a href="/about/ideology/research.html">Research/Academic</a></li>
+  <li><a href="/about/ideology/personal.html">Personal/Individual</a></li>
+  <li><a href="/about/ideology/community.html">Community</a></li>
+  <li><a href="/about/ideology/global.html">Global</a></li>
+</ul>
+</li>
+<!-- OurCommunity -->
+<li><a href="/about/community/">Our Community</a></li>
+</ul>
+</div>

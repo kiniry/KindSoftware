@@ -1,0 +1,12 @@
+<div id="menu">
+<ul>
+<!-- <li id="one"><a href="/" title="KindSoftware">kind</a></li> -->
+<li id="one"><a href="/about/" title="About Us">about us</a></li>
+<li id="two"><a href="/products/opensource/" title="Software">software</a></li>
+<li id="three"><a href="/documents/" title="Documents">documents</a></li>
+<li id="four"><a href="/documents/research/" title="Research">research</a></li>
+<li id="five"><a href="/documents/visitors/" title="Visitors">visitors</a></li>
+<li id="six"><a href="/documents/trackers/" title="CDEs">cdes</a></li>
+<li id="seven"><a href="http://kindsoftware.blogspot.com/" title="Blog">blog</a></li>
+</ul>
+</div>

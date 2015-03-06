@@ -1,0 +1,34 @@
+<!-- Automatically generated menu content. Do not edit. -->
+<div id="subnav">
+<ul>
+<!-- Overview -->
+<li><a href="/documents/research">Overview</a></li>
+<!-- Danish Agency for Science, Technology, and Innovation -->
+<li><a href="/documents/research/dasti/">Danish Agency for Science, Technology, and Innovation</a></li>
+<!-- Enterprise Ireland, International Coordination and Travel -->
+<li><a href="/documents/research/enterprise_ireland">Enterprise Ireland</a></li>
+<!-- European Union COST Action -->
+<li><a href="/documents/research/cost/">EU COST Action</a></li>
+<!-- European Union Framework -->
+<li><a href="/documents/research/eu/">EU Framework</a></li>
+<!-- Formal Methods Europe (FME) -->
+<li><a href="/documents/research/fme/">FME</a></li>
+<!-- IRCSET -->
+<li id="subnavon"><a href="/documents/research/ircset">IRCSET</a>
+<ul>
+   <li><a href="/documents/research/ircset/ebon.html">EBON</a></li>
+   <li><a href="/documents/research/ircset/pcc_esc.html">Proof-Carrying Code for Extended Static Checking</a></li>
+</ul>
+</li>
+<!-- IT University of Copenhagen -->
+<li><a href="/documents/research/itu/">ITU</a></li>
+<!-- LGSSE -->
+<li><a href="/documents/research/lgsse">LGSSE</a></li>
+<!-- Science Foundation Ireland -->
+<li><a href="/documents/research/sfi/">SFI</a></li>
+<!-- Science Foundation Ireland Lero CSET -->
+<li><a href="/documents/research/lero/">Lero CSET</a></li>
+<!-- University College Dublin -->
+<li><a href="/documents/research/ucd/">UCD</a></li>
+</ul>
+</div>

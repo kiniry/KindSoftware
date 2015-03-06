@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>KindSoft</title>
+    <link>http://www.kindsoftware.com/</link>
+    <description>
+      KindSoftware: Software Engineering with Applied Formal Methods
+    </description>
+    <generator>
+      Emacs 23.4.1
+    </generator>
+    <language>en</language>
+    <pubDate>Wed, May  1 12:00:00 CET 2013</pubDate>
+    <lastBuildDate>Wed, May  1 12:00:00 CET 2013</lastBuildDate>
+    <!-- <item> -->
+    <!--   <title></title>  -->
+    <!--   <link>http://www.kindsoftware.com/documents/news/2012.html</link> -->
+    <!--   <pubDate>Tue, 01 Mar 2011 12:00:00 GMT</pubDate> -->
+    <!--   <guid isPermaLink="false"></guid> -->
+    <!-- </item> -->
+    <item>
+      <title>A paper "Formal Model-based Validation for Tally Systems"
+      by Joseph Kiniry and Dermot Cochran has been accepted to
+      VoteID'13.</title>
+      <link>http://www.kindsoftware.com/documents/news/2013.html</link>
+      <pubDate>Tue, 01 Mar 2011 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">VoteID-2013</guid>
+    </item>
+    <item>
+      <title>A paper "A Rigorous Methodology for Analyzing and
+      Designing Plug-Ins" by Marie Fasie, Anne Haxthausen, and
+      Joe has been accepted to TOPI'13.</title>
+      <link>http://www.kindsoftware.com/documents/news/2013.html</link>
+      <pubDate>Wed, May  1 12:00:00 CET 2013</pubDate>
+      <guid isPermaLink="false">TOPI-2013</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of ASE-Tools.</title>
+      <link>http://www.kindsoftware.com/documents/news/2013.html</link>
+      <pubDate>Wed, May  1 12:00:00 CET 2013</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-ASE-Tools-2013</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of SEFM'13.</title>
+      <link>http://www.kindsoftware.com/documents/news/2013.html</link>
+      <pubDate>Wed, May  1 12:00:00 CET 2013</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-SEFM-2013</guid>
+    </item>
+    <item>
+      <title>Photos, slides, and the streamed recording of Joe Kiniry's inaugural lecture at the Technical University of Denmark are now available.</title>
+      <link>http://www.kindsoftware.com/documents/talks/Inaugural_Lecture.html</link>
+      <pubDate>Mon Feb  4 09:52:46 CET 2013</pubDate>
+      <guid isPermaLink="false">Inaugural_Lecture</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave they keynote talk The Use of JML in Embedded Real-Time Systems at JTRES 2012.</title>
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Tue Nov 27 11:58:50 CET 2012</pubDate>
+      <guid isPermaLink="false">JML4RT-JTRES12</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of ICECCS 2013.</title>
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Mon Nov 26 15:24:59 CET 2012</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-ICECCS-2013</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of TOPI 2013.</title>
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Mon Nov 19 14:25:43 CET 2012</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-TOPI-2013</guid>
+    </item>
+    <item>
+      <title>All BSc and MSc theses for 2012 and most for 2011 are now available via our reports page.</title>
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Tue, 19 Jun 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">2012-Theses</guid>
+    </item>
+    <item>
+      <title>The Open Source Science Collaborative Development Environment (OSS-CDE) is now operational.</title>
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Tue, 19 Jun 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">OSS-CDE-announce</guid>
+    </item>
+    <item>
+      <title>The new DemTech website and CDE is now operational.</title>
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Tue, 19 Jun 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">DemTech-CDE-announce</guid>
+    </item>
+    <item>
+      <title>Our various Trac and SVN servers have been moved from Ireland to Denmark.</title>
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Tue, 19 Jun 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Tracs-IE2DK-move</guid>
+    </item>
+    <item>
+      <title>Our work on Testing Library Specifications by Verifying Conformance Tests was presented by Dan Zimmerman at TAP 2012.</title>
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Tue, 19 Jun 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">TAP-presentation-2012</guid>
+    </item>
+    <item>
+      <title>Our Trac and SVN repositories have moved to Denmark, but HTTP access to SVN repositories is not yet available.</title> 
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Mon Mar 26 14:54:05 EDT 2012</pubDate>
+      <guid isPermaLink="false">Trac-SVN</guid>
+    </item>
+    <item>
+      <title>A paper "Testing Library Specifications by Verifying Conformance Tests" by Joe, Dan, and Ralph has been accepted to TAP 2012.</title> 
+      <link>http://www.kindsoftware.com/documents/news/2012.html</link>
+      <pubDate>Mon Mar 26 14:54:05 EDT 2012</pubDate>
+      <guid isPermaLink="false">TAP-2012</guid>
+    </item>
+
+    <item>
+      <title>Joe Kiniry is on the Program Committee of TCS 2012.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-TCS-2012</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of GAS 2012.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-GAS-2012</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry has become a become a member of IFIP working group 1.9/2.15 on Verified Software.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-IFIP-Verified-Software</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of SEFM 2012.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-SEFM-2012</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave a guest lecture entitled DOSE/GSD Concretized: Distributed Outsourced Software Engineering/Global Software Development: Case Studies, Lessons Learned, Best Practices, at ETHZ.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">DOSE-GSD-ETHZ</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave an invited talk entitled Democracy as a Critical System at ETHZ.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Democracy-ETHZ</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave an invited talk entitled Democracy as a Critical System at DTU.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Democracy-DTU</guid>
+    </item>
+    <item>
+      <title>Around fifteen BSc and MSc project/thesis descriptions have been posted to the proposals page, primarily for ITU students.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">ITU-BSc-MSc-projects-Q4-2011</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of ICECCS 2012.</title>
+      <www.link>http://kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-ICECCS-2012</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of FoVeOSS 2011.</title>
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Mon, 02 Jan 2012 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-FoVeOSS-2011</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave an invited talk entitled Democracy as a Critical System to the Department of Computer Science in the University of Aarhus.</title> 
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Wed, 06 Apr 2011 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Democracy-Aarhus</guid>
+    </item>
+    <item>
+      <title>Several postdoc and PhD student positions will be available later this year.</title> 
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Tue, 01 Mar 2011 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">2011-posts</guid>
+    </item>
+    <item>
+      <title>A paper "Verified Gaming" by Joe, Dan, and Fintan has been accepted to GAS 2011.</title> 
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Tue, 01 Mar 2011 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">GAS-2011</guid>
+    </item>
+    <item>
+      <title>A paper "Achieving Instant Gradeification" by Dan, Joe, and Fintan has been accepted to CSEE&amp;T 2011.</title> 
+      <link>http://www.kindsoftware.com/documents/news/2011.html</link>
+      <pubDate>Tue, 01 Mar 2011 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">CSEET-2011</guid>
+    </item>
+    <item>
+      <title>The Danish Council for Strategic Research by the Programme Commission on Strategic Growth Technologies has agreed to fund the DemTech project, in which Joe Kiniry is a principle investigator.</title> 
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Wed, 23 Feb 2011 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">DemTech</guid>
+    </item>
+    <item>
+      <title>A paper on verified visualization of textual modeling languages by Fintan and Joe was accepted to the OCL and Textual Modelling workshop at MODELS 2010.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Wed, 27 Oct 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">OCL-2010</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of CBSE 2011.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 18 Oct 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-CBSE-2011</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave a talk about some of his past work in gaming to the Center for Computer Games Research at ITU.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 18 Oct 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">DALi-ITU-talk</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave an invited talk to the Dusseldorf Java User's Group.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 18 Oct 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">rheinjug-DBC-talk</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave one of the keynote talks at AVOCS 2010.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 18 Oct 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">AVOCS10-talk</guid>
+    </item>
+    <item>
+      <title>Radu Grigore has successfully defended his PhD dissertation "The Design and Algorithms of a Verification Condition Generator."</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 23 Aug 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Grigore-PhD-viva</guid>
+    </item>
+    <item>
+      <title>Fintan Fairmichael and Dan Zimmerman visited us for one month.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 23 Aug 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Summer-2010-visitors</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the editorial board of the Journal of Object Technology (JOT).</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Tue, 17 Aug 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-JOT</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of SEFM 2011.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Tue, 10 Aug 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-SEFM-2011</guid>
+    </item>
+    <item>
+      <title>A paper on combining agile approaches and formal methods by Vieri, Dragan, and Joe was accepted to AM+FM '10.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 9 Aug 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">AM+FM-2010</guid>
+    </item>
+    <item>
+      <title>A paper on Votail by Dermot and Joe was accepted to FoVeOSS '10.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 9 Aug 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">FoVeOSS-2010</guid>
+    </item>
+    <item>
+      <title>Mikolas Janota has successfully defended his PhD dissertation "SAT Solving in Interactive Configuration."</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Fri, 28 May 2010 17:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Janota-PhD-viva</guid>
+    </item>
+    <item>
+      <title>JavaFE version 2.0.11 is now available.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Mon, 26 Apr 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">JavaFE-2.0.11</guid>
+    </item>
+    <item>
+      <title>Mikolas Janota has submitted his PhD dissertation "SAT Solving in Interactive Configuration."</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Wed, 21 Apr 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Janota-PhD</guid>
+    </item>
+    <item>
+      <title>Radu Grigore has submitted his PhD dissertation "The Design and Algorithms of a Verification Condition Generator."</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Wed, 21 Apr 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Grigore-PhD</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of FoVeOOS 2010.</title>
+      <link>http://www.kindsoftware.com/documents/news/2010.html</link>
+      <pubDate>Wed, 21 Apr 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-FoVeOOS-2010</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry has started an Associate Professor position at IT University of Copenhagen (ITU).</title>
+      <link>http://www.kindsoftware.com/about/people/jrk.html</link>
+      <pubDate>Wed, 21 Apr 2010 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">ITU-start</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of CBSE 2010 and PMMPS 2010.</title>
+      <link>http://www.kindsoftware.com/documents/news/2009.html</link>
+      <pubDate>Wed, 23 Dec 2009 12:07:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-CBSE-PMMPS-2010</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry has accepted an Associate Professor position at IT University of Copenhagen (ITU).</title>
+      <link>http://www.kindsoftware.com/about/people/jrk.html</link>
+      <pubDate>Mon, 2 Nov 2009 15:07:00 GMT</pubDate>
+      <guid isPermaLink="false">ITU</guid>
+    </item>
+    <item>
+      <title>A paper on configuration processes by Mikoláš Janota et al. was accepted to SOFSEM '10.</title>
+      <link>http://www.kindsoftware.com/documents/published</link>
+      <pubDate>Sun, 11 Oct 2009 15:07:00 GMT</pubDate>
+      <guid isPermaLink="false">SOFSEM10</guid>
+    </item>
+    <item>
+      <title>Eight new MSc students have joined the group.</title>
+      <link>http://www.kindsoftware.com/about/people/</link>
+      <pubDate>Thu, 27 Aug 2009 15:07:00 GMT</pubDate>
+      <guid isPermaLink="false">MSc09</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of ICECCS 2010.</title>
+      <link>http://www.kindsoftware.com/documents/news/2009.html</link>
+      <pubDate>Tues, 25 Aug 2009 17:20:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PC-ICECCS2010</guid>
+    </item>
+    <item>
+      <title>A paper, "A Verification-centric Software Development
+      Process for Java," by Joe Kiniry and Dan Zimmerman> is being
+      presented by Dan in Korea at QSIC 2009.</title>
+      <link>http://www.kindsoftware.com/documents/news/2009.html</link>
+      <pubDate>Mon, 10 Aug 2009 09:38:00 GMT</pubDate>
+      <guid isPermaLink="false">Janota-STTI09</guid>
+    </item>
+    <item>
+      <title>Mikoláš Janota presented the command line library CLOPS
+      at DSL WC.</title>
+      <link>http://www.kindsoftware.com/documents/news/2009.html</link>
+      <pubDate>Thu, 23 Jul 2009 14:00:00 GMT</pubDate>
+      <guid isPermaLink="false">Janota-DSLWC09</guid>
+    </item>
+    <item>
+      <title>Mikoláš Janota was invited to give a talk at a
+           Czecho-Slovakian conference on current trends in theoretical computer
+           science and wrote a blogpost about it.</title>
+      <www.link>http://kindsoftware.com/documents/news/2009.html</link>
+      <pubDate>Sun, 14 Jun 2009 21:30:00 GMT</pubDate>
+      <guid isPermaLink="false">Janota-STTI09</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of VSTTE 2010, RE-VOTE 2009, and SAVCBS 2009.</title>
+      <link>http://www.kindsoftware.com/documents/news/2009.html</link>
+      <pubDate>Fri, 15 May 2009 21:55:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-PCs-May</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry was invited to participate in four Schloss Dagstuhl seminars this year, and is co-running one of his own.</title>
+      <link>http://www.kindsoftware.com/documents/news/2009.html</link>
+      <pubDate>Fri, 15 May 2009 21:55:00 GMT</pubDate>
+      <guid isPermaLink="false">Kiniry-Dagstuhls</guid>
+    </item>
+    <item>
+      <title>"CLOPS: A DSL for Command Line Options" was accepted to DSL WC.</title>
+      <link>http://www.kindsoftware.com/documents/published/</link>
+      <pubDate>Tue, 14 Apr 2009 00:00:00 GMT</pubDate>
+      <guid isPermaLink="false">CLOPS-accepted-announce</guid>
+    </item>
+    <item>
+      <title>Postdoc position soon open.</title>
+      <link>http://www.kindsoftware.com/about/positions/</link>
+      <pubDate>Tue, 23 Dec 2008 13:09:00 GMT</pubDate>
+      <guid isPermaLink="false">CHARTER-postdoc-pre-announce</guid>
+    </item>
+    <item>
+      <title>Final release of ESC/Java2.</title>
+      <link>http://www.kindsoftware.com/products/opensource/ESCJava2</link>
+      <pubDate>Tue, 2 Dec 2008 18:50:00 GMT</pubDate>
+      <guid isPermaLink="false">ESCJava2-release</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of CBSE 2009.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Mon, 1 Dec 2008 18:50:00 GMT</pubDate>
+      <guid isPermaLink="false">CBSE09</guid>
+    </item>
+    <item>
+      <title>Mikoláš Janota gave a presentation on interactive model construction at MODELS 2008.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Sun, 12 Sep 2008 20:00:00 GMT</pubDate>
+      <guid isPermaLink="false">MODELS08-talk</guid>
+    </item>
+    <item>
+      <title>A configurator using a SAT solver is available for download.</title>
+      <link>/products/opensource/Config</link>
+      <pubDate>Sun, 12 Sep 2008 19:55:00 GMT</pubDate>
+      <guid isPermaLink="false">Config-release</guid>
+    </item>
+    <item>
+      <title>Mikoláš Janota gave a talk on the use of a SAT solver in configuration at ASPL '08.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Sun, 12 Sep 2008 19:50:00 GMT</pubDate>
+      <guid isPermaLink="false">ASPS08-talk</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of TOOLS 2009.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Wed, 1 Oct 2008 15:55:00 GMT</pubDate>
+      <guid isPermaLink="false">TOOLS09</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is co-chair of the VSTTE 2008 workshop 'VS-EXPERIMENTS: Experiments in Verified Software.'</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Mon, 18 Aug 2008 09:45:00 GMT</pubDate>
+      <guid isPermaLink="false">VS-EXPERIMENTS08</guid>  
+    </item>   
+    <item>
+      <title>Mikoláš Janota visited his collaborator Andrzej Wąsowski at the IT University of Copenhagen.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Sun, 17 Aug 2008 13:00:00 GMT</pubDate>
+      <guid isPermaLink="false">ITU-visit</guid>  
+    </item>   
+    <item>
+      <title>Joe Kiniry is giving a course entitled 'Verification-centric Software Engineering' at the GLOBAN Summer School in September 2008.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Mon, 11 Aug 2008 13:00:00 GMT</pubDate>
+      <guid isPermaLink="false">GLOBAN08</guid>
+    </item>
+    <item>
+      <title>Mikoláš Janota's paper 'Model Construction with External Constraints: An Interactive Journey from Semantics to Syntax' has been accepted to MODELS 2008.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Mon, 11 Aug 2008 12:00:00 GMT</pubDate>
+      <guid isPermaLink="false">MODELS08</guid>
+    </item>
+    <item>
+      <title>Mikoláš Janota's paper 'Do SAT Solvers Make Good Configurators?' has been accepted to ASPL 2008.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>Mon, 11 Aug 2008 13:00:00 GMT</pubDate>
+      <guid isPermaLink="false">ASPL08</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry has been nominated as the Chair of Working Group #4: "Tool Integration" of the COST Program Action IC0701 "Formal Verification of Object-Oriented Software." He also sits on the Management Committee as he formally represents Ireland within the Action.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>11 Jun 2008</pubDate>
+      <guid isPermaLink="false">COST08</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of SLE 2008.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>10 Jun 2008</pubDate>
+      <guid isPermaLink="false">SLE08</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry gave a talk this week on 'The Mobius Program Verification Environment' at Formal Methods 2008.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>03 Jun 2008</pubDate>
+      <guid isPermaLink="false">PVE-talk08</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry and Dan Zimmerman are giving a talk this week on their FM'08 paper 'Secret Ninja Formal Methods' at Formal Methods 2008.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>27 May 2008</pubDate>
+      <guid isPermaLink="false">FM08-talk</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is giving a talk this week on 'Verified Gaming' at the GC6 Workshop on Pilot Projects for the Grand Challenge in Verified Software at Formal Methods 2008.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>27 May 2008</pubDate>
+      <guid isPermaLink="false">VerifiedGaming</guid>
+    </item>
+    <item>
+      <title>Our two open senior positions are now listed on the UCD HR website.</title>
+      <link>http://www.kindsoftware.com/about/positions/</link>
+      <pubDate>14 May 2008</pubDate>
+      <guid isPermaLink="false">sensetile-positions</guid>
+    </item>
+    <item>
+      <title>Our ETAPS 2008 tutorial 'Verification-centric Development in Java with JML and ESC/Java2' was a big success.</title>
+      <www.link>http://kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>30 Mar 2008</pubDate>
+      <guid isPermaLink="false">ETAPS08</guid>
+    </item>
+    <item>
+      <title>Mikoláš Janota presented a paper Formal Approach to Integrating Feature and Architecture Models, written with Goetz Botterweck, at FASE'08.</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>08 May 2008</pubDate>
+      <guid isPermaLink="false">FASE08</guid>
+    </item>
+    <item>
+      <title>We have one open position for a Ph.D. student and two open positions for research software and hardware engineers.</title>
+      <link>http://www.kindsoftware.com/about/positions/index.html</link>
+      <pubDate>20 Feb 2008</pubDate>
+      <guid isPermaLink="false">positions</guid>
+    </item>
+    <item>
+      <title>Joseph Kiniry and Daniel Zimmerman's paper 'Secret Ninja Formal Methods' has been accepted to the 15th International Symposium on Formal Methods (FM 2008).</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>28 Feb 2008</pubDate>
+      <guid isPermaLink="false">FM08</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry was an invited speaker at the British Computer Society-FACS Town Hall meeting at the BCS offices in London.  His talk was titled 'Program Verification for the Masses.'</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>04 Feb 2008</pubDate>
+      <guid isPermaLink="false">FACS08</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of several workshops and conferences</title>
+      <link>http://www.kindsoftware.com/documents/news/2008.html</link>
+      <pubDate>2 Feb 2008</pubDate>
+      <guid isPermaLink="false">ictac08</guid>
+    </item>
+    <item>
+      <title>Our ETAPS 2008 tutorial 'Verification-centric Development in Java with JML and ESC/Java2' has been scheduled for 30 March 2008.
+      </title>
+      <link>http://www.kindsoftware.com/documents/tutorials/etaps08.html</link>
+      <pubDate>23 Jan 2008</pubDate>
+      <guid isPermaLink="false">etaps08</guid>
+    </item>
+    <item>
+      <title>ESC/Java 2.0 b4 has been released</title>
+      <link>http://www.kindsoftware.com/products/opensource/ESCJava2/</link>
+      <pubDate>16 Jan 2008</pubDate>
+      <guid isPermaLink="false">escjava-20-b4</guid>
+    </item>
+    <item>
+      <title>Joe Kiniry is on the Program Committee of CBSE 2007</title>
+      <link>http://www.kindsoftware.com/documents/news/2007.html</link>
+      <pubDate>14 Dec 2007</pubDate>
+      <guid isPermaLink="false">cbse-2007</guid>
+    </item>
+    <item>
+      <title>KOA Remote Voting System</title>
+      <link>http://www.kindsoftware.com/products/opensource/KOA/</link>
+      <pubDate>Mon, 10 Dec 2007 16:43:36 +0000</pubDate>
+      <guid isPermaLink="false">koa-remote-voting-system</guid>
+    </item>
+    <item>
+      <title>Open Source Software</title>
+      <link>http://www.kindsoftware.com/products/opensource/</link>
+      <pubDate>Mon, 10 Dec 2007 16:42:55 +0000</pubDate>
+      <guid isPermaLink="false">open-source-software</guid>
+    </item>
+    <item>
+      <title>Published Papers</title>
+      <link>http://www.kindsoftware.com/documents/published/</link>
+      <pubDate>Mon, 10 Dec 2007 16:42:23 +0000</pubDate>
+      <guid isPermaLink="false">published-papers</guid>
+    </item>
+    <item>
+      <title>Javafe 2.0.6 released</title>
+      <link>http://www.kindsoftware.com/products/opensource/JavaFE/</link>
+      <pubDate>Mon, 10 Dec 2007 12:20:25 +0000</pubDate>
+      <guid isPermaLink="false">javafe-206-released</guid>
+    </item>
+    <item>
+      <title>Recent News</title>
+      <link>http://www.kindsoftware.com/documents/news</link>
+      <pubDate>Mon, 10 Dec 2007 12:06:36 +0000</pubDate>
+      <guid isPermaLink="false">recent-news</guid>
+    </item>
+  </channel>
+</rss>

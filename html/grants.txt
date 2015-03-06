@@ -1,0 +1,320 @@
+- Agency: European Union Framework 6, Future & Emerging Technologies
+  Title: Mobius---Mobility, Ubiquity, Security:
+         Proof-Carrying Code for Java
+
+The focus of the MOBIUS project is the specification and verification
+of concurrent JML-annotated Java programs at the source code level as
+well as at the bytecode level using logic- and type-based techniques
+and the Proof-Carrying Code paradigm. The properties of particular
+interest include security (e.g., data is secret and never leaked) and
+resource guarantee properties (e.g., this method will never use more
+than this much memory or that much CPU) as well as total functional
+correctness.
+
+One major component that Dr. Kiniry is responsible for in this effort
+is the development of an Program Verification Environment (PVE). The
+MOBIUS PVE is thus, in a sense, a prototype realization of the
+U.K. Grand Challenge 6 Verifying Compiler, specialized to the domain
+of Java programs.
+
+The MOBIUS PVE integrates theoretical and technical best-practices,
+leveraging the hard work of many research groups within, as well as
+outside of, the grant consortium.  MOBIUS participants represent
+twelve of the top institutions in Europe in this domain (INRIA, ETHZ,
+Nijmegen, Munich, Edinburgh, Tallinn, Chalmers, Imperial, UCD Dublin,
+Warsaw, and Madrid) and we work with partners in North America (Iowa
+State, Concordia University, the University of Central Florida, MIT,
+the University of Washington, Kansas State University, and others),
+some of which are supported by an NSF Infrastructure Grant, on which
+Dr. Kiniry is a named collaborator.
+
+
+- Agency: Science Foundation Ireland Lero CSET
+  Title: Model-based Product Derivation:
+         Applied Formal Methods in the Presence of Explicit
+         Variability and Commonality
+
+
+The goal of this project is to enable systematic application artifact
+and product tracking, evolution and derivation within a product line
+and to improve the degree of automation within the product derivation
+process. The main objective of this project is to combine formal
+approaches to describing requirements, software architecture and other
+artifacts with model-based development approaches to support formal
+automated derivation of verifiable products within a product line.
+ 
+The high-level objectives of the project are  
+ - Determine a variability model that is derivable from the
+ requirements model (both domain and application) by using more formal
+ descriptions of the domain and application requirements.
+ - Investigate how the variability and requirements models (both
+ domain and application) can be used to support formal generation of
+ the architecture models and other artifact models.
+ - Establish a formal approach to the definition of variability
+ between the variability, requirements, architecture and other
+ artifact models both in the domain engineering and application
+ engineering within software product lines.  
+ 
+In order to enable more automated reasoning about these artefacts in
+terms of transformation, organization, search and discovery,
+etc. there must be a fundamental semantics to the software product
+line domain and the specification of artefacts is paramount. This
+project will define such a semantics by using evolutions of existing
+formal approaches to the description of these various artifacts. More
+specifically, a logic called “kind theory” will be used to describe
+artefacts and their interrelationships and this logic will be
+integrated into the Cadena integrated environment for defining and
+modeling component-based systems in model-driven architectures.
+
+
+- Agency: Science Foundation Ireland
+  Title: The UCD CASL SenseTile System
+
+Sensor networks are widely seen as an essential technology for
+supporting next-generation scientific and engineering challenges,
+including environmental monitoring, climate change, assisted living,
+national security and intensive agriculture. Addressing these problems
+requires two complementary strands of research: 
+ 1. to understand the specific physical and/or social phenomena of
+ interest against which to fit data collection and analysis; and 
+ 2. to understand the general scientific and technological principles
+ governing scalable sensor networking in order to maximize the
+ leverage gained from on-going developments. 
+
+Amongst the core general challenges are the collection of large
+volumes of multimedia data, its storage, cataloging, retrieval and
+processing in such a way as to minimize physical and intellectual
+costs of accessing the available data. This is especially important in
+pursuit of cross-disciplinary projects involving different analysis
+methodologies and constraints. At the same time, it is impossible to
+study sensor networking completely separate from practical
+applications which provide real-world validation and verification of
+the techniques being developed. 
+
+This proposal requests funding for a facility, the SenseTile system,
+to support large-scale experiments with complex multimedia sensing and
+processing at terabyte scales. The proposed equipment consists of a
+rich and reusable sensor platform easily deployable into the built
+environment for easy experimentation and representative of platforms
+suitable for wider uses, together with data storage and processing
+capacity and associated high-speed interconnect. 
+
+The delivery of this facility will allow the research teams to attack
+problems on a scale and in a manner not previously possible. The key
+research challenges this facility will address include:
+ - dealing with uncertainty in sensor systems, 
+ - robust management of large (multi-terabyte) sensing data on
+ heterogeneous platforms, 
+ - interaction and activity recognition, 
+ - sparse signal analysis, and 
+ - coding and securing sensor interactions. 
+
+Underpinning each of these key challenges is a fundamental need for an
+integrated, multi-modal sensor test bed that has two unique
+characteristics. firstly, it must be reconfigurable and be easily
+targeted to collect defined data sets. Secondly—and perhaps most
+importantly—it must be of sufficient size and complexity to ensure
+that the challenges listed above, and the resulting theories and
+techniques, can be evaluated in a scientifically rigorous manner. It
+is our contention that this facility will provide a capability—unique
+in the world in terms of its scale and flexibility—for performing
+in-depth investigation of both the specific and general issues in
+large-scale sensor networking. Furthermore, it will provide
+synergistic benefits in supporting the development of reference data
+sets and services for use by other researchers internationally.
+
+
+- Agency: European Union COST Action
+  Title: Formal Verification of Object-Oriented Software
+
+Software is vital for modern society. The efficient development of
+correct and reliable software is of ever growing importance.
+
+This Action will concentrate on program verification: the construction
+of logical proofs that programs are correct. Logic-based technologies
+for the formal description, construction, analysis, and validation of
+software can be expected to complement and partly replace traditional
+software engineering methods in the future. 
+
+Already, program verification methods have outgrown the area of
+academic case studies, and industry is showing serious interest. The
+logical next goal is the verification of industrial software
+products. Most programming languages used in industrial practice (such
+as Java, C++, and C#) are object-oriented. The Action will therefore
+focus on the verification of programs written in object-oriented
+languages and the particular problems this entails.
+
+The goal of this Action is to co-ordinate the development of
+verification technology, to achieve reach and power needed to assure
+reliability of object-oriented programs on industrial scale. 
+
+
+- Agency: Formal Methods Europe (FME)
+  Title: JML Reloaded
+
+The Java Modeling Language is a specification language for Java
+programs, supporting both a design by contract programming style
+(documenting class and method behavior and data consistency
+requirements with assertions) and more detailed logical modeling of
+system behavior. Many tools, such as the JML Common Tools (including a
+compiler, a runtime assertion checker, a documentation generator, a
+unit test generator, and other tools) and the ESC/Java static checker,
+understand the JML syntax and allow developers to incorporate the use
+of formal methods into their engineering process.
+
+Unfortunately, as the Java programming language has evolved over the
+past several years (most notably with the addition of generic types),
+JML and its supporting tools have struggled to keep up with language
+changes. Most existing JML tools do not work with current Java
+code. Moreover, the JML tools that do work with current code have
+significant performance issues, and do not integrate well with
+development environments such as Eclipse, the industry-leading Open
+Source Java IDE. 
+
+The goal of the proposed pro ject is to help coordinate JML tool
+development eﬀorts among North American and European researchers, to
+modernize the JML tools for use with current (and future) versions of
+Java. This work will help make applied formal methods more attractive
+by making them accessible to thousands of Java programmers worldwide. 
+
+
+- Agency: IRCSET
+  Title: Refinement-centric Reliable Software Development
+  The EBON (Extended Business Object Notation) Tool Suite
+
+Popular high-level "modeling" languages in current use (e.g., UML) are
+not amenable to formal analysis because of a lack of semantics and
+interoperable tool support.  Even so, high-level representations are
+compelling and useful in modern software engineering practise and
+software engineers regularly struggle with using these inadequate
+languages, even for mission critical applications.
+
+BON is a high-level specification language for describing structured
+systems, including programs, web sites, databases, etc. BON, unlike
+some of its more popular counterparts like UML, has a semantics, is
+very easy to learn and write, has a graphical and textual notation,
+and can be used for many different domains.
+
+A BON lexer, parser, and typechecker are now available as a part of
+the BONc Tool Suite, available via KindSoftware.  EBON stands for
+"Extended BON". It is a richer specification language that adds a
+number of new constructs called "semantic properties". 
+
+These properties are domain-specific and have rich but intuitive
+semantics that are directly expressed in software engineering
+artifacts and processes.  Examples of domains currently covered with
+semantic properties include concurrency, ownership, responsibility,
+bug tracking, literate programming, and version control.
+
+The goal of this project is to take the next steps in the development
+of EBON, namely a formal specification of its semantics within a
+logical framework and the evolution of an EBON software architecture.
+
+The semantics will be written in kind theory, a higher-order logic
+developed previously for reasoning about reusable assets.  A formal
+bi-refinement must also be defined between EBON and JML.
+
+The software architecture includes the development of EBON parser,
+typechecker, visualizer, and documentation generator.  The
+aforementioned refinement relation will facilitate code generation
+from specifications and ensuring that high-level specifications remain
+uniformly consistent with respect to a given implementation,
+particularly with respect to rich semantic properties.  The target
+language, as previously mentioned, is JML-annotated Java.  This
+architecture will be integrated into the JML toolsuite and the MOBIUS
+PVE.
+
+
+- Agency: University College Dublin
+  Title: Specification-centric Reflective Unit Testing
+
+Developing reliable, defect-free software systems---especially
+critical complex systems such as those for banking, automotive
+systems, electronic voting, etc.---is extremely difficult. Many tools
+and methods currently exist to assist software engineers in designing,
+implementing, and testing reliable software systems; however, many of
+the most effective such tools and methods, in particular those that
+focus on critical systems engineering, require knowledge of
+mathematical formalisms that are beyond the training of the typical
+software engineer.
+
+This project aims to develop prototype next-generation tools for
+testing and verifying the correctness of software systems that, while
+taking advantage of the power of formal mathematical methods, can also
+be easily used by software engineers who have no formal training in
+these methods; that is, by many thousands of software engineers in
+Ireland and around the world. 
+
+UCD Seed Funding will be used to kick-start collaboration on the
+development of these tools by facilitating collaborative research in
+UCD's labs.  Empirical results about the tools' design and
+effectiveness will then be published at well-respected computer
+science conferences and opportunities for commercialisation will be
+investigated.
+
+
+- Agency: University College Dublin
+  Title: Distributed Collaborative Proving
+
+Description to be dug up and cut-and-pasted in.
+
+
+- Agency: IRCSET
+  Title: Proof-Carrying Code for Extended Static Checking
+
+It is widely acknowledged that there are numerous flaws in modern
+software, especially in relation to security. Therefore, it is
+necessary to bring about a change in the manner in which programmers
+take responsibility for the quality of their code. In order to achieve
+this, the main methodology proposed by computer scientists is the use
+of advanced tools and techniques to create bug-free software. Among
+the concepts advocated is Proof Carrying Code (PCC).
+
+PCC “attaches” a formalised mathematical proof to program code that
+guarantees certain properties about the code (such as security,
+correctness, memory-usage, etc.).  A “certificate” contains this proof
+and other related information. The verification of this certificate is
+used to establish trust with the code consumer.  PCC technology has
+the potential to revolutionise security architectures for mobile code
+and global computing, and is receiving increased attention from
+leading industrial stakeholders in application areas with stringent
+security concerns. While PCC holds the promise of becoming a pivotal
+technology in next-generation security architectures, research has so
+far only considered very simple scenarios.
+
+Our proposed research involves the development of a Proof Generating
+Extended Static Checker and an On-Device Proof Checker, two core
+elements of the PCC infrastructure.
+
+A Proof Generating Extended Static Checker emits a proof for
+statically checked properties at the source code and bytecode level in
+a program.  These proofs are embedded into a certificate for the
+program’s corresponding bytecode.
+
+On-Device Proof Checking represents the consumer side of PCC
+technology. When software is downloaded to a device, the On-Device
+Proof Checker takes the attached certificate and verifies its proof
+against the accompanying bytecode and specification. Any malicious
+modification of the code from the moment of compilation is
+automatically recognised. Viruses and other nefarious code are created
+by making such changes. An important aspect of such a checker is that
+it must run on all devices, even tiny devices such as smart cards or
+button-sized sensors. Developing a proof checker that can operate
+within the memory and CPU usage constraints of such devices is very
+challenging.
+
+
+- Agency: Enterprise Ireland, International Coordination/Travel
+
+ * First Steps Toward Realising the Verified Software Grand Challenge:
+   Coordinating American and European Multi-threaded Java Verification
+   Research and Development 
+
+Many researchers in software verification focus on Java programs
+annotated with the Java Modeling Language (JML). A new major tool
+effort has recently begun, led by Dr. Kiniry, under the auspices of an
+E.U. FP6 grant entitled “MOBIUS,” which aims at providing a prototype
+realisation of Tony Hoare’s “Verifying Compiler Grand Challenge.” The
+intent of this travel program is to coordinate North American and
+European development on this tool and its associated underlying
+theory.

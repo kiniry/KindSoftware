@@ -1,0 +1,98 @@
+<ul>
+  <li class="peopleclass"> <strong>Faculty</strong>
+      <ul>
+<!--         <li><a href="/about/people/sd.html">Simon Dobson</a> </li> -->
+        <li><a href="/about/people/jrk.html">Joseph Kiniry</a></li>
+<!--         <li><a href="/about/people/pn.html">Paddy Nixon</a> </li> -->
+<!--         <li><a href="/about/people/aq.html"> Aaron Quigley </a> </li> -->
+      </ul>
+  </li>
+  <li class="peopleclass"> <strong>Postdoctoral Researchers</strong>
+      <ul>
+        <li>Julien Charles</li>
+        <li><a href="/about/people/vdb.html">Vieri del Bianco</a></li>
+        <li><a href="/about/people/vh.html">Viliam Holub</a></li>
+      </ul>
+  </li>
+  <li class="peopleclass"> <strong>PhD Students</strong>
+      <ul>
+        <li><a href="/about/people/fdf.html">Fintan Fairmichael</a></li>
+        <li><a href="/about/people/rg.html">Radu Grigore</a></li>
+        <li><a href="/about/people/mj.html">Mikol&aacute;&scaron; Janota</a></li>
+        <li><a href="/about/people/dc.html">Dermot Cochran</a></li>
+      </ul>
+  </li>
+  <li class="peopleclass"> <strong>Current MSc Students</strong>
+      <ul>
+<!--       <li>Damian Chojna</li> -->
+      <li><!-- <a href="/about/people/.html"> -->Alan Hicks<!-- </a> --></li>
+      <li><!-- <a href="/about/people/.html"> -->Iain Hull<!-- </a> --></li>
+      <li><!-- <a href="/about/people/.html"> -->Ralph Hyland<!-- </a> --></li>
+      <li><!-- <a href="/about/people/.html"> -->Aidan Morrissey<!-- </a> --></li>
+      <li><!-- <a href="/about/people/.html"> -->Ciaran Palmer<!-- </a> --></li>
+      <li><!-- <a href="/about/people/.html"> -->Ralph Skinner<!-- </a> --></li>
+      <li><!-- <a href="/about/people/.html"> -->Murat Torlakcik<!-- </a> --></li>
+      </ul>
+  </li>
+  <li class="peopleclass"> <strong>Interns</strong>
+      <ul>
+      <li><!-- <a href="/about/people/as.html"> -->Anara Sandygulova<!-- </a> --></li>
+      </ul>
+  </li>
+  <li class="peopleclass"> <strong>Researchers</strong>
+      <ul>
+        <li><a href="/about/people/ds.html">Dragan Sto&#353;i&#263;</a></li>
+      </ul>
+  </li>
+  <li class="peopleclass"> <strong>Past Students</strong>
+      <ul>
+        <li><a href="/about/people/mb.html">Maciej Baranski (intern)</a></li>
+        <li>Alan Barrett (MSc)</li>
+        <li>Eliott Bartley (BSc)</li>
+        <li><a href="/about/people/dc.html">Dermot Cochran (MSc)</a></li>
+        <li>Eva Darulova (BSc)</li>
+        <li><a href="/about/people/bd.html">Barry Denby (BSc)</a></li>
+        <li>Jakub Dostal (intern)</li>
+        <li><a href="/about/people/rf.html">Robert Finlay (BSc)</a></li>
+        <li><a href="/about/people/cjg.html">Conor Gallagher (BSc)</a></li>
+        <li><a href="/about/people/rdg.html">Robin Green (MSc)</a></li>
+        <li><a href="/about/people/ch.html">Cl&eacute;ment Hurlin (intern)</a></li>
+        <li>Daragh Hurley (BSc)</li>
+        <li><a href="/about/people/rm.html">Rory McCann (BSc)</a></li>
+        <li><a href="/about/people/aem.html">Alan Morkan (BSc)</a></li>
+        <li><a href="/about/people/no.html">Niall O'Higgens (BSc)</a></li>
+        <li>Patrick Tierney (BSc)</li>
+      </ul>
+  </li>
+  <li class="peopleclass"> <strong>Collaborators and Coauthors</strong>
+      <ul>
+        <li><a href="http://www.uni.lu/recherche/fstc/computer_science_and_communications_research_unit/members/baptiste_alcade">Baptiste Alcalde</a></li>
+        <li><a href="http://www-sop.inria.fr/everest/personnel/Lilian.Burdy/">Lilian Burdy</a></li>
+        <li><a href="http://www.cs.concordia.ca/~chalin/">Patrice Chalin</a></li>
+        <li><a href="http://www.infospheres.caltech.edu/people/mani.html">Mani Chandy</a></li>
+        <li><a href="http://www.cs.utep.edu/cheon/">Yoonsik Cheon</a></li>
+        <li><a href="/about/people/drc.html">David Cok</a></li>
+        <li><a href="http://pag.csail.mit.edu/~mernst/">Michael Ernst</a></li>
+        <li>Roman Ginis</li>
+        <li><a href="http://www.cs.ru.nl/E.Hubbers/">Engelbert Hubbers</a></li>
+        <li><a href="http://www.cs.ru.nl/~bart/">Bart Jacobs</a></li>
+        <li><a href="http://www.eecs.ucf.edu/~leavens/homepage.html">Gary Leavens</a></li>
+        <li><a href="http://research.microsoft.com/~leino/">Rustan Leino</a></li>
+        <li><a href="http://www.cs.ru.nl/~erikpoll/">Erik Poll</a></li>
+        <li><a href="http://www.cs.ru.nl/~martijno/">Martijn Oostdijk</a></li>
+        <li><a href="http://www.csl.sri.com/users/owre/">Sam Owre</a></li>
+        <li>Adam Rifkin</li>
+        <li><a href="http://www.cse.ohio-state.edu/~paolo/">Paul Sivilotti</a></li>
+        <li><a href="http://www.cs.uiowa.edu/~tinelli/">Cesare Tinelli</a></li>
+        <li><a href="http://www.cs.vu.nl/~warnier/">Martijn Warnier</a></li>
+        <li><a href="/about/people/dmz.html">Daniel Zimmerman</a></li>
+        <li><a href="/about/people/mjm.html">Michal Moskal</a></li>
+      </ul>
+  </li>
+  <li class="peopleclass"> <strong>Contributors</strong>
+      <ul>
+        <li> <a href="http://homepage.cs.uri.edu/faculty/hamel/">Lutz Hamel</a></li>
+        <li> <a href="/about/people/caw.html">Chara Williams</a></li>
+      </ul>
+  </li>
+</ul>

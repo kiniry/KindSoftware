@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/kiniry
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://kindsoftware.com
+  * I am kiniry (https://keybase.io/kiniry) on keybase.
+  * I have a public key with fingerprint BF72 0B8A CF5E 28EE EAEE  24A2 0BA1 3516 4894 3A4D
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "bf720b8acf5e28eeeaee24a20ba1351648943a4d",
+            "host": "keybase.io",
+            "key_id": "0BA1351648943A4D",
+            "uid": "21dec05e4cd56de6e804ab251d7b6c00",
+            "username": "kiniry"
+        },
+        "service": {
+            "hostname": "kindsoftware.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1398206829,
+    "expire_in": 157680000,
+    "prev": "605c61282451daaf2fdb2be6f915651ea6a5877e3154da8f5b7e11d030f95ee9",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owFFUWtIFFEU3s0ytZItYTfKXreoiFVnZmdmZ9cS1xdRaaCiPwymOzN3did1Zpt9
+mMlCotELatMKZLUQUShFCsI/Blo/QgrEQCEtJGOtSKnMKAqj7kjh/XO43+ucw4lu
+SDClmNd1MtbDN9zF5ufDi4KprGKhtgEImlQP3A2gGi0XWVG9SPfrihoEbiDITooQ
+OCjKDKI4hBBEiKIhxiDpYEiW5ly0A9ISsAOfFjAcOEaAAZSpaBjDH16RMErkeVb0
+HroAc6FlgiIlJBIMokWJYSXEIo6goUAxpOQUWJEgDGEA6SqsRUa4oip6PYjYAcbC
+ioiMiY3GK7wU0ORgHdRRpqjVYrdf14KaqNVg1hcM+t2GOVjvN9R1SOD/5fACduLN
+sSGM9ICiqcBNYqUYVIxg0uHiKILlKJcdoDN+RUe8YigYJ8sR+BltUBhHsgQjsiTF
+UTTeAEKZkiWBEhAru0iGZUgEWchwTidykAwtQU5mBCciSYlwELKLQcgFjM1Oqxpw
+03hM6MWRAcWrwmBIRyByyZy+2mROMSWuWWXczpSSbPl/UdvutX88Ez3b3s5Onbf1
+L6XlT41v2lt+8WdXxkh5aUdfb1w6lD1/NfmEN8k2lcZVtc+WPy72TLZUxpJyb87d
+SnigHBMqQk9HK4tGk+bPxVvbN1tP7rDetc12fy6dD5Vo/OtfMe7CzExd09iBKJ9V
+eq+jJpz47IM1NWJpLiguSucs1bwWud1/7cfHgt/ZnY3Si6+xd+1Nvd+mN5bknOrL
+6rg+tGhnivb1VN3P3fKqa9C3qA7yVU+WRsLx7UKWozGmgtT83kd3Jte3vM9rbmjz
+mQoXJnZeGT56duhyYcmbgbK2qCXz4EKU7M4YP7KHTux+GH+5f9dYa4596/cv08fn
+msmBT5a/
+=dJmb
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kiniry
+
+==================================================================

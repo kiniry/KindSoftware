@@ -1,0 +1,8 @@
+Short:    An AmigaDE/Elate port of the GNU SmartEiffel compiler.
+Type:     dev/lang
+Author:   Joseph Kiniry (kiniry@acm.org) and Rudi Chiarito (rudi@amiga.com)
+Uploader: kiniry@acm.org
+Requires: util/misc/cpt
+Version:  1.0
+Homepage: smarteiffel.loria.fr
+

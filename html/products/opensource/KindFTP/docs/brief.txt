@@ -1,0 +1,18 @@
+        KindFTP: A Complete Java Implementation of the FTP Protocol
+
+                           Joseph R. Kiniry
+                          KindSoftware, LLC
+
+Abstract
+
+KindFTP is meant to be a complete implementation of the FTP protocol, as
+specified in RFC959.  We provide a component that directly exposes the
+low-level protocol in this first (alpha) version of the software.  We
+support the core protocol that is available on most Open Source FTP
+servers.  We have untested support for ACCT, SMNT, REIN, TYPE, STRU, MODE,
+ALLO, and SITE command.  Commands STOU and REST have no implementation at
+this time. Later version will complete these partial implemetations (once
+we have a server to test them with) and will provide higher-level
+interfaces.  We use iContract to provide a full formal specification (a la
+Design by Contract) of all software, jUnit for all unit testing, and
+Ant as a build tool.

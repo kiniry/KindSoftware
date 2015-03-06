@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware</title>
+
+    <link href="/stylesheets/kind.css" type="text/css" rel="stylesheet"/>
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2005 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectiontwo">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/bee.jpg" border="0" width="180" height="100" alt="Open Source Software" name="bee" />
+
+<!-- Sub menu within sidebar -->
+<!--#include virtual="/menus/OS/KindFTP/selected.xml" -->
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+<h2>TODO List for KindFTP</h2>
+
+<ul>
+  <li> Document lack of cleanup of temporary files due to
+      getDataFile(). </li>
+
+  <li> Rename all temporary variables named <code>assert</code>
+      so as not to conflict with the new JDK 1.4 keyword. </li>
+      
+  <li> Make all unit tests completely independent of local or
+      remote file and directory structure; everything should be
+      completely self-contained and orthogonal. </li>
+      
+  <li> Look into eliminating <code>CommandReader</code> and use
+      <code>mark()</code> and <code>reset()</code> instead. </li>
+
+  <li> Add configuration variables for various pre-contants
+      (wait times, etc.), or at least make them real static final
+      attributes. </li>
+
+  <li> Refactor <code>FTPProxy</code>. </li>
+
+  <li> Add statistics gathering for usage patterns, throughput,
+      etc. </li>
+
+  <li> Write unit tests for RETR serialized object. </li>
+
+  <li> Design a higher-level interface to the proxy, a la
+      ncftp's basic functionality. </li>
+
+  <li> Write system design overview for the system. </li>
+
+  <li> Write a BON design for the system. </li>
+
+  <li> Provide a JavaBean interface to the component. </li>
+</ul>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2005 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="todo.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

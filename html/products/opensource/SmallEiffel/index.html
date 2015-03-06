@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2005 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectiontwoe">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<!--#include virtual="/xml/logo_header.xml" -->
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<!--#include virtual="/xml/top_level_menu.xml" -->
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/bee.jpg" border="0" width="180" height="100" alt="Open Source Software" name="bee" />
+
+<!-- Sub menu within sidebar -->
+<!--#include virtual="/menus/OS/GNU Eiffel/selected.xml" -->
+<!-- End submenus -->
+
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Main content on left side -->
+    <div id="maincontent">
+    <h2>SmallEiffel and SmartEiffel Ports to AmigaDE/Elate</h2>
+    
+    <p> We've ported the <a
+    href="http://smarteiffel.loria.fr/">GNU SmartEiffel</a>
+    compiler to Tao Group's
+    <a href="http://tao-group.com/">Elate</a> operating
+    environment.  If you haven't yet heard about GNU Eiffel,
+    the Elate operating environment, you
+    should really look into each. </p>
+
+    <p> <a href="http://smarteiffel.loria.fr/">SmartEiffel</a>
+    used to be called "SmallEiffel".  Contrary to its name, is
+    a full fledged, Open Source, GPL licensed implementation
+    of the Eiffel programming language.  The compiler
+    generates high quality, high performance C and Java
+    bytecode.  The package includes several reusable libraries
+    (called clusters in the Eiffel vernacular), plenty of
+    documentation, examples, and more. </p>
+
+    <p> <a href="http://withintent.biz/">Elate/intent</a>
+    is a virtual operating system developed by 
+    <a href="http://www.tao-group.com/">Tao Group, UK</a>.  It is one
+    of the most innovative pieces of software we have seen in
+    years.  Elate is a high quality, high performance, robust,
+    virtual operating system that runs hosted on a standard
+    operating system.  We currently run Elate hosted on Linux and
+    Windows. </p>
+
+    <p> The Elate system has a host of lovely features including:
+    </p> 
+    <ul>
+      <li> A preemptive multitasking and multiprocessing kernel
+          with a user-configurable (real-time or not)
+          scheduler. </li>
+      <li> A high performance asynchronous message passing-based
+          IPC based on the mailbox metaphor. </li>
+      <li> A garbage collector-based system memory
+          architecture. </li>
+      <li> An object-based clean-room designed assembly language
+          called VP (for Virtual Processor) that is the nicest assembly
+          we have ever used. </li>
+      <li> An innovative "tool"-based architecture for software
+          components.  Tools are chunks of (re)usable code, thus a
+          library is no longer a set of files or functions, it is a set
+          of tools.  Tools are the fundamental unit of compilation,
+          translation, analysis, garbage collection, and more.  This
+          means that when you load code written in, say, C, C++, or
+          Java, <span class="italic">only those portions of the code
+          that are necessary are loaded into memory and translated into
+          native code</span>.  In other words, why load the full text
+          segment of a C program or a C++ class, or why load a full
+          classfile for a Java class, when all you need on average is a
+          fraction of it?
+      </li>
+      <li> A data-flow analyzing, load-time, caching VP-to-native
+          code compiler that generates excellent native code.  The
+          Elate translation system supports nearly thirty (yes, 30)
+          chipsets including various processors in the x86 line, MIPS,
+          various embedded processors like the SH-4, Thumb, and Arm
+          line, PowerPC, and more. </li>
+      <li> And a host of the standard little things you would
+          expect: a reasonable (but non-standard) command shell, a
+          GUI/multimedia toolsuite (called "intent"), a GCC port (full
+          C and C++), a <em>very</em> high performance Personal Java
+          implementation, signals, interrupts, a file system,
+          networking libraries, etc. </li>
+    </ul>
+
+    <p> GNU SmallEiffel 0.75 and SmartEiffel 1.0 for Elate 1.3 are
+    available here. </p>
+
+    <p class="bold"><a href="archives/">Download SmallEiffel 0.75 or SmartEiffel 1.0 for Elate 1.3</a>.</p>
+
+    <p> Development of this product is hosted at <a
+    href="https://github.com/kiniry/GNUEiffel">GitHub</a>. </p>
+    
+    </div>
+    </div>
+    <!-- End main content -->
+
+    <!-- Footer -->
+    <div id="footer"><p>Copyright &copy; 1993&#8211;2005 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="index.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+    <a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://secure.ucd.ie/stylesheets/kind.css">CSS</a>.</p></div>
+    </div>
+    <!-- End footer -->
+
+    </div>
+    </div>
+    </body>
+    </html>

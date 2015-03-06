@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Introduction</TITLE>
+<META NAME="description" CONTENT="Introduction">
+<META NAME="keywords" CONTENT="idebug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="idebug.css">
+
+<LINK REL="next" HREF="node2.html">
+<LINK REL="previous" HREF="idebug.html">
+<LINK REL="up" HREF="idebug.html">
+<LINK REL="next" HREF="node2.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html44"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html42"
+  HREF="idebug.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html36"
+  HREF="idebug.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html45"
+  HREF="node2.html">Requirements</A>
+<B> Up:</B> <A NAME="tex2html43"
+  HREF="idebug.html">IDebug: An Advanced Debugging</A>
+<B> Previous:</B> <A NAME="tex2html37"
+  HREF="idebug.html">IDebug: An Advanced Debugging</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html46"
+  HREF="#SECTION00011000000000000000">Object-Oriented Debugging</A>
+<LI><A NAME="tex2html47"
+  HREF="#SECTION00012000000000000000">Debugging in Java</A>
+<LI><A NAME="tex2html48"
+  HREF="#SECTION00013000000000000000">Debugging Frameworks</A>
+<LI><A NAME="tex2html49"
+  HREF="#SECTION00014000000000000000">IDebug: A Debugging Framework</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00010000000000000000">
+Introduction</A>
+</H1>
+
+<P>
+Programming technologies have evolved greatly over the years. New
+programming models have emerged, new languages have gained popularity,
+new tools have been adopted, and yet several core debugging constructs
+have not changed.  We believe that the two primary constructs for
+general debugging are the <I>execution trace</I> and the
+<I>assertion</I>.
+
+<P>
+
+<H2><A NAME="SECTION00011000000000000000">
+Object-Oriented Debugging</A>
+</H2>
+
+<P>
+Debugging object-oriented programs is not the same as debugging
+procedural ones.  Because most object models enforce modularity and
+encapsulation, one must test both the implementation and the interface
+of a class.
+
+<P>
+A specification of an interface is called a
+<I>Contract</I>&nbsp;[<A
+ HREF="node6.html#HamiltonPowellMitchell93">1</A>,<A
+ HREF="node6.html#HelmHollandGangopadhyay90">2</A>,<A
+ HREF="node6.html#Holland92">3</A>,<A
+ HREF="node6.html#Meyer88">4</A>].
+A class's contract specifies the externally visible behavior that a
+class guarantees.
+
+<P>
+Contracts are typically specified via three constructs:
+<I>preconditions</I>, <I>postconditions</I>, and
+<I>invariants</I>.  Using these three constructs, the safety
+properties of a class can be completely specified.
+
+<P>
+
+<H2><A NAME="SECTION00012000000000000000">
+Debugging in Java</A>
+</H2>
+
+<P>
+Surprisingly, given its popularity, the Java programming language
+provides very few built-in constructs for debugging classes.
+
+<P>
+Typically, a Java programmer relies upon language features and
+development tools for debugging.  Java provides array bounds checking,
+static type checking, variable initialization testing, and exceptions
+to assist in code debugging.  While programming environments provide
+sophisticated source-code debuggers, most developers seem fixated on
+using primitive <TT>println</TT>'s to debug their code.
+
+<P>
+Java is missing several traditional core debugging constructs, the
+most critical of which is <I>assertions</I>.  Assertions are program
+statements of the form ``at this point in execution the following
+<I>must</I> be true''.  They are used to specify predicates that must
+remain inviolate for a program to exhibit correct behavior.
+Typically, if an assertion is violated, a program is aborted. In
+object-oriented systems we often have options other than halting the
+program execution (e.g. throwing an exception).
+
+<P>
+
+<H2><A NAME="SECTION00013000000000000000">
+Debugging Frameworks</A>
+</H2>
+
+<P>
+A <I>framework</I> is a collection of classes that provides a unified
+model and interface to a specific piece of functionality.  A framework
+in Java is typically implemented as a collection of classes organized
+into a <I>package</I>.
+
+<P>
+
+<H2><A NAME="SECTION00014000000000000000">
+IDebug: A Debugging Framework</A>
+</H2>
+
+<P>
+The IDebug debugging framework is implemented as a set of Java Beans (Java
+components) collected into the package <TT>IDebug</TT>.  These classes can
+be used either (a) as ``normal'' classes with standard manual debugging
+techniques, or (b) as components within visual Java Bean programming tools.
+
+<P>
+This package provides many standard core debugging and specification
+constructs, such as the previously discussed assertions, debug levels
+and categories, call stack, and specialized exceptions.  Debug levels
+permit a developer to assign a ``depth'' to debug statements.  This
+creates a lattice of information that can be pruned at runtime
+according to the demands of the current execution.  Call stack
+introspection is provided as part of the Java language specification.
+The IDebug framework uses the call stack to support a runtime
+user-configurable filter for debug messages based upon the current
+execution context of a thread.  Finally, a set of specialized
+exceptions are provided for fine-tuning the debug process.
+
+<P>
+Additionally, the framework supports extensions for debugging
+distributed systems.  One problem typical of debugging distributed
+systems is a loss of context when communication between two non-local
+entities takes place.  E.g. When object <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$A$"> invokes a method <IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$m$"> on
+object <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$B$">, the thread within <IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$m$"> does not have access to the call
+stack from the calling thread in <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$A$">.  Thus, the IDebug package
+supports what we call <I>call stack currying</I>.  Information such as
+source object identity, calling thread call stack, and more is
+available to the debugging framework on both sides of a communication.
+Such information can be curried across arbitrary communication mediums
+(sockets, RMI, etc.).
+
+<P>
+The IDebug package is also being extended to support the debugging of
+mobile agent systems.  Mobile agent architectures can support
+disconnected computing.  For example, an object <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$O$"> can migrate from
+machine <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$A$"> to machine <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$B$">, which might then becomes disconnected from
+the network (i.e.  absolutely no communication can take place between
+<IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$B$"> and <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$A$">).  Since <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$B$"> cannot communicate with <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$A$">, and printing
+debugging information on <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$B$">'s display might not be useful or
+possible, <IMG
+ WIDTH="17" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$B$"> must log debugging information for later inspection.  To
+support this functionality, the IDebug package will provide
+serializable debug logs.  These logs can be carried around by a mobile
+object and inspected at a later time by the object's owner or
+developer.
+
+<P>
+The IDebug package is very configurable.  Debugging functionality can
+be fine-tuned on a per-thread basis.  Each thread can have its own
+debugging context.  The context specifies the classes of interest to
+that particular thread.  I.e. If a thread <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$T$"> specifies that it is
+interested in a class <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$C$"> but not a second class <IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$D$">, then debugging
+statements in <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$C$"> will be considered when <IMG
+ WIDTH="16" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$T$"> is inside of <IMG
+ WIDTH="17" HEIGHT="15" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.png"
+ ALT="$C$">, but
+debugging statements in <IMG
+ WIDTH="18" HEIGHT="14" ALIGN="BOTTOM" BORDER="0"
+ SRC="img7.png"
+ ALT="$D$"> will be ignored at all times.  These
+debugging contexts can be stored to and recovered from persistent
+storage.  Thus, ``named'' special-purpose contexts can be created for
+reuse across a development team.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html44"
+  HREF="node2.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html42"
+  HREF="idebug.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html36"
+  HREF="idebug.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html45"
+  HREF="node2.html">Requirements</A>
+<B> Up:</B> <A NAME="tex2html43"
+  HREF="idebug.html">IDebug: An Advanced Debugging</A>
+<B> Previous:</B> <A NAME="tex2html37"
+  HREF="idebug.html">IDebug: An Advanced Debugging</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+kiniry@acm.org
+</ADDRESS>
+</BODY>
+</HTML>

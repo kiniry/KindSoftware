@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Requirements</TITLE>
+<META NAME="description" CONTENT="Requirements">
+<META NAME="keywords" CONTENT="idebug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="idebug.css">
+
+<LINK REL="next" HREF="node3.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="idebug.html">
+<LINK REL="next" HREF="node3.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html58"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html56"
+  HREF="idebug.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html50"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html59"
+  HREF="node3.html">Design</A>
+<B> Up:</B> <A NAME="tex2html57"
+  HREF="idebug.html">IDebug: An Advanced Debugging</A>
+<B> Previous:</B> <A NAME="tex2html51"
+  HREF="node1.html">Introduction</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html60"
+  HREF="#SECTION00021000000000000000">Project Dictionaries</A>
+<LI><A NAME="tex2html61"
+  HREF="#SECTION00022000000000000000">Core Requirements</A>
+<LI><A NAME="tex2html62"
+  HREF="#SECTION00023000000000000000">Application Requirements</A>
+<LI><A NAME="tex2html63"
+  HREF="#SECTION00024000000000000000">Innovative Requirements</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00020000000000000000">
+Requirements</A>
+</H1>
+
+<P>
+In this section we will briefly present our project analysis including
+our project concept dictionary, a review of our requirements for the
+debugging package, and our goals.
+
+<P>
+
+<H2><A NAME="SECTION00021000000000000000">
+Project Dictionaries</A>
+</H2>
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="63"></A>
+<TABLE>
+<CAPTION><STRONG>Table 1:</STRONG>
+Project Dictionary</CAPTION>
+<TR><TD>  <DIV ALIGN="CENTER">
+<TABLE CELLPADDING=3 BORDER="1" ALIGN="CENTER">
+<TR><TD ALIGN="CENTER" COLSPAN=2>Project Dictionary</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Assertion</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288>An <I>assertion</I> is a <I>predicate</I> which states a logical
+        sentence which evaluates to <I>true</I> or <I>false</I>.  The
+        assertion is typically embedded in program code. An error is
+        indicated if, during program execution, the assertion evaluates
+        to false. There are three main types of assertions (see
+        below): <I>preconditions</I>, <I>postconditions</I>, and
+        <I>invariants</I>.</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Debug Context</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288>A <I>debug context</I> is a debugging frame of reference.
+        More specifically, each thread of control within a
+        component can have an independent debug context.  This
+        context describes what types of debugging information are
+        relevant to that specific thread.</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Debug Semantics</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288><I>Debug semantics</I> are the runtime behavior of the
+        debug package, as exhibited by its reactions to
+        exceptions, the language and text of its output
+        messages, etc.</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Invariant</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288>A condition that must be true at all stable points in
+        program execution. There are several types of invariants.
+        A <I>class invariant</I> is an assertion describing a
+        property which holds for all instances of a class and,
+        potentially, for all static calls to the class. A
+        <I>loop invariant</I> for a given loop is an assertion that
+        is true at the beginning of the loop and after each
+        execution of the loop body.</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Output Interface</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288>The debug package's <I>output interface</I> is any
+        legitimate output medium.  Example output interfaces
+        include the system console, a shell window, a GUI, etc.</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Postcondition</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288>A condition that must be true at the end of a section
+        of code.</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Precondition</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288>A condition that must be true at the beginning of a
+        section of code.</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Predicate</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288>Formally, a <I>predicate</I> is something that is
+        affirmed or denied of the subject in a proposition in
+        logic. In other words, it is a logical sentence that
+        evaluates to a boolean within specific contexts.</TD>
+</TR>
+<TR><TH ALIGN="LEFT"><B>Variant</B></TH>
+<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=288>A <I>variant</I> is a predicate that describes how
+        state changes. A <I>loop variant</I> is an assertion
+        that describes how the data in the loop condition is
+        changed by the loop.  Loop variants are used to
+        check forward progress in the execution of loops (i.e.
+        avoid infinite loops and other incorrect loop behavior).</TD>
+</TR>
+</TABLE>
+    
+    <A NAME="tab:dictionary"></A>  
+</DIV></TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+
+<P>
+At the beginning of the project analysis phase, a dictionary of
+concepts was developed so that all designers, developers, and users
+would have a clear, common language.  The dictionary of terms is
+included in Table&nbsp;<A HREF="node2.html#tab:dictionary">1</A> as well as in the design
+diagrams directory of the framework deliverable.
+
+<P>
+Next, we will consider the core, application, and innovative
+requirements we agreed upon before designing the IDebug framework.
+
+<P>
+
+<H2><A NAME="SECTION00022000000000000000"></A>
+<A NAME="sec:core"></A>
+<BR>
+Core Requirements
+</H2>
+
+<P>
+We require that the IDebug framework support the following
+requirements.  IDebug must, <I>at the minimum</I>:
+
+<P>
+
+<OL>
+<LI><I>Provide an assertion mechanism.</I>  Assertions are the core
+  construct of any debugging system.  Assertions can be intelligently inserted
+  in program code and, if an assertion is violated, an error message is logged
+  and a <TT>AssertionFailedException</TT> is thrown and the thread, and
+  possibly the program halt.
+</LI>
+<LI><I>Support the output of debugging messages.</I>  Printing
+  miscellaneous debugging messages, perhaps outside the context of the
+  primary interface of a component, is essential in a good debugging
+  suite.
+</LI>
+<LI><I>Support multiple debugging levels.</I> Different types of
+  errors, messages, and situations require different levels of
+  response.  An adequate debugging framework should not only support a
+  set of debugging levels, but the set should be ordered so that user
+  or developer-tunable filtering of debug output can take
+  place<A NAME="tex2html3"
+  HREF="footnode.html#foot76"><SUP>2</SUP></A>.
+</LI>
+<LI><I>Complement the standard Java exception mechanism.</I> Since
+  this is a debugging framework built for the Java language, it should
+  work with, not against, the built in exception mechanisms.  In
+  particular, prudent use of exception types (<TT>Runtime</TT> verses
+  <TT>Throwable</TT>) is necessary so that the framework is not overly
+  intrusive to the developer<A NAME="tex2html4"
+  HREF="footnode.html#foot186"><SUP>3</SUP></A>.
+</LI>
+<LI><I>Work with all development environments.</I>  IDebug must work
+  with all development environments, from the most flashy IDE to the
+  lowly CLI runtime.  This means that IDebug must be implemented as
+  ``100% Pure Java''; no proprietary extensions or native code may
+  be used.
+</LI>
+</OL>
+
+<P>
+
+<H2><A NAME="SECTION00023000000000000000">
+Application Requirements</A>
+</H2>
+
+<P>
+Because we build a wide array of Java applications and components, we
+believe that IDebug should support debugging all types of Java
+programs.  This means that the framework must provide debug
+functionality that complements the following application types.  Each
+type of application listed below is followed by a non-unique
+implication of that particular application assumption.
+
+<OL>
+<LI><I>Console-based applications.</I> Sometimes we will want to
+  send messages to an output stream different from C's <SMALL>STDOUT</SMALL>
+  or <SMALL>STDERR</SMALL>.
+</LI>
+<LI><I>Graphical user interface applications.</I> Occasionally, one
+  wants to send debug messages to independent debugging windows or
+  message sub-frames within a large application.
+</LI>
+<LI><I>Console-less applications.</I> If there is no output channel,
+  logging debug messages for later retrieval is an excellent course of
+  action. 
+</LI>
+<LI><I>Independent components (e.g. beans, servlets, doclets,
+    etc.).</I> Independent components should be able to maintain
+  independent debugging semantics and contexts.  Conversely, sometimes
+  it is useful to have a compositional application share a debug
+  context among its components.
+</LI>
+<LI><I>Mobile agent/object applications.</I> If an application has
+  mobile sub-components, their debug contexts need to be mobile as
+  well, and debugging message output and/or storage should be
+  location-independent and/or location-aware.
+</LI>
+<LI><I>Distributed applications.</I> Distributed applications mean
+  (at least) distributed control, distributed debugging context, and
+  distributed debug messaging.
+</LI>
+</OL>
+
+<P>
+If a debug package were to support all of the above application types,
+we would consider it extremely powerful due to its flexibility.
+
+<P>
+
+<H2><A NAME="SECTION00024000000000000000"></A>
+<A NAME="sec:innovation"></A>
+<BR>
+Innovative Requirements
+</H2>
+
+<P>
+Finally, we wish to support a set of innovative debugging
+capabilities.  While most of these goals are independent of the target
+language, they are facilitated by many of Java's more advanced
+features.  The list of innovative requirements includes:
+
+<OL>
+<LI><I>Support categorized debugging.</I> Debugging messages,
+  errors, warnings, etc. should not only have a value (the debug
+  level), but they should have a debug category (a classification).
+</LI>
+<LI><I>Support per-class debugging.</I> A developer should be able
+  to selectively turn debugging on or off at a per-class level.
+</LI>
+<LI><I>Have a configurable runtime.</I>  We should not force
+  developers to adopt our debugging semantics.  New semantics (debug
+  ranges, base categories, etc.) should be configurable at runtime.
+</LI>
+<LI><I>Support multiple output interfaces.</I> All debugging
+  messages need not be sent to the same output channel.  E.g. Consider
+  messages generated by UNIX's <TT>syslog</TT> facility.  Some
+  messages are sent to the console, some are logged in a file, and
+  some are sent directly to the system administrator via email.
+</LI>
+<LI><I>Support per-thread debugging.</I> Each thread within a
+  runtime should be able to construct its own debugging context.  More
+  precisely, most of the above configurable options (debugging
+  categories, classes, semantics, output interface, and level) should
+  be configurable on a per-thread basis.  Additionally, these options
+  should be changeable at runtime.
+</LI>
+<LI><I>Support persistent debug contexts.</I> Once a debugging
+  context is created, it should be possible to send it to persistent
+  storage for later access.  This way, debugging contexts can not only
+  be shared across sets of components, but they can be shared across
+  groups of developers.
+</LI>
+</OL>
+
+<P>
+If a debug framework were to support all of the above requirements, we
+would simply be amazed<A NAME="tex2html5"
+  HREF="footnode.html#foot106"><SUP>4</SUP></A>.
+
+<P>
+Now that we have a common vocabulary and understand the problem domain
+and the design goals, we'll consider a design for the debugging
+framework.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html58"
+  HREF="node3.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html56"
+  HREF="idebug.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html50"
+  HREF="node1.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html59"
+  HREF="node3.html">Design</A>
+<B> Up:</B> <A NAME="tex2html57"
+  HREF="idebug.html">IDebug: An Advanced Debugging</A>
+<B> Previous:</B> <A NAME="tex2html51"
+  HREF="node1.html">Introduction</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+kiniry@acm.org
+</ADDRESS>
+</BODY>
+</HTML>

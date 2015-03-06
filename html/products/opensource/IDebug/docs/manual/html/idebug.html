@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>IDebug:
+An Advanced Debugging Framework for Java1</TITLE>
+<META NAME="description" CONTENT="IDebug:
+An Advanced Debugging Framework for Java1">
+<META NAME="keywords" CONTENT="idebug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="idebug.css">
+
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html10"
+  HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up_g.png"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev_g.png">   
+<BR>
+<B> Next:</B> <A NAME="tex2html11"
+  HREF="node1.html">Introduction</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<P>
+<H1 ALIGN="CENTER">IDebug:
+<BR>
+An Advanced Debugging Framework for Java<A NAME="tex2html1"
+  HREF="footnode.html#foot4"><SUP>1</SUP></A></H1>
+<P ALIGN="CENTER"><STRONG>Joseph R. Kiniry
+<BR>
+Department of Computer Science,
+<BR>
+California Institute of Technology,
+<BR>
+Mailstop 256-80,
+<BR>
+Pasadena, CA 91125</STRONG></P>
+<P ALIGN="CENTER"><STRONG>September, 1998</STRONG></P>
+
+<P>
+
+<H3>Abstract:</H3>
+<DIV>
+
+<P>
+The IDebug debugging framework is an advanced debugging framework for
+  Java.  This framework provides the standard core debugging and
+  specification constructs such as assertions, debug levels and categories,
+  stack traces, and specialized exceptions.  Debugging functionality can be
+  fine-tuned to a per-thread and/or a per-class basis, debugging contexts
+  can be stored to and recovered from persistent storage, and several
+  aspects of the debugging run-time are configurable at the meta-level.
+  Additionally, the framework is designed for extensibility.  Planned
+  improvements include support for debugging distributed object systems via
+  currying call stacks across virtual machine contexts and debug
+  information logging with a variety of networking media including unicast,
+  multicast, RMI, distributed events, and JavaSpaces. Finally, we are
+  adding support for debugging mobile agent systems by providing mobile
+  debug logs.
+
+<P>
+</DIV>
+<P>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"></A>
+
+<UL>
+<LI><A NAME="tex2html12"
+  HREF="node1.html">Introduction</A>
+<UL>
+<LI><A NAME="tex2html13"
+  HREF="node1.html#SECTION00011000000000000000">Object-Oriented Debugging</A>
+<LI><A NAME="tex2html14"
+  HREF="node1.html#SECTION00012000000000000000">Debugging in Java</A>
+<LI><A NAME="tex2html15"
+  HREF="node1.html#SECTION00013000000000000000">Debugging Frameworks</A>
+<LI><A NAME="tex2html16"
+  HREF="node1.html#SECTION00014000000000000000">IDebug: A Debugging Framework</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html17"
+  HREF="node2.html">Requirements</A>
+<UL>
+<LI><A NAME="tex2html18"
+  HREF="node2.html#SECTION00021000000000000000">Project Dictionaries</A>
+<LI><A NAME="tex2html19"
+  HREF="node2.html#SECTION00022000000000000000">Core Requirements</A>
+<LI><A NAME="tex2html20"
+  HREF="node2.html#SECTION00023000000000000000">Application Requirements</A>
+<LI><A NAME="tex2html21"
+  HREF="node2.html#SECTION00024000000000000000">Innovative Requirements</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html22"
+  HREF="node3.html">Design</A>
+<UL>
+<LI><A NAME="tex2html23"
+  HREF="node3.html#SECTION00031000000000000000">Context Configurability</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html24"
+  HREF="node4.html">Implementation</A>
+<UL>
+<LI><A NAME="tex2html25"
+  HREF="node4.html#SECTION00041000000000000000">Implementation Size and Performance</A>
+<UL>
+<LI><A NAME="tex2html26"
+  HREF="node4.html#SECTION00041010000000000000">IDebug Performance.</A>
+</UL>
+<LI><A NAME="tex2html27"
+  HREF="node4.html#SECTION00042000000000000000">Framework Extensibility</A>
+<UL>
+<LI><A NAME="tex2html28"
+  HREF="node4.html#SECTION00042010000000000000">IDebug Framework Semantics.</A>
+<LI><A NAME="tex2html29"
+  HREF="node4.html#SECTION00042020000000000000">IDebug Output Interfaces.</A>
+</UL>
+<LI><A NAME="tex2html30"
+  HREF="node4.html#SECTION00043000000000000000">Complementary Tools</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html31"
+  HREF="node5.html">Conclusion</A>
+<UL>
+<LI><A NAME="tex2html32"
+  HREF="node5.html#SECTION00050010000000000000">Future Work.</A>
+<LI><A NAME="tex2html33"
+  HREF="node5.html#SECTION00050020000000000000">Thanks.</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html34"
+  HREF="node6.html">Bibliography</A>
+<LI><A NAME="tex2html35"
+  HREF="node7.html">About this document ...</A>
+</UL>
+<!--End of Table of Child-Links-->
+<BR><HR>
+<ADDRESS>
+kiniry@acm.org
+</ADDRESS>
+</BODY>
+</HTML>

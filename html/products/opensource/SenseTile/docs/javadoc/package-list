@@ -1,0 +1,8 @@
+ie.ucd.sensetile.sensorboard
+ie.ucd.sensetile.sensorboard.driver
+ie.ucd.sensetile.sensorboard.simulator
+ie.ucd.sensetile.sensorboard.simulator.formal
+ie.ucd.sensetile.sensorboard.simulator.formal.channel
+ie.ucd.sensetile.sensorboard.simulator.formal.sensor
+ie.ucd.sensetile.sensorboard.simulator.formal.sensor.type
+ie.ucd.sensetile.util

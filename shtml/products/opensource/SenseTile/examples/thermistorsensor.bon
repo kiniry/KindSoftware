@@ -1,0 +1,107 @@
+effective class THERMISTOR_SENSOR 
+    inherit
+      ISENSOR
+    feature
+      make
+        -> arr: SEQUENCE[INTEGER]
+        require
+          arr /= Void;
+        ensure
+          delta {mod_enabled, mod_set};
+          mod_enabled = true;
+          -- ((\forall  int i,;0 <= i && i < arr.length;arr[i] == a_set[i]));
+          mod_max = 2047;
+          mod_min = -880;
+          a_type = ThermistorSensorType.NTC;
+          a_unit = MeasurementUnit.CELSIUS;
+        end
+      a_set: SEQUENCE[INTEGER]
+        ensure
+          Result /= Void;
+        end
+      a_type: INTEGER
+        ensure
+          Result /= Void;
+        end
+      a_unit: INTEGER
+        ensure
+          Result /= Void;
+        end
+      enabled: BOOLEAN
+        ensure
+          Result /= Void;
+        end
+      getType: INTEGER
+        require
+          isEnabled;
+        ensure
+          Result /= Void;
+          Result = ThermistorSensorType.NTC;
+        end
+      getUnit: INTEGER
+        require
+          isEnabled;
+        ensure
+          Result /= Void;
+          Result = MeasurementUnit.CELSIUS;
+        end
+      MAX: INTEGER
+        ensure
+          Result = 2047;
+          Result /= Void;
+        end
+      MIN: INTEGER
+        ensure
+          Result = "-880";
+          Result /= Void;
+        end
+      mod_set: SEQUENCE[INTEGER]
+        ensure
+          Result /= Void;
+        end
+      value: INTEGER
+        ensure
+          Result /= Void;
+        end
+      measure
+        ensure
+          mod_max = 2047;
+          mod_min = -880;
+          a_type = ThermistorSensorType.NTC;
+          a_unit = MeasurementUnit.CELSIUS;
+        end
+      setEnable
+        -> theFlag: BOOLEAN
+        require
+          theFlag /= Void;
+        ensure
+          mod_max = 2047;
+          mod_min = -880;
+          a_type = ThermistorSensorType.NTC;
+          a_unit = MeasurementUnit.CELSIUS;
+        end
+    feature{NONE}
+      index: INTEGER
+        ensure
+          Result /= Void;
+        end
+      setTemp
+        -> index: INTEGER
+        require
+          index /= Void;
+          index >= 0;
+          index < mod_set.count;
+        ensure
+          delta mod_value;
+          mod_min <= mod_value;
+          mod_value <= mod_max;
+          mod_max = 2047;
+          mod_min = -880;
+          a_type = ThermistorSensorType.NTC;
+          a_unit = MeasurementUnit.CELSIUS;
+        end
+    invariant
+      mod_min <= mod_value;
+      mod_value <= mod_max;
+    end
+

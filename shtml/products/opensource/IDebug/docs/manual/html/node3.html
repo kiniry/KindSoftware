@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Design</TITLE>
+<META NAME="description" CONTENT="Design">
+<META NAME="keywords" CONTENT="idebug">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="idebug.css">
+
+<LINK REL="next" HREF="node4.html">
+<LINK REL="previous" HREF="node2.html">
+<LINK REL="up" HREF="idebug.html">
+<LINK REL="next" HREF="node4.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html72"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html70"
+  HREF="idebug.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html64"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html73"
+  HREF="node4.html">Implementation</A>
+<B> Up:</B> <A NAME="tex2html71"
+  HREF="idebug.html">IDebug: An Advanced Debugging</A>
+<B> Previous:</B> <A NAME="tex2html65"
+  HREF="node2.html">Requirements</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html74"
+  HREF="#SECTION00031000000000000000">Context Configurability</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+
+<H1><A NAME="SECTION00030000000000000000">
+Design</A>
+</H1>
+
+<P>
+We will not discuss the full design of IDebug here due to space
+considerations.  Interested parties should download and consult the
+IDebug package or browse the information online via the IDebug release
+<A NAME="tex2html6"
+  HREF="http://www.infospheres.caltech.edu/releases/">web page</A>.  Only a few
+interesting and/or important design points are discussed below.
+
+<P>
+
+<H2><A NAME="SECTION00031000000000000000">
+Context Configurability</A>
+</H2>
+
+<P>
+As mentioned previously, debugging options should be configurable on a
+per-thread basis.  On further consideration, we decided that two
+configurable settings should not be switchable at runtime: debug
+semantics and output interface.
+
+<P>
+The reason for this decision might not be immediately obvious, but
+consider the following two points:
+
+<UL>
+<LI>Debugging output might be queued due to the temporary
+  unavailability of an output channel or user.
+</LI>
+<LI>Source code that uses a debugging package makes explicit
+  assumptions about the semantics of the package.  Meaning, while
+  debugging semantics might be switchable at runtime by the
+  <I>framework</I>, it is not (usually) switchable at runtime for the
+  application <I>using</I> the framework.
+</LI>
+</UL>
+
+<P>
+Due to these factors, the configuration of debugging semantics and
+output interface is immutable.  Meaning, once these options are set
+for a debugging context, they cannot be changed.
+
+<P>
+Note that a new context can be <I>created</I>.  All the other
+flexibility mentioned in Section&nbsp;<A HREF="node2.html#sec:innovation">2.4</A> is fully
+configurable at runtime on a per-thread basis.
+
+<P>
+Now, we'll briefly discuss the implementation and use of the IDebug
+framework, version 2.0.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html72"
+  HREF="node4.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next" SRC="next.png"></A> 
+<A NAME="tex2html70"
+  HREF="idebug.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up" SRC="up.png"></A> 
+<A NAME="tex2html64"
+  HREF="node2.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous" SRC="prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html73"
+  HREF="node4.html">Implementation</A>
+<B> Up:</B> <A NAME="tex2html71"
+  HREF="idebug.html">IDebug: An Advanced Debugging</A>
+<B> Previous:</B> <A NAME="tex2html65"
+  HREF="node2.html">Requirements</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+kiniry@acm.org
+</ADDRESS>
+</BODY>
+</HTML>

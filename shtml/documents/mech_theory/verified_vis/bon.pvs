@@ -1,0 +1,580 @@
+bon_strings : THEORY
+  BEGIN
+    % (p361)
+    % Reserved words are terminal constructs which are predefined
+    % sequences of letters only, and which cannot be used as identifiers
+    % by the user, since this might lead to language ambiguities. The
+    % reserved words in BON consist of keywords and predefined
+    % names. There are only three of the latter type: Current, Result,
+    % and Void.
+    % (p361, A1)
+    % action         creator         false          not          reused
+    % and            Current         feature        object       root
+    % calls          deferred        for_all        object_group scenario
+    % class          delta           incoming       object_stack scenario_chart
+    % class_chart    description     indexing       old          static_diagram
+    % client         dictionary      infix          or           string_marks
+    % cluster        dynamic_diagram inherit        outgoing     such_that
+    % cluster_chart  effective       interfaced     part         system_chart
+    % command        end             invariant      persistent   true
+    % component      ensure          involves       prefix       Void
+    % concatenator   event           it_holds       query        xor
+    % constraint     event_chart     keyword_prefix redefined
+    % creates        exists          member_of      require
+    % creation_chart explanation     nameless       Result
+    reserved_word?(s:string): bool = s="action" OR s= "creator" %TODO etc.
+
+    % (p359, A.10)
+    % The Identifier construct is defined as a sequence of alphanumeric
+    % characters including underscore. An identifier must begin with an
+    % alphanumeric character and must not end with an underscore (whose
+    % purpose really is to mimic word separation).
+    uppercase_alpha?(c:char): bool = 65 <= code(c) & code(c) <= 90
+    lowercase_alpha?(c:char): bool = 97 <= code(c) & code(c) <= 122
+    numeric?(c:char): bool = 48 <= code(c) & code(c) <= 57
+    alphanumeric?(c:char): bool = uppercase_alpha?(c) OR lowercase_alpha?(c)
+    underscore?(c:char): bool = code(c) = 95
+    alphanumeric_or_underscore?(c:char): boolean = alphanumeric?(c) OR underscore?(c)
+
+    identifier?(s:string): bool = 
+      NOT(reserved_word?(s)) AND
+      LET length:nat=s`length IN
+      length > 0 AND
+      LET last_index:nat=s`length-1 IN 
+      alphanumeric?(s(0)) AND alphanumeric?(s(last_index)) AND
+      (FORALL (n: {n:nat | 0<n & n<length}):  alphanumeric_or_underscore?(s(n)))
+    Identifier: TYPE = {x:string | identifier?(x)}
+    IdentifierList: TYPE = list[Identifier]
+
+    % (p360)
+    % The construct Simple_string is defined as any string of
+    % characters not containing a New_line character. The non-terminal
+    % construct Manifest_string is a Simple_string enclosed in the
+    % pair of terminals String_begin and String_end.  Similarly, the
+    % non-terminal Manifest_textblock is a sequence of Simple_string
+    % separated by New_line and enclosed by the same pair of terminal
+    % constructs
+    string_delimiter?(c:char): bool = code(c) = 34
+    newline_char?(c:char): bool = code(c) = 10
+    %For the moment we simply don't allow newline chars or string_delimiter chars
+    not_string_delim_or_newline?(c:char): bool = NOT(string_delimiter?(c)) AND NOT(newline_char?(c))
+    manifest_string?(s:string): bool = 
+      LET length:nat=s`length IN
+      length > 0 AND 
+      LET last_index:nat=s`length-1 IN
+        length > 2 AND string_delimiter?(s(0)) AND string_delimiter?(s(last_index)) AND
+        (FORALL (n: {n:nat | 0<n & n<last_index}): not_string_delim_or_newline?(s(n)))
+    ManifestString: TYPE = (manifest_string?)
+    ManifestTextblock: TYPE;
+
+    % c1,c2: VAR char
+    % s1,s2: VAR string
+    % sl1,sl2: VAR list[char]
+    % <(c1,c2): bool = code(c1) < code(c2);
+    % <(sl1,sl2): RECURSIVE bool = 
+    %    (CASES sl1 OF
+    %      null: NOT(null?(sl2)),
+    %      cons(c1,sl1tail):  
+    %        (CASES sl2 OF 
+    %          null: false, 
+    %          cons(c2,sl2tail): c1 < c2 OR (c1=c2 AND sl1tail<sl2tail)
+    %         ENDCASES)
+    %     ENDCASES)
+    %    MEASURE sl1 BY <<;
+    % null_lex: LEMMA NOT(sl1<null[char])
+    % add_char_lex: LEMMA sl1 < append(sl1,cons(c1,null))
+    % lex_trans1: LEMMA transitive?[list[char]](<);
+    % <(s1,s2): bool = finseq2list(s1) < finseq2list(s2)
+    % lex_trans: LEMMA transitive?[string](<)
+    % lex_strict_order: LEMMA strict_order?[string](<)
+
+    % (p32) The indexing clause contains a number of index entries,
+    % and each index entry consists of a keyword with a list of words
+    % attached.
+    IndexTerm: TYPE = ManifestString
+    IndexKeyword: TYPE = Identifier
+    IndexClause: TYPE = [# keyword:IndexKeyword, index_terms:list[IndexTerm] #]
+    Indexing: TYPE = list[IndexClause]
+
+  END bon_strings
+
+levels: THEORY
+  BEGIN
+    Level: TYPE = {INFORMAL_LEVEL, FORMAL_LEVEL, IMPLEMENTATION_LEVEL}
+    LevelOrdering: TYPE = (partial_order?[Level])
+
+    BON_LEVEL_ORDERING: (partial_order?[Level]) = 
+      (LAMBDA (x,y:Level): 
+        IF x=y THEN true
+      	ELSIF x=INFORMAL_LEVEL THEN y=FORMAL_LEVEL OR y=IMPLEMENTATION_LEVEL
+      	ELSIF x=FORMAL_LEVEL THEN y=IMPLEMENTATION_LEVEL
+      	ELSE false
+      	ENDIF
+      )
+  END levels
+
+
+BonType : DATATYPE WITH SUBTYPES ClassType, ClusterType
+  BEGIN
+    IMPORTING bon_strings, levels
+
+    class(level:Level, identifier:Identifier, generics:list[ClassType]): class? : ClassType
+    cluster(level:Level, identifier:Identifier): cluster? : ClusterType
+  END BonType
+
+bon_types : THEORY
+  BEGIN
+    IMPORTING bon_strings, BonType
+    
+    FormalBonType: TYPE = {t:BonType | level(t) = FORMAL_LEVEL}
+    FormalClassType: TYPE = {t:ClassType | level(t) = FORMAL_LEVEL}
+    FormalClusterType: TYPE = {t:ClusterType | level(t) = FORMAL_LEVEL}
+    formal_class_type_is_formal_type: JUDGEMENT FormalClassType SUBTYPE_OF FormalBonType
+    formal_cluster_type_is_formal_type: JUDGEMENT FormalClusterType SUBTYPE_OF FormalBonType
+    
+    InformalBonType: TYPE = {t:BonType | level(t) = INFORMAL_LEVEL}
+    InformalClassType: TYPE = {t:ClassType | level(t) = INFORMAL_LEVEL}
+    InformalClusterType: TYPE = {t:ClusterType | level(t) = INFORMAL_LEVEL}
+    informal_class_type_is_informal_type: JUDGEMENT InformalClassType SUBTYPE_OF InformalBonType
+    informal_cluster_type_is_informal_type: JUDGEMENT InformalClusterType SUBTYPE_OF InformalBonType
+
+    ANY_INFORMAL: InformalClassType = class(INFORMAL_LEVEL, "ANY", null)
+    ANY_FORMAL: FormalClassType = class(FORMAL_LEVEL, "ANY", null)
+    NONE_INFORMAL: InformalClassType = class(INFORMAL_LEVEL, "NONE", null)
+    NONE_FORMAL: FormalClassType = class(FORMAL_LEVEL, "NONE", null)
+    
+  END bon_types
+
+type_marks : THEORY
+  BEGIN
+    IMPORTING bon_types
+
+    TypeMark : DATATYPE
+      BEGIN
+        has: has?
+    	aggregate: aggregate?
+    	shared(multiplicity:int): shared?
+      END TypeMark
+
+    TypeMarkAndType : TYPE = [# mark:TypeMark, t:FormalClassType #]
+  END type_marks
+
+
+bon_constructs : THEORY
+  BEGIN 
+    IMPORTING bon_types, features
+
+    BonDefinition: TYPE
+    bd: VAR BonDefinition
+    name(bd): Identifier
+    indexing(bd): Indexing
+    ClassDefinition: TYPE FROM BonDefinition
+    ClusterDefinition: TYPE FROM BonDefinition
+
+    FeatureString: TYPE = ManifestString
+    Query: TYPE FROM FeatureString
+    Command: TYPE FROM FeatureString
+    Constraint: TYPE FROM FeatureString
+
+    InformalClassDefinition: TYPE FROM ClassDefinition
+    icd: VAR InformalClassDefinition
+    parents(icd): list[BonType]
+    queries(icd): list[Query]
+    commands(icd): list[Command]
+    constraint(icd): list[Constraint] 
+
+    InformalClusterDefinition: TYPE FROM ClusterDefinition
+    icld: VAR InformalClusterDefinition
+    classes(icld): list[Identifier] %TODO types not just identifiers?
+    clusters(icld): list[Identifier]
+
+    ClassModifier : TYPE+ = { NONE, ROOT, DEFERRED, EFFECTIVE }
+    FormalGeneric: TYPE = [# binder:Identifier, generic_type:FormalClassType #]
+    QueryFeature: TYPE = {f: feature | NOT no_return(f`return) }
+    CommandFeature: TYPE = {f: feature | no_return(f`return) }
+
+    FormalClassDefinition: TYPE FROM ClassDefinition
+    fcd: VAR FormalClassDefinition
+    modifier(fcd): ClassModifier
+    reused(fcd): bool
+    persistent(fcd): bool 
+    interfaced(fcd): bool
+    indexing(fcd): Indexing
+    generics(fcd): list[FormalGeneric]
+    parents(fcd): list[FormalClassType]
+    queries(fcd): list[QueryFeature]
+    commands(fcd): list[CommandFeature]
+    invariants(fcd): list[Expression]
+
+    list_generics_to_list_bon_type(l:list[FormalGeneric]): 
+      RECURSIVE list[FormalClassType] = 
+        CASES l OF
+          null: null,
+          cons(x,tail): cons(x`generic_type,list_generics_to_list_bon_type(tail))
+        ENDCASES
+        MEASURE length(l)
+    formal_class_definition_to_formal_class_type(fcd): FormalClassType = class(FORMAL_LEVEL, name(fcd), list_generics_to_list_bon_type(generics(fcd)))
+    CONVERSION formal_class_definition_to_formal_class_type
+
+    FormalClusterDefinition: TYPE FROM ClusterDefinition
+    fcld: VAR FormalClusterDefinition
+    reused(fcld): bool
+    classes(fcld): list[FormalClassType]
+    clusters(fcld): list[FormalClusterType]
+    formal_cluster_definition_to_formal_cluster_type(fcld): FormalClusterType = cluster(FORMAL_LEVEL, name(fcld))
+
+  END bon_constructs
+
+value[T: TYPE]: THEORY
+BEGIN
+  % =,/=
+  BON_ANY: TYPE = [# value:T #]
+  any_to_b_any(t:T): BON_ANY = (# value:=t #)
+  b_any_to_any(a:BON_ANY): T = a`value
+  CONVERSION any_to_b_any, b_any_to_any
+
+  % <,>,<=,>=
+  BON_VALUE: TYPE = { t:BON_ANY | (EXISTS (f:(strict_order?[T])): true) }
+
+END value
+
+expressions : THEORY
+BEGIN
+  IMPORTING value, bon_strings
+
+  Expression: TYPE %TODO Remove!
+
+  %+,-,*,/  
+  BON_NUMERIC: TYPE FROM BON_VALUE[number_field]
+
+  % //,\\
+  BON_INTEGER: TYPE = {x:BON_NUMERIC | integer?(x`value)}
+  b_int_is_b_num: JUDGEMENT BON_INTEGER SUBTYPE_OF BON_NUMERIC
+  x_num: BON_INTEGER = 3
+
+  BON_REAL: TYPE = {x:BON_NUMERIC | real?(x`value)}
+  b_real_is_b_num: JUDGEMENT BON_REAL SUBTYPE_OF BON_NUMERIC
+  x_real: BON_REAL = 1.0
+
+  BON_BOOLEAN: TYPE = BON_VALUE[bool]
+  x_bool: BON_BOOLEAN = false
+
+  BON_CHAR: TYPE = BON_VALUE[char]
+  x_char: BON_CHAR = char(64)
+
+  BON_STRING: TYPE = BON_VALUE[string]
+  empty_string: BON_STRING = ""
+END expressions
+
+bon_sets[T:TYPE]: THEORY
+BEGIN
+  IMPORTING value
+
+  % member, empty
+  BON_SET: TYPE = BON_ANY[set[T]]
+  BON_SEQUENCE: TYPE = BON_ANY[sequence[T]]
+END bon_sets
+
+bon_expression_testing: THEORY
+BEGIN
+  IMPORTING expressions
+
+  T:TYPE
+
+  n:BON_NUMERIC
+  v:BON_VALUE[T]
+  i:BON_INTEGER
+  i2:BON_INTEGER
+  r:BON_REAL
+  c:BON_CHAR
+  s:BON_STRING
+
+  lem_one: LEMMA i=0 AND r=1.0 => i<r;
+  lem_two: LEMMA n=0 AND i=1 => n < i;
+  %lem_three: LEMMA r=0.0 => v < r;
+  lem_four: LEMMA code(c)=48 and s="a0z" => some((LAMBDA (c2:char): c2=c))(s`value`seq)
+  lem_five: LEMMA 0 < i AND i < 1 AND r=2 => 2*i < r;
+  lem_six: LEMMA n < i AND r < i2 => i+i2 < n+r;
+
+  empty_string_has_length_zero: LEMMA empty_string`value`length = 0
+
+  ints:set[BON_INTEGER] = { x:BON_INTEGER | x < 2 and x > 0}
+  lem_seven: LEMMA (FORALL (x:BON_INTEGER): member(x,ints) => x < 10)
+
+END bon_expression_testing
+
+assertions: THEORY
+BEGIN
+  IMPORTING value
+
+  bon_base_type_embeddings: TYPE = [string + number_field + char]
+
+  assertion: TYPE+ = [list[BON_ANY[bon_base_type_embeddings]] -> bool]
+  invariant: TYPE+ = assertion
+  precondition: TYPE+ = assertion
+  postcondition: TYPE+ = assertion
+END assertions
+
+features : THEORY
+  BEGIN
+    IMPORTING bon_types, expressions, type_marks, assertions
+
+    FeatureModifier : TYPE = { NONE, DEFERRED, EFFECTIVE, REDEFINED }
+
+  Parameter: DATATYPE
+  BEGIN
+    parameter_nameless(bon_type:FormalClassType):nameless?
+    parameter_named(bon_type:FormalClassType, name:Identifier):named?
+  END Parameter
+
+  feature: TYPE =
+    [# name:Identifier,
+       modifier:FeatureModifier,
+       parameters:list[Parameter],
+       return:TypeMarkAndType,
+       precondition:precondition,
+       postcondition:postcondition #]
+
+  feature_lexical_scope: TYPE = list[BON_ANY[bon_base_type_embeddings]]
+		   
+  % A function that tells us if a type_mark_and_type corresponds to the Void return type
+  no_return(t:TypeMarkAndType): bool = has?(t`mark) AND t`t = NONE_FORMAL
+
+  QueryFeature: TYPE = {f: feature | NOT no_return(f`return) }
+  CommandFeature: TYPE = {f: feature | no_return(f`return) }
+
+END features
+
+example_features: THEORY
+BEGIN
+  IMPORTING expressions, assertions, features, BonType
+  % translation of simple features with specifications into our embedding
+  % feature
+  %   i: INTEGER
+  %   s: STRING
+  %   f: NUMERIC
+  %    -> c: CHAR, r: REAL
+  %   requires 0 <= r AND (c = ' ' OR c = '\t') AND i = 1
+  %   ensures Result < 0
+  % invariant
+  %   3 < length(s) AND 0 <= i
+  i: var BON_INTEGER
+  i_inv_domain: TYPE = {l:feature_lexical_scope |
+                        length(l) = 1 AND IN?_2(nth(l, 0)`value) AND
+                        integer?(OUT_2(nth(l, 0)`value))}
+  i_inv_type: TYPE = [i_inv_domain -> bool]
+  i(d: i_inv_domain): int = OUT_2(nth(d, 0)`value)
+  i_inv: i_inv_type = (LAMBDA (d: i_inv_domain): 0 <= i(d))
+
+  s: var BON_STRING
+  s_inv_domain: TYPE = {l:feature_lexical_scope |
+                        length(l) = 1 AND IN?_1(nth(l, 0)`value)}
+  s_inv_type: TYPE = [s_inv_domain -> bool]
+  s(d: s_inv_domain): string = OUT_1(nth(d, 0)`value)
+  s_inv: s_inv_type = (LAMBDA (d: s_inv_domain): 3 <= length(s(d)))
+
+  f_pre_domain: TYPE = {s:feature_lexical_scope |
+                        length(s) = 3 AND
+                        IN?_3(nth(s, 0)`value) AND
+                        IN?_2(nth(s, 1)`value) AND real?(OUT_2(nth(s, 1)`value)) AND
+                        IN?_2(nth(s, 2)`value) AND integer?(OUT_2(nth(s, 2)`value))}
+  f_pre_type: TYPE = [f_pre_domain -> bool]
+  f_c(d: f_pre_domain): BON_CHAR = OUT_3(nth(d, 0)`value)
+  f_r(d: f_pre_domain): BON_REAL = OUT_2(nth(d, 1)`value)
+  f_i(d: f_pre_domain): BON_INTEGER = OUT_2(nth(d, 2)`value)
+  f_parameters: list[Parameter] =
+    cons(parameter_named(class(FORMAL_LEVEL, "CHAR", null), "c"),
+    cons(parameter_named(class(FORMAL_LEVEL, "REAL", null), "r"),
+    null))
+  f_return: FormalClassType = class(FORMAL_LEVEL, "NUMERIC", null)
+  f_pre: f_pre_type = (LAMBDA (d: f_pre_domain):
+    0 <= f_r(d) AND (code(f_c(d)) = 32 OR code(f_c(d)) = 9) AND
+    f_i(d) = 1)
+  f_post: postcondition
+  f: feature = (# name := "f", modifier := NONE,
+     parameters := f_parameters,
+     return := (# mark := has, t := f_return #),
+     precondition := f_pre,
+     postcondition := f_post #)
+
+  f_params: var f_pre_domain
+  f_valid_precondition: LEMMA (f_c(f_params) = char(32) AND
+                               f_r(f_params) = 1.0 AND
+                               f_i(f_params) = 1) IMPLIES f_pre(f_params)
+
+  f_invalid_precondition: LEMMA (f_c(f_params) = char(32) AND
+                                 f_r(f_params) = 1.0 AND
+                                 f_i(f_params) = 0) IMPLIES NOT f_pre(f_params)
+
+end example_features
+
+bon_partials[X,Y:TYPE] : THEORY
+BEGIN
+  x,x2: VAR X
+  y: VAR Y
+  partial: VAR LiftPartialFunction[X,Y]
+  empty_partial(x): lift[Y] = bottom
+  add_mapping_to_partial(partial,x,y)(x2): lift[Y] = 
+    IF x=x2 THEN 
+      up(y) 
+    ELSE 
+      partial(x) 
+    ENDIF
+END bon_partials
+
+TypeRelationPair : DATATYPE WITH SUBTYPES InheritanceRelation, ClientRelation, ClusteringRelation
+BEGIN
+    IMPORTING bon_types, type_marks
+    inheritance_relation(source:BonType,target:BonType): inheritance_relation? : InheritanceRelation
+    clustering_relation(source:BonType,target:ClusterType): clustering_relation? : ClusteringRelation
+    client_relation(source:BonType,target:BonType,mark:TypeMark): client_relation? : ClientRelation
+END TypeRelationPair
+
+bon_maps[X,Y:TYPE] : THEORY
+BEGIN
+  IMPORTING bon_partials[X,Y]
+  map: TYPE = LiftPartialFunction[X,Y]
+  empty_map: map = empty_partial
+
+  m: VAR map
+  x,x1: VAR X
+  y,y1: VAR Y
+  add_to_map(m,x,y): map = add_mapping_to_partial(m,x,y)
+
+  f: VAR [Y->X]
+  ys: VAR finite_set[Y]
+
+  build_map_rec(f)(ys)(m): RECURSIVE map = 
+    IF empty?(ys) THEN m
+    ELSE 
+      LET item:(ys)=choose(ys), rest:set[Y]=remove(item,ys),
+          new_map:map=add_to_map(m,f(item),item) IN
+        build_map_rec(f)(rest)(new_map)
+    ENDIF
+    MEASURE Card(ys)
+
+  build_map(f)(ys): map = build_map_rec(f)(ys)(empty_map)
+
+  map_to_rel(m): pred[[X,Y]] = (LAMBDA x,y: m(x)=up(y))
+
+  % map2_type: TYPE = [X -> set[Y]]
+  % empty_map2(x)(y): bool = false
+  % valid_map2?(m:map2_type): bool = FORALL x: empty?(m(x)) OR singleton?(m(x))
+
+  % map2: TYPE = (valid_map2?)
+
+  % empty_map_is_valid: LEMMA valid_map2?(empty_map2)
+
+  % m2: VAR map2
+  % add_to_map2(m2,x,y): map2 = 
+
+END bon_maps
+
+type_context : THEORY
+BEGIN
+  IMPORTING bon_types, levels, TypeRelationPair, bon_constructs, bon_partials, bon_maps
+
+  TC_Classes: TYPE = map[ClassType,ClassDefinition]
+  Formal_TC_Classes: TYPE = map[FormalClassType,FormalClassDefinition]
+  %formal_tc_classes_is_tc_classes: JUDGEMENT Formal_TC_Classes SUBTYPE_OF TC_Classes
+  Informal_TC_Classes: TYPE = map[InformalClassType,InformalClassDefinition]
+  %informal_tc_classes_is_tc_classes: JUDGEMENT Informal_TC_Classes SUBTYPE_OF TC_Classes
+
+  TC_Clusters: TYPE = map[ClassType,ClassDefinition]
+  Formal_TC_Clusters: TYPE = map[FormalClusterType,FormalClusterDefinition]
+  %formal_tc_clusters_is_tc_clusters: JUDGEMENT Formal_TC_Clusters SUBTYPE_OF TC_Clusters
+  Informal_TC_Clusters: TYPE = map[InformalClusterType,InformalClusterDefinition]
+  %informal_tc_clusters_is_tc_cluster: JUDGEMENT Informal_TC_Clusters SUBTYPE_OF TC_Clusters
+  
+  TC: TYPE = [# level:Level, classes:TC_Classes, clusters:TC_Clusters, system:ClusterType, relations:set[TypeRelationPair] #]
+    
+  Formal_TC: TYPE = [# level:{l:Level|l=FORMAL_LEVEL}, classes:Formal_TC_Classes, clusters:Formal_TC_Clusters, system:FormalClusterType, relations:set[TypeRelationPair] #]
+  %formal_tc_is_tc: JUDGEMENT Formal_TC SUBTYPE_OF TC
+  Informal_TC: TYPE = [# level:{l:Level|l=INFORMAL_LEVEL}, classes:Informal_TC_Classes, clusters:Informal_TC_Clusters, system:InformalClusterType, relations:set[TypeRelationPair] #]
+  %informal_tc_is_tc: JUDGEMENT Informal_TC SUBTYPE_OF TC
+
+  initial_formal_classes: Formal_TC_Classes = empty_map[FormalClassType,FormalClassDefinition]
+  initial_formal_clusters: Formal_TC_Clusters = empty_map[FormalClusterType,FormalClusterDefinition]
+  initial_formal_tc(system_name:Identifier): Formal_TC =
+    LET system_cluster = cluster(FORMAL_LEVEL,system_name) IN
+      (# level:=FORMAL_LEVEL, classes:=initial_formal_classes, clusters:=initial_formal_clusters, system:=system_cluster, relations:=emptyset[TypeRelationPair] #)
+
+  initial_informal_classes: Informal_TC_Classes = empty_map[InformalClassType,InformalClassDefinition]
+  initial_informal_clusters: Informal_TC_Clusters = empty_map[InformalClusterType,InformalClusterDefinition] 
+  initial_informal_tc(system_name:Identifier): Informal_TC =
+    LET system_cluster = cluster(INFORMAL_LEVEL,system_name) IN
+      (# level:=INFORMAL_LEVEL, classes:=initial_informal_classes, clusters:=initial_informal_clusters, system:=system_cluster, relations:=emptyset[TypeRelationPair] #) %TODO add system cluster to clusters
+
+END type_context
+
+bon_relations : THEORY
+BEGIN
+  IMPORTING type_context
+  %TODO some renaming of functions would improve readability here
+
+  BonTypeRelation: TYPE = pred[[BonType,BonType]]
+
+  tc: VAR TC
+  p: VAR TypeRelationPair
+  pair_set: VAR set[TypeRelationPair]
+  ir: VAR InheritanceRelation
+  cgr: VAR ClusteringRelation
+  ctr: VAR ClientRelation
+  a,b,c: VAR BonType
+  cl,cl2: VAR ClusterType
+
+  %Fuctions to pull out the three relation sets
+  inheritance_relations_for_tc(tc): set[InheritanceRelation] = { ir | member(ir,tc`relations) }
+  clustering_relations_for_tc(tc): set[ClusteringRelation] = { cgr | member(cgr,tc`relations) }
+  client_relations_for_tc(tc): set[ClientRelation] = { ctr | member(ctr,tc`relations) }
+
+  %Turn a pair set into a predicate (only pays attention to source and target)
+  trp_set_as_pred(pair_set)(a,b): bool = some((LAMBDA p: source(p)=a AND target(p)=b),pair_set)
+  trp_set_as_reflexive_pred(pair_set)(a,b): bool = a=b OR trp_set_as_pred(pair_set)(a,b)
+
+  %Direct inheritance relation
+  inheritance_relation_pred(tc)(a,b): bool = trp_set_as_reflexive_pred(inheritance_relations_for_tc(tc))(a,b)
+  %Transitive
+  transitive_inheritance_relation_pred(tc)(a,b): INDUCTIVE bool = 
+    LET R=inheritance_relation_pred(tc), TR=transitive_inheritance_relation_pred(tc) IN 
+      R(a,b) OR (EXISTS c: TR(a,c) AND TR(c,b))
+  %Prove our relation has the properties we desire
+  trans_is_trans: LEMMA transitive?(transitive_inheritance_relation_pred(tc))
+  reflex: LEMMA reflexive?(transitive_inheritance_relation_pred(tc))
+
+  clustering_relation_pred(tc)(a,cl): bool = trp_set_as_pred(inheritance_relations_for_tc(tc))(a,cl)
+  transitive_clustering_relation_pred(tc)(a,cl): INDUCTIVE bool = 
+    LET R=clustering_relation_pred(tc), TR=transitive_clustering_relation_pred(tc) IN
+      R(a,cl) OR (EXISTS cl2: TR(a,cl2) AND TR(cl2,cl))
+  %Prove our relation has the properties we desire
+  trans_is_trans2: LEMMA transitive?(transitive_clustering_relation_pred(tc))
+
+  ClientTypePair: TYPE = [BonType,TypeMark]
+  ca,cb: VAR ClientTypePair
+  cp: VAR ClientRelation
+  m: VAR TypeMark
+  client_relation_pred(tc)(ca,cb): bool = some((LAMBDA cp: source(cp)=ca`1 AND target(cp)=cb`1 AND mark(cp)=ca`2),client_relations_for_tc(tc))
+  has_client_relation(tc)(a,b,m): bool = client_relation_pred(tc)((a,m),(b,m))
+
+END bon_relations
+
+build_tc : THEORY
+BEGIN
+  IMPORTING type_context
+  ftc: VAR Formal_TC
+  fcd: VAR FormalClassDefinition
+  fcld: VAR FormalClusterDefinition
+
+  %functions for building the type context when adding classes and clusters
+  add_class(ftc)(fcd): Formal_TC %= 
+    %(#  #)
+  % LET new_classes=..., new_relations=... IN
+  % (# level:=ftc`level, classes:=new_classes, clusters:=ftc`clusters, system:=ftc`system, relations:= #)
+  add_cluster(ftc)(fcld): Formal_TC
+END build_tc
+
+wf_tc : THEORY
+BEGIN
+  % Define a well-formed type context
+END wf_tc
+

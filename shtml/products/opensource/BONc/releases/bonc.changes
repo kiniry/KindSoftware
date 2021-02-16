@@ -1,0 +1,15 @@
+Format: 1.7
+Date: Tue, 13 Sep 2011 11:46:30 +0100
+Source: bonc
+Binary: bonc
+Architecture: all
+Version: 0.2.7
+Distribution: unstable
+Urgency: low
+Maintainer: fintan.fairmichael@ucd.ie
+Changed-By: fintan.fairmichael@ucd.ie
+Description: Parser/typechecker/documentation generator for BON.
+Changes: bonc (0.2.7) unstable; urgency=low
+ * Fixed a bug that meant that additional constraints (after the first) in class charts were not being recorded.
+Files:
+ 2646c19683bc7ad64f7b6f113f523679 2943394 misc optional bonc_0.2.7_all.deb

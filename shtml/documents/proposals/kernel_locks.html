@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: Automatic Derivation of Kernel Locks for OpenBSD</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<div id="header">
+<a href="/">
+<img src="/images/kindsoftware.png" class="kind"
+     alt="KindSoftware" width="576" height="50"/>
+</a>
+</div>
+
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<div id="menu">
+<ul>
+<!-- <li id="one"><a href="/" title="KindSoftware">kind</a></li> -->
+<li id="one"><a href="/about/" title="About Us">about us</a></li>
+<li id="two"><a href="/products/opensource/" title="Software">software</a></li>
+<li id="three"><a href="/documents/" title="Documents">documents</a></li>
+<li id="four"><a href="/documents/research/" title="Research">research</a></li>
+<li id="five"><a href="/documents/visitors/" title="Visitors">visitors</a></li>
+<li id="six"><a href="/documents/trackers/" title="CDEs">cdes</a></li>
+<li id="seven"><a href="http://kindsoftware.blogspot.com/" title="Blog">blog</a></li>
+</ul>
+</div>
+
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><a href="/documents/">Overview</a>
+</li>
+  <li><a href="/documents/mech_theory/">Mechanized Theory</a>
+<ul>
+  <li><a href="/documents/mech_theory/feature_models.html">Formalizing Feature Models</a></li>
+  <li><a href="/documents/mech_theory/verified_vis.html">Verified Visualisation of Textual Modelling Languages</a></li>
+  <li><a href="/documents/mech_theory/concurrency_semantic_property.html">The Concurrency Semantic Property</a></li>
+</ul>
+</li>
+  <li><a href="/documents/news/">News</a>
+<ul>
+  <li><a href="/documents/news/2013.html">2013</a></li>
+  <li><a href="/documents/news/2012.html">2012</a></li>
+  <li><a href="/documents/news/2011.html">2011</a></li>
+  <li><a href="/documents/news/2010.html">2010</a></li>
+  <li><a href="/documents/news/2009.html">2009</a></li>
+  <li><a href="/documents/news/2008.html">2008</a></li>
+  <li><a href="/documents/news/2007.html">2007</a></li>
+  <li><a href="/documents/news/2006.html">2006</a></li>
+  <li><a href="/documents/news/2005.html">2005</a></li>
+  <li><a href="/documents/news/2004.html">2004</a></li>
+  <li><a href="/documents/news/2003.html">2003</a></li>
+</ul>
+</li>
+  <li id="subnavon">
+   <!-- Cadeceus -->
+<!-- add more subnav stuff here -->
+<a href="/documents/proposals/">Project Proposals</a>
+<ul>
+  <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong> </li>
+</ul>
+
+       <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>Operating Systems and Compilers</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/contracts_in_openbsd.html">- Contracts in OpenBSD</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/datastructs_in_openbsd.html">- Data Structures in OpenBSD</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/bugs_in_openbsd.html">- Bugs in OpenBSD</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/superlint.html">- OpenBSD Super-Lint</a></li>
+          <li class="subnavon"><a href="/documents/proposals/kernel_locks.html">- Automatic Derivation of Kernel Locks for OpenBSD</a></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- Memory Leak Analysis in OpenBSD<!-- </a> --></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- OCaml in OpenBSD<!-- </a> --></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- Cil Evaluation<!-- </a> --></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>
+
+  </li>
+  <li><a href="/documents/published/">Published Papers</a>
+</li>
+  <li><a href="/documents/reports/">Reports</a>
+</li>
+  <li><a href="/documents/talks/">Talks</a>
+<ul>
+  <li><a href="/documents/talks/Inaugural_Lecture.html">Feburary 2013 - Saving Democracy from Technology</a></li>
+  <li><a href="/documents/talks/jtres12.html">October 2012 - The Use of JML in Embedded Real-Time Systems</a></li>
+  <li><a href="/documents/talks/tap12.html">June 2012 - Testing Library Specifications by Verifying Conformance Tests</a></li>
+  <li><a href="/documents/talks/ifip.html">December 2011 - Validating Semantics</a></li>
+  <li><a href="/documents/talks/democracy.html">Throughout 2011 - Democracy as a Critical System</a></li>
+  <li><a href="/documents/talks/tomeso.html">April 2011 - Reasoning about Concurrency in (RT) Java</a></li>
+  <li><a href="/documents/talks/teachIT-Student_Groups.html">November 2010 - Student Group Work</a></li>
+  <li><a href="/documents/talks/cost_wg4.html">May 2008 - Tool Integration</a></li>
+  <li><a href="/documents/talks/ninja08.html">May 2008 - Secret Ninja Formal Methods</a></li>
+  <li><a href="/documents/talks/verified_gaming.html">May 2008 - Verified Gaming</a></li>
+  <li><a href="/documents/talks/mobius_pve.html">May 2008 - The Mobius Program Verification Environment</a></li>
+  <li><a href="/documents/talks/rigor08.html">April 2008 - A Bit of Rigor</a></li>
+  <li><a href="/documents/talks/newcastle07.html">2007 - Practical Verification of Java</a></li>
+  <li><a href="/documents/talks/key07.html">2007 - KeY Symposium</a></li>
+  <li><a href="/documents/talks/savcbs07.html">September 2007 - SAVCBS</a></li>
+  <li><a href="/documents/talks/splc07.html">September 2007 - SPLC</a></li>
+  <li><a href="/documents/talks/evt07.html">August 2007 - EVT</a></li>
+  <li><a href="/documents/talks/tgc06.html">November 2006 - TGC</a></li>
+  <li><a href="/documents/talks/odysseus06.html">June 2006 - Odysseus</a></li>
+  <li><a href="/documents/talks/fmco05.html">November 2005 - FMCO</a></li>
+  <li><a href="/documents/talks/fm_gc6.html">July 2005 - FM GC6</a></li>
+  <li><a href="/documents/talks/ksu.html">June 2005 - KSU</a></li>
+  <li><a href="/documents/talks/aist.html">December 2004 - AIST</a></li>
+  <li><a href="/documents/talks/lajug.html">August 2002 - LAJUG</a></li>
+</ul>
+</li>
+  <li><a href="/documents/tutorials/">Tutorials</a>
+<ul>
+  <li> <a href="ecoop04.html">ECOOP 2004</a> </li>
+  <li> <a href="etaps05.html">ETAPS 2005</a> </li>
+  <li> <a href="fm05.html">FM 2005</a> </li>
+  <li> <a href="ecoop05.html">ECOOP 2005</a> </li>
+  <li> <a href="esecfse05.html">ESEC/FSE 2005</a> </li>
+  <li> <a href="fmco05.html">FMCO 2005</a> </li>
+  <li> <a href="etaps08.html">ETAPS 2008</a> </li>
+  <li> <a href="tools08.html">TOOLS 2008</a> </li>
+  <li> <a href="globan08.html">GLOBAN 2008</a> </li>
+<!--   <li> <a href="fm08.html">FM 2008</a> </li> -->
+  <li> <a href="etaps09.html">ETAPS 2009</a> </li>
+  <li> <a href="cost_ic0701.html">COST 2009</a> </li>
+</ul>
+</li>
+  <li><a href="/documents/whitepapers/">White Papers</a>
+<ul>
+  <li><a href="MartinezKiniry12.pdf">Orchestrating with Contracts 
+  (technical report)</a></li>
+  <li><a href="/documents/whitepapers/code_standards/">KindSoftware
+      Coding Standards</a></li>
+  <li><a href="/documents/whitepapers/algebraic_solutions.html">Exercises from
+      "Algebraic Semantics of Imperative Programs" Solutions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>Automatic Derivation of Kernel Locks for OpenBSD</h2>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong> Software Engineering </li>
+      
+  <li> <strong>Pre-requisites</strong> Very good knowledge of C </li>
+
+  <li> <strong>Co-requisites (things you must learn along the
+    way)</strong> Good knowledge of UNIX (generally) and OpenBSD
+    (specifically), concurrency and threads, constraint anlysis,
+    program specification, static program checking, and OS-level
+    systems programming </li>
+      
+  <li> <strong>Subject Coverage</strong> Programming Languages,
+      Compilers, Concurrency, Static Analysis </li>
+
+  <li> <strong>Project Type</strong> Design and Implementation </li>
+      
+  <li> <strong>Hardware</strong> Any computer running OpenBSD </li>
+</ul>
+
+<h3>Description</h3>
+
+<p> <a href="http://www.openbsd.org/">OpenBSD</a> is widely regarded
+as the world's most secure operating system.  It represents the
+combined effort of hundreds of dedicated individuals, most of whom
+work in their spare time for free, over nearly a decade. </p>
+
+<p> OpenBSD developers try very hard to write code that is
+well-designed, clean, maintainable, but above all, <em>secure</em>.  A
+number of techniques are used for such, but most of them are
+relatively <em>ad hoc</em> when compared to the kind of program
+development that that <a href="/">KindSoftware
+research group</a> regularly participates in. </p>
+
+<p> Multi-processor/-core support is a relatively recent addition to
+OpenBSD.  Given OpenBSD's focus on correctness above all else, a
+fairly simple single-lock-based design was used, similar to that
+adopted by other FLOSS UNIXen, to implement this new feature. </p>
+
+<p> Unfortunately, while such and implementation is simple, it does
+not exhibit high performance, it is difficult to maintain and reason
+about, and can easily exhibit unnecessary deadlock. </p>
+
+<p> The goal of this project is to investigate the possibility of
+adding <em>atomicity</em> specifications to the OpenBSD kernel in such
+a way as to automatically generate minimal correct lock covers for
+kernel code. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+
+  <li> Gain familiarity with OpenBSD. </li>
+      
+  <li> Gain familiarity with SMT support in OpenBSD. </li>
+
+  <li> Gain familiarity with reasoning frameworks for concurrency and
+    atomicity. </li>
+
+  <li> Design and develop SMT support in OpenBSD, including
+    concurrency and atomicity annotations, lock specifications,
+    etc. </li>
+
+  <li> Coauthor, submit, and publish a paper on this work. </li>
+      
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+
+  <li> Design and develop a lock cover static analysis tool to
+    determine minimal lock sets and covers for correct,
+    high-performance kernel locks. </li>
+
+  <li> Release the framework and tools to the world under an
+      appropriate FLOSS license, hopefully so that it will be
+      incorporated into, and used by, OpenBSD. </li>
+
+</ol>
+
+<!-- <h3>Exceptional Goals</h3> -->
+
+<!-- <ol> -->
+
+<!--   <li> Analyse a several critical OpenBSD components with the new -->
+<!--       tool. </li> -->
+
+<!-- </ol> -->
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+  <li> <a href="http://www.openbsd.org/">OpenBSD</a> </li>
+  <li> <a href="http://openbsd.org/smp.html">SMT in OpenBSD</a> </li>
+  <li> See the following OpenBSD source files:
+    <ul>
+      <li> <code>src/sys/sys/kern_lock.c</code> </li>
+      <li> <code>src/sys/sys/mplock.c</code> </li>
+      <li> <code>src/sys/sys/lock.h</code> </li>
+      <li> <code>src/sys/kern/sched_bsd.c</code> </li>
+      <li> <code>src/sys/kern/mplock.c</code> </li>
+      <li> <code>src/sys/kern/mplock.c</code> </li>
+    </ul>
+  </li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: Tuesday, 16-Feb-2021 11:46:35 PST <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

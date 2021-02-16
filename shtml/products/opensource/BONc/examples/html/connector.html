@@ -1,0 +1,2129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+
+<title>BON Documentation: CONNECTOR_SYSTEM</title>
+
+<script type="text/javascript">
+<!--
+
+var items = ['system_chart:CONNECTOR_SYSTEM','class_chart:CHANNEL','class_chart:NEGOTIATOR','class_chart:MANAGER','class_chart:CHANNEL_ANALYST','class_chart:CHANNEL_INFORMATION','class_chart:LEVEL','class_chart:COMPONENT','class_chart:SDO','class_chart:CONNECTOR','class_chart:NONE','class_chart:DEBUGGING','class_chart:TYPE','cluster_chart:LOOPBACK','cluster_chart:LOCAL_METHOD_INVOCATION','cluster_chart:UTILITY','cluster_chart:PIPES','cluster_chart:DATABASE','cluster_chart:REMOTE_METHOD_INVOCATION','cluster_chart:MESSAGING','cluster_chart:IMPLEMENTATIONS','cluster_chart:SPECIFICATION','cluster_chart:TUPLE_SPACE','cluster_chart:SHARED_MEMORY','cluster_chart:LOCAL_FILES','event_chart:1','event_chart:2','creation_chart:1','scenario_chart:1','class_dictionary:1'];
+var topOptions = [ 'System Chart', 'system_chart', 'Class Dictionaries', 'class_dictionary', 'Cluster Charts', 'cluster_chart', 'Class Charts', 'class_chart', 'Event Charts', 'event_chart', 'Scenario Charts', 'scenario_chart', 'Creation Charts', 'creation_chart' ];
+var subOptions = [];
+subOptions['system_chart'] = [ 'CONNECTOR_SYSTEM', 'system_chart:CONNECTOR_SYSTEM' ];
+subOptions['cluster_chart'] = [ 'DATABASE','cluster_chart:DATABASE','IMPLEMENTATIONS','cluster_chart:IMPLEMENTATIONS','LOCAL_FILES','cluster_chart:LOCAL_FILES','LOCAL_METHOD_INVOCATION','cluster_chart:LOCAL_METHOD_INVOCATION','LOOPBACK','cluster_chart:LOOPBACK','MESSAGING','cluster_chart:MESSAGING','PIPES','cluster_chart:PIPES','REMOTE_METHOD_INVOCATION','cluster_chart:REMOTE_METHOD_INVOCATION','SHARED_MEMORY','cluster_chart:SHARED_MEMORY','SPECIFICATION','cluster_chart:SPECIFICATION','TUPLE_SPACE','cluster_chart:TUPLE_SPACE','UTILITY','cluster_chart:UTILITY' ];
+subOptions['class_chart'] = [ 'CHANNEL','class_chart:CHANNEL','CHANNEL_ANALYST','class_chart:CHANNEL_ANALYST','CHANNEL_INFORMATION','class_chart:CHANNEL_INFORMATION','COMPONENT','class_chart:COMPONENT','CONNECTOR','class_chart:CONNECTOR','DEBUGGING','class_chart:DEBUGGING','LEVEL','class_chart:LEVEL','MANAGER','class_chart:MANAGER','NEGOTIATOR','class_chart:NEGOTIATOR','NONE','class_chart:NONE','SDO','class_chart:SDO','TYPE','class_chart:TYPE' ];
+subOptions['event_chart'] = [ 'Event Chart 1','event_chart:1','Event Chart 2','event_chart:2' ];
+subOptions['creation_chart'] = [ 'Creation Chart 1','creation_chart:1' ];
+subOptions['scenario_chart'] = [ 'Scenario Chart 1','scenario_chart:1' ];
+subOptions['class_dictionary'] = [ 'Class Dictionary 1','class_dictionary:1' ];
+
+
+var showAll = false;
+var sysTitle = 'system_title';
+var topMenu = 'top-menu';
+var subMenu = 'sub-menu';
+
+function setElText(id,text) {
+  var elem = document.getElementById(id);
+  if (elem) {
+    elem.innerHTML = text;
+  }
+}
+
+function toggleShowAll() {
+  showAll = !showAll;
+  if (showAll) {
+    displayAll();
+    setElText('showlink', 'Show One');
+  } else {
+    hideAll();
+    setElText('showlink', 'Show All');
+  }
+  showSelected();
+  return false;
+}
+
+function select(id) {
+  if (showAll) {
+//    setHash(id);
+    return true;
+  } else {
+    showOnly(id);
+    return true;
+  }
+}
+
+function showOnly(id) {
+  var elem = document.getElementById(id);
+  if (elem) {
+    hideAll();
+    showElem(id);
+  }
+}
+
+function hideAll() {
+  for (var i=0; i<items.length; i++) {
+    hideElem(items[i]);
+  }
+}
+
+function displayAll() {
+  for (var i=0; i<items.length; i++) {
+    showElem(items[i]);
+  }
+}
+
+function showElem(id) {
+  var elem = document.getElementById(id);
+  if (elem) {
+    show(elem);
+  }
+}
+
+function hideElem(id) {
+  var elem = document.getElementById(id);
+  if (elem) {
+    hide(elem);
+  }
+}
+
+function hide(elem) {
+  addClass(elem,'hidden');
+}
+
+function show(elem) {
+  removeClass(elem,'hidden');
+}
+
+function addClass(elem,cName) {
+  if (!elem.className) {
+    elem.className = cName;
+  } else if (elem.className.indexOf(cName) == -1) {
+    elem.className += ' ' + cName;
+  }
+}
+
+function removeClass(elem,cName) {
+  if (elem.className) {
+    var toReplace = elem.className.match(' ' + cName);
+    elem.className = elem.className.replace(toReplace, '');
+  }
+}
+
+function setBack(id) {
+//Not yet...
+}
+
+function initialPopulate() {
+  var topSelect = document.getElementById(topMenu);
+  if (topSelect) {
+    topSelect.options.length = 0;
+    for (var i=0; i < topOptions.length; i+=2) {
+      topSelect.options[i/2] = new Option(topOptions[i],topOptions[i+1]);
+    }
+  }
+  if (window.location.hash) {
+    hashSelect(window.location.hash.substr(1));    
+  } else {
+    populate();
+    showSelected();
+  }
+  lastHash = window.location.hash;
+  //Trigger checkHash
+  setInterval(checkHash,100);
+}
+
+function hashSelect(hash) {
+  var parts = hash.split(':');
+  if (parts.length == 2) {
+    linkSelect(parts[0],hash);
+  } else {
+    populate();
+  }
+}
+
+var lastHash = '';
+
+function checkHash() {
+
+  if (window.location.hash) {
+    if (window.location.hash != lastHash) {
+      hashSelect(window.location.hash.substr(1));
+      lastHash = window.location.hash;
+    }
+  }
+}
+
+function setHash(hash) {
+  lastHash = '#' + hash;
+  window.location.hash = hash;
+}
+
+function populate() {
+
+  var subSelect = document.getElementById(subMenu);
+  var topSelect = document.getElementById(topMenu);
+
+  if (subSelect && topSelect) {
+    var selected = topSelect.options[topSelect.selectedIndex].value;
+    if (selected) {
+      var chosenSubOptions = subOptions[selected];
+      subSelect.options.length = 0;
+      for (var i=0; i < chosenSubOptions.length; i+=2) {
+        subSelect.options[i/2] = new Option(chosenSubOptions[i],chosenSubOptions[i+1]);
+      }
+    }
+  }
+}
+
+function showSelected() {
+  var subSelect = document.getElementById(subMenu);
+  if (subSelect) {
+    var selected = subSelect.options[subSelect.selectedIndex].value;
+    if (selected) {
+      select(selected);
+      setHash(selected);
+    }
+  }
+}
+
+function linkSelect(top, sub) {
+  var topSelect = document.getElementById(topMenu);
+  if (topSelect) {
+    for (var i=0; i < topSelect.options.length; i++) {
+      if (topSelect.options[i].value == top) {
+        topSelect.selectedIndex = i;
+        break;
+      }
+    }
+  }  
+  populate();
+  var subSelect = document.getElementById(subMenu);
+  if (subSelect) {
+    for (var i=0; i < subSelect.options.length; i++) {
+      if (subSelect.options[i].value == sub) {
+        subSelect.selectedIndex = i;
+        showSelected();
+        return false;
+      }
+    }
+    showSelected();
+  }
+  return true;
+}
+
+
+//-->
+</script>
+
+<style type="text/css">
+
+.hidden {
+  position:absolute;
+  left:0px;
+  top:-500px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+body {
+  font-family: Optima, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif;
+}
+
+.list-entry {
+  margin-left: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+#main {
+  padding-bottom: 100px;
+}
+
+#footer {
+  z-index: 1;
+  position: fixed; 
+  bottom: 0px;
+  right: 0px; 
+  width: 100%;
+  border-top: 2px solid #000000;
+  background-color: #cccccc;
+}
+
+#left-footer {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+#left-footer select {
+  margin-right: 10px;
+  font-size: 1.1em;
+}
+
+#showlink {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  min-width: 125px;
+}
+
+#top-menu {
+  min-width: 160px;
+}
+
+#sub-menu {
+  min-width: 220px;
+}
+
+#right-footer {
+  margin: 5px 5px 0px 0px;
+  padding: 0;
+  text-align: right;
+}
+
+#footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+dl {
+  margin: 0 0 0 10px;
+}
+
+dd {
+  margin-left: 20px;
+} 
+
+.scenario_entry dt {
+  font-weight: bold;
+}
+
+.indexing dt, .explanation dt {
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.top-level {
+  width: 98%;
+  margin: auto;
+}
+
+.outer {
+  width: 100%;
+  background-color: #a2a2a2;
+  border: 2px solid #000000;
+  margin-bottom: 30px;
+}
+
+.type, .name, .part {
+  border: 4px groove #c0c0c0;
+  padding: 5px 0px 5px 0px;
+  text-align: center;
+}
+
+.explanation, .indexing {
+  padding: 5px 5px 5px 10px;
+  background-color: #ffffff;
+  vertical-align: top;
+  border: 4px groove #c0c0c0;
+  padding: 5px 0px 5px 0px;
+}
+
+.name {
+  background-color: #f3f0f0;
+  font-size: 1.1em;
+}
+
+.part {
+  background-color: #cccccc;
+}
+
+.type, .part {
+  width: 25%;
+}
+
+.type {
+  background-color: #bcbcbc;
+}
+
+.name, .indexing, .explanation {
+  width: 50%;
+}
+
+.top, .middle, .bottom {
+  width: 100%;
+}
+
+.bottom table {
+  border: 4px groove #c0c0c0;
+  width: 100%;
+}
+
+.bottom tr {
+  width: 100%;
+}
+
+.bottom td, .bottom th {
+  border: 1px inset #c0c0c0;
+  vertical-align: top;
+  padding: 8px 20px 8px 20px;
+}
+
+.spaced-lines {
+  line-height: 1.5em;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.light-grey {
+  background-color: #f3f0f0;
+}
+
+.grey {
+  background-color: #cccccc;
+}
+</style>
+
+</head>
+<body onload="initialPopulate();">
+
+<div id="main">
+
+<div class="top-level" id="system_chart:CONNECTOR_SYSTEM">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">SYSTEM</th>
+      <td class="name" colspan="2">CONNECTOR_SYSTEM</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;The connector architecture realizes the connections between the major components that make up the system. The connectors are first-class entities and provide a single 'plug-in/snap-on/strap-on' architecture for high-speed, lightweight, reliable inter-component communication.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector&#8221;, &#8220;components&#8221;, &#8220;data stream&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">Cluster</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></td>
+            <td class="white">&#8220;This cluster holds the set of core interfaces and classes used to define a new component and complementary connector. No implementation-specific classes are in this cluster.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a></td>
+            <td class="white">&#8220;This cluster contains a set of subclusters, each of which is an implementation of the connector architecture for a different communication mechanism.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:UTILITY" onclick="return linkSelect('cluster_chart','cluster_chart:UTILITY');">UTILITY</a></td>
+            <td class="white">&#8220;This cluster contains a set of utility classes that are shared by the connector implementations.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:SPECIFICATION">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">SPECIFICATION</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;This cluster holds the set of core interfaces and classes used to define a new component and complementary connector. No implementation-specific classes are in this cluster.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:SDO" onclick="return linkSelect('class_chart','class_chart:SDO');">SDO</a></td>
+            <td class="white">&#8220;Semantic Data Object; the primary communication mechanism for the Connector architecture.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></td>
+            <td class="white">&#8220;The connection between two or more components.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:COMPONENT" onclick="return linkSelect('class_chart','class_chart:COMPONENT');">COMPONENT</a></td>
+            <td class="white">&#8220;A part of the system that is compositional and will be connected to other components with connectors.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></td>
+            <td class="white">&#8220;A potential communication medium for connectors.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL_INFORMATION" onclick="return linkSelect('class_chart','class_chart:CHANNEL_INFORMATION');">CHANNEL_INFORMATION</a></td>
+            <td class="white">&#8220;Describes the capabilities of a channel.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NEGOTIATOR" onclick="return linkSelect('class_chart','class_chart:NEGOTIATOR');">NEGOTIATOR</a></td>
+            <td class="white">&#8220;Negotiates the channel properties between components and instantiates the appropriate connector.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></td>
+            <td class="white">&#8220;Manages the set of all connectors in a process.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></td>
+            <td class="white">&#8220;An ordered set associated with the multi-resolution nature of connector data.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></td>
+            <td class="white">&#8220;The basic and extended types applied to data in SDOs.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:IMPLEMENTATIONS">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">IMPLEMENTATIONS</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;This cluster contains a set of subclusters, each of which is an implementation of the connector architecture for a different communication mechanism.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th>Cluster</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:MESSAGING" onclick="return linkSelect('cluster_chart','cluster_chart:MESSAGING');">MESSAGING</a></td>
+            <td class="white">&#8220;Communication between a set of components via a messaging architecture.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:LOCAL_METHOD_INVOCATION" onclick="return linkSelect('cluster_chart','cluster_chart:LOCAL_METHOD_INVOCATION');">LOCAL_METHOD_INVOCATION</a></td>
+            <td class="white">&#8220;Communication between a set of components via local method invocation.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:SHARED_MEMORY" onclick="return linkSelect('cluster_chart','cluster_chart:SHARED_MEMORY');">SHARED_MEMORY</a></td>
+            <td class="white">&#8220;Communication between a set of components via shared memory.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:LOCAL_FILES" onclick="return linkSelect('cluster_chart','cluster_chart:LOCAL_FILES');">LOCAL_FILES</a></td>
+            <td class="white">&#8220;Communication between a set of components via shared files in a filesystem.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:PIPES" onclick="return linkSelect('cluster_chart','cluster_chart:PIPES');">PIPES</a></td>
+            <td class="white">&#8220;Communication between a set of components via anonymous or named pipes.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:LOOPBACK" onclick="return linkSelect('cluster_chart','cluster_chart:LOOPBACK');">LOOPBACK</a></td>
+            <td class="white">&#8220;Communication between a set of components via a loopback network device.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:REMOTE_METHOD_INVOCATION" onclick="return linkSelect('cluster_chart','cluster_chart:REMOTE_METHOD_INVOCATION');">REMOTE_METHOD_INVOCATION</a></td>
+            <td class="white">&#8220;Communication between a set of components via remote method invocation (RMI).&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:DATABASE" onclick="return linkSelect('cluster_chart','cluster_chart:DATABASE');">DATABASE</a></td>
+            <td class="white">&#8220;Communication between a set of components via shared database records and/or tables.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#cluster_chart:TUPLE_SPACE" onclick="return linkSelect('cluster_chart','cluster_chart:TUPLE_SPACE');">TUPLE_SPACE</a></td>
+            <td class="white">&#8220;Communication between a set of components via a tuple space (JavaSpace).&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:MESSAGING">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">MESSAGING</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via a messaging architecture.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:LOCAL_METHOD_INVOCATION">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">LOCAL_METHOD_INVOCATION</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via local method invocation.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:SHARED_MEMORY">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">SHARED_MEMORY</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via shared memory.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:LOCAL_FILES">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">LOCAL_FILES</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via shared files in a filesystem.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:PIPES">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">PIPES</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via anonymous or named pipes.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:LOOPBACK">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">LOOPBACK</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via a loopback network device.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:REMOTE_METHOD_INVOCATION">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">REMOTE_METHOD_INVOCATION</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via remote method invocation (RMI).&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:DATABASE">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">DATABASE</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via shared database records and/or tables.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:TUPLE_SPACE">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">TUPLE_SPACE</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;Communication between a set of components via a tuple space (JavaSpace).&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;connector implementations&#8221;;
+          </dd>
+          <dd>
+            note: &#8220;These clusters have not yet been specified.&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="white">&#8220;A placeholder for refinement of this cluster.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:NONE">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">NONE</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;The 'bottom' class of all classes.  NONE inherits from all classes  and has no features.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="cluster_chart:UTILITY">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLUSTER</th>
+      <td class="name" colspan="2">UTILITY</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Purpose</dt>
+          <dd>&#8220;This cluster contains a set of utility classes that are shared by the connector implementations.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            keywords: &#8220;utility functions&#8221;, &#8220;bandwidth&#8221;, &#8220;latency&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+<table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL_ANALYST" onclick="return linkSelect('class_chart','class_chart:CHANNEL_ANALYST');">CHANNEL_ANALYST</a></td>
+            <td class="white">&#8220;Aggregate data and associated analysis of channel availability and conditions.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:DEBUGGING" onclick="return linkSelect('class_chart','class_chart:DEBUGGING');">DEBUGGING</a></td>
+            <td class="white">&#8220;Enable, disable, and fine-tune debugging information within the Connector architecture.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:SDO">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">SDO</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;A Semantic Data Object.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What data/SDO is associated with a given Tag?&#8221;<br/>&#8220;Is a given tag valid?&#8221;<br/>&#8220;Is a given level valid?&#8221;<br/>&#8220;Is a given tag used?&#8221;<br/>&#8220;Does this SDO contain at least one tag of a specified level?&#8221;<br/>&#8220;What is the current size?&#8221;<br/>&#8220;What is the current tag set?&#8221;<br/>&#8220;What is the current value set?&#8221;<br/>&#8220;How many entries (triples) exist?&#8221;<br/>&#8220;What is the type of the data associated with a Tag?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Add/replace (Tag,Level,Data) triple.&#8221;<br/>&#8220;Add/replace (Tag,Level,SDO) triple.&#8221;<br/>&#8220;Delete a triple based upon a Tag.&#8221;<br/>&#8220;Delete all triples above a certain level.&#8221;<br/>&#8220;Delete all triples below a certain level.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;All tags must be valid.&#8221;<br/>&#8220;All used tags has been added but not deleted.&#8221;<br/>&#8220;No two tags can be the same.&#8221;<br/>&#8220;A valid tag is a non-null String.&#8221;<br/>&#8220;The size of an SDO is exactly the sum of the sizes of its (Tag,Level,Data) triples.&#8221;<br/>&#8220;The number of entries in an SDO is exactly the number of tags in its tag set.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:CONNECTOR">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">CONNECTOR</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;A connector between two or more components.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is the current level of this connector?&#8221;<br/>&#8220;What is the current network utilization?&#8221;<br/>&#8220;What is the name of this connector?&#8221;<br/>&#8220;Which channel is used by this connector?&#8221;<br/>&#8220;Which components are attached to this connector?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Send SDO.&#8221;<br/>&#8220;Receive SDO.&#8221;<br/>&#8220;Close this connector.&#8221;<br/>&#8220;Set the name of this connector.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;All connectors have legal levels.&#8221;<br/>&#8220;All connectors have a legal name.&#8221;<br/>&#8220;The components associated with a connector are exactly the connector associated with the components.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:COMPONENT">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">COMPONENT</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;A major part of the system that will be used compositionally and composed via connectors.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What connectors are associated with this component?&#8221;<br/>&#8220;What levels are associated with the connectors of this component?&#8221;<br/>&#8220;What is the maximum level associated with any connector of this component?&#8221;<br/>&#8220;What is the maximum level associated with a connector of this component?&#8221;<br/>&#8220;What bandwidth communication demands does this component make on a connector at each level?&#8221;<br/>&#8220;What latency communication demands does this component make on a connector at each level?&#8221;<br/>&#8220;Is this component ready to be queried and have its connectors manipulated?&#8221;<br/>&#8220;What interfaces does this component need?&#8221;<br/>&#8220;What are the interfaces that this component provides?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Add a connector to the set of connectors through which this component communicates.&#8221;<br/>&#8220;Remove a connector from the set of connectors through which this component communicates.&#8221;<br/>&#8220;Initialize this component so that it is prepared for being queried and having connectors manipulated.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;The components associated with a connector are exactly the connector associated with the components.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:CHANNEL">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">CHANNEL</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;A potential communication medium for connectors.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;Is this channel being used?&#8221;<br/>&#8220;What are the current legal channels?&#8221;<br/>&#8220;What are the potential communication properties of this channel?&#8221;<br/>&#8220;What is the current state of this communication channel?&#8221;<br/>&#8220;Which connectors are using this channel?&#8221;<br/>&#8220;What is the identifier for a channel type?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Build and return a new Channel for a particular channel type.&#8221;<br/>&#8220;Make this channel available for future connectors.&#8221;<br/>&#8220;Make this channel unavailable for future connectors.&#8221;<br/>&#8220;Register a new channel.&#8221;<br/>&#8220;Unregister a channel.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;All types mentioned are elements of the legal channel types set.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:CHANNEL_INFORMATION">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">CHANNEL_INFORMATION</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Describes the capabilities of a channel.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-08-15 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is the maximal data rate of the channel (in kilobytes per second)?&#8221;<br/>&#8220;What is the average data rate of the channel (in kilobytes per second)?&#8221;<br/>&#8220;What is the minimal latency of the channel (in milliseconds)?&#8221;<br/>&#8220;What is the average latency of the channel (in milliseconds)?&#8221;<br/>&#8220;What is the identifier for this channel type?&#8221;<br/>&#8220;What is a printable string form for this data?&#8221;<br/>&#8220;Is this object equal to another?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;Maximum data rate is non-negative.&#8221;<br/>&#8220;Average data rate is non-negative.&#8221;<br/>&#8220;Minimum latency is non-negative.&#8221;<br/>&#8220;Average latency is non-negative.&#8221;<br/>&#8220;Maximum data rate is at least average data rate.&#8221;<br/>&#8220;Minimum latency is at most average latency.&#8221;<br/>&#8220;Channel identifier is a valid and unique per channel-type string.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:NEGOTIATOR">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">NEGOTIATOR</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Negotiates the channel properties between components and instantiates the appropriate connector.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Bind a set of components together into a specified topology.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:MANAGER">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">MANAGER</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Manages the set of all connectors in a process.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What are the connectors currently in use?&#8221;<br/>&#8220;What components are available?&#8221;<br/>&#8220;What channel types are available?&#8221;<br/>&#8220;How many channel types are available?&#8221;<br/>&#8220;Is a particular channel type currently available?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Initialize the Connector system.&#8221;<br/>&#8220;Perform an orderly/immediate shutdown all connectors.&#8221;<br/>&#8220;Perform an orderly/immediate shutdown of a specific connector.&#8221;<br/>&#8220;Register/unregister a component with the manager.&#8221;<br/>&#8220;Compose a set of components.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:LEVEL">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">LEVEL</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Levels associated with components, connectors, and data in SDOs.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;Is this level bigger/smaller than/equal to another?&#8221;<br/>&#8220;What is the value of this level?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Set the level to a particular value.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;Level values are non-negative floats.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:TYPE">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">TYPE</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;The type of a data value in an SDO.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;SPECIFICATION&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What are the valid basic types?&#8221;<br/>&#8220;Is a given type a valid/basic/user type?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Add a new type to the set of user types.&#8221;<br/>&#8220;Remove a type from the set of user types.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;The set of basic types is invariant.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:CHANNEL_ANALYST">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">CHANNEL_ANALYST</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Aggregate data and associated analysis of channel availability and conditions.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;UTILITY&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;What is the current information available for a particular channel type?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Start/stop gathering data on a particular channel type.&#8221;<br/>&#8220;Start/stop gathering data on all channel types.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines">&#8220;All channel types are exactly one of the set of types specified in the CHANNEL class.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="class_chart:DEBUGGING">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS</th>
+      <td class="name" colspan="2">DEBUGGING</td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Type Of Object</dt>
+          <dd>&#8220;Enable, disable, and fine-tune debugging information within the Connector architecture.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            in_cluster: &#8220;UTILITY&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="light-grey">Queries</th>
+            <td class="white spaced-lines">&#8220;Is debugging enabled?&#8221;<br/>&#8220;Is debugging enabled on a particular channel type?&#8221;<br/>&#8220;Is debugging enabled on a particular connector?&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Commands</th>
+            <td class="white spaced-lines">&#8220;Enable/disable debugging on a particular channel type.&#8221;<br/>&#8220;Enable/disable debugging on a particular connector.&#8221;</td>
+          </tr>
+          <tr>
+            <th class="light-grey">Constraints</th>
+            <td class="white spaced-lines"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="event_chart:1">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">EVENT</th>
+      <td class="name" colspan="2"><a href="#system_chart:CONNECTOR_SYSTEM" onclick="return linkSelect('system_chart','system_chart:CONNECTOR_SYSTEM');">CONNECTOR_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 1/2</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;Selected external events triggering representative types of behavior.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">External (incoming)</th>
+            <th class="grey">Involved object types</th>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Request to initialize Connecter system.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span>, <span class="list-entry"><a href="#class_chart:NEGOTIATOR" onclick="return linkSelect('class_chart','class_chart:NEGOTIATOR');">NEGOTIATOR</a></span>, <span class="list-entry"><a href="#class_chart:DEBUGGING" onclick="return linkSelect('class_chart','class_chart:DEBUGGING');">DEBUGGING</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL_ANALYST" onclick="return linkSelect('class_chart','class_chart:CHANNEL_ANALYST');">CHANNEL_ANALYST</a></span>, <span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Register/unregister a component.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span>, <span class="list-entry"><a href="#class_chart:COMPONENT" onclick="return linkSelect('class_chart','class_chart:COMPONENT');">COMPONENT</a></span>, <span class="list-entry"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></span>, <span class="list-entry"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Shutdown all connectors.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span>, <span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Shutdown a specific connector.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span>, <span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Compose a set of components by type.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span>, <span class="list-entry"><a href="#class_chart:NEGOTIATOR" onclick="return linkSelect('class_chart','class_chart:NEGOTIATOR');">NEGOTIATOR</a></span>, <span class="list-entry"><a href="#class_chart:COMPONENT" onclick="return linkSelect('class_chart','class_chart:COMPONENT');">COMPONENT</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></span>, <span class="list-entry"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Compose a set of components by name.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span>, <span class="list-entry"><a href="#class_chart:COMPONENT" onclick="return linkSelect('class_chart','class_chart:COMPONENT');">COMPONENT</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></span>, <span class="list-entry"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Request for the list of components available.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Request for the list of connector types available.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Request for the list of components in use.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Manipulate debugging system (turn on, turn off, enable specific channel types or connectors, etc.).&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:DEBUGGING" onclick="return linkSelect('class_chart','class_chart:DEBUGGING');">DEBUGGING</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Query the types of channels available.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Query the information available for a particular channel type.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CHANNEL_ANALYST" onclick="return linkSelect('class_chart','class_chart:CHANNEL_ANALYST');">CHANNEL_ANALYST</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL_INFORMATION" onclick="return linkSelect('class_chart','class_chart:CHANNEL_INFORMATION');">CHANNEL_INFORMATION</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Start/stop channel information collection for a particular channel type/all channel types.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CHANNEL_ANALYST" onclick="return linkSelect('class_chart','class_chart:CHANNEL_ANALYST');">CHANNEL_ANALYST</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Receive an SDO on a channel.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL_ANALYST" onclick="return linkSelect('class_chart','class_chart:CHANNEL_ANALYST');">CHANNEL_ANALYST</a></span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="event_chart:2">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">EVENT</th>
+      <td class="name" colspan="2"><a href="#system_chart:CONNECTOR_SYSTEM" onclick="return linkSelect('system_chart','system_chart:CONNECTOR_SYSTEM');">CONNECTOR_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 2/2</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;Selected internal events triggering system responses leaving the system.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">Internal (outgoing)</th>
+            <th class="grey">Involved object types</th>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Send an SDO on a connector.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL_ANALYST" onclick="return linkSelect('class_chart','class_chart:CHANNEL_ANALYST');">CHANNEL_ANALYST</a></span>, <span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Query the properties of a channel.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Query the state of a channel.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Query the legal channel types.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Make a channel type available/unavailable for connectors.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Manipulate an SDO.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:SDO" onclick="return linkSelect('class_chart','class_chart:SDO');">SDO</a></span>, <span class="list-entry"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></span>, <span class="list-entry"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Compose a set of components to build a connector.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></span>, <span class="list-entry"><a href="#class_chart:NEGOTIATOR" onclick="return linkSelect('class_chart','class_chart:NEGOTIATOR');">NEGOTIATOR</a></span>, <span class="list-entry"><a href="#class_chart:COMPONENT" onclick="return linkSelect('class_chart','class_chart:COMPONENT');">COMPONENT</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></span>, <span class="list-entry"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey">&#8220;Create a new connector on a channel.&#8221;</td>
+            <td class="white spaced-lines"><span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="scenario_chart:1">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">SCENARIOS</th>
+      <td class="name" colspan="2"><a href="#system_chart:CONNECTOR_SYSTEM" onclick="return linkSelect('system_chart','system_chart:CONNECTOR_SYSTEM');">CONNECTOR_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;Set of representative scenarios to show important types of system behavior.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Initialize the Connector system.</dt>
+                <dd>&#8220;When a system starts up the connector system needs to be initialized. This is a potentially lengthy operation in that it must query the system to determine which channel types are available.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Shutdown the Connector system.</dt>
+                <dd>&#8220;When a system shuts down, all of the components, connectors, and channels need be shut down in an orderly fashion.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Manipulate debugging subsystem.</dt>
+                <dd>&#8220;Turn on, turn off, enable specific channel types or connectors, etc.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Manipulate the analysis subsystem.</dt>
+                <dd>&#8220;Query information for a particular channel type, start/stop channel information collection, etc.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Send an SDO.</dt>
+                <dd>&#8220;A component sends an SDO on a connector, that connector appends the proper metadata for delivery and sends the SDO on its associated channel.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Receive an SDO.</dt>
+                <dd>&#8220;The implementation of a channel delivers an SDO on a connector where it is inspected and queued by the connector for the proper component.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Manipulate the components of a system.</dt>
+                <dd>&#8220;Register/unregister components with the system.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Compose a set of components.</dt>
+                <dd>&#8220;A set of components are chosen and they are composed by the manager. The manager asks the negotiator to analyze the components, their needs, and the current channel availability, and determine which channel type and level is appropriate for this composition. The negotiator creates the new connector(s), registers them with the correct components, and turns on analysis and debugging as appropriate.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Tear down a connection thus disconnecting two or more components.</dt>
+                <dd>&#8220;A connection is chosen to be disconnected. The manager disconnects it from its components, shuts analysis down for it, and finally shuts it down.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+          <tr>
+            <td class="white">
+              <dl class="scenario_entry">
+                <dt>Reconfigure a composition.</dt>
+                <dd>&#8220;Some change in communication or component conditions necessitates a change in component topology. Some external entity performs this analysis, tears down the appropriate connectors, and builds new connectors as appropriate.&#8221;</dd>
+              </dl>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="top-level" id="creation_chart:1">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CREATION</th>
+      <td class="name" colspan="2"><a href="#system_chart:CONNECTOR_SYSTEM" onclick="return linkSelect('system_chart','system_chart:CONNECTOR_SYSTEM');">CONNECTOR_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;List of classes creating objects in the system.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+          <dd>
+            author: &#8220;Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            created: &#8220;2000-07-12 Joseph Kiniry&#8221;;
+          </dd>
+          <dd>
+            revised: &#8220;$Id: connector.bon,v 1.5 2002/04/26 02:01:09 kiniry Exp $&#8221;;
+          </dd>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Creates instances of</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></td>
+            <td class="white"><span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL_ANALYST" onclick="return linkSelect('class_chart','class_chart:CHANNEL_ANALYST');">CHANNEL_ANALYST</a></td>
+            <td class="white"><span class="list-entry"><a href="#class_chart:CHANNEL_INFORMATION" onclick="return linkSelect('class_chart','class_chart:CHANNEL_INFORMATION');">CHANNEL_INFORMATION</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></td>
+            <td class="white"><span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></span>, <span class="list-entry"><a href="#class_chart:DEBUGGING" onclick="return linkSelect('class_chart','class_chart:DEBUGGING');">DEBUGGING</a></span>, <span class="list-entry"><a href="#class_chart:NEGOTIATOR" onclick="return linkSelect('class_chart','class_chart:NEGOTIATOR');">NEGOTIATOR</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></td>
+            <td class="white"><span class="list-entry"><a href="#class_chart:SDO" onclick="return linkSelect('class_chart','class_chart:SDO');">SDO</a></span></td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></td>
+            <td class="white"><span class="list-entry"><a href="#class_chart:SDO" onclick="return linkSelect('class_chart','class_chart:SDO');">SDO</a></span>, <span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry">(<a href="#cluster_chart:IMPLEMENTATIONS" onclick="return linkSelect('cluster_chart','cluster_chart:IMPLEMENTATIONS');">IMPLEMENTATIONS</a>)</span></td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:COMPONENT" onclick="return linkSelect('class_chart','class_chart:COMPONENT');">COMPONENT</a></td>
+            <td class="white"><span class="list-entry"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></span>, <span class="list-entry"><a href="#class_chart:SDO" onclick="return linkSelect('class_chart','class_chart:SDO');">SDO</a></span></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div><div class="top-level" id="class_dictionary:1">
+  <table class="outer">
+    <tr class="top">
+      <th class="type">CLASS DICTIONARY</th>
+      <td class="name" colspan="2"><a href="#system_chart:CONNECTOR_SYSTEM" onclick="return linkSelect('system_chart','system_chart:CONNECTOR_SYSTEM');">CONNECTOR_SYSTEM</a></td>
+      <td class="part"><strong>Part:</strong> 1/1</td>
+    </tr>
+    <tr class="middle">
+      <td class="explanation" colspan="2">
+        <dl>
+          <dt>Comment</dt>
+          <dd>&#8220;BONc automatically generated class dictionary.&#8221;</dd>
+        </dl>
+      </td>
+      <td class="indexing" colspan="2">
+        <dl>
+          <dt>Indexing</dt>
+        </dl>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="bottom">
+        <table>
+          <tr>
+            <th class="grey">Class</th>
+            <th class="grey">Cluster</th>
+            <th class="grey">Description</th>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL" onclick="return linkSelect('class_chart','class_chart:CHANNEL');">CHANNEL</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;A potential communication medium for connectors.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NEGOTIATOR" onclick="return linkSelect('class_chart','class_chart:NEGOTIATOR');">NEGOTIATOR</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;Negotiates the channel properties between components and instantiates the appropriate connector.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:MANAGER" onclick="return linkSelect('class_chart','class_chart:MANAGER');">MANAGER</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;Manages the set of all connectors in a process.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL_ANALYST" onclick="return linkSelect('class_chart','class_chart:CHANNEL_ANALYST');">CHANNEL_ANALYST</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:UTILITY" onclick="return linkSelect('cluster_chart','cluster_chart:UTILITY');">UTILITY</a></span></td>
+            <td class="white">&#8220;Aggregate data and associated analysis of channel availability and conditions.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CHANNEL_INFORMATION" onclick="return linkSelect('class_chart','class_chart:CHANNEL_INFORMATION');">CHANNEL_INFORMATION</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;Describes the capabilities of a channel.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:LEVEL" onclick="return linkSelect('class_chart','class_chart:LEVEL');">LEVEL</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;Levels associated with components, connectors, and data in SDOs.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:COMPONENT" onclick="return linkSelect('class_chart','class_chart:COMPONENT');">COMPONENT</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;A major part of the system that will be used compositionally and composed via connectors.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:SDO" onclick="return linkSelect('class_chart','class_chart:SDO');">SDO</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;A Semantic Data Object.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:CONNECTOR" onclick="return linkSelect('class_chart','class_chart:CONNECTOR');">CONNECTOR</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;A connector between two or more components.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:NONE" onclick="return linkSelect('class_chart','class_chart:NONE');">NONE</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:LOOPBACK" onclick="return linkSelect('cluster_chart','cluster_chart:LOOPBACK');">LOOPBACK</a></span>, <span class="list-entry"><a href="#cluster_chart:LOCAL_METHOD_INVOCATION" onclick="return linkSelect('cluster_chart','cluster_chart:LOCAL_METHOD_INVOCATION');">LOCAL_METHOD_INVOCATION</a></span>, <span class="list-entry"><a href="#cluster_chart:PIPES" onclick="return linkSelect('cluster_chart','cluster_chart:PIPES');">PIPES</a></span>, <span class="list-entry"><a href="#cluster_chart:DATABASE" onclick="return linkSelect('cluster_chart','cluster_chart:DATABASE');">DATABASE</a></span>, <span class="list-entry"><a href="#cluster_chart:REMOTE_METHOD_INVOCATION" onclick="return linkSelect('cluster_chart','cluster_chart:REMOTE_METHOD_INVOCATION');">REMOTE_METHOD_INVOCATION</a></span>, <span class="list-entry"><a href="#cluster_chart:MESSAGING" onclick="return linkSelect('cluster_chart','cluster_chart:MESSAGING');">MESSAGING</a></span>, <span class="list-entry"><a href="#cluster_chart:TUPLE_SPACE" onclick="return linkSelect('cluster_chart','cluster_chart:TUPLE_SPACE');">TUPLE_SPACE</a></span>, <span class="list-entry"><a href="#cluster_chart:SHARED_MEMORY" onclick="return linkSelect('cluster_chart','cluster_chart:SHARED_MEMORY');">SHARED_MEMORY</a></span>, <span class="list-entry"><a href="#cluster_chart:LOCAL_FILES" onclick="return linkSelect('cluster_chart','cluster_chart:LOCAL_FILES');">LOCAL_FILES</a></span></td>
+            <td class="white">&#8220;The 'bottom' class of all classes.  NONE inherits from all classes  and has no features.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:DEBUGGING" onclick="return linkSelect('class_chart','class_chart:DEBUGGING');">DEBUGGING</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:UTILITY" onclick="return linkSelect('cluster_chart','cluster_chart:UTILITY');">UTILITY</a></span></td>
+            <td class="white">&#8220;Enable, disable, and fine-tune debugging information within the Connector architecture.&#8221;</td>
+          </tr>
+          <tr>
+            <td class="light-grey"><a href="#class_chart:TYPE" onclick="return linkSelect('class_chart','class_chart:TYPE');">TYPE</a></td>
+            <td class="light-grey"><span class="list-entry"><a href="#cluster_chart:SPECIFICATION" onclick="return linkSelect('cluster_chart','cluster_chart:SPECIFICATION');">SPECIFICATION</a></span></td>
+            <td class="white">&#8220;The type of a data value in an SDO.&#8221;</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="footer">
+  <p id="left-footer">
+    <button id="showlink" onclick="return toggleShowAll();">Show all</button>
+    Chart type:
+    <select id="top-menu" onchange="populate(); showSelected();"><option>processing...</option></select>
+    Chart:
+    <select id="sub-menu" onchange="showSelected();"><option>processing...</option></select>
+  </p>
+  <p id="right-footer">
+    Generated by <a href="http://www.kindsoftware.com/products/opensource/BONc">BONc</a> (version: bonc-0.1.4) <a href="http://validator.w3.org/check?uri=referer">XHTML</a> output, Fri Mar 14 03:19:14 GMT 2008.
+  </p>
+</div>
+
+</div> <!-- End main -->
+
+</body>
+</html>

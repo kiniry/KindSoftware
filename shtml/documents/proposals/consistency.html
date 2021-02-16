@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: BON Software Model Consistency Checker for Eclipse</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2009 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<div id="header">
+<a href="/">
+<img src="/images/kindsoftware.png" class="kind"
+     alt="KindSoftware" width="576" height="50"/>
+</a>
+</div>
+
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<div id="menu">
+<ul>
+<!-- <li id="one"><a href="/" title="KindSoftware">kind</a></li> -->
+<li id="one"><a href="/about/" title="About Us">about us</a></li>
+<li id="two"><a href="/products/opensource/" title="Software">software</a></li>
+<li id="three"><a href="/documents/" title="Documents">documents</a></li>
+<li id="four"><a href="/documents/research/" title="Research">research</a></li>
+<li id="five"><a href="/documents/visitors/" title="Visitors">visitors</a></li>
+<li id="six"><a href="/documents/trackers/" title="CDEs">cdes</a></li>
+<li id="seven"><a href="http://kindsoftware.blogspot.com/" title="Blog">blog</a></li>
+</ul>
+</div>
+
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><a href="/documents/">Overview</a>
+</li>
+  <li><a href="/documents/mech_theory/">Mechanized Theory</a>
+<ul>
+  <li><a href="/documents/mech_theory/feature_models.html">Formalizing Feature Models</a></li>
+  <li><a href="/documents/mech_theory/verified_vis.html">Verified Visualisation of Textual Modelling Languages</a></li>
+  <li><a href="/documents/mech_theory/concurrency_semantic_property.html">The Concurrency Semantic Property</a></li>
+</ul>
+</li>
+  <li><a href="/documents/news/">News</a>
+<ul>
+  <li><a href="/documents/news/2013.html">2013</a></li>
+  <li><a href="/documents/news/2012.html">2012</a></li>
+  <li><a href="/documents/news/2011.html">2011</a></li>
+  <li><a href="/documents/news/2010.html">2010</a></li>
+  <li><a href="/documents/news/2009.html">2009</a></li>
+  <li><a href="/documents/news/2008.html">2008</a></li>
+  <li><a href="/documents/news/2007.html">2007</a></li>
+  <li><a href="/documents/news/2006.html">2006</a></li>
+  <li><a href="/documents/news/2005.html">2005</a></li>
+  <li><a href="/documents/news/2004.html">2004</a></li>
+  <li><a href="/documents/news/2003.html">2003</a></li>
+</ul>
+</li>
+  <li id="subnavon">
+   <!-- Cadeceus -->
+<!-- add more subnav stuff here -->
+<a href="/documents/proposals/">Project Proposals</a>
+<ul>
+  <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong> </li>
+</ul>
+
+       <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong>Programing and Specification Languages</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/consistency.html">- Simple Model-Implementation Consistency Testing</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/bonmodelmetrics.html">- BON Model Metrics</a></li>
+          <li class="subnavon"><a href="/documents/proposals/ebon.html">- EBON</a></li>
+          <li class="subnavon"><a href="/documents/proposals/eiffel_experiments.html">- Eiffel Language Experimentation</a></li>
+<!--           <li id="subnavon"><a href="/documents/proposals/eiffel_experiments.html">- FLOSS Eiffel Experiments</a></li> -->
+          <li class="subnavon"><em><a href="/documents/proposals/eiffel_clr_backend.html">- A CLR Backend for a FLOSS Eiffel</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/process_for_spec.html">- A Process for the Specification of Core JDK Classes</a></em></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/jml_for_jdt.html"> -->- A JML Parser for JDT<!-- </a> --></li>
+          <li class="subnavon"><em><a href="/documents/proposals/real.html">- REAL: Experiments in Programming Language Design and Implementation</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Morrissey10.pdf">- Maintaining Consistency between Natural Language Specifications and Software Architectures</a></em></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>
+
+  </li>
+  <li><a href="/documents/published/">Published Papers</a>
+</li>
+  <li><a href="/documents/reports/">Reports</a>
+</li>
+  <li><a href="/documents/talks/">Talks</a>
+<ul>
+  <li><a href="/documents/talks/Inaugural_Lecture.html">Feburary 2013 - Saving Democracy from Technology</a></li>
+  <li><a href="/documents/talks/jtres12.html">October 2012 - The Use of JML in Embedded Real-Time Systems</a></li>
+  <li><a href="/documents/talks/tap12.html">June 2012 - Testing Library Specifications by Verifying Conformance Tests</a></li>
+  <li><a href="/documents/talks/ifip.html">December 2011 - Validating Semantics</a></li>
+  <li><a href="/documents/talks/democracy.html">Throughout 2011 - Democracy as a Critical System</a></li>
+  <li><a href="/documents/talks/tomeso.html">April 2011 - Reasoning about Concurrency in (RT) Java</a></li>
+  <li><a href="/documents/talks/teachIT-Student_Groups.html">November 2010 - Student Group Work</a></li>
+  <li><a href="/documents/talks/cost_wg4.html">May 2008 - Tool Integration</a></li>
+  <li><a href="/documents/talks/ninja08.html">May 2008 - Secret Ninja Formal Methods</a></li>
+  <li><a href="/documents/talks/verified_gaming.html">May 2008 - Verified Gaming</a></li>
+  <li><a href="/documents/talks/mobius_pve.html">May 2008 - The Mobius Program Verification Environment</a></li>
+  <li><a href="/documents/talks/rigor08.html">April 2008 - A Bit of Rigor</a></li>
+  <li><a href="/documents/talks/newcastle07.html">2007 - Practical Verification of Java</a></li>
+  <li><a href="/documents/talks/key07.html">2007 - KeY Symposium</a></li>
+  <li><a href="/documents/talks/savcbs07.html">September 2007 - SAVCBS</a></li>
+  <li><a href="/documents/talks/splc07.html">September 2007 - SPLC</a></li>
+  <li><a href="/documents/talks/evt07.html">August 2007 - EVT</a></li>
+  <li><a href="/documents/talks/tgc06.html">November 2006 - TGC</a></li>
+  <li><a href="/documents/talks/odysseus06.html">June 2006 - Odysseus</a></li>
+  <li><a href="/documents/talks/fmco05.html">November 2005 - FMCO</a></li>
+  <li><a href="/documents/talks/fm_gc6.html">July 2005 - FM GC6</a></li>
+  <li><a href="/documents/talks/ksu.html">June 2005 - KSU</a></li>
+  <li><a href="/documents/talks/aist.html">December 2004 - AIST</a></li>
+  <li><a href="/documents/talks/lajug.html">August 2002 - LAJUG</a></li>
+</ul>
+</li>
+  <li><a href="/documents/tutorials/">Tutorials</a>
+<ul>
+  <li> <a href="ecoop04.html">ECOOP 2004</a> </li>
+  <li> <a href="etaps05.html">ETAPS 2005</a> </li>
+  <li> <a href="fm05.html">FM 2005</a> </li>
+  <li> <a href="ecoop05.html">ECOOP 2005</a> </li>
+  <li> <a href="esecfse05.html">ESEC/FSE 2005</a> </li>
+  <li> <a href="fmco05.html">FMCO 2005</a> </li>
+  <li> <a href="etaps08.html">ETAPS 2008</a> </li>
+  <li> <a href="tools08.html">TOOLS 2008</a> </li>
+  <li> <a href="globan08.html">GLOBAN 2008</a> </li>
+<!--   <li> <a href="fm08.html">FM 2008</a> </li> -->
+  <li> <a href="etaps09.html">ETAPS 2009</a> </li>
+  <li> <a href="cost_ic0701.html">COST 2009</a> </li>
+</ul>
+</li>
+  <li><a href="/documents/whitepapers/">White Papers</a>
+<ul>
+  <li><a href="MartinezKiniry12.pdf">Orchestrating with Contracts 
+  (technical report)</a></li>
+  <li><a href="/documents/whitepapers/code_standards/">KindSoftware
+      Coding Standards</a></li>
+  <li><a href="/documents/whitepapers/algebraic_solutions.html">Exercises from
+      "Algebraic Semantics of Imperative Programs" Solutions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>BON Software Model Consistency Checker for Eclipse</h2>
+
+<p> <strong>Note:</strong> <em>This project (together with an Eclipse
+plugin) was completed successfully as a 2008-2009 Final Year Project
+by Eva Darulova. The project is called <a
+href="products/opensource/Beetlz/"><strong>Beetlz</strong></a> (<a
+href="reports/Darulova09.pdf">report</a> | <a
+href="/products/opensource/Beetlz/">website</a>).</em> </p>
+
+<hr />
+
+<h3> Summary of Eva's Work </h3>
+
+<h4> Beetlz - BON Software Model Consistency Checker for Eclipse </h4>
+<h5> Winner of IBM Open Source Software competition <br />
+     Eva Darulova, UCD 2009 </h5>
+
+<p> Development of a software project usually involves, to some
+extent, both modelling and specification languages. Although both are
+useful in their own right, using them together in an interconnected
+way brings many benefits to all stages of the development process.
+Work can proceed on both the model and the implementation
+concurrently. However, this approach requires tool support that keeps
+the two versions consistent and updates them when necessary. This
+report discusses the theoretical and practical considerations of a
+such a combination between the Business Object Notation and Java,
+together with the Java Modelling Language. It defines and discusses
+relations between individual concepts and presents their
+implementation in the automatic consistency checking Eclipse IDE
+plugin and tool "Beetlz". </p>
+
+<p> Consistency checks are commonly being performed during software
+development as they help to identify potential bugs and errors. Most
+common examples are compilers and typecheckers for specific languages
+but work has also been done on tools that check the consistency
+between different software models, different representations within
+the same notation or fully integrated industrial solutions. This
+report extends this work in that it presents a relation between the
+model language BON and the concrete implementation language Java. The
+successful partial implementation shows that an automatic consistency
+checking tool is indeed feasible and meaningful even if the relation
+is not always perfect. Surprisingly, mappings between BON and pure
+Java constructs prove to be more complex and more involved than
+relations on the assertion languages. It may also seem to the casual
+reader that those relations have many deficiencies, but in fact the
+details they are concerned with mostly turn out to be exotic and
+rather rare special cases. The Beetlz tool has been designed to be
+tolerant in those instances so that it can be readily used in software
+development.  This project and the experience gained from concluding
+it also show that BON and JML are straightforward enough to be quickly
+learned by anyone with average knowledge of Java. It has been
+suggested before to use BON for introducing more formal approaches
+into software engineering and in universities especially. By providing
+tool support that links BON to a very popular programming language,
+Beetlz is thus also suitable for promoting formal methods. </p>
+
+<p> The basic relations between BON and Java are implemented and ready
+for use but further work remains to be done. Some concepts can only be
+mapped unsatisfactorily, however these relations can be corrected by
+extending BON further and thus customising it towards Java and other
+similar object oriented languages. Instances for such extensions
+include static access, more elaborate generics and an exact definition
+of client relations. Furthermore, BON dynamic charts, another possible
+description of a project, have been entirely disregarded in this
+analysis, but may prove useful when specifying a program's
+behaviour. Support for additional JML elements, like multiple
+specification cases, heavy-weight specifications or further operators
+will also become important if Beetlz is to be used in actual software
+development. Another area of improvement is the generation of skeleton
+code. The current functionality works fine when used by itself,
+however creation of ASTs would make it possible to pass on information
+to other tools and thus provide more comprehensive functionality.
+(Currently this not possible due to limitations on third party
+projects but is in development).  On the theoretical side, formalising
+the relations between BON and Java, which at present only exist in
+structured English, would make a very interesting but also quite
+involved future project. </p>
+
+<p> This project outlines how it is possible and advantageous to use a
+model of the software together with its implementation in a seamless
+manner. With added tool support, as the Beetlz tool demonstrates,
+updating of the model and/or the implementation is taken care of
+mostly automatically and thus can serve two purposes:
+<ol>
+<li> Encourage the use of software models in software engineering.
+<li> Reduce faults and misunderstandings resulting from poor
+communication with customers and/or team members.
+</ol>
+</p>
+
+<hr />
+
+<h3> Original Project Specification </h3>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+
+  <li> <strong>Subject Area</strong> Software Engineering</li>
+
+  <li> <strong>Pre-requisite</strong> Good competency in programming
+      in Java </li>
+
+  <li> <strong>Co-requisite (things you must learn along the
+      way)</strong> knowledge of software design, software modelling,
+      software specification, BON notation, JML notation </li>
+
+  <li> <strong>Subject Coverage</strong> Software Design, Software
+      Models, BON, JML </li>
+
+  <li> <strong>Project Type</strong> Design &amp; Implementation</li>
+
+  <li> <strong>Hardware/Software:</strong> PC, laptop or workstation
+      capable of running Java and Eclipse</li>
+</ul>
+
+<h3>Description</h3>
+
+<p> Business Object Notation (BON) has been developed for designing
+and analysing object-oriented programs. It is designed to enable a
+seamless and reversible development process as well as software
+contracting. It provides a textual, graphical and an informal
+representation of the system to be developed. Thus it can close the
+communication gap between technical and non-technical people
+(e.g. programmer and project manager) involved in the design and
+implementation of software. </p>
+
+<p> The Java Modeling Language (JML) is a formal specification
+language for Java. It follows the Java syntax closely and its
+annotations are inserted directly into code. By doing so, it is easy
+for developers to learn and convenient to apply. It employs the design
+by contract approach by specifying preconditions, postconditions and
+invariants. With its extensive tool support it is greatly suitable for
+development of commercial software. </p>
+
+<p> To make the most of a software model it has to be used throughout
+the development process, not just for the initial draft. For example,
+it can be used to update high-level manager on possible changes in the
+implementation without confusing them with technical details. This can
+only be achieved when the model is always up-to-date during whole of
+the development process. This project aims to provide such
+synchronisation by checking the consistency between a BON model and
+the corresponding Java source code with JML annotations. </p>
+
+<h3>Mandatory</h3>
+
+<ol>
+
+  <li> Familiarisation with software modeling and the BON
+      method/language </li>
+
+  <li> Familiarisation with design by contract and the Java Modeling
+      Language (JML) </li>
+
+  <li> Familiarisation with development of Eclipse plugins </li>
+      
+  <li> Create a mapping between BON features and JML features and
+      identify possible issues where the two notations may not be
+      (fully) compatible </li>
+      
+  <li> Implement an Eclipse plugin that reads in a BON file (format to
+      be decided) and highlights differences in the corresponding
+      Java/JML source code </li>
+      
+  <li> Design and implement a test program </li>
+
+</ol>
+
+<h3>Discretionary</h3>
+
+<ol>
+
+  <li> Design a GUI that is clearly arranged and flexible </li>
+
+  <li> Include the option to generate Java skeleton code with JML
+      annotations from BON model </li>
+
+  <li> Make checks possible in both directions (BON -> Java and Java
+      -> BON) </li>
+      
+  <li> Internationalize the plugin </li>
+    
+  <li> Make the plugin effective (e.g., it will only check lines of
+      code that have changed since the last check) </li>
+    
+  <li> Allow for JML and BON to be extendable (e.g., custom tags,
+      keywords) </li>
+
+</ol>
+
+<h3>Exceptional</h3>
+
+<ol>
+  <li>Write, submit, and publish a paper on the results.</li>
+</ol>
+
+<h3>Sources of information and preparatory reading</h3>
+
+<ol>
+
+  <li> Seamless Object-Oriented Software Architecture---Analysis and
+      Design of Reliable Systems by Kim Walden and Jean-Marc Nerson.
+      Available <a href="http://www.bon-method.com/">online</a>. </li>
+
+ <li> <a href="http://www.jmlspecs.org/">JML Homepage</a> </li>
+     
+ <li> <a href="http://www.ibm.com/developerworks/library/os-ecplug/">Developing
+     Eclipse Plugins</a> (IBM) </li>
+         
+ <li> <a href="http://java.sun.com/docs/books/tutorial/i18n/intro/index.html">Java
+     tutorial on Internationalization</a> </li>
+
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2009 <a href="/">KindSoftware</a>. :: Page Last Updated: Tuesday, 16-Feb-2021 11:46:35 PST <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

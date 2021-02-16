@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: Specifying the Irish Voting System</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<div id="header">
+<a href="/">
+<img src="/images/kindsoftware.png" class="kind"
+     alt="KindSoftware" width="576" height="50"/>
+</a>
+</div>
+
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<div id="menu">
+<ul>
+<!-- <li id="one"><a href="/" title="KindSoftware">kind</a></li> -->
+<li id="one"><a href="/about/" title="About Us">about us</a></li>
+<li id="two"><a href="/products/opensource/" title="Software">software</a></li>
+<li id="three"><a href="/documents/" title="Documents">documents</a></li>
+<li id="four"><a href="/documents/research/" title="Research">research</a></li>
+<li id="five"><a href="/documents/visitors/" title="Visitors">visitors</a></li>
+<li id="six"><a href="/documents/trackers/" title="CDEs">cdes</a></li>
+<li id="seven"><a href="http://kindsoftware.blogspot.com/" title="Blog">blog</a></li>
+</ul>
+</div>
+
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><a href="/documents/">Overview</a>
+</li>
+  <li><a href="/documents/mech_theory/">Mechanized Theory</a>
+<ul>
+  <li><a href="/documents/mech_theory/feature_models.html">Formalizing Feature Models</a></li>
+  <li><a href="/documents/mech_theory/verified_vis.html">Verified Visualisation of Textual Modelling Languages</a></li>
+  <li><a href="/documents/mech_theory/concurrency_semantic_property.html">The Concurrency Semantic Property</a></li>
+</ul>
+</li>
+  <li><a href="/documents/news/">News</a>
+<ul>
+  <li><a href="/documents/news/2013.html">2013</a></li>
+  <li><a href="/documents/news/2012.html">2012</a></li>
+  <li><a href="/documents/news/2011.html">2011</a></li>
+  <li><a href="/documents/news/2010.html">2010</a></li>
+  <li><a href="/documents/news/2009.html">2009</a></li>
+  <li><a href="/documents/news/2008.html">2008</a></li>
+  <li><a href="/documents/news/2007.html">2007</a></li>
+  <li><a href="/documents/news/2006.html">2006</a></li>
+  <li><a href="/documents/news/2005.html">2005</a></li>
+  <li><a href="/documents/news/2004.html">2004</a></li>
+  <li><a href="/documents/news/2003.html">2003</a></li>
+</ul>
+</li>
+  <li id="subnavon">
+    <!-- Cadeceus -->
+<!-- add more subnav stuff here -->
+<a href="/documents/proposals/">Project Proposals</a>
+<ul>
+  <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong> </li>
+</ul>
+
+        <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>Case Studies</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/danish_voting.html">- Specifying the Danish Voting System</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Palmer10.pdf">- SensorML on SenseTile</a></em></li>
+          <li class="subnavon"><em><a href="/documents/reports/Chojna10.pdf">- Data Stream Processing on Enterprise Integration Platforms</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/revive_koa.html">- KOA: A Remote Voting Experimentation Platform</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/koa_tally.html">- Full Verification of the KOA Tally System</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/spec_votail.html">- Specifying the Irish Voting System</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/impl_votail.html">- Implementing the Irish Voting System</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/new_koa.html">- New Specification the KOA Remote Voting System</a></li>
+          <li class="subnavon"><a href="/documents/proposals/mondex.html">- The Mondex Case Study</a></li>
+          <li class="subnavon"><a href="/documents/proposals/koa_votecomp.html">- Preparing KOA for VoteComp</a></li>
+          <li class="subnavon"><a href="/documents/proposals/JML_POSIX.html">- JML/POSIX filesystem</a></li>
+          <li class="subnavon"><a href="/documents/proposals/internet_voting.html">- Formal Specification of a Security Protocol for Internet Voting</a></li>
+        </ul>
+      </li>
+    </ul>
+</li>
+  <li><a href="/documents/published/">Published Papers</a>
+</li>
+  <li><a href="/documents/reports/">Reports</a>
+</li>
+  <li><a href="/documents/talks/">Talks</a>
+<ul>
+  <li><a href="/documents/talks/Inaugural_Lecture.html">Feburary 2013 - Saving Democracy from Technology</a></li>
+  <li><a href="/documents/talks/jtres12.html">October 2012 - The Use of JML in Embedded Real-Time Systems</a></li>
+  <li><a href="/documents/talks/tap12.html">June 2012 - Testing Library Specifications by Verifying Conformance Tests</a></li>
+  <li><a href="/documents/talks/ifip.html">December 2011 - Validating Semantics</a></li>
+  <li><a href="/documents/talks/democracy.html">Throughout 2011 - Democracy as a Critical System</a></li>
+  <li><a href="/documents/talks/tomeso.html">April 2011 - Reasoning about Concurrency in (RT) Java</a></li>
+  <li><a href="/documents/talks/teachIT-Student_Groups.html">November 2010 - Student Group Work</a></li>
+  <li><a href="/documents/talks/cost_wg4.html">May 2008 - Tool Integration</a></li>
+  <li><a href="/documents/talks/ninja08.html">May 2008 - Secret Ninja Formal Methods</a></li>
+  <li><a href="/documents/talks/verified_gaming.html">May 2008 - Verified Gaming</a></li>
+  <li><a href="/documents/talks/mobius_pve.html">May 2008 - The Mobius Program Verification Environment</a></li>
+  <li><a href="/documents/talks/rigor08.html">April 2008 - A Bit of Rigor</a></li>
+  <li><a href="/documents/talks/newcastle07.html">2007 - Practical Verification of Java</a></li>
+  <li><a href="/documents/talks/key07.html">2007 - KeY Symposium</a></li>
+  <li><a href="/documents/talks/savcbs07.html">September 2007 - SAVCBS</a></li>
+  <li><a href="/documents/talks/splc07.html">September 2007 - SPLC</a></li>
+  <li><a href="/documents/talks/evt07.html">August 2007 - EVT</a></li>
+  <li><a href="/documents/talks/tgc06.html">November 2006 - TGC</a></li>
+  <li><a href="/documents/talks/odysseus06.html">June 2006 - Odysseus</a></li>
+  <li><a href="/documents/talks/fmco05.html">November 2005 - FMCO</a></li>
+  <li><a href="/documents/talks/fm_gc6.html">July 2005 - FM GC6</a></li>
+  <li><a href="/documents/talks/ksu.html">June 2005 - KSU</a></li>
+  <li><a href="/documents/talks/aist.html">December 2004 - AIST</a></li>
+  <li><a href="/documents/talks/lajug.html">August 2002 - LAJUG</a></li>
+</ul>
+</li>
+  <li><a href="/documents/tutorials/">Tutorials</a>
+<ul>
+  <li> <a href="ecoop04.html">ECOOP 2004</a> </li>
+  <li> <a href="etaps05.html">ETAPS 2005</a> </li>
+  <li> <a href="fm05.html">FM 2005</a> </li>
+  <li> <a href="ecoop05.html">ECOOP 2005</a> </li>
+  <li> <a href="esecfse05.html">ESEC/FSE 2005</a> </li>
+  <li> <a href="fmco05.html">FMCO 2005</a> </li>
+  <li> <a href="etaps08.html">ETAPS 2008</a> </li>
+  <li> <a href="tools08.html">TOOLS 2008</a> </li>
+  <li> <a href="globan08.html">GLOBAN 2008</a> </li>
+<!--   <li> <a href="fm08.html">FM 2008</a> </li> -->
+  <li> <a href="etaps09.html">ETAPS 2009</a> </li>
+  <li> <a href="cost_ic0701.html">COST 2009</a> </li>
+</ul>
+</li>
+  <li><a href="/documents/whitepapers/">White Papers</a>
+<ul>
+  <li><a href="MartinezKiniry12.pdf">Orchestrating with Contracts 
+  (technical report)</a></li>
+  <li><a href="/documents/whitepapers/code_standards/">KindSoftware
+      Coding Standards</a></li>
+  <li><a href="/documents/whitepapers/algebraic_solutions.html">Exercises from
+      "Algebraic Semantics of Imperative Programs" Solutions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>Specifying the Irish Voting System</h2>
+
+<p> <em><strong>Note:</strong> This project was accomplished
+  by <a href="/about/people/dc.html">Dermot Cochran</a> in 2005-2006
+  to earn his MSc in Advanced Software Engineering in
+  the <a href="http://www.csi.ucd.ie/">School of Computer Science and
+  Informatics</a> at UCD.  This work is now a part of
+  the <a href="/products/opensource/KOA/">KOA Remote Voting
+  System</a>.  Dermot continues to work on this project.  Please
+  contact him for more details.</em> </p>
+
+<p> The report/thesis written for this project is available here:
+  <a href="reports/Cochran06.pdf">"Secure Internet Voting in Ireland
+    Using the Open Source Kiezen op Afstand (KOA) Remote Voting
+    System"</a> by Dermot Cochran. </p>
+
+<hr />
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+      <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong>
+      software engineering </li>
+      
+  <li> <strong>Pre-requisites</strong>
+      strong knowledge of Java and strong programming skills </li>
+
+  <li> <strong>Co-requisites (things you must learn along the way)</strong>
+      Irish voting system and law, the Java Modeling Language, the JML
+      tool suite, ESC/Java2 </li>
+
+  <li> <strong>Subject Coverage</strong>
+      software engineering with applied formal methods </li>
+
+  <li> <strong>Project Type</strong>
+      formal system design and specification </li>
+      
+  <li> <strong>Hardware/Software</strong> PC, laptop or workstation
+      capable of running Java and Eclipse </li> </ul>
+</ul>
+
+<h3>Description</h3>
+
+<p> Using a verification-centric software process, perform an analysis
+  of the Irish voting system law (knows as "votail" in Irish) and
+  design and formally specify an architecture to realize this voting
+  system. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+  <li> Become familiar with the Irish voting system law. </li>
+
+  <li> Perform a requirements analysis of the Irish voting system by
+    careful analysis of the legal text. </li>
+
+  <li> Design and formally specify, using JML-annotated Java, the
+    Irish voting system according to the aforementioned requirements
+    analysis. </li>
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+  <li> Check the soundness of the formal specification using
+    ESC/Java. </li>
+  <li> Contribute this formal specification to
+    the <a href="http://www.fmnet.info/vsr-net/">Verified Software
+      Repository</a>. </li>
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+  <li> Coauthor, submit, and publish a paper on this work. </li>
+
+  <li> Specify and prove some (behavioral and security) properties
+    about the specification. </li>
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+  <li> The <a href="http://www.cev.ie/">Commission for Electronic
+      Voting</a> website </li>
+  <li> The <a href="http://www.fmnet.info/vsr-net/">Verified Software
+      Repository Project</a></li>
+  <li> The <a href="/documents/whitepapers/code_standards/">KindSoftware
+      Coding Standard</a> </li>
+  <li> The <a href="http://www.jmlspecs.org/">JML tool suite</a> </li>
+  <li> The <a href="/products/opensource/ESCJava2/">Extended
+      Static Checker for Java</a>, ESC/Java2 </li>
+  <li> <a href="http://archive.eiffel.com/doc/manuals/technology/contract/">Design
+      by Contract</a> </li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: Tuesday, 16-Feb-2021 11:46:35 PST <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>KindSoftware: An OpenBSD Super-Lint</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="/stylesheets/kind.css" />
+
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="ALL" />
+<meta name="Copyright" content="Copyright (c) 2004-2007 Joseph Kiniry, KindSoftware LLC" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+
+<meta name="description" content="formal methods in software engineering" />
+<meta name="keywords" content="formal methods, kindsoftware" />
+
+<link rel="help" href="http://www.kindsoftware.com/about/" title="Site Information" />
+
+<meta name="Rating" content="General" />
+<meta name="doc-class" content="Living Document" />
+
+</head>
+
+<body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
+
+
+<div id="theory">
+<div id="wrapper">
+
+<!-- Kindsoftware Logo in Header -->
+
+<div id="header">
+<a href="/">
+<img src="/images/kindsoftware.png" class="kind"
+     alt="KindSoftware" width="576" height="50"/>
+</a>
+</div>
+
+
+<div id="wrapper2">
+
+<!-- Top Level Menu -->
+
+<div id="menu">
+<ul>
+<!-- <li id="one"><a href="/" title="KindSoftware">kind</a></li> -->
+<li id="one"><a href="/about/" title="About Us">about us</a></li>
+<li id="two"><a href="/products/opensource/" title="Software">software</a></li>
+<li id="three"><a href="/documents/" title="Documents">documents</a></li>
+<li id="four"><a href="/documents/research/" title="Research">research</a></li>
+<li id="five"><a href="/documents/visitors/" title="Visitors">visitors</a></li>
+<li id="six"><a href="/documents/trackers/" title="CDEs">cdes</a></li>
+<li id="seven"><a href="http://kindsoftware.blogspot.com/" title="Blog">blog</a></li>
+</ul>
+</div>
+
+
+<!-- End Top Level Menu -->
+
+<!-- Main page on left and sidebar on right -->
+<div id="pagebody">
+
+<!-- Sidebar -->
+<div id="sidebar">
+
+<!-- Nature Photo -->
+<img src="/images/aster.jpg" border="0" width="180" height="100" alt="Documents" name="aster" />
+
+<!-- Sub menu within sidebar -->
+<!-- All secondary menus are hidden except the ones under "subnavon" -->
+<div id="subnav">
+<ul>
+  <li><a href="/documents/">Overview</a>
+</li>
+  <li><a href="/documents/mech_theory/">Mechanized Theory</a>
+<ul>
+  <li><a href="/documents/mech_theory/feature_models.html">Formalizing Feature Models</a></li>
+  <li><a href="/documents/mech_theory/verified_vis.html">Verified Visualisation of Textual Modelling Languages</a></li>
+  <li><a href="/documents/mech_theory/concurrency_semantic_property.html">The Concurrency Semantic Property</a></li>
+</ul>
+</li>
+  <li><a href="/documents/news/">News</a>
+<ul>
+  <li><a href="/documents/news/2013.html">2013</a></li>
+  <li><a href="/documents/news/2012.html">2012</a></li>
+  <li><a href="/documents/news/2011.html">2011</a></li>
+  <li><a href="/documents/news/2010.html">2010</a></li>
+  <li><a href="/documents/news/2009.html">2009</a></li>
+  <li><a href="/documents/news/2008.html">2008</a></li>
+  <li><a href="/documents/news/2007.html">2007</a></li>
+  <li><a href="/documents/news/2006.html">2006</a></li>
+  <li><a href="/documents/news/2005.html">2005</a></li>
+  <li><a href="/documents/news/2004.html">2004</a></li>
+  <li><a href="/documents/news/2003.html">2003</a></li>
+</ul>
+</li>
+  <li id="subnavon">
+   <!-- Cadeceus -->
+<!-- add more subnav stuff here -->
+<a href="/documents/proposals/">Project Proposals</a>
+<ul>
+  <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="os_and_compilers.html">Operating Systems and Compilers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong> </li>
+
+  <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong> </li>
+</ul>
+
+       <!-- add more subnav stuff here -->
+    <ul>
+      <li class="proposalsclass"><strong><a href="prog_and_spec_langs.html">Programing and Specification Languages</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="ides.html">IDEs</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theory.html">Theory</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong>Operating Systems and Compilers</strong>
+        <ul>
+          <li class="subnavon"><em><a href="/documents/proposals/contracts_in_openbsd.html">- Contracts in OpenBSD</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/datastructs_in_openbsd.html">- Data Structures in OpenBSD</a></em></li>
+          <li class="subnavon"><em><a href="/documents/proposals/bugs_in_openbsd.html">- Bugs in OpenBSD</a></em></li>
+          <li class="subnavon"><a href="/documents/proposals/superlint.html">- OpenBSD Super-Lint</a></li>
+          <li class="subnavon"><a href="/documents/proposals/kernel_locks.html">- Automatic Derivation of Kernel Locks for OpenBSD</a></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- Memory Leak Analysis in OpenBSD<!-- </a> --></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- OCaml in OpenBSD<!-- </a> --></li>
+          <li class="subnavon"><!-- <a href="/documents/proposals/.html"> -->- Cil Evaluation<!-- </a> --></li>
+        </ul>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="theorem_provers.html">Theorem Provers</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="verification.html">Verification</a></strong>
+      </li>
+
+      <li class="proposalsclass"><strong><a href="case_studies.html">Case Studies</a></strong>
+      </li>
+    </ul>
+
+  </li>
+  <li><a href="/documents/published/">Published Papers</a>
+</li>
+  <li><a href="/documents/reports/">Reports</a>
+</li>
+  <li><a href="/documents/talks/">Talks</a>
+<ul>
+  <li><a href="/documents/talks/Inaugural_Lecture.html">Feburary 2013 - Saving Democracy from Technology</a></li>
+  <li><a href="/documents/talks/jtres12.html">October 2012 - The Use of JML in Embedded Real-Time Systems</a></li>
+  <li><a href="/documents/talks/tap12.html">June 2012 - Testing Library Specifications by Verifying Conformance Tests</a></li>
+  <li><a href="/documents/talks/ifip.html">December 2011 - Validating Semantics</a></li>
+  <li><a href="/documents/talks/democracy.html">Throughout 2011 - Democracy as a Critical System</a></li>
+  <li><a href="/documents/talks/tomeso.html">April 2011 - Reasoning about Concurrency in (RT) Java</a></li>
+  <li><a href="/documents/talks/teachIT-Student_Groups.html">November 2010 - Student Group Work</a></li>
+  <li><a href="/documents/talks/cost_wg4.html">May 2008 - Tool Integration</a></li>
+  <li><a href="/documents/talks/ninja08.html">May 2008 - Secret Ninja Formal Methods</a></li>
+  <li><a href="/documents/talks/verified_gaming.html">May 2008 - Verified Gaming</a></li>
+  <li><a href="/documents/talks/mobius_pve.html">May 2008 - The Mobius Program Verification Environment</a></li>
+  <li><a href="/documents/talks/rigor08.html">April 2008 - A Bit of Rigor</a></li>
+  <li><a href="/documents/talks/newcastle07.html">2007 - Practical Verification of Java</a></li>
+  <li><a href="/documents/talks/key07.html">2007 - KeY Symposium</a></li>
+  <li><a href="/documents/talks/savcbs07.html">September 2007 - SAVCBS</a></li>
+  <li><a href="/documents/talks/splc07.html">September 2007 - SPLC</a></li>
+  <li><a href="/documents/talks/evt07.html">August 2007 - EVT</a></li>
+  <li><a href="/documents/talks/tgc06.html">November 2006 - TGC</a></li>
+  <li><a href="/documents/talks/odysseus06.html">June 2006 - Odysseus</a></li>
+  <li><a href="/documents/talks/fmco05.html">November 2005 - FMCO</a></li>
+  <li><a href="/documents/talks/fm_gc6.html">July 2005 - FM GC6</a></li>
+  <li><a href="/documents/talks/ksu.html">June 2005 - KSU</a></li>
+  <li><a href="/documents/talks/aist.html">December 2004 - AIST</a></li>
+  <li><a href="/documents/talks/lajug.html">August 2002 - LAJUG</a></li>
+</ul>
+</li>
+  <li><a href="/documents/tutorials/">Tutorials</a>
+<ul>
+  <li> <a href="ecoop04.html">ECOOP 2004</a> </li>
+  <li> <a href="etaps05.html">ETAPS 2005</a> </li>
+  <li> <a href="fm05.html">FM 2005</a> </li>
+  <li> <a href="ecoop05.html">ECOOP 2005</a> </li>
+  <li> <a href="esecfse05.html">ESEC/FSE 2005</a> </li>
+  <li> <a href="fmco05.html">FMCO 2005</a> </li>
+  <li> <a href="etaps08.html">ETAPS 2008</a> </li>
+  <li> <a href="tools08.html">TOOLS 2008</a> </li>
+  <li> <a href="globan08.html">GLOBAN 2008</a> </li>
+<!--   <li> <a href="fm08.html">FM 2008</a> </li> -->
+  <li> <a href="etaps09.html">ETAPS 2009</a> </li>
+  <li> <a href="cost_ic0701.html">COST 2009</a> </li>
+</ul>
+</li>
+  <li><a href="/documents/whitepapers/">White Papers</a>
+<ul>
+  <li><a href="MartinezKiniry12.pdf">Orchestrating with Contracts 
+  (technical report)</a></li>
+  <li><a href="/documents/whitepapers/code_standards/">KindSoftware
+      Coding Standards</a></li>
+  <li><a href="/documents/whitepapers/algebraic_solutions.html">Exercises from
+      "Algebraic Semantics of Imperative Programs" Solutions</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- End submenus -->
+
+</div>
+<!-- End Sidebar -->
+
+<!-- Main content on left side -->
+<div id="maincontent">
+
+<h2>An OpenBSD Super-Lint</h2>
+
+<ul>
+  <li> <strong>Supervisor</strong> 
+    <a href="/about/people/jrk.html">Dr. Joseph Kiniry</a></li>
+      
+  <li> <strong>Subject Area</strong> Software Engineering </li>
+      
+  <li> <strong>Pre-requisites</strong> Very good knowledge of C </li>
+
+  <li> <strong>Co-requisites (things you must learn along the
+    way)</strong> Good knowledge of UNIX (generally) and OpenBSD
+    (specifically), static program checking, and OS-level systems
+    programming </li>
+      
+  <li> <strong>Subject Coverage</strong> Programming Languages,
+      Compilers, Static Analysis </li>
+
+  <li> <strong>Project Type</strong> Design and Implementation </li>
+      
+  <li> <strong>Hardware</strong> Any computer running OpenBSD </li>
+</ul>
+
+<h3>Description</h3>
+
+<p> <a href="http://www.openbsd.org/">OpenBSD</a> is widely regarded
+as the world's most secure operating system.  It represents the
+combined effort of hundreds of dedicated individuals, most of whom
+work in their spare time for free, over nearly a decade. </p>
+
+<p> OpenBSD developers try very hard to write code that is
+well-designed, clean, maintainable, but above all, <em>secure</em>.  A
+number of techniques are used for such, but most of them are
+relatively <em>ad hoc</em> when compared to the kind of program
+development that that KindSoftware research group regularly
+participates in. </p>
+
+<p> One way to further improve the quality and security of OpenBSD
+code is to use various types of static analysis to reason about the
+code to (perhaps automatically) ensure that it conforms to some form
+of (perhaps lightweight, or entirely implicit) specification. </p>
+
+<p> A number of tools exist to provide this kind of functionality.
+The most rudimentary of them is called "lint" and has been around for
+nearly twenty years.  Lint statically checks C code for standard
+programming errors, but is not very "smart".  </p>
+
+<p> Other, much more advanced, static analysis tools have been
+developed over the years.  One of the most mature of these tools was
+originally called LCLint.  It has seen a number of different
+implementations, the most recent of which is called <a
+href="http://lclint.cs.virginia.edu/">Splint</a>. </p>
+
+<p> The main problem with static analysis of arbitrary C code is that
+(a) C's semantics are under-defined, and (b) aliasing and pointer
+manipulation make reasoning impossible in many situations.  This means
+that tools like Splint are necessarily incomplete, as they cannot
+reason about arbitrary C code and thus many problems in the code
+cannot be detected, and unsound, as some of the problems that these
+tools identify are not in fact errors. </p>
+
+<p> But OpenBSD C code is not arbitrary.  The OpenBSD developers have
+strict coding conventions that significantly restricts the use of C
+programming constructs.  These conventions can thus significantly
+simplify the semantic domain, thereby improving the chances of
+developing a sound and complete automated reasoning framework. </p>
+
+<p> This project focuses on (a) developing local expertise in these
+tools, (b) formalising the conventions used by OpenBSD developers, and
+(c) synthesising these two results. </p>
+
+<h3>Mandatory Goals</h3>
+
+<ol>
+
+  <li> Gain familiarity with OpenBSD. </li>
+      
+  <li> Gain familiarity with lightweight static checkers for C like
+       the lint tool. </li>
+
+  <li> Evaluate several research static checkers for systems-level C
+      code. </li>
+
+  <li> Analyse and formalise some of the core OpenBSD development
+      methodologies that simplify the domain semantics for automated
+      reasoning. </li>
+
+  <li> Design, implement, and test a framework for static checking
+      systems-level C code in OpenBSD using a combination of existing
+      <a
+      href="http://en.wikipedia.org/wiki/Free/Libre_Open_Source_Software">FLOSS</a>
+      tools and new techniques and incorporating the results of the
+      previous step. </li>
+
+  <li> Release the framework and tools to the world under an
+      appropriate FLOSS license, hopefully so that it will be
+      incorporated into, and used by, OpenBSD. </li>
+
+</ol>
+  
+<h3>Discretionary Goals</h3>
+
+<ol>
+
+  <li> Analyse a single critical OpenBSD component with the new
+      tool. </li>
+
+  <li> Support framework and tool indefinitely and help kick-start
+      community for such. </li>
+      
+  <li> Coauthor, submit, and publish a paper on this work. </li>
+      
+</ol>
+
+<h3>Exceptional Goals</h3>
+
+<ol>
+
+  <li> Analyse a several critical OpenBSD components with the new
+      tool. </li>
+
+</ol>
+
+<h3>Sources of Information and Preparatory Reading</h3>
+
+<ol>
+  <li> <a href="http://www.openbsd.org/">OpenBSD</a> </li>
+  <li> The <a href="http://lclint.cs.virginia.edu/faq.html">Splint FAQ</a> </li>
+  <li> <a href="http://www.testingfaqs.org/t-static.html">Static Analysis Tools</a> </li>
+  <li> Look into CodeSurfer/C and CodeSurfer/x86 </li>
+</ol>
+
+</div>
+</div>
+<!-- End main content -->
+
+<!-- Footer -->
+<div id="footer"><p>Copyright &copy; 1993&#8211;2007 <a href="/">KindSoftware</a>. :: Page Last Updated: Tuesday, 16-Feb-2021 11:46:35 PST <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
+<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+</div>
+<!-- End footer -->
+
+</div>
+</div>
+</body>
+</html>

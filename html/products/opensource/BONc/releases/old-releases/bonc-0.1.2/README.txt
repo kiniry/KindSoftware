@@ -24,7 +24,7 @@ Contents:
   input is also available, with (x)html output planned for a future release.
 
   More information can be found on BON at the website 
-  http://www.bon-method.com/, and by reading the book "Seamless object-oriented
+  https://www.bon-method.com/, and by reading the book "Seamless object-oriented
   software architecture: analysis and design of reliable systems" which is 
   freely available on the site since it is out of print.
 

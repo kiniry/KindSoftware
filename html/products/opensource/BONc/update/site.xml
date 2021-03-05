@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description url="http://www.kindsoftware.com/products/opensource/BONc/">
+   <description url="https://www.kindsoftware.com/products/opensource/BONc/">
       BONc Plugin Update Site.
    </description>
    <feature url="features/ie.ucd.bon.plugin_0.3.13.jar" id="ie.ucd.bon.plugin" version="0.3.13">

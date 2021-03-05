@@ -27,7 +27,7 @@ are welcome.
 @copying
 The JML and ESC/Java2 Homework Exercises are licensed under the Creative
 Commons Attribution-NonCommercial-ShareAlike 2.0 license.  See
-http://creativecommons.org/licenses/by-nc-sa/2.0/
+https://creativecommons.org/licenses/by-nc-sa/2.0/
 
 Copyright @copyright{} 2004 Joseph R. Kiniry
 
@@ -62,7 +62,7 @@ Your fair use and other rights are in no way affected by the above.
 
 This is a human-readable summary of the Legal Code.
 
-See http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
+See https://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
 @end quotation
 
 @end copying
@@ -87,7 +87,7 @@ See http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
 
 @c Will be published by the Nijmegen Institute for Computing and Information
 @c Science at the University of Nijmegen as technical report NIII-R04XX.
-@c See http://www.cs.kun.nl/research/reports/
+@c See https://www.cs.kun.nl/research/reports/
 @end titlepage
 
 @c metadata used in HTML
@@ -153,33 +153,33 @@ documentation generator (@t{jmldoc}), a set of unit test tools
 generator and specification comparison tool (@t{jmlspec}).
 
 The JML tool suite is primarily the development of the JML project at
-Iowa State University, led by Gary Leavens.  http://www.jmlspecs.org/
+Iowa State University, led by Gary Leavens.  https://www.jmlspecs.org/
 
 Several other tools understand (often subsets of) JML:
 @itemize
 @item
 The Extended Static Checker for Java (ESC/Java version 1).
-http://research.compaq.com/SRC/esc/
+https://research.compaq.com/SRC/esc/
 @item
 The Open Source Extended Static Checker for Java (ESC/Java version 2, or
 ESC/Java2 for short) from the SoS Group at the University of Nijmegen
 and David Cok.
-http://www.cs.kun.nl/sos/research/escjava/
+https://www.cs.kun.nl/sos/research/escjava/
 @item
 The LOOP compiler from the SoS Group at the University of Nijmegen.
-http://www.cs.kun.nl/sos/
+https://www.cs.kun.nl/sos/
 @item
 The Daikon invariant detector from the Program Analysis Group at MIT.
-http://pag.lcs.mit.edu/daikon/
+https://pag.lcs.mit.edu/daikon/
 @item
 The ChAsE frame axiom checker from Lemme project at INRIA Sophia-Antipolis.
-http://www-sop.inria.fr/lemme/verificard/modifSpec/index.html
+https://www-sop.inria.fr/lemme/verificard/modifSpec/index.html
 @item
 The JACK tool from Gemplus.
-http://www.gemplus.com/smart/r_d/trends/jack.html
+https://www.gemplus.com/smart/r_d/trends/jack.html
 @item
 The Bogor tool from the SpEx project at Kansas State University.
-http://spex.projects.cis.ksu.edu/
+https://spex.projects.cis.ksu.edu/
 @end itemize
 
 This set of homework problems focus on the use of JML in runtime

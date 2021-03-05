@@ -41,7 +41,7 @@ JML and ESC/Java Homework Exercises
 
 The JML and ESC/Java2 Homework Exercises are licensed under the Creative
 Commons Attribution-NonCommercial-ShareAlike 2.0 license.  See
-http://creativecommons.org/licenses/by-nc-sa/2.0/
+https://creativecommons.org/licenses/by-nc-sa/2.0/
 
 Copyright (C) 2004 Joseph R. Kiniry
 
@@ -70,7 +70,7 @@ Copyright (C) 2004 Joseph R. Kiniry
 
      This is a human-readable summary of the Legal Code.
 
-     See http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
+     See https://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
 
 This set of homework problems focus on the use of JML in runtime
 assertion checking (with jmlc and jmlrac) and static verification with
@@ -92,31 +92,31 @@ jtest), and a specification skeleton generator and specification
 comparison tool (jmlspec).
 
 The JML tool suite is primarily the development of the JML project at
-Iowa State University, led by Gary Leavens.  http://www.jmlspecs.org/
+Iowa State University, led by Gary Leavens.  https://www.jmlspecs.org/
 
 Several other tools understand (often subsets of) JML:
    * The Extended Static Checker for Java (ESC/Java version 1).
-     http://research.compaq.com/SRC/esc/
+     https://research.compaq.com/SRC/esc/
 
    * The Open Source Extended Static Checker for Java (ESC/Java version
      2, or ESC/Java2 for short) from the SoS Group at the University of
-     Nijmegen and David Cok.  http://www.cs.kun.nl/sos/research/escjava/
+     Nijmegen and David Cok.  https://www.cs.kun.nl/sos/research/escjava/
 
    * The LOOP compiler from the SoS Group at the University of Nijmegen.
-     http://www.cs.kun.nl/sos/
+     https://www.cs.kun.nl/sos/
 
    * The Daikon invariant detector from the Program Analysis Group at
-     MIT.  http://pag.lcs.mit.edu/daikon/
+     MIT.  https://pag.lcs.mit.edu/daikon/
 
    * The ChAsE frame axiom checker from Lemme project at INRIA
      Sophia-Antipolis.
-     http://www-sop.inria.fr/lemme/verificard/modifSpec/index.html
+     https://www-sop.inria.fr/lemme/verificard/modifSpec/index.html
 
    * The JACK tool from Gemplus.
-     http://www.gemplus.com/smart/r_d/trends/jack.html
+     https://www.gemplus.com/smart/r_d/trends/jack.html
 
    * The Bogor tool from the SpEx project at Kansas State University.
-     http://spex.projects.cis.ksu.edu/
+     https://spex.projects.cis.ksu.edu/
 
 This set of homework problems focus on the use of JML in runtime
 assertion checking (with jmlc and jmlrac) and static verification with
@@ -1054,7 +1054,7 @@ Copying
 
 The JML and ESC/Java2 Homework Exercises are licensed under the Creative
 Commons Attribution-NonCommercial-ShareAlike 2.0 license.  See
-http://creativecommons.org/licenses/by-nc-sa/2.0/
+https://creativecommons.org/licenses/by-nc-sa/2.0/
 
 Copyright (C) 2004 Joseph R. Kiniry
 
@@ -1083,7 +1083,7 @@ Copyright (C) 2004 Joseph R. Kiniry
 
      This is a human-readable summary of the Legal Code.
 
-     See http://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
+     See https://creativecommons.org/licenses/by-nc-sa/2.0/legalcode
 
 Index
 *****

@@ -60,7 +60,7 @@ Joe
 >         Gary T. Leavens
 >         Department of Computer Science, Iowa State University
 >         229 Atanasoff Hall, Ames, Iowa 50011-1041 USA
->         http://www.cs.iastate.edu/~leavens  phone: +1-515-294-1580
+>         https://www.cs.iastate.edu/~leavens  phone: +1-515-294-1580
 > 
 > Talk -*- Outline -*-
 > 

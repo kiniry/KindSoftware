@@ -17,7 +17,7 @@ PURPOSE OF ESCJAVA2
 
 The primary purpose of the work on Escjava2 is to alter the tool so
 that it parses the current version of JML (Java Modeling Language -
-http://www.jmlspecs.org), while checking at least the same set of
+https://www.jmlspecs.org), while checking at least the same set of
 features that the final HP/Compaq version (1.4.2) of Escjava checks.
 
 A secondary purpose is to increase the number of features of JML that
@@ -68,7 +68,7 @@ that has gone on to make ESC/Java2, based upon the semi-open sourced
 ESC/Java 1 from November, 2001 a reality.
 
 Finally, the "JML Reference Manual" is part of the Java Modeling
-Language (JML) distribution.  See http://www.jmlspecs.org/ for more
+Language (JML) distribution.  See https://www.jmlspecs.org/ for more
 information.
 
 We have begun writing additional booklets on several other topics.
@@ -113,14 +113,14 @@ The JMLSpecs-Escjava mailing list, hosted at SourceForge.net, is the
 main mailing list for SRC ESC/Java and ESC/Java2 *users*.
 
 Please see the JMLSpecs project
-  <http://sourceforge.net/projects/jmlspecs/>
+  <https://sourceforge.net/projects/jmlspecs/>
 for more information.
 
 ESC/Java developers communicate on the ESCJava-Developers mailing
 list, hosted at UCD.
 
 Please see the SRG Mailman web pages at
-  <http://topos.ucd.ie/mailman/listinfo>
+  <https://topos.ucd.ie/mailman/listinfo>
 for more information.
 
 To make a new bug report: 
@@ -132,9 +132,9 @@ OBTAINING THE ORIGINAL SOURCE FOR SRC's "Java Programming Toolkit
 Source Release" (which includes EscJava):
 
 The source has been available from
-  http://www.research.compaq.com/downloads.html 
+  https://www.research.compaq.com/downloads.html 
 or
-  http://www.hpl.hp.com/downloads/crl/jtk/
+  https://www.hpl.hp.com/downloads/crl/jtk/
 
 The availability can be intermittent.  Note the license restrictions
 on further distribution of the source.
@@ -171,7 +171,7 @@ a) Provide evidence to Joe that you have obtained the original sources
    ESC/Java archives you have downloaded from SRC.
 
 b) Create an account on the UCD Trac server located at
-   http://mobius.ucd.ie/
+   https://mobius.ucd.ie/
 
    Notify Joe that you wish to have access to our Subversion repository via
    the Trac.  Make sure you tell him your Trac username.

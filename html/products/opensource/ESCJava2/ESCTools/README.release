@@ -53,7 +53,7 @@ following files:
 
   In the "slides" directory you will find half a dozen sets of slides
   used at tutorials given at several major conferences in 2004 and
-  2005.  See http://secure.ucd.ie/documents/tutorials/ for more
+  2005.  See https://secure.ucd.ie/documents/tutorials/ for more
   information.
 
   In the "papers" directory you will find all of the papers we have
@@ -124,5 +124,5 @@ There are many options available, most of them experimental and not
 documented.  The "official" options are listed using "escj -help".
 
 An Eclipse plugin for ESC/Java2 is also available.  Please see
-http://kind.ucd.ie/products/opensource/ESCJava2/
+https://kind.ucd.ie/products/opensource/ESCJava2/
 for more details.

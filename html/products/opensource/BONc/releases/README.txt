@@ -31,7 +31,7 @@ Contents:
   charts.
 
   More information can be found on BON at the website 
-  http://www.bon-method.com/, and by reading the book "Seamless object-oriented
+  https://www.bon-method.com/, and by reading the book "Seamless object-oriented
   software architecture: analysis and design of reliable systems" which is 
   freely available on the site since it is out of print.
 
@@ -192,7 +192,7 @@ Contents:
 
   It is possible to create graphs representing the clustering and inheritance
   relationships in the given BON source. For the chosen graph type, the output
-  will be in the DOT language (see http://www.graphviz.org/doc/info/lang.html).
+  will be in the DOT language (see https://www.graphviz.org/doc/info/lang.html).
   
   The available graph printing options currently are:
     (1) icg - Informal cluster graph
@@ -208,7 +208,7 @@ Contents:
 
   There are numerous pieces of software available for viewing/working with .dot
   files. Some of the most popular of these are available from Graphviz 
-  (http://www.graphviz.org/).
+  (https://www.graphviz.org/).
 
   For those working on Ubuntu, simply install the "graphviz" package (should be
   similarly available on other linux flavours. For an example of usage, assume

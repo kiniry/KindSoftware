@@ -105,7 +105,7 @@ you may copy them as ~/proj/Javafe, ~/proj/Escjava, etc.).
   If you add command-line switches, you'll want to document these
   in Escjava/java/escjava/escjava.mtex.  To convert this file into
   both the Unix man format and HTML format, use the "mtex" tool,
-  which you can download from http://research.compaq.com/SRC/software.
+  which you can download from https://research.compaq.com/SRC/software.
 
   The Escjava/release directory contains the files going into a
   recent binary release of ESC/Java.  If you want to the larger set

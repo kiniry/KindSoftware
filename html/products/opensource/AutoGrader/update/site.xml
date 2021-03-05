@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description name="AutoGrader update site" url="http://www.kindsoftware.com/products/opensource/AutoGrader/update">
+   <description name="AutoGrader update site" url="https://www.kindsoftware.com/products/opensource/AutoGrader/update">
       The AutoGrader update site.
    </description>
    <feature url="features/AGFeature_0.3.1.jar" id="AGFeature" version="0.3.1">

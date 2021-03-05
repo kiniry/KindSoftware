@@ -43,7 +43,7 @@ Contents:
 ------------------------
 
    Add the following line to your sources.list (/etc/apt/sources.list):
-     sudo wget http://hunter.ucd.ie/bon/bonc.list -O /etc/apt/sources.list.d/bonc.list
+     sudo wget https://hunter.ucd.ie/bon/bonc.list -O /etc/apt/sources.list.d/bonc.list
 
    Then:
      sudo apt-get update
@@ -81,7 +81,7 @@ Contents:
 2. SYSTEMS WITH BASH
 ====================
 
-  Bonc releases are available from http://kind.ucd.ie/products/opensource/BONc/releases/
+  Bonc releases are available from https://kind.ucd.ie/products/opensource/BONc/releases/
 
 2.1 Dependencies
 ----------------
@@ -99,7 +99,7 @@ Contents:
   Additionally, the rubber tool must be downloaded manually and its installation
   location added to the path (e.g. "export $PATH:/path/to/dir/containing/rubber")
   
-  You will find rubber here: http://www.pps.jussieu.fr/~beffara/soft/rubber/
+  You will find rubber here: https://www.pps.jussieu.fr/~beffara/soft/rubber/
   
 2.1.2 OSX
 
@@ -130,16 +130,16 @@ Contents:
 
   From the commandline navigate to the desired directory and issue the
   following commands:
-    wget http://kind.ucd.ie/products/opensource/BONc/releases/update
+    wget https://kind.ucd.ie/products/opensource/BONc/releases/update
     chmod a+x update
     ./update
   
   Alternatively:
-    wget -qO - http://kind.ucd.ie/products/opensource/BONc/releases/update | bash
+    wget -qO - https://kind.ucd.ie/products/opensource/BONc/releases/update | bash
     
 2.2.2 Without the update script
 
-  - Visit http://kind.ucd.ie/products/opensource/BONc/releases/
+  - Visit https://kind.ucd.ie/products/opensource/BONc/releases/
   - Download a package of the latest version (e.g., bonc-XXX.tar.gz).
   - Extract the files to the desired location (e.g. tar xzf bonc-XXX.tar.gz)
 
@@ -222,7 +222,7 @@ Contents:
 3. WINDOWS WITHOUT CYGWIN
 =========================
 
-  Bonc releases are available from http://kind.ucd.ie/products/opensource/BONc/releases/
+  Bonc releases are available from https://kind.ucd.ie/products/opensource/BONc/releases/
 
   1. Download the zip of the latest build.
   2. Unzip the package to a location of your choice.
@@ -248,7 +248,7 @@ Contents:
 ----------------
 
   - Building from source requires Java version 5 or later.
-  - Building uses Apache Ant (http://ant.apache.org/). It has been tested on
+  - Building uses Apache Ant (https://ant.apache.org/). It has been tested on
     version 1.6.5 and 1.7.0, but may work on others.
 
 4.2 Getting the source

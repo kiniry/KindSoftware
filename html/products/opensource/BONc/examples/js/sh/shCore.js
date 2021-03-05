@@ -1,9 +1,9 @@
 /**
  * SyntaxHighlighter
- * http://alexgorbatchev.com/
+ * https://alexgorbatchev.com/
  *
  * SyntaxHighlighter is donationware. If you are using it, please donate.
- * http://alexgorbatchev.com/wiki/SyntaxHighlighter:Donate
+ * https://alexgorbatchev.com/wiki/SyntaxHighlighter:Donate
  *
  * @version
  * 2.1.364 (October 15 2009)
@@ -25,7 +25,7 @@
  * GNU General Public License for more details.
  * 
  * You should have received a copy of the GNU General Public License
- * along with SyntaxHighlighter.  If not, see <http://www.gnu.org/copyleft/lesser.html>.
+ * along with SyntaxHighlighter.  If not, see <https://www.gnu.org/copyleft/lesser.html>.
  */
 //
 // Begin anonymous function. This is used to contain local scope variables without polutting global scope.
@@ -115,7 +115,7 @@ var sh = {
 			brushNotHtmlScript : 'Brush wasn\'t configured for html-script option: ',
 			
 			// this is populated by the build script
-			aboutDialog : '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About SyntaxHighlighter</title></head><body style="font-family:Geneva,Arial,Helvetica,sans-serif;background-color:#fff;color:#000;font-size:1em;text-align:center;"><div style="text-align:center;margin-top:3em;"><div style="font-size:xx-large;">SyntaxHighlighter</div><div style="font-size:.75em;margin-bottom:4em;"><div>version 2.1.364 (October 15 2009)</div><div><a href="http://alexgorbatchev.com" target="_blank" style="color:#0099FF;text-decoration:none;">http://alexgorbatchev.com</a></div><div>If you like this script, please <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2930402" style="color:#0099FF;text-decoration:none;">donate</a> to keep development active!</div></div><div>JavaScript code syntax highlighter.</div><div>Copyright 2004-2009 Alex Gorbatchev.</div></div></body></html>'
+			aboutDialog : '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>About SyntaxHighlighter</title></head><body style="font-family:Geneva,Arial,Helvetica,sans-serif;background-color:#fff;color:#000;font-size:1em;text-align:center;"><div style="text-align:center;margin-top:3em;"><div style="font-size:xx-large;">SyntaxHighlighter</div><div style="font-size:.75em;margin-bottom:4em;"><div>version 2.1.364 (October 15 2009)</div><div><a href="http://alexgorbatchev.com" target="_blank" style="color:#0099FF;text-decoration:none;">http://alexgorbatchev.com</a></div><div>If you like this script, please <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2930402" style="color:#0099FF;text-decoration:none;">donate</a> to keep development active!</div></div><div>JavaScript code syntax highlighter.</div><div>Copyright 2004-2009 Alex Gorbatchev.</div></div></body></html>'
 		},
 
 		/** If true, output will show HTML produces instead. */
@@ -366,7 +366,7 @@ var sh = {
 						html = '<object'
 							+ attributes({
 								classid : 'clsid:d27cdb6e-ae6d-11cf-96b8-444553540000',
-								codebase : 'http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0'
+								codebase : 'https://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0'
 							})
 							+ attributes(args1)
 							+ '>'
@@ -1050,8 +1050,8 @@ var sh = {
 			{
 				var suffix = '', prefix = '';
 				
-				// We include &lt; and &gt; in the URL for the common cases like <http://google.com>
-				// The problem is that they get transformed into &lt;http://google.com&gt;
+				// We include &lt; and &gt; in the URL for the common cases like <https://google.com>
+				// The problem is that they get transformed into &lt;https://google.com&gt;
 				// Where as &gt; easily looks like part of the URL string.
 				
 				if (m.indexOf(lt) == 0)
@@ -1388,7 +1388,7 @@ sh.Highlighter.prototype = {
 	{
 		var matches = this.matches;
 		
-		// Optimized by Jose Prado (http://joseprado.com)
+		// Optimized by Jose Prado (https://joseprado.com)
 		for (var i = 0; i < matches.length; i++) 
 		{ 
 			if (matches[i] === null)
@@ -1675,7 +1675,7 @@ return sh;
 /**
  * XRegExp 0.6.1
  * (c) 2007-2008 Steven Levithan
- * <http://stevenlevithan.com/regex/xregexp/>
+ * <https://stevenlevithan.com/regex/xregexp/>
  * MIT License
  * 
  * provides an augmented, cross-browser implementation of regular expressions

@@ -1,8 +1,0 @@
-Copyright (c) 2007, Fintan Fairmichael, University College Dublin
-All rights reserved.
-
-Bonc release 0.1.2:
-
- * Our second release!
- * Now allowing parenthesized cluster names in involves and creates clauses.
- * Typechecking of formal diagrams is not 100%. This will be fixed very soon in a new release.

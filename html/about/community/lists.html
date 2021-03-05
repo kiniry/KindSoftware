@@ -9,6 +9,18 @@
 </head>
 
 <body>
+<script type="text/javascript">
+// you can also factor this into a library
+  function include(id, path) {
+    fetch(path)
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+  }
+</script>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td class="headerleft" width="5%">
@@ -182,7 +194,10 @@ border="0"/>
 <tr>
   <td class="footer" colspan="7" height="50">
   <!-- footer:  spans left and right column -->
-  <!--#include virtual="/xml/footer.xml" -->
+<div id="footer"></div>
+<script>
+include("footer", "/xml/footer.xml")
+</script>
   Last Updated: <!--#flastmod file="lists.html" -->
   </td>
 </tr>

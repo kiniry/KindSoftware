@@ -405,6 +405,19 @@ dd {
 </head>
 <body onload="initialPopulate();">
 
+<script type="text/javascript">
+// you can also factor this into a library
+  function include(id, path) {
+    fetch(path)
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+  }
+</script>
+
 <div id="main">
 
 <div class="top-level" id="system_chart:CONNECTOR_SYSTEM">

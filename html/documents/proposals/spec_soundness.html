@@ -26,19 +26,37 @@
 
 <body onload="window.defaultStatus='KindSoftware'" id="sectionthree">
 
+<script type="text/javascript">
+// you can also factor this into a library
+  function include(id, path) {
+    fetch(path)
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+  }
+</script>
 
 <div id="theory">
 <div id="wrapper">
 
 <!-- Kindsoftware Logo in Header -->
 
-<!--#include virtual="/xml/logo_header.xml" -->
+<div id="logo_header"></div>
+<script>
+include("logo_header", "/xml/logo_header.xml")
+</script>
 
 <div id="wrapper2">
 
 <!-- Top Level Menu -->
 
-<!--#include virtual="/xml/top_level_menu.xml" -->
+<div id="top_level_menu"></div>
+<script>
+include("top_level_menu", "/xml/top_level_menu.xml")
+</script>
 
 <!-- End Top Level Menu -->
 
@@ -55,17 +73,47 @@
 <!-- All secondary menus are hidden except the ones under "subnavon" -->
 <div id="subnav">
 <ul>
-  <li><!--#include virtual="/documents/xml/overview.xml"--></li>
-  <li><!--#include virtual="/documents/xml/mech_theory.xml"--></li>
-  <li><!--#include virtual="/documents/xml/news.xml"--></li>
+<div id="overview"></div>
+<script>
+include("overview", "/documents/xml/overview.xml")
+</script>
+<div id="mech_theory"></div>
+<script>
+include("mech_theory", "/documents/xml/mech_theory.xml")
+</script>
+<div id="news"></div>
+<script>
+include("news", "/documents/xml/news.xml")
+</script>
   <li id="subnavon">
-    <!--#include virtual="/documents/xml/proposals.xml"-->
-    <!--#include virtual="/documents/proposals/xml/verification.xml"--></li>
-  <li><!--#include virtual="/documents/xml/published.xml"--></li>
-  <li><!--#include virtual="/documents/xml/reports.xml"--></li>
-  <li><!--#include virtual="/documents/xml/talks.xml"--></li>
-  <li><!--#include virtual="/documents/xml/tutorials.xml"--></li>
-  <li><!--#include virtual="/documents/xml/whitepapers.xml"--></li>
+<div id="proposals"></div>
+<script>
+include("proposals", "/documents/xml/proposals.xml")
+</script>
+<div id="verification"></div>
+<script>
+include("verification", "/documents/proposals/xml/verification.xml")
+</script>
+<div id="published"></div>
+<script>
+include("published", "/documents/xml/published.xml")
+</script>
+<div id="reports"></div>
+<script>
+include("reports", "/documents/xml/reports.xml")
+</script>
+<div id="talks"></div>
+<script>
+include("talks", "/documents/xml/talks.xml")
+</script>
+<div id="tutorials"></div>
+<script>
+include("tutorials", "/documents/xml/tutorials.xml")
+</script>
+<div id="whitepapers"></div>
+<script>
+include("whitepapers", "/documents/xml/whitepapers.xml")
+</script>
 </ul>
 </div>
 <!-- End submenus -->
@@ -199,8 +247,10 @@ tool and a research publication with Dr. Kiniry.
 <!-- End main content -->
 
 <!-- Footer -->
-<div id="footer"><p>Copyright &copy; 1993&#8211;2006 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="spec_soundness.html" --> <br />Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
-<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+<div id="footer"></div>
+<script>
+include("footer", "/xml/footer.xml")
+</script>
 </div>
 <!-- End footer -->
 

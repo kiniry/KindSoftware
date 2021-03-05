@@ -26,19 +26,37 @@
 
 <body onload="window.defaultStatus='KindSoftware'" id="sectionone">
 
+<script type="text/javascript">
+// you can also factor this into a library
+  function include(id, path) {
+    fetch(path)
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+  }
+</script>
 
 <div id="theory">
 <div id="wrapper">
 
 <!-- Kindsoftware Logo in Header -->
 
-<!--#include virtual="/xml/logo_header.xml" -->
+<div id="logo_header"></div>
+<script>
+include("logo_header", "/xml/logo_header.xml")
+</script>
 
 <div id="wrapper2">
 
 <!-- Top Level Menu -->
 
-<!--#include virtual="/xml/top_level_menu.xml" -->
+<div id="top_level_menu"></div>
+<script>
+include("top_level_menu", "/xml/top_level_menu.xml")
+</script>
 
 <!-- End Top Level Menu -->
 
@@ -62,7 +80,10 @@
 <li><a href="/about/donate.html">Donate</a></li>
 </ul></li>
 <li id="subnavon"><a href="/about/people/">Who We Are</a>
-<!--#include virtual="/about/people/people.xml" --></li>
+<div id="people"></div>
+<script>
+include("people", "/about/people/people.xml")
+</script>
 <li><a href="/about/ideology/">Ideology</a>
 <ul>
 <li><a href="/about/ideology/index.html#technical">Technical</a></li>
@@ -82,7 +103,10 @@
 
 <!-- Disclaimer of sorts -->
 
-<!--#include virtual="/xml/leader.xml" -->
+<div id="leader"></div>
+<script>
+include("leader", "/xml/leader.xml")
+</script>
 
 </div>
 <!-- End Sidebar -->
@@ -112,8 +136,10 @@ projects that garner over a million hits per month. </p>
 <!-- End main content -->
 
 <!-- Footer -->
-<div id="footer"><p>Copyright &copy; 1993&#8211;2006 <a href="/">KindSoftware</a>. :: Page Last Updated: <!--#flastmod file="dmz.html" --><br /> Site Design and Photos by <a href="http://www.charawilliams.com">CAW</a> ::
-<a href="http://validator.w3.org/check/referer">XHTML</a>, <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.kindsoftware.com/stylesheets/kind.css">CSS</a>.</p></div>
+<div id="footer"></div>
+<script>
+include("footer", "/xml/footer.xml")
+</script>
 </div>
 <!-- End footer -->
 

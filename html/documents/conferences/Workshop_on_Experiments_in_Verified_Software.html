@@ -18,7 +18,20 @@
     <script type="text/javascript" src="Workshop_on_Experiments_in_Verified_Software_files/Workshop_on_Experiments_in_Verified_Software.js"></script>
   </head>
   <body style="background: #ffffff url(Workshop_on_Experiments_in_Verified_Software_files/Pattern%20Browser.jpg) repeat scroll top left; margin: 0pt; " onload="onPageLoad();" onunload="onPageUnload();">
-    <div style="text-align: center; ">
+  <script type="text/javascript">
+// you can also factor this into a library
+  function include(id, path) {
+    fetch(path)
+    .then(response => {
+      return response.text()
+    })
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+    });
+  }
+</script>
+
+  <div style="text-align: center; ">
       <div style="margin-bottom: 10px; margin-left: auto; margin-right: auto; margin-top: 10px; overflow: hidden; position: relative; word-wrap: break-word;  text-align: left; width: 700px; " id="body_content">
         <div style="background: transparent url(Workshop_on_Experiments_in_Verified_Software_files/Typesetter_Page%20Tile4.jpg) repeat scroll top left; width: 700px; ">
           <div style="height: 70px; margin-left: 0px; position: relative; width: 700px; z-index: 10; " id="header_layer">
